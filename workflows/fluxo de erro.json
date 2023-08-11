@@ -1,0 +1,133 @@
+{
+  "active": false,
+  "connections": {
+    "Error Trigger": {
+      "main": [
+        [
+          {
+            "node": "mensagem de erro pro zap",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "mensagem de erro pro zap1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "createdAt": "2023-03-20T21:45:26.942Z",
+  "id": "9",
+  "name": "fluxo de erro",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "6ed3e86c-864e-4f6d-81b8-f08096c4d0d4",
+      "name": "Error Trigger",
+      "type": "n8n-nodes-base.errorTrigger",
+      "typeVersion": 1,
+      "position": [
+        540,
+        560
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "6aa3a8b0-af89-4e67-9068-afd893d08ade",
+      "name": "Start",
+      "type": "n8n-nodes-base.start",
+      "typeVersion": 1,
+      "position": [
+        260,
+        400
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://backend.botconversa.com.br/api/v1/webhook/subscriber/139232712/send_message/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "type",
+              "value": "text"
+            },
+            {
+              "name": "value",
+              "value": "=⚠️ *SERVIDOR N8N* ⚠️\n\nWorkflow: {{$json[\"workflow\"][\"name\"]}}\nErro: {{$json[\"execution\"][\"error\"][\"message\"]}}\nÚltimo nó executado: {{$json[\"execution\"][\"lastNodeExecuted\"]}}\nURL de execução: {{$json[\"execution\"][\"url\"]}}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "b6f3769f-11b2-4564-96a5-ec2a33fa2bf6",
+      "name": "mensagem de erro pro zap",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        840,
+        480
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "4",
+          "name": "BotConversa Fabiolas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://backend.botconversa.com.br/api/v1/webhook/subscriber/145306036/send_message/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "type",
+              "value": "text"
+            },
+            {
+              "name": "value",
+              "value": "=⚠️ *SERVIDOR N8N* ⚠️\n\nWorkflow: {{$json[\"workflow\"][\"name\"]}}\nErro: {{$json[\"execution\"][\"error\"][\"message\"]}}\nÚltimo nó executado: {{$json[\"execution\"][\"lastNodeExecuted\"]}}\nURL de execução: {{$json[\"execution\"][\"url\"]}}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "819b281b-8863-4ff9-b1f9-d9429af3aab1",
+      "name": "mensagem de erro pro zap1",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        840,
+        680
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "4",
+          "name": "BotConversa Fabiolas"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "settings": {},
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 0,
+  "updatedAt": "2023-03-30T21:59:26.000Z",
+  "versionId": "e3286231-1cef-4250-9a7d-74873ef13217"
+}
