@@ -1,0 +1,4946 @@
+{
+  "active": true,
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Implante",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Preventivo",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Consulta Ginecológica e Consulta de DIU",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Consulta em geral e Nova Consulta",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Colocação do Diu",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Implante": {
+      "main": [
+        [
+          {
+            "node": "1 dia depois",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "30 dias depois",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "6 meses depois",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "1 dia depois": {
+      "main": [
+        [
+          {
+            "node": "Listar Agendamentos",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Listar Agendamentos": {
+      "main": [
+        [
+          {
+            "node": "separa agendamentos",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "separa agendamentos": {
+      "main": [
+        [
+          {
+            "node": "Filtro de procedimento e atendido",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filtro de procedimento e atendido": {
+      "main": [
+        [
+          {
+            "node": "1 por vez",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "1 por vez": {
+      "main": [
+        [
+          {
+            "node": "buscar pacientes",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Nome e telefone para validar": {
+      "main": [
+        [
+          {
+            "node": "Formatando Nome e Telefone",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Formatando Nome e Telefone": {
+      "main": [
+        [
+          {
+            "node": "Cadastrando na Audiência",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Cadastrando na Audiência": {
+      "main": [
+        [
+          {
+            "node": "enviar fluxo",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "buscar pacientes": {
+      "main": [
+        [
+          {
+            "node": "Nome e telefone para validar",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "BUSCAR PROCEDIMENTO2": {
+      "main": [
+        [
+          {
+            "node": "Item Lists",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Item Lists": {
+      "main": [
+        [
+          {
+            "node": "Set",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "enviar fluxo": {
+      "main": [
+        [
+          {
+            "node": "1s",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "1s": {
+      "main": [
+        [
+          {
+            "node": "1 por vez",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Listar Agendamentos1": {
+      "main": [
+        [
+          {
+            "node": "separa agendamentos1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filtro de procedimento e atendido1": {
+      "main": [
+        [
+          {
+            "node": "1 por vez1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "separa agendamentos1": {
+      "main": [
+        [
+          {
+            "node": "Filtro de procedimento e atendido1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "1 por vez1": {
+      "main": [
+        [
+          {
+            "node": "buscar pacientes1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Cadastrando na Audiência1": {
+      "main": [
+        [
+          {
+            "node": "enviar fluxo1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Nome e telefone para validar1": {
+      "main": [
+        [
+          {
+            "node": "Formatando Nome e Telefone1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Formatando Nome e Telefone1": {
+      "main": [
+        [
+          {
+            "node": "Cadastrando na Audiência1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "1s1": {
+      "main": [
+        [
+          {
+            "node": "1 por vez1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "buscar pacientes1": {
+      "main": [
+        [
+          {
+            "node": "Nome e telefone para validar1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "enviar fluxo1": {
+      "main": [
+        [
+          {
+            "node": "1s1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "30 dias depois": {
+      "main": [
+        [
+          {
+            "node": "Listar Agendamentos1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Listar Agendamentos2": {
+      "main": [
+        [
+          {
+            "node": "separa agendamentos2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filtro de procedimento e atendido2": {
+      "main": [
+        [
+          {
+            "node": "1 por vez2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "separa agendamentos2": {
+      "main": [
+        [
+          {
+            "node": "Filtro de procedimento e atendido2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "1 por vez2": {
+      "main": [
+        [
+          {
+            "node": "buscar pacientes2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Cadastrando na Audiência2": {
+      "main": [
+        [
+          {
+            "node": "enviar fluxo2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Nome e telefone para validar2": {
+      "main": [
+        [
+          {
+            "node": "Formatando Nome e Telefone2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Formatando Nome e Telefone2": {
+      "main": [
+        [
+          {
+            "node": "Cadastrando na Audiência2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "1s2": {
+      "main": [
+        [
+          {
+            "node": "1 por vez2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "buscar pacientes2": {
+      "main": [
+        [
+          {
+            "node": "Nome e telefone para validar2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "enviar fluxo2": {
+      "main": [
+        [
+          {
+            "node": "1s2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "6 meses depois": {
+      "main": [
+        [
+          {
+            "node": "Listar Agendamentos2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Listar Agendamentos3": {
+      "main": [
+        [
+          {
+            "node": "separa agendamentos3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filtro de procedimento e atendido3": {
+      "main": [
+        [
+          {
+            "node": "1 por vez3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "separa agendamentos3": {
+      "main": [
+        [
+          {
+            "node": "Filtro de procedimento e atendido3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "1 por vez3": {
+      "main": [
+        [
+          {
+            "node": "buscar pacientes3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Cadastrando na Audiência3": {
+      "main": [
+        [
+          {
+            "node": "enviar fluxo3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Nome e telefone para validar3": {
+      "main": [
+        [
+          {
+            "node": "Formatando Nome e Telefone3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Formatando Nome e Telefone3": {
+      "main": [
+        [
+          {
+            "node": "Cadastrando na Audiência3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "1s3": {
+      "main": [
+        [
+          {
+            "node": "1 por vez3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "buscar pacientes3": {
+      "main": [
+        [
+          {
+            "node": "Nome e telefone para validar3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "enviar fluxo3": {
+      "main": [
+        [
+          {
+            "node": "1s3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Preventivo": {
+      "main": [
+        [
+          {
+            "node": "15 dias depois",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "11 meses depois",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "15 dias depois": {
+      "main": [
+        [
+          {
+            "node": "Listar Agendamentos3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Listar Agendamentos4": {
+      "main": [
+        [
+          {
+            "node": "separa agendamentos4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filtro de procedimento e atendido4": {
+      "main": [
+        [
+          {
+            "node": "1 por vez4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "separa agendamentos4": {
+      "main": [
+        [
+          {
+            "node": "Filtro de procedimento e atendido4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "1 por vez4": {
+      "main": [
+        [
+          {
+            "node": "buscar pacientes4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Cadastrando na Audiência4": {
+      "main": [
+        [
+          {
+            "node": "enviar fluxo4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Nome e telefone para validar4": {
+      "main": [
+        [
+          {
+            "node": "Formatando Nome e Telefone4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Formatando Nome e Telefone4": {
+      "main": [
+        [
+          {
+            "node": "Cadastrando na Audiência4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "1s4": {
+      "main": [
+        [
+          {
+            "node": "1 por vez4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "buscar pacientes4": {
+      "main": [
+        [
+          {
+            "node": "Nome e telefone para validar4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "enviar fluxo4": {
+      "main": [
+        [
+          {
+            "node": "1s4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "11 meses depois": {
+      "main": [
+        [
+          {
+            "node": "Listar Agendamentos4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Listar Agendamentos5": {
+      "main": [
+        [
+          {
+            "node": "separa agendamentos5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filtro de procedimento e atendido5": {
+      "main": [
+        [
+          {
+            "node": "Filtro de procedimento e atendido6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "separa agendamentos5": {
+      "main": [
+        [
+          {
+            "node": "Filtro de procedimento e atendido5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "1 por vez5": {
+      "main": [
+        [
+          {
+            "node": "buscar pacientes5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Cadastrando na Audiência5": {
+      "main": [
+        [
+          {
+            "node": "enviar fluxo5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Nome e telefone para validar5": {
+      "main": [
+        [
+          {
+            "node": "Formatando Nome e Telefone5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Formatando Nome e Telefone5": {
+      "main": [
+        [
+          {
+            "node": "Cadastrando na Audiência5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "1s5": {
+      "main": [
+        [
+          {
+            "node": "1 por vez5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "buscar pacientes5": {
+      "main": [
+        [
+          {
+            "node": "Nome e telefone para validar5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "enviar fluxo5": {
+      "main": [
+        [
+          {
+            "node": "1s5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Consulta Ginecológica e Consulta de DIU": {
+      "main": [
+        [
+          {
+            "node": "11 meses depois1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "11 meses depois1": {
+      "main": [
+        [
+          {
+            "node": "Listar Agendamentos5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filtro de procedimento e atendido6": {
+      "main": [
+        [
+          {
+            "node": "1 por vez5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Listar Agendamentos6": {
+      "main": [
+        [
+          {
+            "node": "separa agendamentos6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filtro de procedimento e atendido7": {
+      "main": [
+        [
+          {
+            "node": "Filtro de procedimento e atendido8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "separa agendamentos6": {
+      "main": [
+        [
+          {
+            "node": "Filtro de procedimento e atendido7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "1 por vez6": {
+      "main": [
+        [
+          {
+            "node": "buscar pacientes6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Cadastrando na Audiência6": {
+      "main": [
+        [
+          {
+            "node": "enviar fluxo6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Nome e telefone para validar6": {
+      "main": [
+        [
+          {
+            "node": "Formatando Nome e Telefone6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Formatando Nome e Telefone6": {
+      "main": [
+        [
+          {
+            "node": "Cadastrando na Audiência6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "1s6": {
+      "main": [
+        [
+          {
+            "node": "1 por vez6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "buscar pacientes6": {
+      "main": [
+        [
+          {
+            "node": "Nome e telefone para validar6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "enviar fluxo6": {
+      "main": [
+        [
+          {
+            "node": "1s6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filtro de procedimento e atendido8": {
+      "main": [
+        [
+          {
+            "node": "1 por vez6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Consulta em geral e Nova Consulta": {
+      "main": [
+        [
+          {
+            "node": "7 dias depois",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "7 dias depois": {
+      "main": [
+        [
+          {
+            "node": "Listar Agendamentos6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Listar Agendamentos7": {
+      "main": [
+        [
+          {
+            "node": "separa agendamentos7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filtro de procedimento e atendido9": {
+      "main": [
+        [
+          {
+            "node": "1 por vez7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "separa agendamentos7": {
+      "main": [
+        [
+          {
+            "node": "Filtro de procedimento e atendido9",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "1 por vez7": {
+      "main": [
+        [
+          {
+            "node": "buscar pacientes7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Cadastrando na Audiência7": {
+      "main": [
+        [
+          {
+            "node": "enviar fluxo7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Nome e telefone para validar7": {
+      "main": [
+        [
+          {
+            "node": "Formatando Nome e Telefone7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Formatando Nome e Telefone7": {
+      "main": [
+        [
+          {
+            "node": "Cadastrando na Audiência7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "1s7": {
+      "main": [
+        [
+          {
+            "node": "1 por vez7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "buscar pacientes7": {
+      "main": [
+        [
+          {
+            "node": "Nome e telefone para validar7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "enviar fluxo7": {
+      "main": [
+        [
+          {
+            "node": "1s7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "15 dias depois1": {
+      "main": [
+        [
+          {
+            "node": "Listar Agendamentos7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Listar Agendamentos8": {
+      "main": [
+        [
+          {
+            "node": "separa agendamentos8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filtro de procedimento e atendido10": {
+      "main": [
+        [
+          {
+            "node": "1 por vez8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "separa agendamentos8": {
+      "main": [
+        [
+          {
+            "node": "Filtro de procedimento e atendido10",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "1 por vez8": {
+      "main": [
+        [
+          {
+            "node": "buscar pacientes8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Cadastrando na Audiência8": {
+      "main": [
+        [
+          {
+            "node": "enviar fluxo8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Nome e telefone para validar8": {
+      "main": [
+        [
+          {
+            "node": "Formatando Nome e Telefone8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Formatando Nome e Telefone8": {
+      "main": [
+        [
+          {
+            "node": "Cadastrando na Audiência8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "1s8": {
+      "main": [
+        [
+          {
+            "node": "1 por vez8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "buscar pacientes8": {
+      "main": [
+        [
+          {
+            "node": "Nome e telefone para validar8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "enviar fluxo8": {
+      "main": [
+        [
+          {
+            "node": "1s8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Colocação do Diu": {
+      "main": [
+        [
+          {
+            "node": "15 dias depois1",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "6 meses depois1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "6 meses depois1": {
+      "main": [
+        [
+          {
+            "node": "Listar Agendamentos8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "createdAt": "2023-06-14T04:19:08.917Z",
+  "id": "13",
+  "name": "Envios Pós Consulta - Dra Simone",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "triggerAtHour": 9
+            }
+          ]
+        }
+      },
+      "id": "1f350c99-82b4-4e0a-ab70-5399ccfcdf21",
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1,
+      "position": [
+        -20,
+        1060
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "35003eec-4ecc-4b94-91bf-bc65e0bc15d3",
+      "name": "Implante",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        900,
+        300
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "993da721-e607-4ae5-891d-ebb5113713de",
+      "name": "Preventivo",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        900,
+        920
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "870161c2-200a-4caa-ad17-285766a63093",
+      "name": "Colocação do Diu",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        900,
+        1940
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "subtractFromDate",
+        "magnitude": "={{ $json.timestamp }}",
+        "duration": 1,
+        "outputFieldName": "data-pesquisa"
+      },
+      "id": "90bbbd87-9d7a-4dbe-94a9-ef6b80e0f3ff",
+      "name": "1 dia depois",
+      "type": "n8n-nodes-base.dateTime",
+      "typeVersion": 2,
+      "position": [
+        1180,
+        80
+      ]
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "url": "https://api.feegow.com/v1/api/appoints/search",
+        "options": {},
+        "queryParametersUi": {
+          "parameter": [
+            {
+              "name": "data_start",
+              "value": "={{ $json['data-pesquisa'].split(\"-\")[2].slice(0,2) }}-{{ $json['data-pesquisa'].split(\"-\")[1] }}-{{ $json['data-pesquisa'].split(\"-\")[0] }} "
+            },
+            {
+              "name": "data_end",
+              "value": "={{ $json['data-pesquisa'].split(\"-\")[2].slice(0,2) }}-{{ $json['data-pesquisa'].split(\"-\")[1] }}-{{ $json['data-pesquisa'].split(\"-\")[0] }} "
+            }
+          ]
+        }
+      },
+      "id": "afb13fb4-afc8-4cdc-ac6a-1606d0fd7a64",
+      "name": "Listar Agendamentos",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [
+        1420,
+        80
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "maxTries": 5,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "13",
+          "name": "Feegow Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json.status_id.toString() }}",
+              "value2": "3"
+            },
+            {
+              "value1": "={{ $json.procedimento_id.toString() }}",
+              "value2": "5"
+            }
+          ]
+        }
+      },
+      "id": "31170c80-a975-48a3-9589-007e669fd852",
+      "name": "Filtro de procedimento e atendido",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        1900,
+        80
+      ]
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "content",
+        "options": {}
+      },
+      "id": "739c67ab-5476-4e57-bfb4-f4220c7a5661",
+      "name": "separa agendamentos",
+      "type": "n8n-nodes-base.itemLists",
+      "typeVersion": 1,
+      "position": [
+        1660,
+        80
+      ]
+    },
+    {
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      },
+      "id": "034a77d6-426d-4074-9c7d-23560a56e6b1",
+      "name": "1 por vez",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 2,
+      "position": [
+        2120,
+        80
+      ]
+    },
+    {
+      "parameters": {
+        "authentication": "headerAuth",
+        "requestMethod": "POST",
+        "url": "https://backend.botconversa.com.br/api/v1/webhook/subscriber/",
+        "options": {},
+        "bodyParametersUi": {
+          "parameter": [
+            {
+              "name": "phone",
+              "value": "={{ $json.whatsapp }}"
+            },
+            {
+              "name": "first_name",
+              "value": "={{ $json.Nome }}"
+            },
+            {
+              "name": "last_name",
+              "value": "={{ $json.Sobrenome }}"
+            }
+          ]
+        }
+      },
+      "name": "Cadastrando na Audiência",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 1,
+      "position": [
+        3020,
+        80
+      ],
+      "id": "341fecf1-ef27-4337-a3b2-fd6128ab0547",
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "14",
+          "name": "BotConversa Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "keepOnlySet": true,
+        "values": {
+          "string": [
+            {
+              "name": "telefone",
+              "value": "={{ $json.content.celulares[0] }}"
+            },
+            {
+              "name": "nomeCompleto",
+              "value": "={{ $json.content.nome }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "1b2a4a1b-c120-4d70-b335-8a404fac8497",
+      "name": "Nome e telefone para validar",
+      "type": "n8n-nodes-base.set",
+      "position": [
+        2600,
+        80
+      ],
+      "typeVersion": 1
+    },
+    {
+      "parameters": {
+        "jsCode": "// Obter a string de nome completo do nó anterior\nconst nomeCompleto = items[0].json.nomeCompleto;\n\n// Função para separar o nome completo em nome e sobrenome\nfunction separarNomeSobrenome(nomeCompleto) {\n  // Verificar se o nome completo é uma string\n  if (typeof nomeCompleto !== 'string') {\n    throw new Error('O nome completo deve ser uma string.');\n  }\n\n  // Dividir o nome completo em palavras\n  const palavras = nomeCompleto.trim().split(' ');\n\n  // Verificar se há mais de uma palavra\n  if (palavras.length === 0) {\n    throw new Error('O nome completo deve conter pelo menos um nome.');\n  }\n\n  // Extrair o primeiro nome\n  const primeiroNome = palavras.shift();\n\n  // Extrair o sobrenome\n  const sobrenome = palavras.length > 0 ? palavras.join(' ') : '.';\n\n  // Formatar o nome e sobrenome com a primeira letra de cada palavra em maiúscula\n  const nomeFormatado = formatarNome(primeiroNome);\n  const sobrenomeFormatado = formatarNome(sobrenome);\n\n  return {\n    nome: nomeFormatado,\n    sobrenome: sobrenomeFormatado\n  };\n}\n\nfunction formatarNome(nome) {\n  return nome\n    .toLowerCase()\n    .split(' ')\n    .map((palavra) => palavra.charAt(0).toUpperCase() + palavra.slice(1))\n    .join(' ');\n}\n\n// Separar o nome completo em nome e sobrenome\nconst resultado = separarNomeSobrenome(nomeCompleto);\n\nvar whatsapp = items[0].json.telefone.replace(/\\D/g, '');\nvar ddd = whatsapp.slice(2,4);\nvar ddi = whatsapp.charAt(0);\nvar ddx = whatsapp.slice(0,2);\nvar length = whatsapp.length;\nif (length >= 12){\n  if (ddi == '+'){\n    ddi = whatsapp.slice(0,3);\n    whatsapp = parseInt(whatsapp.slice(3)).toString();\n  } else {\n    if (ddx == '55'){\n      whatsapp = parseInt(whatsapp.slice(2)).toString();\n      ddi = \"+55\";\n    } else {\n      whatsapp = parseInt(whatsapp).toString();\n      ddi = 'não informado';\n    }\n  }\n} else {\n  whatsapp = parseInt(whatsapp).toString();\n  ddi = 'não informado';\n}\n\nddd = whatsapp.slice(0,2);\nwhatsapp = whatsapp.slice(2);\nif (ddd > 28){\n  whatsapp = whatsapp.slice(-8);\n} else {\n  whatsapp = '9'+whatsapp.slice(-8);\n}\nvar whatsapp = '+55'+ddd+whatsapp;\n\n// Armazenar o nome e sobrenome nos campos desejados\nreturn {\n  json: {\n    Nome: resultado.nome,\n    Sobrenome: resultado.sobrenome,\n    NomeCompleto: resultado.nome+' '+resultado.sobrenome,\n    whatsapp\n  }\n};\n"
+      },
+      "id": "f81fba26-e395-427c-8ee9-230d65af3fa5",
+      "name": "Formatando Nome e Telefone",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 1,
+      "position": [
+        2800,
+        80
+      ]
+    },
+    {
+      "parameters": {
+        "unit": "seconds"
+      },
+      "id": "834bd0c1-90f2-4c54-b130-4f460d115640",
+      "name": "1s",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1,
+      "position": [
+        3480,
+        80
+      ],
+      "webhookId": "310e398c-eead-4019-90f2-2677e0916ba4"
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "url": "https://api.feegow.com/v1/api/patient/search",
+        "options": {},
+        "queryParametersUi": {
+          "parameter": [
+            {
+              "name": "paciente_id",
+              "value": "={{ $json.paciente_id }}"
+            }
+          ]
+        }
+      },
+      "id": "ffb88b69-ec87-4603-9744-c1ab2d743db8",
+      "name": "buscar pacientes",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [
+        2360,
+        80
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "13",
+          "name": "Feegow Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "url": "https://api.feegow.com/v1/api/procedures/list",
+        "options": {}
+      },
+      "id": "9521b2ab-2872-4f07-9fc2-5ebba5550868",
+      "name": "BUSCAR PROCEDIMENTO2",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [
+        4540,
+        560
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "13",
+          "name": "Feegow Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "content",
+        "options": {}
+      },
+      "id": "989cffdf-94a4-4597-8621-e4373783e83d",
+      "name": "Item Lists",
+      "type": "n8n-nodes-base.itemLists",
+      "typeVersion": 2.1,
+      "position": [
+        4760,
+        560
+      ]
+    },
+    {
+      "parameters": {
+        "keepOnlySet": true,
+        "values": {
+          "string": [
+            {
+              "name": "procedimento_id",
+              "value": "={{ $json.procedimento_id }}"
+            },
+            {
+              "name": "nome",
+              "value": "={{ $json.nome }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "a2c39964-1831-46e1-9fb6-02254b42b095",
+      "name": "Set",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 2,
+      "position": [
+        4980,
+        560
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{ $node[\"Cadastrando na Audiência\"].json[\"id\"] }}/send_flow/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "flow",
+              "value": "1648942"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "471f6a09-800f-4faf-b3df-f35dfc704d5b",
+      "name": "enviar fluxo",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        3260,
+        80
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "14",
+          "name": "BotConversa Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "url": "https://api.feegow.com/v1/api/appoints/search",
+        "options": {},
+        "queryParametersUi": {
+          "parameter": [
+            {
+              "name": "data_start",
+              "value": "={{ $json['data-pesquisa'].split(\"-\")[2].slice(0,2) }}-{{ $json['data-pesquisa'].split(\"-\")[1] }}-{{ $json['data-pesquisa'].split(\"-\")[0] }} "
+            },
+            {
+              "name": "data_end",
+              "value": "={{ $json['data-pesquisa'].split(\"-\")[2].slice(0,2) }}-{{ $json['data-pesquisa'].split(\"-\")[1] }}-{{ $json['data-pesquisa'].split(\"-\")[0] }} "
+            }
+          ]
+        }
+      },
+      "id": "9e3ea8f3-0a69-47b1-aaba-77a130c87934",
+      "name": "Listar Agendamentos1",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [
+        1420,
+        300
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "maxTries": 5,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "13",
+          "name": "Feegow Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json.status_id.toString() }}",
+              "value2": "3"
+            },
+            {
+              "value1": "={{ $json.procedimento_id.toString() }}",
+              "value2": "5"
+            }
+          ]
+        }
+      },
+      "id": "ea8e1ff8-0238-4f35-b081-b94534756f3b",
+      "name": "Filtro de procedimento e atendido1",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        1900,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "content",
+        "options": {}
+      },
+      "id": "753a4778-ad0b-4b6e-8e0e-fc7a696f8d6d",
+      "name": "separa agendamentos1",
+      "type": "n8n-nodes-base.itemLists",
+      "typeVersion": 1,
+      "position": [
+        1660,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      },
+      "id": "7106e5e3-8d9e-4ca0-ba43-e5efcf4965ac",
+      "name": "1 por vez1",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 2,
+      "position": [
+        2120,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "authentication": "headerAuth",
+        "requestMethod": "POST",
+        "url": "https://backend.botconversa.com.br/api/v1/webhook/subscriber/",
+        "options": {},
+        "bodyParametersUi": {
+          "parameter": [
+            {
+              "name": "phone",
+              "value": "={{ $json.whatsapp }}"
+            },
+            {
+              "name": "first_name",
+              "value": "={{ $json.Nome }}"
+            },
+            {
+              "name": "last_name",
+              "value": "={{ $json.Sobrenome }}"
+            }
+          ]
+        }
+      },
+      "name": "Cadastrando na Audiência1",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 1,
+      "position": [
+        3020,
+        300
+      ],
+      "id": "d713aee1-6475-4e59-b7bd-19acb6ac6d4a",
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "14",
+          "name": "BotConversa Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "keepOnlySet": true,
+        "values": {
+          "string": [
+            {
+              "name": "telefone",
+              "value": "={{ $json.content.celulares[0] }}"
+            },
+            {
+              "name": "nomeCompleto",
+              "value": "={{ $json.content.nome }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "f1f96b69-243c-4aec-b835-af3c47788141",
+      "name": "Nome e telefone para validar1",
+      "type": "n8n-nodes-base.set",
+      "position": [
+        2600,
+        300
+      ],
+      "typeVersion": 1
+    },
+    {
+      "parameters": {
+        "jsCode": "// Obter a string de nome completo do nó anterior\nconst nomeCompleto = items[0].json.nomeCompleto;\n\n// Função para separar o nome completo em nome e sobrenome\nfunction separarNomeSobrenome(nomeCompleto) {\n  // Verificar se o nome completo é uma string\n  if (typeof nomeCompleto !== 'string') {\n    throw new Error('O nome completo deve ser uma string.');\n  }\n\n  // Dividir o nome completo em palavras\n  const palavras = nomeCompleto.trim().split(' ');\n\n  // Verificar se há mais de uma palavra\n  if (palavras.length === 0) {\n    throw new Error('O nome completo deve conter pelo menos um nome.');\n  }\n\n  // Extrair o primeiro nome\n  const primeiroNome = palavras.shift();\n\n  // Extrair o sobrenome\n  const sobrenome = palavras.length > 0 ? palavras.join(' ') : '.';\n\n  // Formatar o nome e sobrenome com a primeira letra de cada palavra em maiúscula\n  const nomeFormatado = formatarNome(primeiroNome);\n  const sobrenomeFormatado = formatarNome(sobrenome);\n\n  return {\n    nome: nomeFormatado,\n    sobrenome: sobrenomeFormatado\n  };\n}\n\nfunction formatarNome(nome) {\n  return nome\n    .toLowerCase()\n    .split(' ')\n    .map((palavra) => palavra.charAt(0).toUpperCase() + palavra.slice(1))\n    .join(' ');\n}\n\n// Separar o nome completo em nome e sobrenome\nconst resultado = separarNomeSobrenome(nomeCompleto);\n\nvar whatsapp = items[0].json.telefone.replace(/\\D/g, '');\nvar ddd = whatsapp.slice(2,4);\nvar ddi = whatsapp.charAt(0);\nvar ddx = whatsapp.slice(0,2);\nvar length = whatsapp.length;\nif (length >= 12){\n  if (ddi == '+'){\n    ddi = whatsapp.slice(0,3);\n    whatsapp = parseInt(whatsapp.slice(3)).toString();\n  } else {\n    if (ddx == '55'){\n      whatsapp = parseInt(whatsapp.slice(2)).toString();\n      ddi = \"+55\";\n    } else {\n      whatsapp = parseInt(whatsapp).toString();\n      ddi = 'não informado';\n    }\n  }\n} else {\n  whatsapp = parseInt(whatsapp).toString();\n  ddi = 'não informado';\n}\n\nddd = whatsapp.slice(0,2);\nwhatsapp = whatsapp.slice(2);\nif (ddd > 28){\n  whatsapp = whatsapp.slice(-8);\n} else {\n  whatsapp = '9'+whatsapp.slice(-8);\n}\nvar whatsapp = '+55'+ddd+whatsapp;\n\n// Armazenar o nome e sobrenome nos campos desejados\nreturn {\n  json: {\n    Nome: resultado.nome,\n    Sobrenome: resultado.sobrenome,\n    NomeCompleto: resultado.nome+' '+resultado.sobrenome,\n    whatsapp\n  }\n};\n"
+      },
+      "id": "468bfcf0-0025-4c5c-98a0-df560bfbaecd",
+      "name": "Formatando Nome e Telefone1",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 1,
+      "position": [
+        2800,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "unit": "seconds"
+      },
+      "id": "2ca5e45a-52f1-45f6-a321-52dc3d34c465",
+      "name": "1s1",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1,
+      "position": [
+        3480,
+        300
+      ],
+      "webhookId": "310e398c-eead-4019-90f2-2677e0916ba4"
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "url": "https://api.feegow.com/v1/api/patient/search",
+        "options": {},
+        "queryParametersUi": {
+          "parameter": [
+            {
+              "name": "paciente_id",
+              "value": "={{ $json.paciente_id }}"
+            }
+          ]
+        }
+      },
+      "id": "5a49b428-a052-4ee5-81d1-92d68feb8f57",
+      "name": "buscar pacientes1",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [
+        2360,
+        300
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "13",
+          "name": "Feegow Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{ $node[\"Cadastrando na Audiência1\"].json[\"id\"] }}/send_flow/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "flow",
+              "value": "1648952"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "d1efc40b-cea1-48b9-a4fc-2ebaa3f4e130",
+      "name": "enviar fluxo1",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        3260,
+        300
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "14",
+          "name": "BotConversa Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "subtractFromDate",
+        "magnitude": "={{ $json.timestamp }}",
+        "duration": 30,
+        "outputFieldName": "data-pesquisa"
+      },
+      "id": "4f6ae48b-53e0-4abd-b120-03d4e7956cfa",
+      "name": "30 dias depois",
+      "type": "n8n-nodes-base.dateTime",
+      "typeVersion": 2,
+      "position": [
+        1180,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "url": "https://api.feegow.com/v1/api/appoints/search",
+        "options": {},
+        "queryParametersUi": {
+          "parameter": [
+            {
+              "name": "data_start",
+              "value": "={{ $json['data-pesquisa'].split(\"-\")[2].slice(0,2) }}-{{ $json['data-pesquisa'].split(\"-\")[1] }}-{{ $json['data-pesquisa'].split(\"-\")[0] }} "
+            },
+            {
+              "name": "data_end",
+              "value": "={{ $json['data-pesquisa'].split(\"-\")[2].slice(0,2) }}-{{ $json['data-pesquisa'].split(\"-\")[1] }}-{{ $json['data-pesquisa'].split(\"-\")[0] }} "
+            }
+          ]
+        }
+      },
+      "id": "6601c9f7-fc87-4cae-b0dd-b55690c8b528",
+      "name": "Listar Agendamentos2",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [
+        1420,
+        520
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "maxTries": 5,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "13",
+          "name": "Feegow Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json.status_id.toString() }}",
+              "value2": "3"
+            },
+            {
+              "value1": "={{ $json.procedimento_id.toString() }}",
+              "value2": "5"
+            }
+          ]
+        }
+      },
+      "id": "6ba83c10-066f-4e5e-a456-18c8dd4b02ec",
+      "name": "Filtro de procedimento e atendido2",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        1900,
+        520
+      ]
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "content",
+        "options": {}
+      },
+      "id": "2389d9cd-554f-49a9-9640-539bf131d95a",
+      "name": "separa agendamentos2",
+      "type": "n8n-nodes-base.itemLists",
+      "typeVersion": 1,
+      "position": [
+        1660,
+        520
+      ]
+    },
+    {
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      },
+      "id": "7014ebe6-a3ba-407f-b6a1-a2b11467fe71",
+      "name": "1 por vez2",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 2,
+      "position": [
+        2120,
+        520
+      ]
+    },
+    {
+      "parameters": {
+        "authentication": "headerAuth",
+        "requestMethod": "POST",
+        "url": "https://backend.botconversa.com.br/api/v1/webhook/subscriber/",
+        "options": {},
+        "bodyParametersUi": {
+          "parameter": [
+            {
+              "name": "phone",
+              "value": "={{ $json.whatsapp }}"
+            },
+            {
+              "name": "first_name",
+              "value": "={{ $json.Nome }}"
+            },
+            {
+              "name": "last_name",
+              "value": "={{ $json.Sobrenome }}"
+            }
+          ]
+        }
+      },
+      "name": "Cadastrando na Audiência2",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 1,
+      "position": [
+        3020,
+        520
+      ],
+      "id": "05cbd5ff-c14e-4730-8a90-546cac137363",
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "14",
+          "name": "BotConversa Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "keepOnlySet": true,
+        "values": {
+          "string": [
+            {
+              "name": "telefone",
+              "value": "={{ $json.content.celulares[0] }}"
+            },
+            {
+              "name": "nomeCompleto",
+              "value": "={{ $json.content.nome }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "2f1a7601-2fbc-4491-841f-904f3e9e4235",
+      "name": "Nome e telefone para validar2",
+      "type": "n8n-nodes-base.set",
+      "position": [
+        2600,
+        520
+      ],
+      "typeVersion": 1
+    },
+    {
+      "parameters": {
+        "jsCode": "// Obter a string de nome completo do nó anterior\nconst nomeCompleto = items[0].json.nomeCompleto;\n\n// Função para separar o nome completo em nome e sobrenome\nfunction separarNomeSobrenome(nomeCompleto) {\n  // Verificar se o nome completo é uma string\n  if (typeof nomeCompleto !== 'string') {\n    throw new Error('O nome completo deve ser uma string.');\n  }\n\n  // Dividir o nome completo em palavras\n  const palavras = nomeCompleto.trim().split(' ');\n\n  // Verificar se há mais de uma palavra\n  if (palavras.length === 0) {\n    throw new Error('O nome completo deve conter pelo menos um nome.');\n  }\n\n  // Extrair o primeiro nome\n  const primeiroNome = palavras.shift();\n\n  // Extrair o sobrenome\n  const sobrenome = palavras.length > 0 ? palavras.join(' ') : '.';\n\n  // Formatar o nome e sobrenome com a primeira letra de cada palavra em maiúscula\n  const nomeFormatado = formatarNome(primeiroNome);\n  const sobrenomeFormatado = formatarNome(sobrenome);\n\n  return {\n    nome: nomeFormatado,\n    sobrenome: sobrenomeFormatado\n  };\n}\n\nfunction formatarNome(nome) {\n  return nome\n    .toLowerCase()\n    .split(' ')\n    .map((palavra) => palavra.charAt(0).toUpperCase() + palavra.slice(1))\n    .join(' ');\n}\n\n// Separar o nome completo em nome e sobrenome\nconst resultado = separarNomeSobrenome(nomeCompleto);\n\nvar whatsapp = items[0].json.telefone.replace(/\\D/g, '');\nvar ddd = whatsapp.slice(2,4);\nvar ddi = whatsapp.charAt(0);\nvar ddx = whatsapp.slice(0,2);\nvar length = whatsapp.length;\nif (length >= 12){\n  if (ddi == '+'){\n    ddi = whatsapp.slice(0,3);\n    whatsapp = parseInt(whatsapp.slice(3)).toString();\n  } else {\n    if (ddx == '55'){\n      whatsapp = parseInt(whatsapp.slice(2)).toString();\n      ddi = \"+55\";\n    } else {\n      whatsapp = parseInt(whatsapp).toString();\n      ddi = 'não informado';\n    }\n  }\n} else {\n  whatsapp = parseInt(whatsapp).toString();\n  ddi = 'não informado';\n}\n\nddd = whatsapp.slice(0,2);\nwhatsapp = whatsapp.slice(2);\nif (ddd > 28){\n  whatsapp = whatsapp.slice(-8);\n} else {\n  whatsapp = '9'+whatsapp.slice(-8);\n}\nvar whatsapp = '+55'+ddd+whatsapp;\n\n// Armazenar o nome e sobrenome nos campos desejados\nreturn {\n  json: {\n    Nome: resultado.nome,\n    Sobrenome: resultado.sobrenome,\n    NomeCompleto: resultado.nome+' '+resultado.sobrenome,\n    whatsapp\n  }\n};\n"
+      },
+      "id": "34f2ce34-4da2-48be-bafb-10cf7835ac04",
+      "name": "Formatando Nome e Telefone2",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 1,
+      "position": [
+        2800,
+        520
+      ]
+    },
+    {
+      "parameters": {
+        "unit": "seconds"
+      },
+      "id": "bddc4d9f-4074-483b-9622-e09503af5da8",
+      "name": "1s2",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1,
+      "position": [
+        3480,
+        520
+      ],
+      "webhookId": "310e398c-eead-4019-90f2-2677e0916ba4"
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "url": "https://api.feegow.com/v1/api/patient/search",
+        "options": {},
+        "queryParametersUi": {
+          "parameter": [
+            {
+              "name": "paciente_id",
+              "value": "={{ $json.paciente_id }}"
+            }
+          ]
+        }
+      },
+      "id": "efd3944e-3c0a-4cfa-94e8-22f0a3ebf701",
+      "name": "buscar pacientes2",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [
+        2360,
+        520
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "13",
+          "name": "Feegow Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{ $node[\"Cadastrando na Audiência2\"].json[\"id\"] }}/send_flow/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "flow",
+              "value": "1648955"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "4a60e7c6-d324-4177-bae1-f68c898d7acf",
+      "name": "enviar fluxo2",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        3260,
+        520
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "14",
+          "name": "BotConversa Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "subtractFromDate",
+        "magnitude": "={{ $json.timestamp }}",
+        "timeUnit": "months",
+        "duration": 6,
+        "outputFieldName": "data-pesquisa"
+      },
+      "id": "b57c9d85-3153-40e7-bdc3-23747f49c002",
+      "name": "6 meses depois",
+      "type": "n8n-nodes-base.dateTime",
+      "typeVersion": 2,
+      "position": [
+        1180,
+        520
+      ]
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "url": "https://api.feegow.com/v1/api/appoints/search",
+        "options": {},
+        "queryParametersUi": {
+          "parameter": [
+            {
+              "name": "data_start",
+              "value": "={{ $json['data-pesquisa'].split(\"-\")[2].slice(0,2) }}-{{ $json['data-pesquisa'].split(\"-\")[1] }}-{{ $json['data-pesquisa'].split(\"-\")[0] }} "
+            },
+            {
+              "name": "data_end",
+              "value": "={{ $json['data-pesquisa'].split(\"-\")[2].slice(0,2) }}-{{ $json['data-pesquisa'].split(\"-\")[1] }}-{{ $json['data-pesquisa'].split(\"-\")[0] }} "
+            }
+          ]
+        }
+      },
+      "id": "d81ca8f8-96d8-4728-84f5-b7139e7a8b77",
+      "name": "Listar Agendamentos3",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [
+        1420,
+        800
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "maxTries": 5,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "13",
+          "name": "Feegow Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json.status_id.toString() }}",
+              "value2": "3"
+            },
+            {
+              "value1": "={{ $json.procedimento_id.toString() }}",
+              "value2": "7"
+            }
+          ]
+        }
+      },
+      "id": "c614801c-f2b6-4d06-9dc3-545e5fa80113",
+      "name": "Filtro de procedimento e atendido3",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        1900,
+        800
+      ]
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "content",
+        "options": {}
+      },
+      "id": "312efd9a-1708-4af8-8fba-8c3e96d4dcbe",
+      "name": "separa agendamentos3",
+      "type": "n8n-nodes-base.itemLists",
+      "typeVersion": 1,
+      "position": [
+        1660,
+        800
+      ]
+    },
+    {
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      },
+      "id": "e7074279-30e5-4f7c-8382-f3414e5939ec",
+      "name": "1 por vez3",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 2,
+      "position": [
+        2120,
+        800
+      ]
+    },
+    {
+      "parameters": {
+        "authentication": "headerAuth",
+        "requestMethod": "POST",
+        "url": "https://backend.botconversa.com.br/api/v1/webhook/subscriber/",
+        "options": {},
+        "bodyParametersUi": {
+          "parameter": [
+            {
+              "name": "phone",
+              "value": "={{ $json.whatsapp }}"
+            },
+            {
+              "name": "first_name",
+              "value": "={{ $json.Nome }}"
+            },
+            {
+              "name": "last_name",
+              "value": "={{ $json.Sobrenome }}"
+            }
+          ]
+        }
+      },
+      "name": "Cadastrando na Audiência3",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 1,
+      "position": [
+        3020,
+        800
+      ],
+      "id": "92ac9311-608d-4414-94ad-29287ce36ab7",
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "14",
+          "name": "BotConversa Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "keepOnlySet": true,
+        "values": {
+          "string": [
+            {
+              "name": "telefone",
+              "value": "={{ $json.content.celulares[0] }}"
+            },
+            {
+              "name": "nomeCompleto",
+              "value": "={{ $json.content.nome }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "88d00098-740a-4461-aa15-591c6408f084",
+      "name": "Nome e telefone para validar3",
+      "type": "n8n-nodes-base.set",
+      "position": [
+        2600,
+        800
+      ],
+      "typeVersion": 1
+    },
+    {
+      "parameters": {
+        "jsCode": "// Obter a string de nome completo do nó anterior\nconst nomeCompleto = items[0].json.nomeCompleto;\n\n// Função para separar o nome completo em nome e sobrenome\nfunction separarNomeSobrenome(nomeCompleto) {\n  // Verificar se o nome completo é uma string\n  if (typeof nomeCompleto !== 'string') {\n    throw new Error('O nome completo deve ser uma string.');\n  }\n\n  // Dividir o nome completo em palavras\n  const palavras = nomeCompleto.trim().split(' ');\n\n  // Verificar se há mais de uma palavra\n  if (palavras.length === 0) {\n    throw new Error('O nome completo deve conter pelo menos um nome.');\n  }\n\n  // Extrair o primeiro nome\n  const primeiroNome = palavras.shift();\n\n  // Extrair o sobrenome\n  const sobrenome = palavras.length > 0 ? palavras.join(' ') : '.';\n\n  // Formatar o nome e sobrenome com a primeira letra de cada palavra em maiúscula\n  const nomeFormatado = formatarNome(primeiroNome);\n  const sobrenomeFormatado = formatarNome(sobrenome);\n\n  return {\n    nome: nomeFormatado,\n    sobrenome: sobrenomeFormatado\n  };\n}\n\nfunction formatarNome(nome) {\n  return nome\n    .toLowerCase()\n    .split(' ')\n    .map((palavra) => palavra.charAt(0).toUpperCase() + palavra.slice(1))\n    .join(' ');\n}\n\n// Separar o nome completo em nome e sobrenome\nconst resultado = separarNomeSobrenome(nomeCompleto);\n\nvar whatsapp = items[0].json.telefone.replace(/\\D/g, '');\nvar ddd = whatsapp.slice(2,4);\nvar ddi = whatsapp.charAt(0);\nvar ddx = whatsapp.slice(0,2);\nvar length = whatsapp.length;\nif (length >= 12){\n  if (ddi == '+'){\n    ddi = whatsapp.slice(0,3);\n    whatsapp = parseInt(whatsapp.slice(3)).toString();\n  } else {\n    if (ddx == '55'){\n      whatsapp = parseInt(whatsapp.slice(2)).toString();\n      ddi = \"+55\";\n    } else {\n      whatsapp = parseInt(whatsapp).toString();\n      ddi = 'não informado';\n    }\n  }\n} else {\n  whatsapp = parseInt(whatsapp).toString();\n  ddi = 'não informado';\n}\n\nddd = whatsapp.slice(0,2);\nwhatsapp = whatsapp.slice(2);\nif (ddd > 28){\n  whatsapp = whatsapp.slice(-8);\n} else {\n  whatsapp = '9'+whatsapp.slice(-8);\n}\nvar whatsapp = '+55'+ddd+whatsapp;\n\n// Armazenar o nome e sobrenome nos campos desejados\nreturn {\n  json: {\n    Nome: resultado.nome,\n    Sobrenome: resultado.sobrenome,\n    NomeCompleto: resultado.nome+' '+resultado.sobrenome,\n    whatsapp\n  }\n};\n"
+      },
+      "id": "98b0ca5b-ee36-4331-9aa2-18789e8419ad",
+      "name": "Formatando Nome e Telefone3",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 1,
+      "position": [
+        2800,
+        800
+      ]
+    },
+    {
+      "parameters": {
+        "unit": "seconds"
+      },
+      "id": "914bbc60-6e31-4834-92c8-984883a138f9",
+      "name": "1s3",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1,
+      "position": [
+        3480,
+        800
+      ],
+      "webhookId": "310e398c-eead-4019-90f2-2677e0916ba4"
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "url": "https://api.feegow.com/v1/api/patient/search",
+        "options": {},
+        "queryParametersUi": {
+          "parameter": [
+            {
+              "name": "paciente_id",
+              "value": "={{ $json.paciente_id }}"
+            }
+          ]
+        }
+      },
+      "id": "f07ff3a0-6b83-40ac-a9bf-42b4cbe3f04d",
+      "name": "buscar pacientes3",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [
+        2360,
+        800
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "13",
+          "name": "Feegow Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{ $node[\"Cadastrando na Audiência3\"].json[\"id\"] }}/send_flow/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "flow",
+              "value": "1648957"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "1e80a550-c787-421a-b285-12f62a3071a8",
+      "name": "enviar fluxo3",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        3260,
+        800
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "14",
+          "name": "BotConversa Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "subtractFromDate",
+        "magnitude": "={{ $json.timestamp }}",
+        "duration": 15,
+        "outputFieldName": "data-pesquisa"
+      },
+      "id": "9d6d297d-8b76-4642-8fa7-ab371210dc7d",
+      "name": "15 dias depois",
+      "type": "n8n-nodes-base.dateTime",
+      "typeVersion": 2,
+      "position": [
+        1180,
+        800
+      ]
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "url": "https://api.feegow.com/v1/api/appoints/search",
+        "options": {},
+        "queryParametersUi": {
+          "parameter": [
+            {
+              "name": "data_start",
+              "value": "={{ $json['data-pesquisa'].split(\"-\")[2].slice(0,2) }}-{{ $json['data-pesquisa'].split(\"-\")[1] }}-{{ $json['data-pesquisa'].split(\"-\")[0] }} "
+            },
+            {
+              "name": "data_end",
+              "value": "={{ $json['data-pesquisa'].split(\"-\")[2].slice(0,2) }}-{{ $json['data-pesquisa'].split(\"-\")[1] }}-{{ $json['data-pesquisa'].split(\"-\")[0] }} "
+            }
+          ]
+        }
+      },
+      "id": "a773d85f-d14c-4db1-8a21-6c940e0aead9",
+      "name": "Listar Agendamentos4",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [
+        1420,
+        1020
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "maxTries": 5,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "13",
+          "name": "Feegow Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json.status_id.toString() }}",
+              "value2": "3"
+            },
+            {
+              "value1": "={{ $json.procedimento_id.toString() }}",
+              "value2": "7"
+            }
+          ]
+        }
+      },
+      "id": "2e6680e6-57cc-41ea-9ed4-5cc73bffefee",
+      "name": "Filtro de procedimento e atendido4",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        1900,
+        1020
+      ]
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "content",
+        "options": {}
+      },
+      "id": "3c17adff-008d-43a3-bbfb-6ba27dd06973",
+      "name": "separa agendamentos4",
+      "type": "n8n-nodes-base.itemLists",
+      "typeVersion": 1,
+      "position": [
+        1660,
+        1020
+      ]
+    },
+    {
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      },
+      "id": "f2e6928e-ffc0-46c1-beaf-8b9a38cd3a1e",
+      "name": "1 por vez4",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 2,
+      "position": [
+        2120,
+        1020
+      ]
+    },
+    {
+      "parameters": {
+        "authentication": "headerAuth",
+        "requestMethod": "POST",
+        "url": "https://backend.botconversa.com.br/api/v1/webhook/subscriber/",
+        "options": {},
+        "bodyParametersUi": {
+          "parameter": [
+            {
+              "name": "phone",
+              "value": "={{ $json.whatsapp }}"
+            },
+            {
+              "name": "first_name",
+              "value": "={{ $json.Nome }}"
+            },
+            {
+              "name": "last_name",
+              "value": "={{ $json.Sobrenome }}"
+            }
+          ]
+        }
+      },
+      "name": "Cadastrando na Audiência4",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 1,
+      "position": [
+        3020,
+        1020
+      ],
+      "id": "2bb1b3c2-41cb-467c-81ba-8801dd97bf04",
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "14",
+          "name": "BotConversa Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "keepOnlySet": true,
+        "values": {
+          "string": [
+            {
+              "name": "telefone",
+              "value": "={{ $json.content.celulares[0] }}"
+            },
+            {
+              "name": "nomeCompleto",
+              "value": "={{ $json.content.nome }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "2e808cb5-3637-4277-b6cb-2f6b1adeaa24",
+      "name": "Nome e telefone para validar4",
+      "type": "n8n-nodes-base.set",
+      "position": [
+        2600,
+        1020
+      ],
+      "typeVersion": 1
+    },
+    {
+      "parameters": {
+        "jsCode": "// Obter a string de nome completo do nó anterior\nconst nomeCompleto = items[0].json.nomeCompleto;\n\n// Função para separar o nome completo em nome e sobrenome\nfunction separarNomeSobrenome(nomeCompleto) {\n  // Verificar se o nome completo é uma string\n  if (typeof nomeCompleto !== 'string') {\n    throw new Error('O nome completo deve ser uma string.');\n  }\n\n  // Dividir o nome completo em palavras\n  const palavras = nomeCompleto.trim().split(' ');\n\n  // Verificar se há mais de uma palavra\n  if (palavras.length === 0) {\n    throw new Error('O nome completo deve conter pelo menos um nome.');\n  }\n\n  // Extrair o primeiro nome\n  const primeiroNome = palavras.shift();\n\n  // Extrair o sobrenome\n  const sobrenome = palavras.length > 0 ? palavras.join(' ') : '.';\n\n  // Formatar o nome e sobrenome com a primeira letra de cada palavra em maiúscula\n  const nomeFormatado = formatarNome(primeiroNome);\n  const sobrenomeFormatado = formatarNome(sobrenome);\n\n  return {\n    nome: nomeFormatado,\n    sobrenome: sobrenomeFormatado\n  };\n}\n\nfunction formatarNome(nome) {\n  return nome\n    .toLowerCase()\n    .split(' ')\n    .map((palavra) => palavra.charAt(0).toUpperCase() + palavra.slice(1))\n    .join(' ');\n}\n\n// Separar o nome completo em nome e sobrenome\nconst resultado = separarNomeSobrenome(nomeCompleto);\n\nvar whatsapp = items[0].json.telefone.replace(/\\D/g, '');\nvar ddd = whatsapp.slice(2,4);\nvar ddi = whatsapp.charAt(0);\nvar ddx = whatsapp.slice(0,2);\nvar length = whatsapp.length;\nif (length >= 12){\n  if (ddi == '+'){\n    ddi = whatsapp.slice(0,3);\n    whatsapp = parseInt(whatsapp.slice(3)).toString();\n  } else {\n    if (ddx == '55'){\n      whatsapp = parseInt(whatsapp.slice(2)).toString();\n      ddi = \"+55\";\n    } else {\n      whatsapp = parseInt(whatsapp).toString();\n      ddi = 'não informado';\n    }\n  }\n} else {\n  whatsapp = parseInt(whatsapp).toString();\n  ddi = 'não informado';\n}\n\nddd = whatsapp.slice(0,2);\nwhatsapp = whatsapp.slice(2);\nif (ddd > 28){\n  whatsapp = whatsapp.slice(-8);\n} else {\n  whatsapp = '9'+whatsapp.slice(-8);\n}\nvar whatsapp = '+55'+ddd+whatsapp;\n\n// Armazenar o nome e sobrenome nos campos desejados\nreturn {\n  json: {\n    Nome: resultado.nome,\n    Sobrenome: resultado.sobrenome,\n    NomeCompleto: resultado.nome+' '+resultado.sobrenome,\n    whatsapp\n  }\n};\n"
+      },
+      "id": "108b1a45-0c32-47bd-b504-2eb61434d6bb",
+      "name": "Formatando Nome e Telefone4",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 1,
+      "position": [
+        2800,
+        1020
+      ]
+    },
+    {
+      "parameters": {
+        "unit": "seconds"
+      },
+      "id": "244331cc-c9ee-459b-9602-27ab00fc81e5",
+      "name": "1s4",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1,
+      "position": [
+        3480,
+        1020
+      ],
+      "webhookId": "310e398c-eead-4019-90f2-2677e0916ba4"
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "url": "https://api.feegow.com/v1/api/patient/search",
+        "options": {},
+        "queryParametersUi": {
+          "parameter": [
+            {
+              "name": "paciente_id",
+              "value": "={{ $json.paciente_id }}"
+            }
+          ]
+        }
+      },
+      "id": "c9664f0e-3c88-499e-832c-898ce44f6124",
+      "name": "buscar pacientes4",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [
+        2360,
+        1020
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "13",
+          "name": "Feegow Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{ $node[\"Cadastrando na Audiência4\"].json[\"id\"] }}/send_flow/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "flow",
+              "value": "1648959"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "f0e6f3b9-920f-4e15-9684-7feea9cb6d1a",
+      "name": "enviar fluxo4",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        3260,
+        1020
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "14",
+          "name": "BotConversa Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "subtractFromDate",
+        "magnitude": "={{ $json.timestamp }}",
+        "timeUnit": "months",
+        "duration": 11,
+        "outputFieldName": "data-pesquisa"
+      },
+      "id": "348fcdc0-bb43-4c80-8325-f924b3cf318e",
+      "name": "11 meses depois",
+      "type": "n8n-nodes-base.dateTime",
+      "typeVersion": 2,
+      "position": [
+        1180,
+        1020
+      ]
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "url": "https://api.feegow.com/v1/api/appoints/search",
+        "options": {},
+        "queryParametersUi": {
+          "parameter": [
+            {
+              "name": "data_start",
+              "value": "={{ $json['data-pesquisa'].split(\"-\")[2].slice(0,2) }}-{{ $json['data-pesquisa'].split(\"-\")[1] }}-{{ $json['data-pesquisa'].split(\"-\")[0] }} "
+            },
+            {
+              "name": "data_end",
+              "value": "={{ $json['data-pesquisa'].split(\"-\")[2].slice(0,2) }}-{{ $json['data-pesquisa'].split(\"-\")[1] }}-{{ $json['data-pesquisa'].split(\"-\")[0] }} "
+            }
+          ]
+        }
+      },
+      "id": "22fc2a5a-592a-492a-bef2-87a53d55629a",
+      "name": "Listar Agendamentos5",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [
+        1420,
+        1320
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "maxTries": 5,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "13",
+          "name": "Feegow Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json.status_id.toString() }}",
+              "value2": "3"
+            }
+          ]
+        }
+      },
+      "id": "50caeff9-17ad-4ae4-8a2f-c2af6b91ad17",
+      "name": "Filtro de procedimento e atendido5",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        1900,
+        1320
+      ]
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "content",
+        "options": {}
+      },
+      "id": "f71650ec-88d2-4746-a287-826c0e3099e5",
+      "name": "separa agendamentos5",
+      "type": "n8n-nodes-base.itemLists",
+      "typeVersion": 1,
+      "position": [
+        1660,
+        1320
+      ]
+    },
+    {
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      },
+      "id": "4252b740-3513-44e2-9d0c-4312095a1a79",
+      "name": "1 por vez5",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 2,
+      "position": [
+        2400,
+        1320
+      ]
+    },
+    {
+      "parameters": {
+        "authentication": "headerAuth",
+        "requestMethod": "POST",
+        "url": "https://backend.botconversa.com.br/api/v1/webhook/subscriber/",
+        "options": {},
+        "bodyParametersUi": {
+          "parameter": [
+            {
+              "name": "phone",
+              "value": "={{ $json.whatsapp }}"
+            },
+            {
+              "name": "first_name",
+              "value": "={{ $json.Nome }}"
+            },
+            {
+              "name": "last_name",
+              "value": "={{ $json.Sobrenome }}"
+            }
+          ]
+        }
+      },
+      "name": "Cadastrando na Audiência5",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 1,
+      "position": [
+        3300,
+        1320
+      ],
+      "id": "ec65a91c-c0a9-4f3e-865b-aa4bc91c9933",
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "14",
+          "name": "BotConversa Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "keepOnlySet": true,
+        "values": {
+          "string": [
+            {
+              "name": "telefone",
+              "value": "={{ $json.content.celulares[0] }}"
+            },
+            {
+              "name": "nomeCompleto",
+              "value": "={{ $json.content.nome }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "570e9a8e-6f13-4d26-b4a8-041a17d4d264",
+      "name": "Nome e telefone para validar5",
+      "type": "n8n-nodes-base.set",
+      "position": [
+        2880,
+        1320
+      ],
+      "typeVersion": 1
+    },
+    {
+      "parameters": {
+        "jsCode": "// Obter a string de nome completo do nó anterior\nconst nomeCompleto = items[0].json.nomeCompleto;\n\n// Função para separar o nome completo em nome e sobrenome\nfunction separarNomeSobrenome(nomeCompleto) {\n  // Verificar se o nome completo é uma string\n  if (typeof nomeCompleto !== 'string') {\n    throw new Error('O nome completo deve ser uma string.');\n  }\n\n  // Dividir o nome completo em palavras\n  const palavras = nomeCompleto.trim().split(' ');\n\n  // Verificar se há mais de uma palavra\n  if (palavras.length === 0) {\n    throw new Error('O nome completo deve conter pelo menos um nome.');\n  }\n\n  // Extrair o primeiro nome\n  const primeiroNome = palavras.shift();\n\n  // Extrair o sobrenome\n  const sobrenome = palavras.length > 0 ? palavras.join(' ') : '.';\n\n  // Formatar o nome e sobrenome com a primeira letra de cada palavra em maiúscula\n  const nomeFormatado = formatarNome(primeiroNome);\n  const sobrenomeFormatado = formatarNome(sobrenome);\n\n  return {\n    nome: nomeFormatado,\n    sobrenome: sobrenomeFormatado\n  };\n}\n\nfunction formatarNome(nome) {\n  return nome\n    .toLowerCase()\n    .split(' ')\n    .map((palavra) => palavra.charAt(0).toUpperCase() + palavra.slice(1))\n    .join(' ');\n}\n\n// Separar o nome completo em nome e sobrenome\nconst resultado = separarNomeSobrenome(nomeCompleto);\n\nvar whatsapp = items[0].json.telefone.replace(/\\D/g, '');\nvar ddd = whatsapp.slice(2,4);\nvar ddi = whatsapp.charAt(0);\nvar ddx = whatsapp.slice(0,2);\nvar length = whatsapp.length;\nif (length >= 12){\n  if (ddi == '+'){\n    ddi = whatsapp.slice(0,3);\n    whatsapp = parseInt(whatsapp.slice(3)).toString();\n  } else {\n    if (ddx == '55'){\n      whatsapp = parseInt(whatsapp.slice(2)).toString();\n      ddi = \"+55\";\n    } else {\n      whatsapp = parseInt(whatsapp).toString();\n      ddi = 'não informado';\n    }\n  }\n} else {\n  whatsapp = parseInt(whatsapp).toString();\n  ddi = 'não informado';\n}\n\nddd = whatsapp.slice(0,2);\nwhatsapp = whatsapp.slice(2);\nif (ddd > 28){\n  whatsapp = whatsapp.slice(-8);\n} else {\n  whatsapp = '9'+whatsapp.slice(-8);\n}\nvar whatsapp = '+55'+ddd+whatsapp;\n\n// Armazenar o nome e sobrenome nos campos desejados\nreturn {\n  json: {\n    Nome: resultado.nome,\n    Sobrenome: resultado.sobrenome,\n    NomeCompleto: resultado.nome+' '+resultado.sobrenome,\n    whatsapp\n  }\n};\n"
+      },
+      "id": "9e466262-f8f5-4294-b53b-1cc592c6e9bd",
+      "name": "Formatando Nome e Telefone5",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 1,
+      "position": [
+        3080,
+        1320
+      ]
+    },
+    {
+      "parameters": {
+        "unit": "seconds"
+      },
+      "id": "a3850ac6-d83a-4fdb-ab91-a7eda6cce0bb",
+      "name": "1s5",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1,
+      "position": [
+        3760,
+        1320
+      ],
+      "webhookId": "310e398c-eead-4019-90f2-2677e0916ba4"
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "url": "https://api.feegow.com/v1/api/patient/search",
+        "options": {},
+        "queryParametersUi": {
+          "parameter": [
+            {
+              "name": "paciente_id",
+              "value": "={{ $json.paciente_id }}"
+            }
+          ]
+        }
+      },
+      "id": "c2f45412-8327-48f1-b03d-506ee9fbe9eb",
+      "name": "buscar pacientes5",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [
+        2640,
+        1320
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "13",
+          "name": "Feegow Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{ $node[\"Cadastrando na Audiência5\"].json[\"id\"] }}/send_flow/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "flow",
+              "value": "1648963"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "6540601a-be97-4d61-b918-dbb0ae38a931",
+      "name": "enviar fluxo5",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        3540,
+        1320
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "14",
+          "name": "BotConversa Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "id": "4afa6fde-4ed4-495e-b108-0756d7a041f0",
+      "name": "Consulta Ginecológica e Consulta de DIU",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        900,
+        1320
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "subtractFromDate",
+        "magnitude": "={{ $json.timestamp }}",
+        "timeUnit": "months",
+        "duration": 11,
+        "outputFieldName": "data-pesquisa"
+      },
+      "id": "dd64381c-0dc6-4dc2-b3e7-87b39a523884",
+      "name": "11 meses depois1",
+      "type": "n8n-nodes-base.dateTime",
+      "typeVersion": 2,
+      "position": [
+        1180,
+        1320
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json.procedimento_id.toString() }}",
+              "value2": "1"
+            },
+            {
+              "value1": "={{ $json.procedimento_id.toString() }}",
+              "value2": "3"
+            },
+            {
+              "value1": "={{ $json.procedimento_id.toString() }}",
+              "value2": "25"
+            },
+            {
+              "value1": "={{ $json.procedimento_id.toString() }}",
+              "value2": "26"
+            }
+          ]
+        }
+      },
+      "id": "20e3c4b0-5ab9-497c-98c7-32b4abcc9319",
+      "name": "Filtro de procedimento e atendido6",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        2140,
+        1320
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "89c6d398-a3af-480f-996b-80e07cbf0c1f",
+      "name": "Consulta em geral e Nova Consulta",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        900,
+        1560
+      ]
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "url": "https://api.feegow.com/v1/api/appoints/search",
+        "options": {},
+        "queryParametersUi": {
+          "parameter": [
+            {
+              "name": "data_start",
+              "value": "={{ $json['data-pesquisa'].split(\"-\")[2].slice(0,2) }}-{{ $json['data-pesquisa'].split(\"-\")[1] }}-{{ $json['data-pesquisa'].split(\"-\")[0] }} "
+            },
+            {
+              "name": "data_end",
+              "value": "={{ $json['data-pesquisa'].split(\"-\")[2].slice(0,2) }}-{{ $json['data-pesquisa'].split(\"-\")[1] }}-{{ $json['data-pesquisa'].split(\"-\")[0] }} "
+            }
+          ]
+        }
+      },
+      "id": "d3313d72-d1ef-4c84-92cc-e6d4a2592fd2",
+      "name": "Listar Agendamentos6",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [
+        1420,
+        1560
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "maxTries": 5,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "13",
+          "name": "Feegow Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json.status_id.toString() }}",
+              "value2": "3"
+            }
+          ]
+        }
+      },
+      "id": "eca4d3fa-3fef-41e2-b913-e985fd534695",
+      "name": "Filtro de procedimento e atendido7",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        1900,
+        1560
+      ]
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "content",
+        "options": {}
+      },
+      "id": "7c9711df-281d-4239-a296-cdc1c24861d1",
+      "name": "separa agendamentos6",
+      "type": "n8n-nodes-base.itemLists",
+      "typeVersion": 1,
+      "position": [
+        1660,
+        1560
+      ]
+    },
+    {
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      },
+      "id": "b1092114-ce9c-4be9-b8da-3e7157ff30cf",
+      "name": "1 por vez6",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 2,
+      "position": [
+        2400,
+        1560
+      ]
+    },
+    {
+      "parameters": {
+        "authentication": "headerAuth",
+        "requestMethod": "POST",
+        "url": "https://backend.botconversa.com.br/api/v1/webhook/subscriber/",
+        "options": {},
+        "bodyParametersUi": {
+          "parameter": [
+            {
+              "name": "phone",
+              "value": "={{ $json.whatsapp }}"
+            },
+            {
+              "name": "first_name",
+              "value": "={{ $json.Nome }}"
+            },
+            {
+              "name": "last_name",
+              "value": "={{ $json.Sobrenome }}"
+            }
+          ]
+        }
+      },
+      "name": "Cadastrando na Audiência6",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 1,
+      "position": [
+        3300,
+        1560
+      ],
+      "id": "a5312b8d-2e43-4fba-8c7a-086596826da4",
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "14",
+          "name": "BotConversa Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "keepOnlySet": true,
+        "values": {
+          "string": [
+            {
+              "name": "telefone",
+              "value": "={{ $json.content.celulares[0] }}"
+            },
+            {
+              "name": "nomeCompleto",
+              "value": "={{ $json.content.nome }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "b4bb0265-88be-4475-abc4-b351c3bdb830",
+      "name": "Nome e telefone para validar6",
+      "type": "n8n-nodes-base.set",
+      "position": [
+        2880,
+        1560
+      ],
+      "typeVersion": 1
+    },
+    {
+      "parameters": {
+        "jsCode": "// Obter a string de nome completo do nó anterior\nconst nomeCompleto = items[0].json.nomeCompleto;\n\n// Função para separar o nome completo em nome e sobrenome\nfunction separarNomeSobrenome(nomeCompleto) {\n  // Verificar se o nome completo é uma string\n  if (typeof nomeCompleto !== 'string') {\n    throw new Error('O nome completo deve ser uma string.');\n  }\n\n  // Dividir o nome completo em palavras\n  const palavras = nomeCompleto.trim().split(' ');\n\n  // Verificar se há mais de uma palavra\n  if (palavras.length === 0) {\n    throw new Error('O nome completo deve conter pelo menos um nome.');\n  }\n\n  // Extrair o primeiro nome\n  const primeiroNome = palavras.shift();\n\n  // Extrair o sobrenome\n  const sobrenome = palavras.length > 0 ? palavras.join(' ') : '.';\n\n  // Formatar o nome e sobrenome com a primeira letra de cada palavra em maiúscula\n  const nomeFormatado = formatarNome(primeiroNome);\n  const sobrenomeFormatado = formatarNome(sobrenome);\n\n  return {\n    nome: nomeFormatado,\n    sobrenome: sobrenomeFormatado\n  };\n}\n\nfunction formatarNome(nome) {\n  return nome\n    .toLowerCase()\n    .split(' ')\n    .map((palavra) => palavra.charAt(0).toUpperCase() + palavra.slice(1))\n    .join(' ');\n}\n\n// Separar o nome completo em nome e sobrenome\nconst resultado = separarNomeSobrenome(nomeCompleto);\n\nvar whatsapp = items[0].json.telefone.replace(/\\D/g, '');\nvar ddd = whatsapp.slice(2,4);\nvar ddi = whatsapp.charAt(0);\nvar ddx = whatsapp.slice(0,2);\nvar length = whatsapp.length;\nif (length >= 12){\n  if (ddi == '+'){\n    ddi = whatsapp.slice(0,3);\n    whatsapp = parseInt(whatsapp.slice(3)).toString();\n  } else {\n    if (ddx == '55'){\n      whatsapp = parseInt(whatsapp.slice(2)).toString();\n      ddi = \"+55\";\n    } else {\n      whatsapp = parseInt(whatsapp).toString();\n      ddi = 'não informado';\n    }\n  }\n} else {\n  whatsapp = parseInt(whatsapp).toString();\n  ddi = 'não informado';\n}\n\nddd = whatsapp.slice(0,2);\nwhatsapp = whatsapp.slice(2);\nif (ddd > 28){\n  whatsapp = whatsapp.slice(-8);\n} else {\n  whatsapp = '9'+whatsapp.slice(-8);\n}\nvar whatsapp = '+55'+ddd+whatsapp;\n\n// Armazenar o nome e sobrenome nos campos desejados\nreturn {\n  json: {\n    Nome: resultado.nome,\n    Sobrenome: resultado.sobrenome,\n    NomeCompleto: resultado.nome+' '+resultado.sobrenome,\n    whatsapp\n  }\n};\n"
+      },
+      "id": "72a90722-7af5-4198-acac-97b77d270ce0",
+      "name": "Formatando Nome e Telefone6",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 1,
+      "position": [
+        3080,
+        1560
+      ]
+    },
+    {
+      "parameters": {
+        "unit": "seconds"
+      },
+      "id": "a6f2c27f-c9bd-418d-a8e5-fe964e9dc82c",
+      "name": "1s6",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1,
+      "position": [
+        3760,
+        1560
+      ],
+      "webhookId": "310e398c-eead-4019-90f2-2677e0916ba4"
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "url": "https://api.feegow.com/v1/api/patient/search",
+        "options": {},
+        "queryParametersUi": {
+          "parameter": [
+            {
+              "name": "paciente_id",
+              "value": "={{ $json.paciente_id }}"
+            }
+          ]
+        }
+      },
+      "id": "a1d56762-d68b-4590-9d44-8b8fb2a0efd9",
+      "name": "buscar pacientes6",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [
+        2640,
+        1560
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "13",
+          "name": "Feegow Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{ $node[\"Cadastrando na Audiência6\"].json[\"id\"] }}/send_flow/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "flow",
+              "value": "1648964"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "049a47de-c028-4a8d-b02e-570d1875539e",
+      "name": "enviar fluxo6",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        3540,
+        1560
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "14",
+          "name": "BotConversa Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json.procedimento_id.toString() }}",
+              "value2": "11"
+            },
+            {
+              "value1": "={{ $json.procedimento_id.toString() }}",
+              "value2": "16"
+            },
+            {
+              "value1": "={{ $json.procedimento_id.toString() }}",
+              "value2": "17"
+            },
+            {
+              "value1": "={{ $json.procedimento_id.toString() }}",
+              "value2": "18"
+            },
+            {
+              "value1": "={{ $json.procedimento_id.toString() }}",
+              "value2": "19"
+            },
+            {
+              "value1": "={{ $json.procedimento_id.toString() }}",
+              "value2": "20"
+            },
+            {
+              "value1": "={{ $json.procedimento_id.toString() }}",
+              "value2": "21"
+            },
+            {
+              "value1": "={{ $json.procedimento_id.toString() }}",
+              "value2": "22"
+            },
+            {
+              "value1": "={{ $json.procedimento_id.toString() }}",
+              "value2": "23"
+            }
+          ]
+        }
+      },
+      "id": "b1a3397b-7bad-4006-b9ee-64870adfcccb",
+      "name": "Filtro de procedimento e atendido8",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        2140,
+        1560
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "subtractFromDate",
+        "magnitude": "={{ $json.timestamp }}",
+        "duration": 7,
+        "outputFieldName": "data-pesquisa"
+      },
+      "id": "88747171-3282-40fe-94fd-a30911eb41ef",
+      "name": "7 dias depois",
+      "type": "n8n-nodes-base.dateTime",
+      "typeVersion": 2,
+      "position": [
+        1180,
+        1560
+      ]
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "url": "https://api.feegow.com/v1/api/appoints/search",
+        "options": {},
+        "queryParametersUi": {
+          "parameter": [
+            {
+              "name": "data_start",
+              "value": "={{ $json['data-pesquisa'].split(\"-\")[2].slice(0,2) }}-{{ $json['data-pesquisa'].split(\"-\")[1] }}-{{ $json['data-pesquisa'].split(\"-\")[0] }} "
+            },
+            {
+              "name": "data_end",
+              "value": "={{ $json['data-pesquisa'].split(\"-\")[2].slice(0,2) }}-{{ $json['data-pesquisa'].split(\"-\")[1] }}-{{ $json['data-pesquisa'].split(\"-\")[0] }} "
+            }
+          ]
+        }
+      },
+      "id": "44ca86da-8b1e-45cf-a617-e1bcd1888268",
+      "name": "Listar Agendamentos7",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [
+        1420,
+        1840
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "maxTries": 5,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "13",
+          "name": "Feegow Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json.status_id.toString() }}",
+              "value2": "3"
+            },
+            {
+              "value1": "={{ $json.procedimento_id.toString() }}",
+              "value2": "24"
+            }
+          ]
+        }
+      },
+      "id": "ed05ba5c-4177-4807-86ce-37c03a0fbb68",
+      "name": "Filtro de procedimento e atendido9",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        1900,
+        1840
+      ]
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "content",
+        "options": {}
+      },
+      "id": "877578e1-f57d-4ca8-b60e-cb4f81b0f401",
+      "name": "separa agendamentos7",
+      "type": "n8n-nodes-base.itemLists",
+      "typeVersion": 1,
+      "position": [
+        1660,
+        1840
+      ]
+    },
+    {
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      },
+      "id": "a0a1944c-e368-4619-943f-5daa7a3d657a",
+      "name": "1 por vez7",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 2,
+      "position": [
+        2120,
+        1840
+      ]
+    },
+    {
+      "parameters": {
+        "authentication": "headerAuth",
+        "requestMethod": "POST",
+        "url": "https://backend.botconversa.com.br/api/v1/webhook/subscriber/",
+        "options": {},
+        "bodyParametersUi": {
+          "parameter": [
+            {
+              "name": "phone",
+              "value": "={{ $json.whatsapp }}"
+            },
+            {
+              "name": "first_name",
+              "value": "={{ $json.Nome }}"
+            },
+            {
+              "name": "last_name",
+              "value": "={{ $json.Sobrenome }}"
+            }
+          ]
+        }
+      },
+      "name": "Cadastrando na Audiência7",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 1,
+      "position": [
+        3020,
+        1840
+      ],
+      "id": "c10f8a38-aa23-4a13-a2c5-7cbc18dd18de",
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "14",
+          "name": "BotConversa Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "keepOnlySet": true,
+        "values": {
+          "string": [
+            {
+              "name": "telefone",
+              "value": "={{ $json.content.celulares[0] }}"
+            },
+            {
+              "name": "nomeCompleto",
+              "value": "={{ $json.content.nome }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "78f00979-3d86-40bd-aad8-e50bfba56a49",
+      "name": "Nome e telefone para validar7",
+      "type": "n8n-nodes-base.set",
+      "position": [
+        2600,
+        1840
+      ],
+      "typeVersion": 1
+    },
+    {
+      "parameters": {
+        "jsCode": "// Obter a string de nome completo do nó anterior\nconst nomeCompleto = items[0].json.nomeCompleto;\n\n// Função para separar o nome completo em nome e sobrenome\nfunction separarNomeSobrenome(nomeCompleto) {\n  // Verificar se o nome completo é uma string\n  if (typeof nomeCompleto !== 'string') {\n    throw new Error('O nome completo deve ser uma string.');\n  }\n\n  // Dividir o nome completo em palavras\n  const palavras = nomeCompleto.trim().split(' ');\n\n  // Verificar se há mais de uma palavra\n  if (palavras.length === 0) {\n    throw new Error('O nome completo deve conter pelo menos um nome.');\n  }\n\n  // Extrair o primeiro nome\n  const primeiroNome = palavras.shift();\n\n  // Extrair o sobrenome\n  const sobrenome = palavras.length > 0 ? palavras.join(' ') : '.';\n\n  // Formatar o nome e sobrenome com a primeira letra de cada palavra em maiúscula\n  const nomeFormatado = formatarNome(primeiroNome);\n  const sobrenomeFormatado = formatarNome(sobrenome);\n\n  return {\n    nome: nomeFormatado,\n    sobrenome: sobrenomeFormatado\n  };\n}\n\nfunction formatarNome(nome) {\n  return nome\n    .toLowerCase()\n    .split(' ')\n    .map((palavra) => palavra.charAt(0).toUpperCase() + palavra.slice(1))\n    .join(' ');\n}\n\n// Separar o nome completo em nome e sobrenome\nconst resultado = separarNomeSobrenome(nomeCompleto);\n\nvar whatsapp = items[0].json.telefone.replace(/\\D/g, '');\nvar ddd = whatsapp.slice(2,4);\nvar ddi = whatsapp.charAt(0);\nvar ddx = whatsapp.slice(0,2);\nvar length = whatsapp.length;\nif (length >= 12){\n  if (ddi == '+'){\n    ddi = whatsapp.slice(0,3);\n    whatsapp = parseInt(whatsapp.slice(3)).toString();\n  } else {\n    if (ddx == '55'){\n      whatsapp = parseInt(whatsapp.slice(2)).toString();\n      ddi = \"+55\";\n    } else {\n      whatsapp = parseInt(whatsapp).toString();\n      ddi = 'não informado';\n    }\n  }\n} else {\n  whatsapp = parseInt(whatsapp).toString();\n  ddi = 'não informado';\n}\n\nddd = whatsapp.slice(0,2);\nwhatsapp = whatsapp.slice(2);\nif (ddd > 28){\n  whatsapp = whatsapp.slice(-8);\n} else {\n  whatsapp = '9'+whatsapp.slice(-8);\n}\nvar whatsapp = '+55'+ddd+whatsapp;\n\n// Armazenar o nome e sobrenome nos campos desejados\nreturn {\n  json: {\n    Nome: resultado.nome,\n    Sobrenome: resultado.sobrenome,\n    NomeCompleto: resultado.nome+' '+resultado.sobrenome,\n    whatsapp\n  }\n};\n"
+      },
+      "id": "2e728345-ad91-4bbf-8e04-f62669aae1ad",
+      "name": "Formatando Nome e Telefone7",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 1,
+      "position": [
+        2800,
+        1840
+      ]
+    },
+    {
+      "parameters": {
+        "unit": "seconds"
+      },
+      "id": "4543a710-352e-4eab-8103-c2b4a4419744",
+      "name": "1s7",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1,
+      "position": [
+        3480,
+        1840
+      ],
+      "webhookId": "310e398c-eead-4019-90f2-2677e0916ba4"
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "url": "https://api.feegow.com/v1/api/patient/search",
+        "options": {},
+        "queryParametersUi": {
+          "parameter": [
+            {
+              "name": "paciente_id",
+              "value": "={{ $json.paciente_id }}"
+            }
+          ]
+        }
+      },
+      "id": "e5247106-6fd5-4bd6-8170-2cc354b902dc",
+      "name": "buscar pacientes7",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [
+        2360,
+        1840
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "13",
+          "name": "Feegow Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{ $node[\"Cadastrando na Audiência7\"].json[\"id\"] }}/send_flow/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "flow",
+              "value": "1648966"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "0473a368-d8d0-47b8-b9d8-32bfedf3381c",
+      "name": "enviar fluxo7",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        3260,
+        1840
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "14",
+          "name": "BotConversa Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "subtractFromDate",
+        "magnitude": "={{ $json.timestamp }}",
+        "duration": 15,
+        "outputFieldName": "data-pesquisa"
+      },
+      "id": "797f2c16-da38-4fc7-a3e2-f82fd8025dec",
+      "name": "15 dias depois1",
+      "type": "n8n-nodes-base.dateTime",
+      "typeVersion": 2,
+      "position": [
+        1180,
+        1840
+      ]
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "url": "https://api.feegow.com/v1/api/appoints/search",
+        "options": {},
+        "queryParametersUi": {
+          "parameter": [
+            {
+              "name": "data_start",
+              "value": "={{ $json['data-pesquisa'].split(\"-\")[2].slice(0,2) }}-{{ $json['data-pesquisa'].split(\"-\")[1] }}-{{ $json['data-pesquisa'].split(\"-\")[0] }} "
+            },
+            {
+              "name": "data_end",
+              "value": "={{ $json['data-pesquisa'].split(\"-\")[2].slice(0,2) }}-{{ $json['data-pesquisa'].split(\"-\")[1] }}-{{ $json['data-pesquisa'].split(\"-\")[0] }} "
+            }
+          ]
+        }
+      },
+      "id": "a1a72a20-bb02-49e8-b22f-05ca4c550ee6",
+      "name": "Listar Agendamentos8",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [
+        1420,
+        2060
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "maxTries": 5,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "13",
+          "name": "Feegow Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json.status_id.toString() }}",
+              "value2": "3"
+            },
+            {
+              "value1": "={{ $json.procedimento_id.toString() }}",
+              "value2": "24"
+            }
+          ]
+        }
+      },
+      "id": "9754c385-6e8e-4742-b8ad-9fb07045cbc9",
+      "name": "Filtro de procedimento e atendido10",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        1900,
+        2060
+      ]
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "content",
+        "options": {}
+      },
+      "id": "2e256131-6bcf-487c-ac0a-18c57c4253d8",
+      "name": "separa agendamentos8",
+      "type": "n8n-nodes-base.itemLists",
+      "typeVersion": 1,
+      "position": [
+        1660,
+        2060
+      ]
+    },
+    {
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      },
+      "id": "b73b6d34-38ff-48ae-b641-8c8b8d23247f",
+      "name": "1 por vez8",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 2,
+      "position": [
+        2120,
+        2060
+      ]
+    },
+    {
+      "parameters": {
+        "authentication": "headerAuth",
+        "requestMethod": "POST",
+        "url": "https://backend.botconversa.com.br/api/v1/webhook/subscriber/",
+        "options": {},
+        "bodyParametersUi": {
+          "parameter": [
+            {
+              "name": "phone",
+              "value": "={{ $json.whatsapp }}"
+            },
+            {
+              "name": "first_name",
+              "value": "={{ $json.Nome }}"
+            },
+            {
+              "name": "last_name",
+              "value": "={{ $json.Sobrenome }}"
+            }
+          ]
+        }
+      },
+      "name": "Cadastrando na Audiência8",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 1,
+      "position": [
+        3020,
+        2060
+      ],
+      "id": "247657c6-cd48-4a07-9355-be0b36a356cf",
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "14",
+          "name": "BotConversa Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "keepOnlySet": true,
+        "values": {
+          "string": [
+            {
+              "name": "telefone",
+              "value": "={{ $json.content.celulares[0] }}"
+            },
+            {
+              "name": "nomeCompleto",
+              "value": "={{ $json.content.nome }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "d20619d4-e570-4ba5-8491-edc483f5e7ab",
+      "name": "Nome e telefone para validar8",
+      "type": "n8n-nodes-base.set",
+      "position": [
+        2600,
+        2060
+      ],
+      "typeVersion": 1
+    },
+    {
+      "parameters": {
+        "jsCode": "// Obter a string de nome completo do nó anterior\nconst nomeCompleto = items[0].json.nomeCompleto;\n\n// Função para separar o nome completo em nome e sobrenome\nfunction separarNomeSobrenome(nomeCompleto) {\n  // Verificar se o nome completo é uma string\n  if (typeof nomeCompleto !== 'string') {\n    throw new Error('O nome completo deve ser uma string.');\n  }\n\n  // Dividir o nome completo em palavras\n  const palavras = nomeCompleto.trim().split(' ');\n\n  // Verificar se há mais de uma palavra\n  if (palavras.length === 0) {\n    throw new Error('O nome completo deve conter pelo menos um nome.');\n  }\n\n  // Extrair o primeiro nome\n  const primeiroNome = palavras.shift();\n\n  // Extrair o sobrenome\n  const sobrenome = palavras.length > 0 ? palavras.join(' ') : '.';\n\n  // Formatar o nome e sobrenome com a primeira letra de cada palavra em maiúscula\n  const nomeFormatado = formatarNome(primeiroNome);\n  const sobrenomeFormatado = formatarNome(sobrenome);\n\n  return {\n    nome: nomeFormatado,\n    sobrenome: sobrenomeFormatado\n  };\n}\n\nfunction formatarNome(nome) {\n  return nome\n    .toLowerCase()\n    .split(' ')\n    .map((palavra) => palavra.charAt(0).toUpperCase() + palavra.slice(1))\n    .join(' ');\n}\n\n// Separar o nome completo em nome e sobrenome\nconst resultado = separarNomeSobrenome(nomeCompleto);\n\nvar whatsapp = items[0].json.telefone.replace(/\\D/g, '');\nvar ddd = whatsapp.slice(2,4);\nvar ddi = whatsapp.charAt(0);\nvar ddx = whatsapp.slice(0,2);\nvar length = whatsapp.length;\nif (length >= 12){\n  if (ddi == '+'){\n    ddi = whatsapp.slice(0,3);\n    whatsapp = parseInt(whatsapp.slice(3)).toString();\n  } else {\n    if (ddx == '55'){\n      whatsapp = parseInt(whatsapp.slice(2)).toString();\n      ddi = \"+55\";\n    } else {\n      whatsapp = parseInt(whatsapp).toString();\n      ddi = 'não informado';\n    }\n  }\n} else {\n  whatsapp = parseInt(whatsapp).toString();\n  ddi = 'não informado';\n}\n\nddd = whatsapp.slice(0,2);\nwhatsapp = whatsapp.slice(2);\nif (ddd > 28){\n  whatsapp = whatsapp.slice(-8);\n} else {\n  whatsapp = '9'+whatsapp.slice(-8);\n}\nvar whatsapp = '+55'+ddd+whatsapp;\n\n// Armazenar o nome e sobrenome nos campos desejados\nreturn {\n  json: {\n    Nome: resultado.nome,\n    Sobrenome: resultado.sobrenome,\n    NomeCompleto: resultado.nome+' '+resultado.sobrenome,\n    whatsapp\n  }\n};\n"
+      },
+      "id": "edf4ed04-ea36-4e9f-a21a-9c7ae592140c",
+      "name": "Formatando Nome e Telefone8",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 1,
+      "position": [
+        2800,
+        2060
+      ]
+    },
+    {
+      "parameters": {
+        "unit": "seconds"
+      },
+      "id": "da3f00e3-c5b0-4844-a43c-642eb927ab86",
+      "name": "1s8",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1,
+      "position": [
+        3480,
+        2060
+      ],
+      "webhookId": "310e398c-eead-4019-90f2-2677e0916ba4"
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "url": "https://api.feegow.com/v1/api/patient/search",
+        "options": {},
+        "queryParametersUi": {
+          "parameter": [
+            {
+              "name": "paciente_id",
+              "value": "={{ $json.paciente_id }}"
+            }
+          ]
+        }
+      },
+      "id": "a265db6e-318f-43f5-9bcf-2b1ebf69afab",
+      "name": "buscar pacientes8",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [
+        2360,
+        2060
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "13",
+          "name": "Feegow Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{ $node[\"Cadastrando na Audiência8\"].json[\"id\"] }}/send_flow/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "flow",
+              "value": "1648968"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "29076292-ce4a-4a45-a3ad-9e8bb99506af",
+      "name": "enviar fluxo8",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        3260,
+        2060
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "14",
+          "name": "BotConversa Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "subtractFromDate",
+        "magnitude": "={{ $json.timestamp }}",
+        "timeUnit": "months",
+        "duration": 6,
+        "outputFieldName": "data-pesquisa"
+      },
+      "id": "156b7d1c-7a1c-43ad-a8b1-c681d49c0985",
+      "name": "6 meses depois1",
+      "type": "n8n-nodes-base.dateTime",
+      "typeVersion": 2,
+      "position": [
+        1180,
+        2060
+      ]
+    }
+  ],
+  "pinData": {
+    "Item Lists": [
+      {
+        "json": {
+          "tableId": 0,
+          "procedimento_id": 1,
+          "nome": "Consulta de ginecologia/preventivo presencial",
+          "tipo_procedimento": 2,
+          "opcoes_agendamento": 0,
+          "permite_agendamento_online": true,
+          "telemedicina": false,
+          "preparo": "",
+          "dias_retorno": null,
+          "codigo": "",
+          "grupo_procedimento": 0,
+          "tempo": "60",
+          "valor": 60000,
+          "especialidade_id": null,
+          "convenio_id": null,
+          "nao_necessita_agendamento": "",
+          "permite_pagamento_online": false,
+          "indicacao_clinica": false
+        },
+        "pairedItem": {
+          "item": 0
+        }
+      },
+      {
+        "json": {
+          "tableId": 0,
+          "procedimento_id": 2,
+          "nome": "Consulta de retorno / revisão",
+          "tipo_procedimento": 9,
+          "opcoes_agendamento": 0,
+          "permite_agendamento_online": true,
+          "telemedicina": false,
+          "preparo": "",
+          "dias_retorno": null,
+          "codigo": "",
+          "grupo_procedimento": 0,
+          "tempo": "40",
+          "valor": 0,
+          "especialidade_id": null,
+          "convenio_id": null,
+          "nao_necessita_agendamento": "",
+          "permite_pagamento_online": false,
+          "indicacao_clinica": false
+        },
+        "pairedItem": {
+          "item": 0
+        }
+      },
+      {
+        "json": {
+          "tableId": 0,
+          "procedimento_id": 3,
+          "nome": "Consulta de ginecologia/preventivo on-line",
+          "tipo_procedimento": 2,
+          "opcoes_agendamento": 0,
+          "permite_agendamento_online": true,
+          "telemedicina": false,
+          "preparo": "",
+          "dias_retorno": null,
+          "codigo": "",
+          "grupo_procedimento": 0,
+          "tempo": "40",
+          "valor": 60000,
+          "especialidade_id": null,
+          "convenio_id": null,
+          "nao_necessita_agendamento": "",
+          "permite_pagamento_online": false,
+          "indicacao_clinica": false
+        },
+        "pairedItem": {
+          "item": 0
+        }
+      },
+      {
+        "json": {
+          "tableId": 0,
+          "procedimento_id": 5,
+          "nome": "Inserção de implante hormonal",
+          "tipo_procedimento": 4,
+          "opcoes_agendamento": 0,
+          "permite_agendamento_online": true,
+          "telemedicina": false,
+          "preparo": "",
+          "dias_retorno": null,
+          "codigo": "",
+          "grupo_procedimento": 0,
+          "tempo": "60",
+          "valor": 0,
+          "especialidade_id": null,
+          "convenio_id": null,
+          "nao_necessita_agendamento": "",
+          "permite_pagamento_online": false,
+          "indicacao_clinica": false
+        },
+        "pairedItem": {
+          "item": 0
+        }
+      },
+      {
+        "json": {
+          "tableId": 0,
+          "procedimento_id": 6,
+          "nome": "Ultra som (USG)",
+          "tipo_procedimento": 3,
+          "opcoes_agendamento": 0,
+          "permite_agendamento_online": true,
+          "telemedicina": false,
+          "preparo": "",
+          "dias_retorno": null,
+          "codigo": "",
+          "grupo_procedimento": 0,
+          "tempo": "30",
+          "valor": 30000,
+          "especialidade_id": null,
+          "convenio_id": null,
+          "nao_necessita_agendamento": "",
+          "permite_pagamento_online": false,
+          "indicacao_clinica": false
+        },
+        "pairedItem": {
+          "item": 0
+        }
+      },
+      {
+        "json": {
+          "tableId": 0,
+          "procedimento_id": 7,
+          "nome": "Coleta de Preventivos",
+          "tipo_procedimento": 3,
+          "opcoes_agendamento": 0,
+          "permite_agendamento_online": true,
+          "telemedicina": false,
+          "preparo": "",
+          "dias_retorno": null,
+          "codigo": "",
+          "grupo_procedimento": 0,
+          "tempo": "30",
+          "valor": 20000,
+          "especialidade_id": null,
+          "convenio_id": null,
+          "nao_necessita_agendamento": "",
+          "permite_pagamento_online": false,
+          "indicacao_clinica": false
+        },
+        "pairedItem": {
+          "item": 0
+        }
+      },
+      {
+        "json": {
+          "tableId": 0,
+          "procedimento_id": 8,
+          "nome": "Vitaminas injetáveis",
+          "tipo_procedimento": 4,
+          "opcoes_agendamento": 0,
+          "permite_agendamento_online": true,
+          "telemedicina": false,
+          "preparo": "",
+          "dias_retorno": null,
+          "codigo": "",
+          "grupo_procedimento": 0,
+          "tempo": "30",
+          "valor": 30000,
+          "especialidade_id": null,
+          "convenio_id": null,
+          "nao_necessita_agendamento": "",
+          "permite_pagamento_online": false,
+          "indicacao_clinica": false
+        },
+        "pairedItem": {
+          "item": 0
+        }
+      },
+      {
+        "json": {
+          "tableId": 0,
+          "procedimento_id": 11,
+          "nome": "Nova Consulta (já é paciente)",
+          "tipo_procedimento": 2,
+          "opcoes_agendamento": 0,
+          "permite_agendamento_online": true,
+          "telemedicina": false,
+          "preparo": "",
+          "dias_retorno": null,
+          "codigo": "",
+          "grupo_procedimento": 0,
+          "tempo": "40",
+          "valor": 60000,
+          "especialidade_id": null,
+          "convenio_id": null,
+          "nao_necessita_agendamento": "",
+          "permite_pagamento_online": false,
+          "indicacao_clinica": false
+        },
+        "pairedItem": {
+          "item": 0
+        }
+      },
+      {
+        "json": {
+          "tableId": 0,
+          "procedimento_id": 16,
+          "nome": "Consulta para Reprodução Humana on-line",
+          "tipo_procedimento": 2,
+          "opcoes_agendamento": 0,
+          "permite_agendamento_online": true,
+          "telemedicina": false,
+          "preparo": "",
+          "dias_retorno": null,
+          "codigo": "",
+          "grupo_procedimento": 0,
+          "tempo": "40",
+          "valor": 60000,
+          "especialidade_id": null,
+          "convenio_id": null,
+          "nao_necessita_agendamento": "",
+          "permite_pagamento_online": false,
+          "indicacao_clinica": false
+        },
+        "pairedItem": {
+          "item": 0
+        }
+      },
+      {
+        "json": {
+          "tableId": 0,
+          "procedimento_id": 17,
+          "nome": "Consulta para Reprodução Humana presencial",
+          "tipo_procedimento": 2,
+          "opcoes_agendamento": 0,
+          "permite_agendamento_online": true,
+          "telemedicina": false,
+          "preparo": "",
+          "dias_retorno": null,
+          "codigo": "",
+          "grupo_procedimento": 0,
+          "tempo": "60",
+          "valor": 60000,
+          "especialidade_id": null,
+          "convenio_id": null,
+          "nao_necessita_agendamento": "",
+          "permite_pagamento_online": false,
+          "indicacao_clinica": false
+        },
+        "pairedItem": {
+          "item": 0
+        }
+      },
+      {
+        "json": {
+          "tableId": 0,
+          "procedimento_id": 18,
+          "nome": "Consulta para congelamento de óvulos presencial",
+          "tipo_procedimento": 2,
+          "opcoes_agendamento": 0,
+          "permite_agendamento_online": true,
+          "telemedicina": false,
+          "preparo": "",
+          "dias_retorno": null,
+          "codigo": "",
+          "grupo_procedimento": 0,
+          "tempo": "60",
+          "valor": 60000,
+          "especialidade_id": null,
+          "convenio_id": null,
+          "nao_necessita_agendamento": "",
+          "permite_pagamento_online": false,
+          "indicacao_clinica": false
+        },
+        "pairedItem": {
+          "item": 0
+        }
+      },
+      {
+        "json": {
+          "tableId": 0,
+          "procedimento_id": 19,
+          "nome": "Consulta para congelamento de óvulos on-line",
+          "tipo_procedimento": 2,
+          "opcoes_agendamento": 0,
+          "permite_agendamento_online": true,
+          "telemedicina": false,
+          "preparo": "",
+          "dias_retorno": null,
+          "codigo": "",
+          "grupo_procedimento": 0,
+          "tempo": "40",
+          "valor": 60000,
+          "especialidade_id": null,
+          "convenio_id": null,
+          "nao_necessita_agendamento": "",
+          "permite_pagamento_online": false,
+          "indicacao_clinica": false
+        },
+        "pairedItem": {
+          "item": 0
+        }
+      },
+      {
+        "json": {
+          "tableId": 0,
+          "procedimento_id": 20,
+          "nome": "Consulta para inserção de implante hormonal presencial",
+          "tipo_procedimento": 2,
+          "opcoes_agendamento": 0,
+          "permite_agendamento_online": true,
+          "telemedicina": false,
+          "preparo": "",
+          "dias_retorno": null,
+          "codigo": "",
+          "grupo_procedimento": 0,
+          "tempo": "60",
+          "valor": 60000,
+          "especialidade_id": null,
+          "convenio_id": null,
+          "nao_necessita_agendamento": "",
+          "permite_pagamento_online": false,
+          "indicacao_clinica": false
+        },
+        "pairedItem": {
+          "item": 0
+        }
+      },
+      {
+        "json": {
+          "tableId": 0,
+          "procedimento_id": 21,
+          "nome": "Consulta para inserção de implante hormonal on-line",
+          "tipo_procedimento": 2,
+          "opcoes_agendamento": 0,
+          "permite_agendamento_online": true,
+          "telemedicina": false,
+          "preparo": "",
+          "dias_retorno": null,
+          "codigo": "",
+          "grupo_procedimento": 0,
+          "tempo": "40",
+          "valor": 60000,
+          "especialidade_id": null,
+          "convenio_id": null,
+          "nao_necessita_agendamento": "",
+          "permite_pagamento_online": false,
+          "indicacao_clinica": false
+        },
+        "pairedItem": {
+          "item": 0
+        }
+      },
+      {
+        "json": {
+          "tableId": 0,
+          "procedimento_id": 22,
+          "nome": "Consulta para Histeroscopia on-line",
+          "tipo_procedimento": 2,
+          "opcoes_agendamento": 0,
+          "permite_agendamento_online": true,
+          "telemedicina": false,
+          "preparo": "",
+          "dias_retorno": null,
+          "codigo": "",
+          "grupo_procedimento": 0,
+          "tempo": "40",
+          "valor": 60000,
+          "especialidade_id": null,
+          "convenio_id": null,
+          "nao_necessita_agendamento": "",
+          "permite_pagamento_online": false,
+          "indicacao_clinica": false
+        },
+        "pairedItem": {
+          "item": 0
+        }
+      },
+      {
+        "json": {
+          "tableId": 0,
+          "procedimento_id": 23,
+          "nome": "Consulta para Histeroscopia presencial",
+          "tipo_procedimento": 2,
+          "opcoes_agendamento": 0,
+          "permite_agendamento_online": true,
+          "telemedicina": false,
+          "preparo": "",
+          "dias_retorno": null,
+          "codigo": "",
+          "grupo_procedimento": 0,
+          "tempo": "60",
+          "valor": 60000,
+          "especialidade_id": null,
+          "convenio_id": null,
+          "nao_necessita_agendamento": "",
+          "permite_pagamento_online": false,
+          "indicacao_clinica": false
+        },
+        "pairedItem": {
+          "item": 0
+        }
+      },
+      {
+        "json": {
+          "tableId": 0,
+          "procedimento_id": 24,
+          "nome": "Inserção de DIU",
+          "tipo_procedimento": 4,
+          "opcoes_agendamento": 0,
+          "permite_agendamento_online": true,
+          "telemedicina": false,
+          "preparo": "",
+          "dias_retorno": null,
+          "codigo": "",
+          "grupo_procedimento": 0,
+          "tempo": "40",
+          "valor": 60000,
+          "especialidade_id": null,
+          "convenio_id": null,
+          "nao_necessita_agendamento": "",
+          "permite_pagamento_online": false,
+          "indicacao_clinica": false
+        },
+        "pairedItem": {
+          "item": 0
+        }
+      },
+      {
+        "json": {
+          "tableId": 0,
+          "procedimento_id": 25,
+          "nome": "Consulta para inserção de DIU presencial",
+          "tipo_procedimento": 2,
+          "opcoes_agendamento": 0,
+          "permite_agendamento_online": true,
+          "telemedicina": false,
+          "preparo": "",
+          "dias_retorno": null,
+          "codigo": "",
+          "grupo_procedimento": 0,
+          "tempo": "60",
+          "valor": 60000,
+          "especialidade_id": null,
+          "convenio_id": null,
+          "nao_necessita_agendamento": "",
+          "permite_pagamento_online": false,
+          "indicacao_clinica": false
+        },
+        "pairedItem": {
+          "item": 0
+        }
+      },
+      {
+        "json": {
+          "tableId": 0,
+          "procedimento_id": 26,
+          "nome": "Consulta para inserção de DIU on-line",
+          "tipo_procedimento": 2,
+          "opcoes_agendamento": 0,
+          "permite_agendamento_online": true,
+          "telemedicina": false,
+          "preparo": "",
+          "dias_retorno": null,
+          "codigo": "",
+          "grupo_procedimento": 0,
+          "tempo": "40",
+          "valor": 60000,
+          "especialidade_id": null,
+          "convenio_id": null,
+          "nao_necessita_agendamento": "",
+          "permite_pagamento_online": false,
+          "indicacao_clinica": false
+        },
+        "pairedItem": {
+          "item": 0
+        }
+      },
+      {
+        "json": {
+          "tableId": 0,
+          "procedimento_id": 27,
+          "nome": "Ultra som (USG)",
+          "tipo_procedimento": 3,
+          "opcoes_agendamento": 0,
+          "permite_agendamento_online": true,
+          "telemedicina": false,
+          "preparo": "",
+          "dias_retorno": 0,
+          "codigo": "",
+          "grupo_procedimento": 0,
+          "tempo": "40",
+          "valor": 30000,
+          "especialidade_id": null,
+          "convenio_id": null,
+          "nao_necessita_agendamento": "",
+          "permite_pagamento_online": false,
+          "indicacao_clinica": false
+        },
+        "pairedItem": {
+          "item": 0
+        }
+      },
+      {
+        "json": {
+          "tableId": 0,
+          "procedimento_id": 28,
+          "nome": "Honorário médico acompanhamento",
+          "tipo_procedimento": 4,
+          "opcoes_agendamento": 0,
+          "permite_agendamento_online": true,
+          "telemedicina": false,
+          "preparo": "",
+          "dias_retorno": null,
+          "codigo": "",
+          "grupo_procedimento": 0,
+          "tempo": "30",
+          "valor": 100000,
+          "especialidade_id": null,
+          "convenio_id": null,
+          "nao_necessita_agendamento": "",
+          "permite_pagamento_online": false,
+          "indicacao_clinica": false
+        },
+        "pairedItem": {
+          "item": 0
+        }
+      }
+    ],
+    "Set": [
+      {
+        "json": {
+          "procedimento_id": 1,
+          "nome": "Consulta de ginecologia/preventivo presencial"
+        },
+        "pairedItem": {
+          "item": 0
+        }
+      },
+      {
+        "json": {
+          "procedimento_id": 2,
+          "nome": "Consulta de retorno / revisão"
+        },
+        "pairedItem": {
+          "item": 1
+        }
+      },
+      {
+        "json": {
+          "procedimento_id": 3,
+          "nome": "Consulta de ginecologia/preventivo on-line"
+        },
+        "pairedItem": {
+          "item": 2
+        }
+      },
+      {
+        "json": {
+          "procedimento_id": 5,
+          "nome": "Inserção de implante hormonal"
+        },
+        "pairedItem": {
+          "item": 3
+        }
+      },
+      {
+        "json": {
+          "procedimento_id": 6,
+          "nome": "Ultra som (USG)"
+        },
+        "pairedItem": {
+          "item": 4
+        }
+      },
+      {
+        "json": {
+          "procedimento_id": 7,
+          "nome": "Coleta de Preventivos"
+        },
+        "pairedItem": {
+          "item": 5
+        }
+      },
+      {
+        "json": {
+          "procedimento_id": 8,
+          "nome": "Vitaminas injetáveis"
+        },
+        "pairedItem": {
+          "item": 6
+        }
+      },
+      {
+        "json": {
+          "procedimento_id": 11,
+          "nome": "Nova Consulta (já é paciente)"
+        },
+        "pairedItem": {
+          "item": 7
+        }
+      },
+      {
+        "json": {
+          "procedimento_id": 16,
+          "nome": "Consulta para Reprodução Humana on-line"
+        },
+        "pairedItem": {
+          "item": 8
+        }
+      },
+      {
+        "json": {
+          "procedimento_id": 17,
+          "nome": "Consulta para Reprodução Humana presencial"
+        },
+        "pairedItem": {
+          "item": 9
+        }
+      }
+    ],
+    "BUSCAR PROCEDIMENTO2": [
+      {
+        "json": {
+          "success": true,
+          "content": [
+            {
+              "tableId": 0,
+              "procedimento_id": 1,
+              "nome": "Consulta de ginecologia/preventivo presencial",
+              "tipo_procedimento": 2,
+              "opcoes_agendamento": 0,
+              "permite_agendamento_online": true,
+              "telemedicina": false,
+              "preparo": "",
+              "dias_retorno": null,
+              "codigo": "",
+              "grupo_procedimento": 0,
+              "tempo": "60",
+              "valor": 60000,
+              "especialidade_id": null,
+              "convenio_id": null,
+              "nao_necessita_agendamento": "",
+              "permite_pagamento_online": false,
+              "indicacao_clinica": false
+            },
+            {
+              "tableId": 0,
+              "procedimento_id": 2,
+              "nome": "Consulta de retorno / revisão",
+              "tipo_procedimento": 9,
+              "opcoes_agendamento": 0,
+              "permite_agendamento_online": true,
+              "telemedicina": false,
+              "preparo": "",
+              "dias_retorno": null,
+              "codigo": "",
+              "grupo_procedimento": 0,
+              "tempo": "40",
+              "valor": 0,
+              "especialidade_id": null,
+              "convenio_id": null,
+              "nao_necessita_agendamento": "",
+              "permite_pagamento_online": false,
+              "indicacao_clinica": false
+            },
+            {
+              "tableId": 0,
+              "procedimento_id": 3,
+              "nome": "Consulta de ginecologia/preventivo on-line",
+              "tipo_procedimento": 2,
+              "opcoes_agendamento": 0,
+              "permite_agendamento_online": true,
+              "telemedicina": false,
+              "preparo": "",
+              "dias_retorno": null,
+              "codigo": "",
+              "grupo_procedimento": 0,
+              "tempo": "40",
+              "valor": 60000,
+              "especialidade_id": null,
+              "convenio_id": null,
+              "nao_necessita_agendamento": "",
+              "permite_pagamento_online": false,
+              "indicacao_clinica": false
+            },
+            {
+              "tableId": 0,
+              "procedimento_id": 5,
+              "nome": "Inserção de implante hormonal",
+              "tipo_procedimento": 4,
+              "opcoes_agendamento": 0,
+              "permite_agendamento_online": true,
+              "telemedicina": false,
+              "preparo": "",
+              "dias_retorno": null,
+              "codigo": "",
+              "grupo_procedimento": 0,
+              "tempo": "60",
+              "valor": 0,
+              "especialidade_id": null,
+              "convenio_id": null,
+              "nao_necessita_agendamento": "",
+              "permite_pagamento_online": false,
+              "indicacao_clinica": false
+            },
+            {
+              "tableId": 0,
+              "procedimento_id": 6,
+              "nome": "Ultra som (USG)",
+              "tipo_procedimento": 3,
+              "opcoes_agendamento": 0,
+              "permite_agendamento_online": true,
+              "telemedicina": false,
+              "preparo": "",
+              "dias_retorno": null,
+              "codigo": "",
+              "grupo_procedimento": 0,
+              "tempo": "30",
+              "valor": 30000,
+              "especialidade_id": null,
+              "convenio_id": null,
+              "nao_necessita_agendamento": "",
+              "permite_pagamento_online": false,
+              "indicacao_clinica": false
+            },
+            {
+              "tableId": 0,
+              "procedimento_id": 7,
+              "nome": "Coleta de Preventivos",
+              "tipo_procedimento": 3,
+              "opcoes_agendamento": 0,
+              "permite_agendamento_online": true,
+              "telemedicina": false,
+              "preparo": "",
+              "dias_retorno": null,
+              "codigo": "",
+              "grupo_procedimento": 0,
+              "tempo": "30",
+              "valor": 20000,
+              "especialidade_id": null,
+              "convenio_id": null,
+              "nao_necessita_agendamento": "",
+              "permite_pagamento_online": false,
+              "indicacao_clinica": false
+            },
+            {
+              "tableId": 0,
+              "procedimento_id": 8,
+              "nome": "Vitaminas injetáveis",
+              "tipo_procedimento": 4,
+              "opcoes_agendamento": 0,
+              "permite_agendamento_online": true,
+              "telemedicina": false,
+              "preparo": "",
+              "dias_retorno": null,
+              "codigo": "",
+              "grupo_procedimento": 0,
+              "tempo": "30",
+              "valor": 30000,
+              "especialidade_id": null,
+              "convenio_id": null,
+              "nao_necessita_agendamento": "",
+              "permite_pagamento_online": false,
+              "indicacao_clinica": false
+            },
+            {
+              "tableId": 0,
+              "procedimento_id": 11,
+              "nome": "Nova Consulta (já é paciente)",
+              "tipo_procedimento": 2,
+              "opcoes_agendamento": 0,
+              "permite_agendamento_online": true,
+              "telemedicina": false,
+              "preparo": "",
+              "dias_retorno": null,
+              "codigo": "",
+              "grupo_procedimento": 0,
+              "tempo": "40",
+              "valor": 60000,
+              "especialidade_id": null,
+              "convenio_id": null,
+              "nao_necessita_agendamento": "",
+              "permite_pagamento_online": false,
+              "indicacao_clinica": false
+            },
+            {
+              "tableId": 0,
+              "procedimento_id": 16,
+              "nome": "Consulta para Reprodução Humana on-line",
+              "tipo_procedimento": 2,
+              "opcoes_agendamento": 0,
+              "permite_agendamento_online": true,
+              "telemedicina": false,
+              "preparo": "",
+              "dias_retorno": null,
+              "codigo": "",
+              "grupo_procedimento": 0,
+              "tempo": "40",
+              "valor": 60000,
+              "especialidade_id": null,
+              "convenio_id": null,
+              "nao_necessita_agendamento": "",
+              "permite_pagamento_online": false,
+              "indicacao_clinica": false
+            },
+            {
+              "tableId": 0,
+              "procedimento_id": 17,
+              "nome": "Consulta para Reprodução Humana presencial",
+              "tipo_procedimento": 2,
+              "opcoes_agendamento": 0,
+              "permite_agendamento_online": true,
+              "telemedicina": false,
+              "preparo": "",
+              "dias_retorno": null,
+              "codigo": "",
+              "grupo_procedimento": 0,
+              "tempo": "60",
+              "valor": 60000,
+              "especialidade_id": null,
+              "convenio_id": null,
+              "nao_necessita_agendamento": "",
+              "permite_pagamento_online": false,
+              "indicacao_clinica": false
+            },
+            {
+              "tableId": 0,
+              "procedimento_id": 18,
+              "nome": "Consulta para congelamento de óvulos presencial",
+              "tipo_procedimento": 2,
+              "opcoes_agendamento": 0,
+              "permite_agendamento_online": true,
+              "telemedicina": false,
+              "preparo": "",
+              "dias_retorno": null,
+              "codigo": "",
+              "grupo_procedimento": 0,
+              "tempo": "60",
+              "valor": 60000,
+              "especialidade_id": null,
+              "convenio_id": null,
+              "nao_necessita_agendamento": "",
+              "permite_pagamento_online": false,
+              "indicacao_clinica": false
+            },
+            {
+              "tableId": 0,
+              "procedimento_id": 19,
+              "nome": "Consulta para congelamento de óvulos on-line",
+              "tipo_procedimento": 2,
+              "opcoes_agendamento": 0,
+              "permite_agendamento_online": true,
+              "telemedicina": false,
+              "preparo": "",
+              "dias_retorno": null,
+              "codigo": "",
+              "grupo_procedimento": 0,
+              "tempo": "40",
+              "valor": 60000,
+              "especialidade_id": null,
+              "convenio_id": null,
+              "nao_necessita_agendamento": "",
+              "permite_pagamento_online": false,
+              "indicacao_clinica": false
+            },
+            {
+              "tableId": 0,
+              "procedimento_id": 20,
+              "nome": "Consulta para inserção de implante hormonal presencial",
+              "tipo_procedimento": 2,
+              "opcoes_agendamento": 0,
+              "permite_agendamento_online": true,
+              "telemedicina": false,
+              "preparo": "",
+              "dias_retorno": null,
+              "codigo": "",
+              "grupo_procedimento": 0,
+              "tempo": "60",
+              "valor": 60000,
+              "especialidade_id": null,
+              "convenio_id": null,
+              "nao_necessita_agendamento": "",
+              "permite_pagamento_online": false,
+              "indicacao_clinica": false
+            },
+            {
+              "tableId": 0,
+              "procedimento_id": 21,
+              "nome": "Consulta para inserção de implante hormonal on-line",
+              "tipo_procedimento": 2,
+              "opcoes_agendamento": 0,
+              "permite_agendamento_online": true,
+              "telemedicina": false,
+              "preparo": "",
+              "dias_retorno": null,
+              "codigo": "",
+              "grupo_procedimento": 0,
+              "tempo": "40",
+              "valor": 60000,
+              "especialidade_id": null,
+              "convenio_id": null,
+              "nao_necessita_agendamento": "",
+              "permite_pagamento_online": false,
+              "indicacao_clinica": false
+            },
+            {
+              "tableId": 0,
+              "procedimento_id": 22,
+              "nome": "Consulta para Histeroscopia on-line",
+              "tipo_procedimento": 2,
+              "opcoes_agendamento": 0,
+              "permite_agendamento_online": true,
+              "telemedicina": false,
+              "preparo": "",
+              "dias_retorno": null,
+              "codigo": "",
+              "grupo_procedimento": 0,
+              "tempo": "40",
+              "valor": 60000,
+              "especialidade_id": null,
+              "convenio_id": null,
+              "nao_necessita_agendamento": "",
+              "permite_pagamento_online": false,
+              "indicacao_clinica": false
+            },
+            {
+              "tableId": 0,
+              "procedimento_id": 23,
+              "nome": "Consulta para Histeroscopia presencial",
+              "tipo_procedimento": 2,
+              "opcoes_agendamento": 0,
+              "permite_agendamento_online": true,
+              "telemedicina": false,
+              "preparo": "",
+              "dias_retorno": null,
+              "codigo": "",
+              "grupo_procedimento": 0,
+              "tempo": "60",
+              "valor": 60000,
+              "especialidade_id": null,
+              "convenio_id": null,
+              "nao_necessita_agendamento": "",
+              "permite_pagamento_online": false,
+              "indicacao_clinica": false
+            },
+            {
+              "tableId": 0,
+              "procedimento_id": 24,
+              "nome": "Inserção de DIU",
+              "tipo_procedimento": 4,
+              "opcoes_agendamento": 0,
+              "permite_agendamento_online": true,
+              "telemedicina": false,
+              "preparo": "",
+              "dias_retorno": null,
+              "codigo": "",
+              "grupo_procedimento": 0,
+              "tempo": "40",
+              "valor": 60000,
+              "especialidade_id": null,
+              "convenio_id": null,
+              "nao_necessita_agendamento": "",
+              "permite_pagamento_online": false,
+              "indicacao_clinica": false
+            },
+            {
+              "tableId": 0,
+              "procedimento_id": 25,
+              "nome": "Consulta para inserção de DIU presencial",
+              "tipo_procedimento": 2,
+              "opcoes_agendamento": 0,
+              "permite_agendamento_online": true,
+              "telemedicina": false,
+              "preparo": "",
+              "dias_retorno": null,
+              "codigo": "",
+              "grupo_procedimento": 0,
+              "tempo": "60",
+              "valor": 60000,
+              "especialidade_id": null,
+              "convenio_id": null,
+              "nao_necessita_agendamento": "",
+              "permite_pagamento_online": false,
+              "indicacao_clinica": false
+            },
+            {
+              "tableId": 0,
+              "procedimento_id": 26,
+              "nome": "Consulta para inserção de DIU on-line",
+              "tipo_procedimento": 2,
+              "opcoes_agendamento": 0,
+              "permite_agendamento_online": true,
+              "telemedicina": false,
+              "preparo": "",
+              "dias_retorno": null,
+              "codigo": "",
+              "grupo_procedimento": 0,
+              "tempo": "40",
+              "valor": 60000,
+              "especialidade_id": null,
+              "convenio_id": null,
+              "nao_necessita_agendamento": "",
+              "permite_pagamento_online": false,
+              "indicacao_clinica": false
+            },
+            {
+              "tableId": 0,
+              "procedimento_id": 27,
+              "nome": "Ultra som (USG)",
+              "tipo_procedimento": 3,
+              "opcoes_agendamento": 0,
+              "permite_agendamento_online": true,
+              "telemedicina": false,
+              "preparo": "",
+              "dias_retorno": 0,
+              "codigo": "",
+              "grupo_procedimento": 0,
+              "tempo": "40",
+              "valor": 30000,
+              "especialidade_id": null,
+              "convenio_id": null,
+              "nao_necessita_agendamento": "",
+              "permite_pagamento_online": false,
+              "indicacao_clinica": false
+            },
+            {
+              "tableId": 0,
+              "procedimento_id": 28,
+              "nome": "Honorário médico acompanhamento",
+              "tipo_procedimento": 4,
+              "opcoes_agendamento": 0,
+              "permite_agendamento_online": true,
+              "telemedicina": false,
+              "preparo": "",
+              "dias_retorno": null,
+              "codigo": "",
+              "grupo_procedimento": 0,
+              "tempo": "30",
+              "valor": 100000,
+              "especialidade_id": null,
+              "convenio_id": null,
+              "nao_necessita_agendamento": "",
+              "permite_pagamento_online": false,
+              "indicacao_clinica": false
+            }
+          ],
+          "total": 21
+        },
+        "pairedItem": {
+          "item": 0
+        }
+      }
+    ]
+  },
+  "settings": {
+    "saveManualExecutions": false,
+    "callerPolicy": "workflowsFromSameOwner",
+    "errorWorkflow": "15"
+  },
+  "staticData": {
+    "node:Schedule Trigger": {
+      "recurrencyRules": []
+    }
+  },
+  "tags": [
+    {
+      "createdAt": "2023-06-19T10:12:17.753Z",
+      "updatedAt": "2023-06-19T10:12:17.753Z",
+      "id": "1",
+      "name": "Dra. Simone"
+    }
+  ],
+  "triggerCount": 1,
+  "updatedAt": "2023-07-04T21:17:24.000Z",
+  "versionId": "74dc78cd-a21c-42b1-aca1-a2b1be4ec6cd"
+}
