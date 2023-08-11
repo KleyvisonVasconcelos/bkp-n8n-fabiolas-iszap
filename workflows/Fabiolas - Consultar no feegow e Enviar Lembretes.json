@@ -1,0 +1,1838 @@
+{
+  "active": false,
+  "connections": {
+    "data hoje": {
+      "main": [
+        [
+          {
+            "node": "Date & Time",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Date & Time": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets": {
+      "main": [
+        [
+          {
+            "node": "1 por vez",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch": {
+      "main": [
+        [
+          {
+            "node": "Lembrete 1 dia antes",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Lembrete no dia",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Lembrete 30 dias depois",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Switch1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch1": {
+      "main": [
+        [
+          {
+            "node": "Lembrete 150 dias depois",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Avaliação 1 dia depois",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "3 dias antes",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "NoOp",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Lembrete 1 dia antes": {
+      "main": [
+        [
+          {
+            "node": "é não confirmado?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Lembrete 30 dias depois": {
+      "main": [
+        [
+          {
+            "node": "foi atendido?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Lembrete no dia": {
+      "main": [
+        [
+          {
+            "node": "NoOp",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "foi atendido?": {
+      "main": [
+        [
+          {
+            "node": "É IMPLANTE HORMONAL?1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "NoOp",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "enviar fluxo implante hormonal": {
+      "main": [
+        [
+          {
+            "node": "Wait",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Lembrete 150 dias depois": {
+      "main": [
+        [
+          {
+            "node": "foi atendido?1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "foi atendido?1": {
+      "main": [
+        [
+          {
+            "node": "É IMPLANTE HORMONAL?2",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "NoOp",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "enviar fluxo implante hormonal1": {
+      "main": [
+        [
+          {
+            "node": "Wait",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait": {
+      "main": [
+        [
+          {
+            "node": "NoOp",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "1 por vez": {
+      "main": [
+        [
+          {
+            "node": "Switch",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "salvando nome médica": {
+      "main": [
+        [
+          {
+            "node": "salvando hora agendamento",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "salvando hora agendamento": {
+      "main": [
+        [
+          {
+            "node": "salvando procedimento agendado",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "salvando procedimento agendado": {
+      "main": [
+        [
+          {
+            "node": "salvando DATA procedimento",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF": {
+      "main": [
+        [
+          {
+            "node": "tag fabiola ribeiro",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "tag fabiola leite",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "tag fabiola ribeiro": {
+      "main": [
+        [
+          {
+            "node": "enviar fluxo confirmação de agendamento",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "tag fabiola leite": {
+      "main": [
+        [
+          {
+            "node": "enviar fluxo confirmação de agendamento",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "enviar fluxo confirmação de agendamento": {
+      "main": [
+        [
+          {
+            "node": "Wait",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "data hoje",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Avaliação 1 dia depois": {
+      "main": [
+        [
+          {
+            "node": "foi atendido?2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "foi atendido?2": {
+      "main": [
+        [
+          {
+            "node": "É IMPLANTE HORMONAL?",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "NoOp",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "enviar fluxo avaliação": {
+      "main": [
+        [
+          {
+            "node": "Wait",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "É IMPLANTE HORMONAL?": {
+      "main": [
+        [
+          {
+            "node": "enviar fluxo IMPLANTE HORMONAL",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "enviar fluxo avaliação",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "enviar fluxo IMPLANTE HORMONAL": {
+      "main": [
+        [
+          {
+            "node": "Wait",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule Trigger1": {
+      "main": [
+        [
+          {
+            "node": "data hoje1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "data hoje1": {
+      "main": [
+        [
+          {
+            "node": "Date & Time1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Date & Time1": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets1": {
+      "main": [
+        [
+          {
+            "node": "atendimento hoje?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch4": {
+      "main": [
+        [
+          {
+            "node": "laser intimo1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "estetica/cirurgia intima1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "1 por vez1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "1 por vez1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "laser intimo1": {
+      "main": [
+        [
+          {
+            "node": "enviar fluxo laser íntimo1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "estetica/cirurgia intima1": {
+      "main": [
+        [
+          {
+            "node": "enviar fluxo estética/cirurgia íntima1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "atendimento hoje?": {
+      "main": [
+        [
+          {
+            "node": "1 por vez1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "1 por vez1": {
+      "main": [
+        [
+          {
+            "node": "Switch4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "enviar fluxo laser íntimo1": {
+      "main": [
+        [
+          {
+            "node": "Wait1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "enviar fluxo estética/cirurgia íntima1": {
+      "main": [
+        [
+          {
+            "node": "Wait1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait1": {
+      "main": [
+        [
+          {
+            "node": "1 por vez1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3 dias antes": {
+      "main": [
+        [
+          {
+            "node": "é laser?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "enviar fluxo laser íntimo 3 dias antes": {
+      "main": [
+        [
+          {
+            "node": "Wait",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "salvando DATA procedimento": {
+      "main": [
+        [
+          {
+            "node": "IF",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "É IMPLANTE HORMONAL?1": {
+      "main": [
+        [
+          {
+            "node": "enviar fluxo implante hormonal",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "NoOp",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "É IMPLANTE HORMONAL?2": {
+      "main": [
+        [
+          {
+            "node": "enviar fluxo implante hormonal1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "NoOp",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "é não confirmado?": {
+      "main": [
+        [
+          {
+            "node": "salvando nome médica",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "NoOp",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "NoOp": {
+      "main": [
+        [
+          {
+            "node": "1 por vez",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "é laser?": {
+      "main": [
+        [
+          {
+            "node": "enviar fluxo laser íntimo 3 dias antes",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "NoOp",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "createdAt": "2023-07-27T04:44:49.831Z",
+  "id": "16",
+  "name": "Fabiolas - Consultar no feegow e Enviar Lembretes",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "triggerAtHour": 8
+            }
+          ]
+        }
+      },
+      "id": "d375242e-232f-43a7-92a7-5f1f1a7cf54f",
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1,
+      "position": [
+        -140,
+        240
+      ]
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "DataHoje",
+              "value": "={{Date()}}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "9862d2db-c343-4b55-beee-ec63e7d2db25",
+      "name": "data hoje",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [
+        100,
+        240
+      ]
+    },
+    {
+      "parameters": {
+        "value": "={{ $json[\"DataHoje\"] }}",
+        "dataPropertyName": "data hoje",
+        "custom": true,
+        "toFormat": "DD-MM-YYYY",
+        "options": {}
+      },
+      "id": "be247f39-abb7-46a9-a784-9a827820b05d",
+      "name": "Date & Time",
+      "type": "n8n-nodes-base.dateTime",
+      "typeVersion": 1,
+      "position": [
+        320,
+        240
+      ]
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1WAPCHqXPkKUpvSH3cgWhKu6_6-jNytqg0CudwcirpGE",
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Lembretes",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1WAPCHqXPkKUpvSH3cgWhKu6_6-jNytqg0CudwcirpGE/edit#gid=0"
+        },
+        "filtersUI": {
+          "values": [
+            {
+              "lookupColumn": "Lembrete 1 dia antes",
+              "lookupValue": "={{ $json[\"data hoje\"] }}"
+            },
+            {
+              "lookupColumn": "Lembrete no dia",
+              "lookupValue": "={{ $json[\"data hoje\"] }}"
+            },
+            {
+              "lookupColumn": "Avaliação 1 dia depois",
+              "lookupValue": "={{ $json[\"data hoje\"] }}"
+            },
+            {
+              "lookupColumn": "Lembrete 30 dias",
+              "lookupValue": "={{ $json[\"data hoje\"] }}"
+            },
+            {
+              "lookupColumn": "Lembrete 150 dias",
+              "lookupValue": "={{ $json[\"data hoje\"] }}"
+            },
+            {
+              "lookupColumn": "Lembrete 3 dias antes",
+              "lookupValue": "={{ $json[\"data hoje\"] }}"
+            }
+          ]
+        },
+        "options": {
+          "returnAllMatches": "returnAllMatches"
+        }
+      },
+      "id": "785c9ba4-1173-4aeb-8ff2-13bd6b39f5db",
+      "name": "Google Sheets",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 3,
+      "position": [
+        540,
+        240
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "3",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "dataType": "string",
+        "value1": "={{ $node[\"Date & Time\"].json[\"data hoje\"] }}",
+        "rules": {
+          "rules": [
+            {
+              "value2": "={{ $json[\"Lembrete 1 dia antes\"] }}"
+            },
+            {
+              "value2": "={{ $json[\"Lembrete no dia\"] }}",
+              "output": 1
+            },
+            {
+              "value2": "={{ $json[\"Lembrete 30 dias\"] }}",
+              "output": 2
+            }
+          ]
+        },
+        "fallbackOutput": 3
+      },
+      "id": "d856940e-ed79-4a02-8dc3-12cd2a9e6114",
+      "name": "Switch",
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 1,
+      "position": [
+        1720,
+        240
+      ]
+    },
+    {
+      "parameters": {
+        "dataType": "string",
+        "value1": "={{ $node[\"Date & Time\"].json[\"data hoje\"] }}",
+        "rules": {
+          "rules": [
+            {
+              "value2": "={{ $node[\"1 por vez\"].json[\"Lembrete 150 dias\"] }}"
+            },
+            {
+              "value2": "={{ $node[\"1 por vez\"].json[\"Avaliação 1 dia depois\"] }}",
+              "output": 1
+            },
+            {
+              "value2": "={{ $node[\"1 por vez\"].json[\"Lembrete 3 dias antes\"] }}",
+              "output": 2
+            }
+          ]
+        },
+        "fallbackOutput": 3
+      },
+      "id": "a6fb168b-3780-49d6-8479-c9a3355d022f",
+      "name": "Switch1",
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 1,
+      "position": [
+        1700,
+        1080
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "aa34cd2f-d103-4ea2-85f6-0d4dee65c0db",
+      "name": "Lembrete 1 dia antes",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        1940,
+        20
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "b2e50c85-ab98-46a2-a978-e360a2454d01",
+      "name": "Lembrete no dia",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        2180,
+        240
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "24d6269c-932f-4cac-a790-42bdc5c25ae9",
+      "name": "Lembrete 30 dias depois",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        2160,
+        580
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "fd821c15-54a4-4f8c-8100-c42eab4db164",
+      "name": "Lembrete 150 dias depois",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        2160,
+        800
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "5934ada5-3976-4135-b881-8e89b7d17337",
+      "name": "On clicking 'execute'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -100,
+        680
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $node[\"1 por vez\"].json[\"STATUS\"] }}",
+              "value2": "Atendido"
+            }
+          ]
+        }
+      },
+      "id": "24ba8c81-558d-4986-aaaf-a740d98896c3",
+      "name": "foi atendido?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        2400,
+        580
+      ]
+    },
+    {
+      "parameters": {
+        "amount": 30,
+        "unit": "seconds"
+      },
+      "id": "39937402-9dcf-4b99-8e85-b745a0369437",
+      "name": "Wait",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1,
+      "position": [
+        3980,
+        560
+      ],
+      "webhookId": "e488acb1-4e17-4ba7-be21-3606162e4402"
+    },
+    {
+      "parameters": {},
+      "id": "c7adda6c-8c22-4aa0-b803-f84edd12cff2",
+      "name": "NoOp",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        4360,
+        1180
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{$json[\"ID - BC\"]}}/send_flow/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "flow",
+              "value": "890681"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "77bdc40c-4146-48bf-a673-4155d9beae5e",
+      "name": "enviar fluxo implante hormonal",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        2900,
+        500
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "4",
+          "name": "BotConversa Fabiolas"
+        }
+      },
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $node[\"1 por vez\"].json[\"STATUS\"] }}",
+              "value2": "Atendido"
+            }
+          ]
+        }
+      },
+      "id": "92e809e9-0040-4358-bdd4-97301ac8c8d2",
+      "name": "foi atendido?1",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        2400,
+        800
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{$json[\"ID - BC\"]}}/send_flow/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "flow",
+              "value": "890725"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "bf93ce4a-f11e-41b0-ad8f-128a064bd66f",
+      "name": "enviar fluxo implante hormonal1",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        2900,
+        740
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "4",
+          "name": "BotConversa Fabiolas"
+        }
+      },
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{$node[\"Lembrete 1 dia antes\"].json[\"ID - BC\"]}}/custom_fields/521316/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "value",
+              "value": "={{ $node[\"1 por vez\"].json[\"MEDICA\"] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "dbadb4eb-100c-4811-862c-2a0e2ac891b7",
+      "name": "salvando nome médica",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        2380,
+        20
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "4",
+          "name": "BotConversa Fabiolas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      },
+      "id": "76d6a7b7-823a-410e-8892-2790ab65cf65",
+      "name": "1 por vez",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 1,
+      "position": [
+        1500,
+        240
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{$node[\"Lembrete 1 dia antes\"].json[\"ID - BC\"]}}/custom_fields/521315/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "value",
+              "value": "={{$node[\"1 por vez\"].json[\"HORÁRIO\"]}}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "764ccb1f-f4ce-408b-96f6-206f57e7fb15",
+      "name": "salvando hora agendamento",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        2600,
+        20
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "4",
+          "name": "BotConversa Fabiolas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{$node[\"Lembrete 1 dia antes\"].json[\"ID - BC\"]}}/custom_fields/521328/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "value",
+              "value": "={{$node[\"1 por vez\"].json[\"PROCEDIMENTO\"]}}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "06028f06-fccb-42b5-a05d-a39ada68cb5e",
+      "name": "salvando procedimento agendado",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        2820,
+        20
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "4",
+          "name": "BotConversa Fabiolas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $node[\"1 por vez\"].json[\"MEDICA\"] }}",
+              "value2": "Fabiola Ribeiro"
+            }
+          ]
+        }
+      },
+      "id": "80f5113e-24e6-45c2-86b0-9b052e449a1d",
+      "name": "IF",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        3240,
+        20
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{$node[\"Lembrete 1 dia antes\"].json[\"ID - BC\"]}}/tags/1407115/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "options": {}
+      },
+      "id": "9e1d3907-6331-4bf0-89d6-747841f57aa9",
+      "name": "tag fabiola ribeiro",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        3460,
+        -80
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "4",
+          "name": "BotConversa Fabiolas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{$node[\"Lembrete 1 dia antes\"].json[\"ID - BC\"]}}/tags/1407118/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "options": {}
+      },
+      "id": "d3199df6-0a46-4221-a4a4-d869dbfa9c02",
+      "name": "tag fabiola leite",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        3460,
+        100
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "4",
+          "name": "BotConversa Fabiolas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{$node[\"Lembrete 1 dia antes\"].json[\"ID - BC\"]}}/send_flow/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "flow",
+              "value": "890289"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "3aebdd86-973e-41ad-9fff-d8da3d405c77",
+      "name": "enviar fluxo confirmação de agendamento",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        3740,
+        20
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "4",
+          "name": "BotConversa Fabiolas"
+        }
+      },
+      "disabled": true
+    },
+    {
+      "parameters": {},
+      "id": "265931f0-54c0-443e-9416-84a85fa04fd1",
+      "name": "Avaliação 1 dia depois",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        2160,
+        1040
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $node[\"1 por vez\"].json[\"STATUS\"] }}",
+              "value2": "Atendido"
+            }
+          ]
+        }
+      },
+      "id": "f70cb6fb-6a0b-4d73-a9c3-6c769bb46e61",
+      "name": "foi atendido?2",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        2400,
+        1040
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{$json[\"ID - BC\"]}}/send_flow/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "flow",
+              "value": "889483"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "9ef0d92d-ad11-4b22-a4d3-100c8e7be5e3",
+      "name": "enviar fluxo avaliação",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        2900,
+        1060
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "4",
+          "name": "BotConversa Fabiolas"
+        }
+      },
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $node[\"1 por vez\"].json[\"PROCEDIMENTO\"] }}",
+              "value2": "Implante Hormonal I"
+            }
+          ]
+        }
+      },
+      "id": "5433c156-e6dd-4337-bcdc-694f8c74ace5",
+      "name": "É IMPLANTE HORMONAL?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        2620,
+        980
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{$json[\"ID - BC\"]}}/send_flow/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "flow",
+              "value": "890611"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "8a6d4cee-18f5-4741-a568-988ff6afc694",
+      "name": "enviar fluxo IMPLANTE HORMONAL",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        2900,
+        880
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "4",
+          "name": "BotConversa Fabiolas"
+        }
+      },
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "triggerAtHour": 18
+            }
+          ]
+        }
+      },
+      "id": "a3f0f27a-d311-4f46-8c82-776e26db1cbd",
+      "name": "Schedule Trigger1",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1,
+      "position": [
+        500,
+        1540
+      ]
+    },
+    {
+      "parameters": {
+        "keepOnlySet": true,
+        "values": {
+          "string": [
+            {
+              "name": "DataHoje",
+              "value": "={{Date()}}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "3c4b80db-f2e9-4ca0-aa62-45561d1a7011",
+      "name": "data hoje1",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [
+        740,
+        1540
+      ]
+    },
+    {
+      "parameters": {
+        "value": "={{ $json[\"DataHoje\"] }}",
+        "dataPropertyName": "data hoje",
+        "custom": true,
+        "toFormat": "DD-MM-YYYY",
+        "options": {}
+      },
+      "id": "956e96fc-ef74-4376-97e3-2ac315a12372",
+      "name": "Date & Time1",
+      "type": "n8n-nodes-base.dateTime",
+      "typeVersion": 1,
+      "position": [
+        960,
+        1540
+      ]
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1WAPCHqXPkKUpvSH3cgWhKu6_6-jNytqg0CudwcirpGE",
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Lembretes",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1WAPCHqXPkKUpvSH3cgWhKu6_6-jNytqg0CudwcirpGE/edit#gid=0"
+        },
+        "filtersUI": {
+          "values": [
+            {
+              "lookupColumn": "STATUS",
+              "lookupValue": "Atendido"
+            }
+          ]
+        },
+        "options": {
+          "returnAllMatches": "returnAllMatches"
+        }
+      },
+      "id": "6c103dc5-9def-4460-9ef1-340ad28fd711",
+      "name": "Google Sheets1",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 3,
+      "position": [
+        1180,
+        1540
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "3",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{$json[\"ID - BC\"]}}/send_flow/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "flow",
+              "value": "794271"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "b149e952-2ed9-41fb-ab97-57a33823cffd",
+      "name": "enviar fluxo laser íntimo1",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        2260,
+        1480
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "4",
+          "name": "BotConversa Fabiolas"
+        }
+      },
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      },
+      "id": "76057aab-bf70-4676-8886-49d8058a8f7b",
+      "name": "1 por vez1",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 1,
+      "position": [
+        1600,
+        1540
+      ]
+    },
+    {
+      "parameters": {
+        "dataType": "string",
+        "value1": "={{ $node[\"1 por vez1\"].json[\"PROCEDIMENTO\"] }}",
+        "rules": {
+          "rules": [
+            {
+              "value2": "Laser Fotona Íntimo"
+            },
+            {
+              "value2": "Cirurgia Íntima",
+              "output": 1
+            }
+          ]
+        },
+        "fallbackOutput": 3
+      },
+      "id": "32e95cc1-0158-4324-b3cf-127994019df0",
+      "name": "Switch4",
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 1,
+      "position": [
+        1780,
+        1540
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "e5bba2c6-2007-434d-ae22-40b744731f10",
+      "name": "laser intimo1",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        2040,
+        1480
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "2846c9f8-772f-4c71-8429-eac998de8e53",
+      "name": "estetica/cirurgia intima1",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        2040,
+        1660
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{$json[\"ID - BC\"]}}/send_flow/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "flow",
+              "value": "891168"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "c38025cb-c268-4ae1-b970-f94422a3fd5d",
+      "name": "enviar fluxo estética/cirurgia íntima1",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        2260,
+        1660
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "4",
+          "name": "BotConversa Fabiolas"
+        }
+      },
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json[\"DATA\"] }}",
+              "value2": "={{ $node[\"Date & Time1\"].json[\"data hoje\"] }}"
+            }
+          ]
+        }
+      },
+      "id": "8f854653-18f8-4a5a-a99f-856eb773fe25",
+      "name": "atendimento hoje?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        1400,
+        1540
+      ]
+    },
+    {
+      "parameters": {
+        "amount": 5,
+        "unit": "seconds"
+      },
+      "id": "29e007ed-3bd7-4e48-b972-463133eb9d8a",
+      "name": "Wait1",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1,
+      "position": [
+        2560,
+        1660
+      ],
+      "webhookId": "6fd3cb49-ced0-4bbf-9ab7-402b60d3924a"
+    },
+    {
+      "parameters": {},
+      "id": "ecfdc4a8-d4ec-432e-a378-51f3c9c1787d",
+      "name": "3 dias antes",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        2160,
+        1220
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{$json[\"ID - BC\"]}}/send_flow/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "flow",
+              "value": "790956"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "263bdb89-a425-47a5-bee5-dd0c0efa9512",
+      "name": "enviar fluxo laser íntimo 3 dias antes",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        2620,
+        1200
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "4",
+          "name": "BotConversa Fabiolas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{$node[\"Lembrete 1 dia antes\"].json[\"ID - BC\"]}}/custom_fields/569261/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "value",
+              "value": "={{$node[\"1 por vez\"].json[\"DATA\"]}}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "366cc23b-dcd7-44e8-8d36-14d45dc9ad46",
+      "name": "salvando DATA procedimento",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        3040,
+        20
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "4",
+          "name": "BotConversa Fabiolas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $node[\"1 por vez\"].json[\"PROCEDIMENTO\"] }}",
+              "value2": "Implante Hormonal I"
+            }
+          ]
+        }
+      },
+      "id": "73a11413-1cb8-4ced-8dbe-b1c7384264ee",
+      "name": "É IMPLANTE HORMONAL?1",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        2620,
+        560
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $node[\"1 por vez\"].json[\"PROCEDIMENTO\"] }}",
+              "value2": "Implante Hormonal I"
+            }
+          ]
+        }
+      },
+      "id": "80e1feea-f1aa-4c6a-b57d-13fd32f81b52",
+      "name": "É IMPLANTE HORMONAL?2",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        2620,
+        780
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $node[\"1 por vez\"].json[\"STATUS\"] }}",
+              "value2": "Marcado - não confirmado"
+            }
+          ]
+        }
+      },
+      "id": "7c6cd483-a19d-4d53-9a73-e7d84d21db06",
+      "name": "é não confirmado?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        2160,
+        20
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $node[\"1 por vez\"].json[\"PROCEDIMENTO\"] }}",
+              "value2": "Laser Fotona Íntimo"
+            }
+          ]
+        }
+      },
+      "id": "a359f63e-9488-4692-9980-c1fd7ac1950c",
+      "name": "é laser?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        2400,
+        1220
+      ]
+    }
+  ],
+  "pinData": {},
+  "settings": {
+    "saveManualExecutions": false,
+    "callerPolicy": "workflowsFromSameOwner",
+    "errorWorkflow": "9"
+  },
+  "staticData": {
+    "node:Schedule Trigger": {
+      "recurrencyRules": []
+    },
+    "node:Schedule Trigger1": {
+      "recurrencyRules": []
+    }
+  },
+  "tags": [],
+  "triggerCount": 2,
+  "updatedAt": "2023-08-08T13:48:14.000Z",
+  "versionId": "0d73f408-ce7c-413b-bd52-f36487d20bd5"
+}
