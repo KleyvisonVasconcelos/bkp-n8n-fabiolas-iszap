@@ -1,0 +1,907 @@
+{
+  "active": true,
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "formatando",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Listar Agendamentos": {
+      "main": [
+        [
+          {
+            "node": "separa agendamentos",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "buscar pacientes1": {
+      "main": [
+        [
+          {
+            "node": "BUSCAR PROCEDIMENTO2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "BUSCAR PROCEDIMENTO2": {
+      "main": [
+        [
+          {
+            "node": "Valores",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Renomeando status1": {
+      "main": [
+        [
+          {
+            "node": "buscar pacientes1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "1 POR VEZ1": {
+      "main": [
+        [
+          {
+            "node": "Nome e telefone para validar",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Atualizar Data Agendamento no BC1": {
+      "main": [
+        []
+      ]
+    },
+    "Atualizar Hora Agendamento no BC1": {
+      "main": [
+        []
+      ]
+    },
+    "Atualizar Procedimento no BC1": {
+      "main": [
+        []
+      ]
+    },
+    "enviar fluxo1": {
+      "main": [
+        [
+          {
+            "node": "Wait1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait1": {
+      "main": [
+        [
+          {
+            "node": "1 POR VEZ1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "possui telefone?": {
+      "main": [
+        [
+          {
+            "node": "Item Lists",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Item Lists": {
+      "main": [
+        [
+          {
+            "node": "Valores Planilha2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "formatando": {
+      "main": [
+        [
+          {
+            "node": "Listar Agendamentos",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Valores": {
+      "main": [
+        [
+          {
+            "node": "possui telefone?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "separa agendamentos": {
+      "main": [
+        [
+          {
+            "node": "Atendido",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Atendido": {
+      "main": [
+        [
+          {
+            "node": "Renomeando status1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Nome e telefone para validar": {
+      "main": [
+        [
+          {
+            "node": "Formatando Nome e Telefone",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Formatando Nome e Telefone": {
+      "main": [
+        [
+          {
+            "node": "Cadastrando na Audiência",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Valores Planilha2": {
+      "main": [
+        [
+          {
+            "node": "1 POR VEZ1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Cadastrando na Audiência": {
+      "main": [
+        [
+          {
+            "node": "enviar fluxo1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "createdAt": "2023-06-19T10:23:39.437Z",
+  "id": "14",
+  "name": "Dra Simone - Pesquisa de Satisfação",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "triggerAtHour": 19
+            }
+          ]
+        }
+      },
+      "id": "c46c958d-2ef0-402f-b6df-a23a4b05be1b",
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1,
+      "position": [
+        120,
+        280
+      ]
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "url": "https://api.feegow.com/v1/api/appoints/search",
+        "options": {},
+        "queryParametersUi": {
+          "parameter": [
+            {
+              "name": "data_start",
+              "value": "={{ $json[\"data-pesquisa\"] }}"
+            },
+            {
+              "name": "data_end",
+              "value": "={{ $json[\"data-pesquisa\"] }}"
+            }
+          ]
+        }
+      },
+      "id": "84123f27-1fc1-46fb-9960-e304d378fe3a",
+      "name": "Listar Agendamentos",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [
+        560,
+        280
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "maxTries": 5,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "13",
+          "name": "Feegow Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "url": "https://api.feegow.com/v1/api/patient/search",
+        "options": {},
+        "queryParametersUi": {
+          "parameter": [
+            {
+              "name": "paciente_id",
+              "value": "={{$node[\"Renomeando status1\"].json[\"paciente_id\"]}}"
+            }
+          ]
+        }
+      },
+      "id": "f67a461e-4ee2-4eda-8f4f-0b57f27f6ade",
+      "name": "buscar pacientes1",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [
+        1500,
+        280
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "13",
+          "name": "Feegow Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "url": "https://api.feegow.com/v1/api/procedures/list",
+        "options": {},
+        "queryParametersUi": {
+          "parameter": [
+            {
+              "name": "procedimento_id",
+              "value": "={{ $node[\"Renomeando status1\"].json[\"procedimento_id\"] }}"
+            }
+          ]
+        }
+      },
+      "id": "a2243f74-a381-42ab-995c-8b98564b6a4b",
+      "name": "BUSCAR PROCEDIMENTO2",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [
+        1740,
+        280
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "13",
+          "name": "Feegow Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "status_id",
+              "value": "={{ $json.status_id.toString().replace(\"3\",\"Atendido\").replace(\"1\",\"Marcado - não confirmado\").replace(\"7\",\"Marcado - confirmado\").replace(\"11\",\"Desmarcado\").replace(\"15\",\"Remarcado\") }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "e82c7b6f-37fe-49f4-bdf6-7724a0f3e14b",
+      "name": "Renomeando status1",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [
+        1260,
+        280
+      ]
+    },
+    {
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      },
+      "id": "afad973b-47df-4441-9ef1-fa3332e8faa7",
+      "name": "1 POR VEZ1",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 2,
+      "position": [
+        2940,
+        280
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{ $node[\"Cadastrando na Audiência1\"].json[\"id\"] }}/custom_fields/1004832/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "value",
+              "value": "={{ $node[\"1 POR VEZ1\"].json.data }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "569a6103-2bfa-40f5-a91e-e74c2e46fcca",
+      "name": "Atualizar Data Agendamento no BC1",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        3560,
+        1020
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "14",
+          "name": "BotConversa Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{ $node[\"Cadastrando na Audiência1\"].json[\"id\"] }}/custom_fields/1004833/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "value",
+              "value": "={{ $node[\"1 POR VEZ1\"].json.horario }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "9b2f4e7f-1fc7-4df2-9104-76d5e23c2247",
+      "name": "Atualizar Hora Agendamento no BC1",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        3800,
+        1020
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "maxTries": 5,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "14",
+          "name": "BotConversa Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{ $node[\"Cadastrando na Audiência1\"].json[\"id\"] }}/custom_fields/992933/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "value",
+              "value": "={{ $node[\"1 POR VEZ1\"].json.procedimento }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "67004ea0-66ab-4a5d-bf91-d840111d1f66",
+      "name": "Atualizar Procedimento no BC1",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        4040,
+        1060
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "14",
+          "name": "BotConversa Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{ $node[\"Cadastrando na Audiência\"].json[\"id\"] }}/send_flow/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "flow",
+              "value": "1648911"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "c7b19c37-127c-49e9-a306-c15ec56e86d6",
+      "name": "enviar fluxo1",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        3840,
+        280
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "14",
+          "name": "BotConversa Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "amount": 5,
+        "unit": "seconds"
+      },
+      "id": "94318bae-0391-4ec4-9864-99506791096c",
+      "name": "Wait1",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1,
+      "position": [
+        4080,
+        280
+      ],
+      "webhookId": "aa0c3cbc-8ae9-40cb-b52e-220f78d8be2b"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{ $node[\"Cadastrando na Audiência1\"].json[\"id\"] }}/custom_fields/854414/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "value",
+              "value": "={{ $node[\"1 POR VEZ1\"].json[\"agendamento_id\"] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "9d5ce67b-cd14-4429-a557-3f41570722cb",
+      "name": "Atualizar ID do Agendamento no BC1",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        4220,
+        1040
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "14",
+          "name": "BotConversa Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json.telefone }}",
+              "operation": "isNotEmpty"
+            }
+          ]
+        }
+      },
+      "id": "9cf0b141-dcb4-4853-8568-092ff62ca5f3",
+      "name": "possui telefone?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        2240,
+        280
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "summarize",
+        "fieldsToSummarize": {
+          "values": [
+            {
+              "aggregation": "concatenate",
+              "field": "procedimento",
+              "separateBy": ", "
+            },
+            {
+              "aggregation": "concatenate",
+              "field": "agendamento_id"
+            },
+            {
+              "aggregation": "append",
+              "field": "data"
+            },
+            {
+              "aggregation": "append",
+              "field": "horario"
+            },
+            {
+              "aggregation": "append",
+              "field": "telefone"
+            },
+            {
+              "aggregation": "append",
+              "field": "nome"
+            }
+          ]
+        },
+        "fieldsToSplitBy": "paciente_id",
+        "options": {}
+      },
+      "id": "60899867-53aa-42b1-9738-923332763dcf",
+      "name": "Item Lists",
+      "type": "n8n-nodes-base.itemLists",
+      "typeVersion": 2,
+      "position": [
+        2520,
+        280
+      ]
+    },
+    {
+      "parameters": {
+        "keepOnlySet": true,
+        "values": {
+          "string": [
+            {
+              "name": "agendamento_id",
+              "value": "={{ $json.concatenated_agendamento_id }}"
+            },
+            {
+              "name": "data",
+              "value": "={{ $json.appended_data[0] }}"
+            },
+            {
+              "name": "horario",
+              "value": "={{ $json.appended_horario[0] }}"
+            },
+            {
+              "name": "nome",
+              "value": "={{ $json.appended_nome[0] }}"
+            },
+            {
+              "name": "procedimento",
+              "value": "={{ $json.concatenated_procedimento }}"
+            },
+            {
+              "name": "telefone",
+              "value": "={{ $json.appended_telefone[0] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "360f4506-d8a6-47da-ab65-9a5cb2df8766",
+      "name": "Valores Planilha2",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [
+        2740,
+        280
+      ]
+    },
+    {
+      "parameters": {
+        "value": "={{ $now }}",
+        "dataPropertyName": "data-pesquisa",
+        "custom": true,
+        "toFormat": "DD-MM-YYYY",
+        "options": {}
+      },
+      "id": "8c58846f-e09d-4fa4-9cf3-c8332526c718",
+      "name": "formatando",
+      "type": "n8n-nodes-base.dateTime",
+      "typeVersion": 1,
+      "position": [
+        340,
+        280
+      ]
+    },
+    {
+      "parameters": {
+        "keepOnlySet": true,
+        "values": {
+          "string": [
+            {
+              "name": "agendamento_id",
+              "value": "={{$node[\"Renomeando status1\"].json[\"agendamento_id\"]}}"
+            },
+            {
+              "name": "data",
+              "value": "={{$node[\"Renomeando status1\"].json[\"data\"]}}"
+            },
+            {
+              "name": "horario",
+              "value": "={{ $node[\"Renomeando status1\"].json[\"horario\"].slice(0,5)}}"
+            },
+            {
+              "name": "paciente_id",
+              "value": "={{ $node[\"Renomeando status1\"].json[\"paciente_id\"] }}"
+            },
+            {
+              "name": "nome",
+              "value": "={{$node[\"buscar pacientes1\"].json[\"content\"][\"nome\"]}}"
+            },
+            {
+              "name": "nascimento",
+              "value": "={{$node[\"buscar pacientes1\"].json[\"content\"][\"nascimento\"]}}"
+            },
+            {
+              "name": "procedimento",
+              "value": "={{$node[\"BUSCAR PROCEDIMENTO2\"].json[\"content\"][0][\"nome\"]}}"
+            },
+            {
+              "name": "status",
+              "value": "={{$node[\"Renomeando status1\"].json[\"status_id\"]}}"
+            },
+            {
+              "name": "telefone",
+              "value": "={{$node[\"buscar pacientes1\"].json[\"content\"][\"celulares\"][0]}}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "a6e42c47-be45-4648-83be-9d518b95b4e3",
+      "name": "Valores",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [
+        2000,
+        280
+      ]
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "content",
+        "options": {}
+      },
+      "id": "a5700842-301a-465b-a20d-9b4f6308df85",
+      "name": "separa agendamentos",
+      "type": "n8n-nodes-base.itemLists",
+      "typeVersion": 1,
+      "position": [
+        780,
+        280
+      ]
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "url": "https://api.feegow.com/v1/api/patient/list",
+        "options": {}
+      },
+      "id": "8239d56d-13da-472b-bbc3-9da0c8810e3a",
+      "name": "buscar pacientes",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [
+        1700,
+        980
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "13",
+          "name": "Feegow Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json.status_id.toString() }}"
+            }
+          ]
+        }
+      },
+      "id": "da73cec8-1942-4890-bc80-21e7bca699df",
+      "name": "Atendido",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        1000,
+        280
+      ]
+    },
+    {
+      "parameters": {
+        "authentication": "headerAuth",
+        "requestMethod": "POST",
+        "url": "https://backend.botconversa.com.br/api/v1/webhook/subscriber/",
+        "options": {},
+        "bodyParametersUi": {
+          "parameter": [
+            {
+              "name": "phone",
+              "value": "={{ $json.whatsapp }}"
+            },
+            {
+              "name": "first_name",
+              "value": "={{ $json.Nome }}"
+            },
+            {
+              "name": "last_name",
+              "value": "={{ $json.Sobrenome }}"
+            }
+          ]
+        }
+      },
+      "name": "Cadastrando na Audiência",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 1,
+      "position": [
+        3600,
+        280
+      ],
+      "id": "410818ba-ea95-4b53-b274-423741c6b527",
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "14",
+          "name": "BotConversa Dra Simone"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "keepOnlySet": true,
+        "values": {
+          "string": [
+            {
+              "name": "telefone",
+              "value": "={{ $json.telefone }}"
+            },
+            {
+              "name": "nomeCompleto",
+              "value": "={{ $json.nome }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "7e462b94-fefd-4fb7-99cb-a1dd26d52ade",
+      "name": "Nome e telefone para validar",
+      "type": "n8n-nodes-base.set",
+      "position": [
+        3180,
+        280
+      ],
+      "typeVersion": 1
+    },
+    {
+      "parameters": {
+        "jsCode": "// Obter a string de nome completo do nó anterior\nconst nomeCompleto = items[0].json.nomeCompleto;\n\n// Função para separar o nome completo em nome e sobrenome\nfunction separarNomeSobrenome(nomeCompleto) {\n  // Verificar se o nome completo é uma string\n  if (typeof nomeCompleto !== 'string') {\n    throw new Error('O nome completo deve ser uma string.');\n  }\n\n  // Dividir o nome completo em palavras\n  const palavras = nomeCompleto.trim().split(' ');\n\n  // Verificar se há mais de uma palavra\n  if (palavras.length === 0) {\n    throw new Error('O nome completo deve conter pelo menos um nome.');\n  }\n\n  // Extrair o primeiro nome\n  const primeiroNome = palavras.shift();\n\n  // Extrair o sobrenome\n  const sobrenome = palavras.length > 0 ? palavras.join(' ') : '.';\n\n  // Formatar o nome e sobrenome com a primeira letra de cada palavra em maiúscula\n  const nomeFormatado = formatarNome(primeiroNome);\n  const sobrenomeFormatado = formatarNome(sobrenome);\n\n  return {\n    nome: nomeFormatado,\n    sobrenome: sobrenomeFormatado\n  };\n}\n\nfunction formatarNome(nome) {\n  return nome\n    .toLowerCase()\n    .split(' ')\n    .map((palavra) => palavra.charAt(0).toUpperCase() + palavra.slice(1))\n    .join(' ');\n}\n\n// Separar o nome completo em nome e sobrenome\nconst resultado = separarNomeSobrenome(nomeCompleto);\n\nvar whatsapp = items[0].json.telefone.replace(/\\D/g, '');\nvar ddd = whatsapp.slice(2,4);\nvar ddi = whatsapp.charAt(0);\nvar ddx = whatsapp.slice(0,2);\nvar length = whatsapp.length;\nif (length >= 12){\n  if (ddi == '+'){\n    ddi = whatsapp.slice(0,3);\n    whatsapp = parseInt(whatsapp.slice(3)).toString();\n  } else {\n    if (ddx == '55'){\n      whatsapp = parseInt(whatsapp.slice(2)).toString();\n      ddi = \"+55\";\n    } else {\n      whatsapp = parseInt(whatsapp).toString();\n      ddi = 'não informado';\n    }\n  }\n} else {\n  whatsapp = parseInt(whatsapp).toString();\n  ddi = 'não informado';\n}\n\nddd = whatsapp.slice(0,2);\nwhatsapp = whatsapp.slice(2);\nif (ddd > 28){\n  whatsapp = whatsapp.slice(-8);\n} else {\n  whatsapp = '9'+whatsapp.slice(-8);\n}\nvar whatsapp = '+55'+ddd+whatsapp;\n\n// Armazenar o nome e sobrenome nos campos desejados\nreturn {\n  json: {\n    Nome: resultado.nome,\n    Sobrenome: resultado.sobrenome,\n    NomeCompleto: resultado.nome+' '+resultado.sobrenome,\n    whatsapp\n  }\n};\n"
+      },
+      "id": "03ca6f17-e745-4cf5-b074-57e341d432ab",
+      "name": "Formatando Nome e Telefone",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 1,
+      "position": [
+        3380,
+        280
+      ]
+    }
+  ],
+  "pinData": {},
+  "settings": {
+    "saveManualExecutions": false,
+    "callerPolicy": "workflowsFromSameOwner",
+    "errorWorkflow": "15"
+  },
+  "staticData": {
+    "node:Schedule Trigger": {
+      "recurrencyRules": []
+    }
+  },
+  "tags": [
+    {
+      "createdAt": "2023-06-19T10:12:17.753Z",
+      "updatedAt": "2023-06-19T10:12:17.753Z",
+      "id": "1",
+      "name": "Dra. Simone"
+    }
+  ],
+  "triggerCount": 1,
+  "updatedAt": "2023-07-04T21:17:03.000Z",
+  "versionId": "0db2873d-a75f-4805-af93-ec57ab62ffc8"
+}
