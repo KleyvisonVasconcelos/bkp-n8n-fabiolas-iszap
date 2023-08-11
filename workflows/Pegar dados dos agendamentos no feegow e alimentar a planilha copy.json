@@ -1,0 +1,1431 @@
+{
+  "active": true,
+  "connections": {
+    "Cron": {
+      "main": [
+        [
+          {
+            "node": "formatando data hoje",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Status Atendido": {
+      "main": [
+        [
+          {
+            "node": "NoOp",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "buscar pacientes": {
+      "main": [
+        [
+          {
+            "node": "BUSCAR PROCEDIMENTO",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "BUSCAR PROCEDIMENTO": {
+      "main": [
+        [
+          {
+            "node": "Valores Planilha",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "NoOp": {
+      "main": [
+        [
+          {
+            "node": "buscar pacientes",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Valores Planilha": {
+      "main": [
+        [
+          {
+            "node": "Compare Datasets",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Listar Agendamentos1": {
+      "main": [
+        [
+          {
+            "node": "separa agendamentos1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "separa agendamentos1": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Set1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF": {
+      "main": [
+        [
+          {
+            "node": "Set2",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "IF1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set2": {
+      "main": [
+        [
+          {
+            "node": "Status Atendido",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF1": {
+      "main": [
+        [
+          {
+            "node": "Set3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set3": {
+      "main": [
+        [
+          {
+            "node": "Status Atendido1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "formatando data hoje": {
+      "main": [
+        [
+          {
+            "node": "calcular 30 dias",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "calcular 30 dias": {
+      "main": [
+        [
+          {
+            "node": "formatando data 30 dias",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "formatando data 30 dias": {
+      "main": [
+        [
+          {
+            "node": "Listar Agendamentos1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Status Atendido1": {
+      "main": [
+        [
+          {
+            "node": "NoOp5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "buscar pacientes5": {
+      "main": [
+        [
+          {
+            "node": "BUSCAR PROCEDIMENTO5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "BUSCAR PROCEDIMENTO5": {
+      "main": [
+        [
+          {
+            "node": "Valores Planilha5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "NoOp5": {
+      "main": [
+        [
+          {
+            "node": "buscar pacientes5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Valores Planilha5": {
+      "main": [
+        [
+          {
+            "node": "Compare Datasets1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Atualizando planilha5": {
+      "main": [
+        [
+          {
+            "node": "Wait5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "SplitInBatches4": {
+      "main": [
+        [
+          {
+            "node": "Atualizando planilha5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "SplitInBatches5": {
+      "main": [
+        [
+          {
+            "node": "Atualizando planilha",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait": {
+      "main": [
+        [
+          {
+            "node": "SplitInBatches5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait5": {
+      "main": [
+        [
+          {
+            "node": "SplitInBatches4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets": {
+      "main": [
+        [
+          {
+            "node": "Set",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set": {
+      "main": [
+        [
+          {
+            "node": "Compare Datasets",
+            "type": "main",
+            "index": 1
+          },
+          {
+            "node": "Compare Datasets1",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Set1": {
+      "main": [
+        [
+          {
+            "node": "IF",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Compare Datasets": {
+      "main": [
+        [
+          {
+            "node": "SplitInBatches5",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [],
+        [
+          {
+            "node": "Set4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set4": {
+      "main": [
+        [
+          {
+            "node": "Split In Batches",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split In Batches": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets1": {
+      "main": [
+        [
+          {
+            "node": "Wait1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait1": {
+      "main": [
+        [
+          {
+            "node": "Split In Batches",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Atualizando planilha": {
+      "main": [
+        [
+          {
+            "node": "Wait",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Compare Datasets1": {
+      "main": [
+        [
+          {
+            "node": "SplitInBatches4",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [],
+        [
+          {
+            "node": "Set5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets2": {
+      "main": [
+        [
+          {
+            "node": "Wait2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set5": {
+      "main": [
+        [
+          {
+            "node": "Split In Batches1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split In Batches1": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait2": {
+      "main": [
+        [
+          {
+            "node": "Split In Batches1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "createdAt": "2023-02-21T23:32:58.207Z",
+  "id": "7",
+  "name": "Pegar dados dos agendamentos no feegow e alimentar a planilha copy",
+  "nodes": [
+    {
+      "parameters": {
+        "triggerTimes": {
+          "item": [
+            {
+              "mode": "everyHour",
+              "minute": 30
+            }
+          ]
+        }
+      },
+      "id": "e8d4b7b1-b7cb-43b4-8a98-03dce3c16160",
+      "name": "Cron",
+      "type": "n8n-nodes-base.cron",
+      "typeVersion": 1,
+      "position": [
+        -1460,
+        440
+      ]
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "status_id",
+              "value": "={{ $json.status_id.toString().replace(\"3\",\"Atendido\").replace(\"1\",\"Marcado - não confirmado\").replace(\"7\",\"Marcado - confirmado\").replace(\"11\",\"Desmarcado\").replace(\"15\",\"Remarcado\") }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "2f71ebb9-9ba2-4037-a20d-5c3ec92df5d9",
+      "name": "Status Atendido",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [
+        1960,
+        460
+      ]
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "url": "https://api.feegow.com/v1/api/patient/search",
+        "options": {},
+        "queryParametersUi": {
+          "parameter": [
+            {
+              "name": "paciente_id",
+              "value": "={{$node[\"NoOp\"].json[\"paciente_id\"]}}"
+            }
+          ]
+        }
+      },
+      "id": "47f8366d-b54e-4efd-9482-c142801e1a7b",
+      "name": "buscar pacientes",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [
+        2540,
+        460
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "2",
+          "name": "feegow fabiolas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "url": "https://api.feegow.com/v1/api/procedures/list",
+        "options": {},
+        "queryParametersUi": {
+          "parameter": [
+            {
+              "name": "procedimento_id",
+              "value": "={{$node[\"NoOp\"].json[\"procedimento_id\"]}}"
+            }
+          ]
+        }
+      },
+      "id": "613ce1e7-46bd-44a8-b464-a4c34348a4dc",
+      "name": "BUSCAR PROCEDIMENTO",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [
+        2840,
+        460
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "2",
+          "name": "feegow fabiolas"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "id": "af4f811e-6978-49d0-9ab4-4cbf47b1988b",
+      "name": "NoOp",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        2300,
+        460
+      ]
+    },
+    {
+      "parameters": {
+        "keepOnlySet": true,
+        "values": {
+          "string": [
+            {
+              "name": "agendamento_id",
+              "value": "={{$node[\"NoOp\"].json[\"agendamento_id\"]}}'"
+            },
+            {
+              "name": "data",
+              "value": "={{$node[\"NoOp\"].json[\"data\"]}}"
+            },
+            {
+              "name": "horario",
+              "value": "={{ $node[\"NoOp\"].json[\"horario\"].slice(0,5)}}"
+            },
+            {
+              "name": "paciente_id",
+              "value": "={{ $node[\"NoOp\"].json[\"paciente_id\"] }}"
+            },
+            {
+              "name": "nome",
+              "value": "={{$node[\"buscar pacientes\"].json[\"content\"][\"nome\"]}}"
+            },
+            {
+              "name": "nascimento",
+              "value": "={{$node[\"buscar pacientes\"].json[\"content\"][\"nascimento\"]}}"
+            },
+            {
+              "name": "procedimento",
+              "value": "={{$node[\"BUSCAR PROCEDIMENTO\"].json[\"content\"][0][\"nome\"]}}"
+            },
+            {
+              "name": "status",
+              "value": "={{$node[\"NoOp\"].json[\"status_id\"]}}"
+            },
+            {
+              "name": "profissional",
+              "value": "={{ $node[\"NoOp\"].json[\"profissional\"] }}"
+            },
+            {
+              "name": "Telefone",
+              "value": "={{$node[\"buscar pacientes\"].json[\"content\"][\"celulares\"][0]}}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "72e7025e-7e7e-4627-ae19-bbfd6e206d78",
+      "name": "Valores Planilha",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [
+        3080,
+        460
+      ]
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "url": "https://api.feegow.com/v1/api/appoints/search",
+        "options": {},
+        "queryParametersUi": {
+          "parameter": [
+            {
+              "name": "data_start",
+              "value": "={{ $json[\"data-hoje\"] }}"
+            },
+            {
+              "name": "data_end",
+              "value": "={{ $json[\"data-30dias\"] }}"
+            }
+          ]
+        }
+      },
+      "id": "89c33ec7-1cf0-4246-9122-47f353873b28",
+      "name": "Listar Agendamentos1",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [
+        -520,
+        440
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "maxTries": 5,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "2",
+          "name": "feegow fabiolas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "content",
+        "options": {}
+      },
+      "id": "f142ccec-6fbd-4c23-924f-6c4c85fc9fcb",
+      "name": "separa agendamentos1",
+      "type": "n8n-nodes-base.itemLists",
+      "typeVersion": 1,
+      "position": [
+        -300,
+        440
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "number": [
+            {
+              "value1": "={{ $json[\"profissional_id\"] }}",
+              "operation": "equal",
+              "value2": 9
+            }
+          ]
+        }
+      },
+      "id": "39d3709d-e6bd-449f-9e29-a3d318df816a",
+      "name": "IF",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        1200,
+        460
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "number": [
+            {
+              "value1": "={{ $json[\"profissional_id\"] }}",
+              "operation": "equal",
+              "value2": 10
+            }
+          ]
+        }
+      },
+      "id": "24a702a4-dcc0-426b-ab4e-11384a8e27f2",
+      "name": "IF1",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        1140,
+        1040
+      ]
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "profissional",
+              "value": "Fabiola Ribeiro"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "c99fa225-24e2-4b47-b034-ffcee7a48bd9",
+      "name": "Set2",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [
+        1620,
+        460
+      ]
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "profissional",
+              "value": "Fabiola Leite"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "2c2ba355-fad5-4413-8c29-f15c444b5477",
+      "name": "Set3",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [
+        1620,
+        1020
+      ]
+    },
+    {
+      "parameters": {
+        "value": "={{Date()}}",
+        "dataPropertyName": "data-hoje",
+        "custom": true,
+        "toFormat": "DD-MM-YYYY",
+        "options": {
+          "fromTimezone": "America/Sao_Paulo"
+        }
+      },
+      "id": "34887598-aedf-415f-962d-8cbb832ae5d7",
+      "name": "formatando data hoje",
+      "type": "n8n-nodes-base.dateTime",
+      "typeVersion": 1,
+      "position": [
+        -1220,
+        440
+      ]
+    },
+    {
+      "parameters": {
+        "action": "calculate",
+        "value": "={{ $json[\"data-hoje\"] }}",
+        "duration": 30,
+        "dataPropertyName": "data-30dias",
+        "options": {
+          "fromFormat": "DD-MM-YYYY"
+        }
+      },
+      "id": "7e3174f5-22f6-4b17-a52f-8f4a3e12056a",
+      "name": "calcular 30 dias",
+      "type": "n8n-nodes-base.dateTime",
+      "typeVersion": 1,
+      "position": [
+        -960,
+        440
+      ]
+    },
+    {
+      "parameters": {
+        "value": "={{ $json[\"data-30dias\"] }}",
+        "dataPropertyName": "data-30dias",
+        "custom": true,
+        "toFormat": "DD-MM-YYYY",
+        "options": {}
+      },
+      "id": "600721e9-85be-48aa-b95f-7810d7424a01",
+      "name": "formatando data 30 dias",
+      "type": "n8n-nodes-base.dateTime",
+      "typeVersion": 1,
+      "position": [
+        -740,
+        440
+      ]
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "status_id",
+              "value": "={{ $json.status_id.toString().replace(\"3\",\"Atendido\").replace(\"1\",\"Marcado - não confirmado\").replace(\"7\",\"Marcado - confirmado\").replace(\"11\",\"Desmarcado\").replace(\"15\",\"Remarcado\") }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "590ddecd-4090-4c2c-bce6-9d9b541ee1af",
+      "name": "Status Atendido1",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [
+        1960,
+        1020
+      ]
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "url": "https://api.feegow.com/v1/api/patient/search",
+        "options": {},
+        "queryParametersUi": {
+          "parameter": [
+            {
+              "name": "paciente_id",
+              "value": "={{$node[\"NoOp5\"].json[\"paciente_id\"]}}"
+            }
+          ]
+        }
+      },
+      "id": "b46e6216-9fe0-41c8-ad2b-1568352d1658",
+      "name": "buscar pacientes5",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [
+        2540,
+        1020
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "2",
+          "name": "feegow fabiolas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "url": "https://api.feegow.com/v1/api/procedures/list",
+        "options": {},
+        "queryParametersUi": {
+          "parameter": [
+            {
+              "name": "procedimento_id",
+              "value": "={{$node[\"NoOp5\"].json[\"procedimento_id\"]}}"
+            }
+          ]
+        }
+      },
+      "id": "241a364a-bda6-44ad-8387-c4c836fa9014",
+      "name": "BUSCAR PROCEDIMENTO5",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [
+        2840,
+        1020
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "2",
+          "name": "feegow fabiolas"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "id": "d24ee35f-1891-43a7-ab04-9d4e1ed6ff27",
+      "name": "NoOp5",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        2300,
+        1020
+      ]
+    },
+    {
+      "parameters": {
+        "keepOnlySet": true,
+        "values": {
+          "string": [
+            {
+              "name": "agendamento_id",
+              "value": "={{$node[\"NoOp5\"].json[\"agendamento_id\"]}}'"
+            },
+            {
+              "name": "data",
+              "value": "={{$node[\"NoOp5\"].json[\"data\"]}}"
+            },
+            {
+              "name": "horario",
+              "value": "={{ $node[\"NoOp5\"].json[\"horario\"].slice(0,5)}}"
+            },
+            {
+              "name": "paciente_id",
+              "value": "={{ $node[\"NoOp5\"].json[\"paciente_id\"] }}"
+            },
+            {
+              "name": "nome",
+              "value": "={{$node[\"buscar pacientes5\"].json[\"content\"][\"nome\"]}}"
+            },
+            {
+              "name": "nascimento",
+              "value": "={{$node[\"buscar pacientes5\"].json[\"content\"][\"nascimento\"]}}"
+            },
+            {
+              "name": "procedimento",
+              "value": "={{$node[\"BUSCAR PROCEDIMENTO5\"].json[\"content\"][0][\"nome\"]}}"
+            },
+            {
+              "name": "status",
+              "value": "={{$node[\"NoOp5\"].json[\"status_id\"]}}"
+            },
+            {
+              "name": "profissional",
+              "value": "={{ $node[\"NoOp5\"].json[\"profissional\"] }}"
+            },
+            {
+              "name": "Telefone",
+              "value": "={{$node[\"buscar pacientes5\"].json[\"content\"][\"celulares\"][0]}}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "45feec96-8ed3-4ffc-a6bd-e2fb7b225656",
+      "name": "Valores Planilha5",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [
+        3080,
+        1020
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "upsert",
+        "sheetId": "1WAPCHqXPkKUpvSH3cgWhKu6_6-jNytqg0CudwcirpGE",
+        "range": "dados!A:AAA",
+        "key": "agendamento_id",
+        "options": {
+          "valueInputMode": "USER_ENTERED"
+        }
+      },
+      "id": "a3abe947-a2ff-40d6-a0be-3046804de925",
+      "name": "Atualizando planilha5",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 2,
+      "position": [
+        4000,
+        1020
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "3",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      },
+      "id": "f5cc6df0-ad14-4ab6-861a-867fccc48f8d",
+      "name": "SplitInBatches4",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 1,
+      "position": [
+        3780,
+        1020
+      ]
+    },
+    {
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      },
+      "id": "d58ec65a-1676-47ec-8f01-60af99ef963d",
+      "name": "SplitInBatches5",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 1,
+      "position": [
+        3780,
+        420
+      ]
+    },
+    {
+      "parameters": {
+        "amount": 2,
+        "unit": "seconds"
+      },
+      "id": "827bac6a-4864-4c31-8e6a-3b00ef7185bf",
+      "name": "Wait",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1,
+      "position": [
+        4220,
+        420
+      ],
+      "webhookId": "419776f7-68ef-49a2-9737-71bc02b9d4ef"
+    },
+    {
+      "parameters": {
+        "amount": 2,
+        "unit": "seconds"
+      },
+      "id": "e63f7e7a-a15a-4452-b9ba-7b88f310c4f2",
+      "name": "Wait5",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1,
+      "position": [
+        4240,
+        1020
+      ],
+      "webhookId": "3ce4574a-2922-41f2-8d8f-90f755b72dcc"
+    },
+    {
+      "parameters": {
+        "mergeByFields": {
+          "values": [
+            {
+              "field1": "agendamento_id",
+              "field2": "agendamento_id"
+            }
+          ]
+        },
+        "resolve": "mix",
+        "options": {
+          "skipFields": "row_number"
+        }
+      },
+      "id": "71007e34-cf2f-4beb-ae10-50a68a15eac7",
+      "name": "Compare Datasets",
+      "type": "n8n-nodes-base.compareDatasets",
+      "typeVersion": 1,
+      "position": [
+        3300,
+        700
+      ]
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "documentId": {
+          "__rl": true,
+          "value": "https://docs.google.com/spreadsheets/d/1WAPCHqXPkKUpvSH3cgWhKu6_6-jNytqg0CudwcirpGE/edit#gid=262658505",
+          "mode": "url",
+          "__regex": "https:\\/\\/(?:drive|docs)\\.google\\.com\\/\\w+\\/d\\/([0-9a-zA-Z\\-_]+)(?:\\/.*|)"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1148268862,
+          "mode": "list",
+          "cachedResultName": "dados",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1WAPCHqXPkKUpvSH3cgWhKu6_6-jNytqg0CudwcirpGE/edit#gid=1148268862"
+        },
+        "options": {}
+      },
+      "id": "b7945d31-e85f-44a3-b8db-825304a9f9cb",
+      "name": "Google Sheets",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 3,
+      "position": [
+        -120,
+        1040
+      ],
+      "credentials": {
+        "googleApi": {
+          "id": "1",
+          "name": "fabiolas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "agendamento_id",
+              "value": "={{ $json.agendamento_id}}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "5c3488e9-4f07-4548-a69c-8fe32610c220",
+      "name": "Set",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [
+        120,
+        1040
+      ]
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "agendamento_id",
+              "value": "={{ $json.agendamento_id.toString()}}"
+            },
+            {
+              "name": "status",
+              "value": "={{ $json.status_id.toString().replace(\"3\",\"Atendido\").replace(\"1\",\"Marcado - não confirmado\").replace(\"7\",\"Marcado - confirmado\").replace(\"11\",\"Desmarcado\").replace(\"15\",\"Remarcado\") }}"
+            },
+            {
+              "name": "horario",
+              "value": "={{ $json.horario.slice(0,5) }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "a3fdb5f0-cf4f-4405-8447-2cce9da9aac5",
+      "name": "Set1",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [
+        -20,
+        440
+      ]
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "operation": "update",
+        "documentId": {
+          "__rl": true,
+          "value": "https://docs.google.com/spreadsheets/d/1WAPCHqXPkKUpvSH3cgWhKu6_6-jNytqg0CudwcirpGE/",
+          "mode": "url",
+          "__regex": "https:\\/\\/(?:drive|docs)\\.google\\.com\\/\\w+\\/d\\/([0-9a-zA-Z\\-_]+)(?:\\/.*|)"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1148268862,
+          "mode": "list",
+          "cachedResultName": "dados",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1WAPCHqXPkKUpvSH3cgWhKu6_6-jNytqg0CudwcirpGE/edit#gid=1148268862"
+        },
+        "dataMode": "autoMapInputData",
+        "columnToMatchOn": "agendamento_id",
+        "options": {
+          "handlingExtraData": "ignoreIt"
+        }
+      },
+      "id": "8a903dc4-7f45-4536-97c5-8ea268c959f8",
+      "name": "Google Sheets1",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 3,
+      "position": [
+        4000,
+        740
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "googleApi": {
+          "id": "1",
+          "name": "fabiolas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "No BC?"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "3d7f9313-4a31-4849-8b05-b0e813c2b94c",
+      "name": "Set4",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [
+        3580,
+        740
+      ]
+    },
+    {
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      },
+      "id": "50751722-5179-45dd-bf1b-a12f8f1d97bd",
+      "name": "Split In Batches",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 1,
+      "position": [
+        3780,
+        740
+      ]
+    },
+    {
+      "parameters": {
+        "amount": 2,
+        "unit": "seconds"
+      },
+      "id": "d569871e-2e2a-4c2f-aef0-0a8eb7b7d10a",
+      "name": "Wait1",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1,
+      "position": [
+        4220,
+        740
+      ],
+      "webhookId": "2e0c0893-3889-47e5-9ee0-64abe0cc71b0"
+    },
+    {
+      "parameters": {
+        "operation": "upsert",
+        "sheetId": "1WAPCHqXPkKUpvSH3cgWhKu6_6-jNytqg0CudwcirpGE",
+        "range": "dados!A:AAA",
+        "key": "agendamento_id",
+        "options": {
+          "valueInputMode": "USER_ENTERED"
+        }
+      },
+      "id": "4ed7877c-6c96-430b-86e1-46ca873533d4",
+      "name": "Atualizando planilha",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 2,
+      "position": [
+        4000,
+        420
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "3",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mergeByFields": {
+          "values": [
+            {
+              "field1": "agendamento_id",
+              "field2": "agendamento_id"
+            }
+          ]
+        },
+        "resolve": "mix",
+        "options": {
+          "skipFields": "row_number"
+        }
+      },
+      "id": "7bd7abdd-0ec5-4a27-8ef1-9fec737a38c8",
+      "name": "Compare Datasets1",
+      "type": "n8n-nodes-base.compareDatasets",
+      "typeVersion": 1,
+      "position": [
+        3300,
+        1300
+      ]
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "operation": "update",
+        "documentId": {
+          "__rl": true,
+          "value": "https://docs.google.com/spreadsheets/d/1WAPCHqXPkKUpvSH3cgWhKu6_6-jNytqg0CudwcirpGE/",
+          "mode": "url",
+          "__regex": "https:\\/\\/(?:drive|docs)\\.google\\.com\\/\\w+\\/d\\/([0-9a-zA-Z\\-_]+)(?:\\/.*|)"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1148268862,
+          "mode": "list",
+          "cachedResultName": "dados",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1WAPCHqXPkKUpvSH3cgWhKu6_6-jNytqg0CudwcirpGE/edit#gid=1148268862"
+        },
+        "dataMode": "autoMapInputData",
+        "columnToMatchOn": "agendamento_id",
+        "options": {
+          "handlingExtraData": "ignoreIt"
+        }
+      },
+      "id": "56927443-18bb-4811-a8a5-70c3d3693c5c",
+      "name": "Google Sheets2",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 3,
+      "position": [
+        4000,
+        1340
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "googleApi": {
+          "id": "1",
+          "name": "fabiolas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "No BC?"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "2b2c7bca-38e5-4520-bf6d-5b7c6748a91a",
+      "name": "Set5",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [
+        3580,
+        1340
+      ]
+    },
+    {
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      },
+      "id": "962c9786-4a54-48d7-b28c-484fd869c79e",
+      "name": "Split In Batches1",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 1,
+      "position": [
+        3780,
+        1340
+      ]
+    },
+    {
+      "parameters": {
+        "amount": 2,
+        "unit": "seconds"
+      },
+      "id": "e36fe204-10f0-4708-8cb5-50bc480f9b0f",
+      "name": "Wait2",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1,
+      "position": [
+        4240,
+        1340
+      ],
+      "webhookId": "2e0c0893-3889-47e5-9ee0-64abe0cc71b0"
+    }
+  ],
+  "pinData": {},
+  "settings": {
+    "saveDataSuccessExecution": "none",
+    "saveManualExecutions": false,
+    "callerPolicy": "any",
+    "saveExecutionProgress": "DEFAULT"
+  },
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 1,
+  "updatedAt": "2023-03-29T20:54:20.000Z",
+  "versionId": "5f314ad4-155e-4ce4-b448-44a6ded83f01"
+}
