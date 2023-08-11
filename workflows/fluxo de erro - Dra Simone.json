@@ -1,0 +1,167 @@
+{
+  "active": false,
+  "connections": {
+    "Error Trigger": {
+      "main": [
+        [
+          {
+            "node": "mensagem de erro pro zap",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "mensagem de erro pro zap1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "createdAt": "2023-07-04T20:47:31.170Z",
+  "id": "15",
+  "name": "fluxo de erro - Dra Simone",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "d9d6c127-e0b0-483f-8bf8-f8a77fe89c8d",
+      "name": "Error Trigger",
+      "type": "n8n-nodes-base.errorTrigger",
+      "typeVersion": 1,
+      "position": [
+        540,
+        560
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "a2ada633-cccf-47cf-b2ce-77bfafbc0abe",
+      "name": "Start",
+      "type": "n8n-nodes-base.start",
+      "typeVersion": 1,
+      "position": [
+        260,
+        400
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://backend.botconversa.com.br/api/v1/webhook/subscriber/214933991/send_message/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "type",
+              "value": "text"
+            },
+            {
+              "name": "value",
+              "value": "=⚠️ *SERVIDOR N8N* ⚠️\n\nWorkflow: {{$json[\"workflow\"][\"name\"]}}\nErro: {{$json[\"execution\"][\"error\"][\"message\"]}}\nÚltimo nó executado: {{$json[\"execution\"][\"lastNodeExecuted\"]}}\nURL de execução: {{$json[\"execution\"][\"url\"]}}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "870e461b-9b28-4ae5-8d4d-79c219a7cca5",
+      "name": "mensagem de erro pro zap",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        840,
+        380
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "14",
+          "name": "BotConversa Dra Simone"
+        }
+      },
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://backend.botconversa.com.br/api/v1/webhook/subscriber/152332368/send_message/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "type",
+              "value": "text"
+            },
+            {
+              "name": "value",
+              "value": "=⚠️ *SERVIDOR N8N Dra Simone* ⚠️\n\nWorkflow: {{$json[\"workflow\"][\"name\"]}}\nErro: {{$json[\"execution\"][\"error\"][\"message\"]}}\nÚltimo nó executado: {{$json[\"execution\"][\"lastNodeExecuted\"]}}\nURL de execução: {{$json[\"execution\"][\"url\"]}}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "e4348036-2e06-478c-8c2f-33caa9d2371c",
+      "name": "mensagem de erro pro zap1",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        820,
+        700
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "5",
+          "name": "Botconversa Aristides"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "https://backend.botconversa.com.br/api/v1/webhook/subscriber/get_by_phone/+557181719761/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "options": {}
+      },
+      "id": "399a825d-10af-4804-a57f-41ff57b1b7e8",
+      "name": "mensagem de erro pro zap2",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        1220,
+        460
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "5",
+          "name": "Botconversa Aristides"
+        }
+      },
+      "disabled": true
+    }
+  ],
+  "pinData": {},
+  "settings": {},
+  "staticData": null,
+  "tags": [
+    {
+      "createdAt": "2023-06-19T10:12:17.753Z",
+      "updatedAt": "2023-06-19T10:12:17.753Z",
+      "id": "1",
+      "name": "Dra. Simone"
+    }
+  ],
+  "triggerCount": 0,
+  "updatedAt": "2023-07-04T21:19:20.000Z",
+  "versionId": "f331da81-47f3-461c-913b-2eb8ad25be15"
+}
