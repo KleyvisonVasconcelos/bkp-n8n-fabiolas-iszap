@@ -1,0 +1,434 @@
+{
+  "active": false,
+  "connections": {
+    "When clicking \"Execute Workflow\"": {
+      "main": [
+        []
+      ]
+    },
+    "Adicionar contato": {
+      "main": [
+        [
+          {
+            "node": "Buscar na audiência",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Buscar na audiência": {
+      "main": [
+        [
+          {
+            "node": "Adicionar etiqueta",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Campo personalizado",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parametros ari": {
+      "main": [
+        [
+          {
+            "node": "Verificar na audiencia",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Verificar na audiencia": {
+      "main": [
+        [
+          {
+            "node": "IF",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF": {
+      "main": [
+        [
+          {
+            "node": "Adicionar contato",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Buscar na audiência",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Campo personalizado": {
+      "main": [
+        [
+          {
+            "node": "Alterar campo do robo",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Adicionar etiqueta": {
+      "main": [
+        [
+          {
+            "node": "Enviar fluxo",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook": {
+      "main": [
+        []
+      ]
+    }
+  },
+  "createdAt": "2023-03-16T23:41:28.401Z",
+  "id": "8",
+  "name": "Teste Ari",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "6ccb0229-ed13-42e2-a55a-c8a77c586169",
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        320,
+        540
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $node[\"Parametros ari\"].parameter[\"values\"][\"string\"][0][\"value\"] }}subscriber/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "phone",
+              "value": "={{ $node[\"Parametros ari\"].parameter[\"values\"][\"string\"][1][\"value\"] }}"
+            },
+            {
+              "name": "first_name",
+              "value": "={{ $node[\"Parametros ari\"].parameter[\"values\"][\"string\"][2][\"value\"] }}"
+            },
+            {
+              "name": "last_name",
+              "value": "={{ $node[\"Parametros ari\"].parameter[\"values\"][\"string\"][3][\"value\"] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "827e1e03-41ec-42ff-a231-1cf4a3f8c009",
+      "name": "Adicionar contato",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        1520,
+        280
+      ],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "9",
+          "name": "API - IsZAP"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "={{ $node[\"Parametros ari\"].json[\"endpoint\"] }}subscriber/{{ $node[\"Parametros ari\"].parameter[\"values\"][\"string\"][1][\"value\"] }}/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {}
+          ]
+        },
+        "options": {}
+      },
+      "id": "d6ed5373-e907-4694-b893-a3cce870c4ed",
+      "name": "Buscar na audiência",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        1740,
+        520
+      ],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "9",
+          "name": "API - IsZAP"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $node[\"Parametros ari\"].json[\"endpoint\"] }}subscriber/{{$json.id }}/tags/2233733/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {}
+          ]
+        },
+        "options": {}
+      },
+      "id": "a8a309e7-ad32-462f-a652-765eee80ac41",
+      "name": "Adicionar etiqueta",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        1980,
+        340
+      ],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "9",
+          "name": "API - IsZAP"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $node[\"Parametros ari\"].json[\"endpoint\"] }}subscriber/{{ $json.id }}/custom_fields/751591/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "type",
+              "value": "string"
+            },
+            {
+              "name": "value",
+              "value": "Campo personalizado via n8n"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "7a510b10-2f7d-46b7-8c67-fb174ac2e166",
+      "name": "Campo personalizado",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        1980,
+        660
+      ],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "9",
+          "name": "API - IsZAP"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "endpoint",
+              "value": "https://backend.botconversa.com.br/api/v1/webhook/"
+            },
+            {
+              "name": "Telefone",
+              "value": "={{ $node[\"Webhook\"].json[\"body\"][\"Telefone\"] }}"
+            },
+            {
+              "name": "primeiro-nome",
+              "value": "={{ $node[\"Webhook\"].json[\"body\"][\"Nome\"] }}"
+            },
+            {
+              "name": "sobrenome",
+              "value": "Almeida"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "60d25c9a-04fd-4b30-8f88-d9c2ad49266e",
+      "name": "Parametros ari",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [
+        900,
+        500
+      ],
+      "continueOnFail": true
+    },
+    {
+      "parameters": {
+        "url": "={{ $json[\"endpoint\"] }}subscriber/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "phone",
+              "value": "={{ $node[\"Parametros ari\"].parameter[\"values\"][\"string\"][1][\"value\"] }}"
+            },
+            {
+              "name": "first_name",
+              "value": "={{ $node[\"Parametros ari\"].parameter[\"values\"][\"string\"][2][\"value\"] }}"
+            },
+            {
+              "name": "last_name",
+              "value": "={{ $node[\"Parametros ari\"].parameter[\"values\"][\"string\"][3][\"value\"] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "e352df00-1089-4a66-8439-bb15c8f4813a",
+      "name": "Verificar na audiencia",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        1100,
+        500
+      ],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "9",
+          "name": "API - IsZAP"
+        }
+      },
+      "continueOnFail": true
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $node[\"Verificar na audiencia\"].parameter[\"bodyParameters\"][\"parameters\"][0][\"value\"] }}",
+              "operation": "isNotEmpty"
+            }
+          ]
+        }
+      },
+      "id": "467fb88f-4f1f-48d4-a28a-fc55ce92f52a",
+      "name": "IF",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        1300,
+        500
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $node[\"Parametros ari\"].json[\"endpoint\"] }}bot_fields/629076/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "value",
+              "value": "Campo atualizado e pronto"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "580604e8-10ae-41d4-bc24-c320bc22d6ef",
+      "name": "Alterar campo do robo",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        2260,
+        660
+      ],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "9",
+          "name": "API - IsZAP"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $node[\"Parametros ari\"].json[\"endpoint\"] }}subscriber/{{ $node[\"Buscar na audiência\"].json[\"id\"] }}/send_flow/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "flow",
+              "value": "1215625"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "e254e256-33a9-4699-8c0c-f2ca8203d8a0",
+      "name": "Enviar fluxo",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        2240,
+        340
+      ],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "9",
+          "name": "API - IsZAP"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "d7cb7c92-aa4a-4282-8bca-7d637c26d8d5",
+        "options": {}
+      },
+      "id": "463753a2-6d8d-4e69-9a65-a80af59cf1e7",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        700,
+        500
+      ],
+      "webhookId": "d7cb7c92-aa4a-4282-8bca-7d637c26d8d5"
+    }
+  ],
+  "pinData": {},
+  "settings": {},
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 1,
+  "updatedAt": "2023-03-21T00:01:04.000Z",
+  "versionId": "8b15e333-568d-4109-b674-9dacc3be7473"
+}
