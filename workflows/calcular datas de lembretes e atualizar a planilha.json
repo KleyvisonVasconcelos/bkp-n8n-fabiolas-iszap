@@ -1,0 +1,1112 @@
+{
+  "active": true,
+  "connections": {
+    "definindo valores": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "definindo valores1": {
+      "main": [
+        [
+          {
+            "node": "Set2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "calcular 1 dia antes": {
+      "main": [
+        [
+          {
+            "node": "formatar 1 dia antes",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "formatar 1 dia antes": {
+      "main": [
+        [
+          {
+            "node": "calcular 30 dias depois",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "calcular 30 dias depois": {
+      "main": [
+        [
+          {
+            "node": "formatar 30 dias depois",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "formatar 30 dias depois": {
+      "main": [
+        [
+          {
+            "node": "calcular 150 dias depois",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "calcular 150 dias depois": {
+      "main": [
+        [
+          {
+            "node": "formatar 150 dias depois",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "formatar 150 dias depois": {
+      "main": [
+        [
+          {
+            "node": "calcular 1 dia depois",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Cadastrando na Audiência": {
+      "main": [
+        [
+          {
+            "node": "Buscando ID cadastrado",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Buscando ID cadastrado": {
+      "main": [
+        [
+          {
+            "node": "definindo valores",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets1": {
+      "main": [
+        [
+          {
+            "node": "IF1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF1": {
+      "main": [
+        [
+          {
+            "node": "Split In Batches",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "1 por vez": {
+      "main": [
+        [
+          {
+            "node": "definindo valores1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set": {
+      "main": [
+        [
+          {
+            "node": "Validar Telefone BR",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets": {
+      "main": [
+        [
+          {
+            "node": "Set1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set1": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "On clicking 'execute'": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validar Telefone BR": {
+      "main": [
+        [
+          {
+            "node": "Cadastrando na Audiência",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets2": {
+      "main": [
+        [
+          {
+            "node": "Wait",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "calcular 1 dia depois": {
+      "main": [
+        [
+          {
+            "node": "formatar 1 dia depois",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "formatar 1 dia depois": {
+      "main": [
+        [
+          {
+            "node": "calcular 3 dias antes",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "calcular 3 dias antes": {
+      "main": [
+        [
+          {
+            "node": "formatar 3 dias antes",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "formatar 3 dias antes": {
+      "main": [
+        [
+          {
+            "node": "Set",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set2": {
+      "main": [
+        [
+          {
+            "node": "Code",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code": {
+      "main": [
+        [
+          {
+            "node": "é segunda?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "calcular 1 dia antes1": {
+      "main": [
+        [
+          {
+            "node": "formatar 1 dia antes",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "é segunda?": {
+      "main": [
+        [
+          {
+            "node": "calcular 1 dia antes1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "calcular 1 dia antes",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait": {
+      "main": [
+        [
+          {
+            "node": "1 por vez",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split In Batches": {
+      "main": [
+        [
+          {
+            "node": "1 por vez",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule Trigger1": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "createdAt": "2022-12-01T20:34:02.694Z",
+  "id": "2",
+  "name": "calcular datas de lembretes e atualizar a planilha",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "bc027e58-7fa5-4bff-9139-dd6eaadc142b",
+      "name": "On clicking 'execute'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -1660,
+        540
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "appendOrUpdate",
+        "documentId": {
+          "__rl": true,
+          "value": "1WAPCHqXPkKUpvSH3cgWhKu6_6-jNytqg0CudwcirpGE",
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Lembretes",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1WAPCHqXPkKUpvSH3cgWhKu6_6-jNytqg0CudwcirpGE/edit#gid=0"
+        },
+        "dataMode": "autoMapInputData",
+        "columnToMatchOn": "ID AGENDAMENTO",
+        "options": {}
+      },
+      "id": "8e65e0bb-ca89-4009-8742-fe27ccf6d9c3",
+      "name": "Google Sheets",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 3,
+      "position": [
+        3620,
+        260
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "3",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "keepOnlySet": true,
+        "values": {
+          "string": [
+            {
+              "name": "NOME COMPLETO",
+              "value": "={{ $node[\"definindo valores1\"].json[\"NOME COMPLETO\"] }}"
+            },
+            {
+              "name": "TELEFONE",
+              "value": "={{ $node[\"Validar Telefone BR\"].json[\"whatsapp\"] }}"
+            },
+            {
+              "name": "ID - BC",
+              "value": "={{ $node[\"Buscando ID cadastrado\"].json[\"id\"] }}"
+            },
+            {
+              "name": "ID - FEEGOW",
+              "value": "={{ $node[\"definindo valores1\"].json[\"ID - FEEGOW\"] }}"
+            },
+            {
+              "name": "MEDICA",
+              "value": "={{ $node[\"definindo valores1\"].json[\"MEDICA\"] }}"
+            },
+            {
+              "name": "PROCEDIMENTO",
+              "value": "={{ $node[\"definindo valores1\"].json[\"PROCEDIMENTO\"] }}"
+            },
+            {
+              "name": "DATA",
+              "value": "={{ $node[\"definindo valores1\"].json[\"DATA\"] }}"
+            },
+            {
+              "name": "HORÁRIO",
+              "value": "={{ $node[\"definindo valores1\"].json[\"HORÁRIO\"] }}"
+            },
+            {
+              "name": "Lembrete 1 dia antes",
+              "value": "={{ $node[\"formatar 1 dia antes\"].json[\"data 1 dia antes\"] }}"
+            },
+            {
+              "name": "Lembrete no dia",
+              "value": "={{$node[\"definindo valores1\"].json[\"DATA\"]}}"
+            },
+            {
+              "name": "Lembrete 30 dias",
+              "value": "={{ $node[\"formatar 30 dias depois\"].json[\"data 30 dias depois\"] }}"
+            },
+            {
+              "name": "Lembrete 150 dias",
+              "value": "={{ $node[\"formatar 150 dias depois\"].json[\"data 150 dias depois\"] }}"
+            },
+            {
+              "name": "ID AGENDAMENTO",
+              "value": "={{ $node[\"1 por vez\"].json[\"agendamento_id\"] }}"
+            },
+            {
+              "name": "STATUS",
+              "value": "={{ $node[\"1 por vez\"].json[\"status\"] }}"
+            },
+            {
+              "name": "Avaliação 1 dia depois",
+              "value": "={{ $node[\"formatar 1 dia depois\"].json[\"data 1 dia depois\"] }}"
+            },
+            {
+              "name": "Lembrete 3 dias antes",
+              "value": "={{ $node[\"formatar 3 dias antes\"].json[\"data 3 dias antes\"] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "2d19f7ef-b752-4790-9cf2-7da53b9656a7",
+      "name": "definindo valores",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [
+        3420,
+        260
+      ]
+    },
+    {
+      "parameters": {
+        "keepOnlySet": true,
+        "values": {
+          "string": [
+            {
+              "name": "NOME COMPLETO",
+              "value": "={{ $json[\"nome\"] }}"
+            },
+            {
+              "name": "telefone",
+              "value": "={{ $json[\"Telefone\"] }}"
+            },
+            {
+              "name": "ID - FEEGOW",
+              "value": "={{ $json[\"paciente_id\"] }}"
+            },
+            {
+              "name": "MEDICA",
+              "value": "={{ $json[\"profissional\"] }}"
+            },
+            {
+              "name": "DATA",
+              "value": "={{ $json[\"data\"] }}"
+            },
+            {
+              "name": "HORÁRIO",
+              "value": "={{ $json[\"horario\"] }}"
+            },
+            {
+              "name": "PROCEDIMENTO",
+              "value": "={{ $json[\"procedimento\"] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "36c34ab3-7852-42d0-92bd-b0fcac846647",
+      "name": "definindo valores1",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [
+        -340,
+        260
+      ]
+    },
+    {
+      "parameters": {
+        "action": "calculate",
+        "value": "={{$node[\"definindo valores1\"].json[\"DATA\"]}}",
+        "operation": "subtract",
+        "duration": 1,
+        "dataPropertyName": "data 1 dia antes",
+        "options": {
+          "fromFormat": "DD-MM-YYYY"
+        }
+      },
+      "id": "65864302-de6a-463c-afeb-6448d12a508d",
+      "name": "calcular 1 dia antes",
+      "type": "n8n-nodes-base.dateTime",
+      "typeVersion": 1,
+      "position": [
+        520,
+        280
+      ]
+    },
+    {
+      "parameters": {
+        "value": "={{ $json[\"data 1 dia antes\"] }}",
+        "dataPropertyName": "data 1 dia antes",
+        "custom": true,
+        "toFormat": "DD-MM-YYYY",
+        "options": {}
+      },
+      "id": "bb9f32f0-704a-4885-820d-8e810c398bc9",
+      "name": "formatar 1 dia antes",
+      "type": "n8n-nodes-base.dateTime",
+      "typeVersion": 1,
+      "position": [
+        700,
+        260
+      ]
+    },
+    {
+      "parameters": {
+        "action": "calculate",
+        "value": "={{$node[\"definindo valores1\"].json[\"DATA\"]}}",
+        "duration": 30,
+        "dataPropertyName": "data 30 dias depois",
+        "options": {
+          "fromFormat": "DD-MM-YYYY"
+        }
+      },
+      "id": "b1d3ba59-18c9-4a66-89b3-410b38636269",
+      "name": "calcular 30 dias depois",
+      "type": "n8n-nodes-base.dateTime",
+      "typeVersion": 1,
+      "position": [
+        900,
+        260
+      ]
+    },
+    {
+      "parameters": {
+        "value": "={{ $json[\"data 30 dias depois\"] }}",
+        "dataPropertyName": "data 30 dias depois",
+        "custom": true,
+        "toFormat": "DD-MM-YYYY",
+        "options": {}
+      },
+      "id": "e15eb27e-9805-4c6d-b332-bfcad73437d6",
+      "name": "formatar 30 dias depois",
+      "type": "n8n-nodes-base.dateTime",
+      "typeVersion": 1,
+      "position": [
+        1100,
+        260
+      ]
+    },
+    {
+      "parameters": {
+        "action": "calculate",
+        "value": "={{$node[\"definindo valores1\"].json[\"DATA\"]}}",
+        "duration": 150,
+        "dataPropertyName": "data 150 dias depois",
+        "options": {
+          "fromFormat": "DD-MM-YYYY"
+        }
+      },
+      "id": "37c3c490-b2fa-4c41-9306-cc03ef6602f1",
+      "name": "calcular 150 dias depois",
+      "type": "n8n-nodes-base.dateTime",
+      "typeVersion": 1,
+      "position": [
+        1300,
+        260
+      ]
+    },
+    {
+      "parameters": {
+        "value": "={{ $json[\"data 150 dias depois\"] }}",
+        "dataPropertyName": "data 150 dias depois",
+        "custom": true,
+        "toFormat": "DD-MM-YYYY",
+        "options": {}
+      },
+      "id": "b8b028d1-8521-48ad-aaa4-808eff4687b6",
+      "name": "formatar 150 dias depois",
+      "type": "n8n-nodes-base.dateTime",
+      "typeVersion": 1,
+      "position": [
+        1500,
+        260
+      ]
+    },
+    {
+      "parameters": {
+        "authentication": "headerAuth",
+        "requestMethod": "POST",
+        "url": "https://backend.botconversa.com.br/api/v1/webhook/subscriber/",
+        "options": {},
+        "bodyParametersUi": {
+          "parameter": [
+            {
+              "name": "phone",
+              "value": "={{ $json[\"whatsapp\"] }}"
+            },
+            {
+              "name": "first_name",
+              "value": "={{ $node[\"definindo valores1\"].json[\"NOME COMPLETO\"].split(' ')[0]}}"
+            },
+            {
+              "name": "last_name",
+              "value": "={{ $node[\"definindo valores1\"].json[\"NOME COMPLETO\"].split(' ')[1]}} {{ $node[\"definindo valores1\"].json[\"NOME COMPLETO\"].split(' ')[2]}} {{ $node[\"definindo valores1\"].json[\"NOME COMPLETO\"].split(' ')[3]}} {{ $node[\"definindo valores1\"].json[\"NOME COMPLETO\"].split(' ')[4]}} {{ $node[\"definindo valores1\"].json[\"NOME COMPLETO\"].split(' ')[5]}}"
+            }
+          ]
+        }
+      },
+      "name": "Cadastrando na Audiência",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 1,
+      "position": [
+        3000,
+        260
+      ],
+      "id": "5e9a5123-b25f-4d38-8614-551e59eff8e0",
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "4",
+          "name": "BotConversa Fabiolas"
+        }
+      },
+      "continueOnFail": true
+    },
+    {
+      "parameters": {
+        "authentication": "headerAuth",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{$node[\"Validar Telefone BR\"].json[\"whatsapp\"]}}/",
+        "options": {}
+      },
+      "name": "Buscando ID cadastrado",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 1,
+      "position": [
+        3200,
+        260
+      ],
+      "id": "df08739f-daa8-40f7-b7cf-ea563b6eecac",
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "4",
+          "name": "BotConversa Fabiolas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1WAPCHqXPkKUpvSH3cgWhKu6_6-jNytqg0CudwcirpGE",
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1148268862,
+          "mode": "list",
+          "cachedResultName": "dados",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1WAPCHqXPkKUpvSH3cgWhKu6_6-jNytqg0CudwcirpGE/edit#gid=1148268862"
+        },
+        "options": {}
+      },
+      "id": "e150f3b4-d9d9-4fa1-84a0-f44263e56625",
+      "name": "Google Sheets1",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 3,
+      "position": [
+        -1320,
+        280
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "alwaysOutputData": true,
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "3",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json[\"No BC?\"] }}",
+              "operation": "isEmpty"
+            }
+          ]
+        }
+      },
+      "id": "2453674e-b1a7-4c9b-9738-731747a7953b",
+      "name": "IF1",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        -1120,
+        280
+      ]
+    },
+    {
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      },
+      "id": "cdafa7a1-1df2-4d47-ade9-28be1b8c6dda",
+      "name": "1 por vez",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 1,
+      "position": [
+        -540,
+        260
+      ]
+    },
+    {
+      "parameters": {
+        "keepOnlySet": true,
+        "values": {
+          "string": [
+            {
+              "name": "telefone",
+              "value": "={{ $node[\"definindo valores1\"].json[\"telefone\"].toString()}}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "fa1005ff-a57d-47e1-8096-796eea26a3e2",
+      "name": "Set",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [
+        2540,
+        260
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "appendOrUpdate",
+        "documentId": {
+          "__rl": true,
+          "value": "1WAPCHqXPkKUpvSH3cgWhKu6_6-jNytqg0CudwcirpGE",
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1148268862,
+          "mode": "list",
+          "cachedResultName": "dados",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1WAPCHqXPkKUpvSH3cgWhKu6_6-jNytqg0CudwcirpGE/edit#gid=1148268862"
+        },
+        "dataMode": "autoMapInputData",
+        "columnToMatchOn": "agendamento_id",
+        "options": {}
+      },
+      "id": "16ff4e6a-5030-4c67-b097-443f5019a534",
+      "name": "Google Sheets2",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 3,
+      "position": [
+        4080,
+        260
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "3",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "keepOnlySet": true,
+        "values": {
+          "string": [
+            {
+              "name": "No BC?",
+              "value": "✅"
+            },
+            {
+              "name": "agendamento_id",
+              "value": "={{ $json[\"ID AGENDAMENTO\"] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "82cd4fc0-f2a1-431d-92ce-bee72d5651c3",
+      "name": "Set1",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [
+        3840,
+        260
+      ]
+    },
+    {
+      "parameters": {
+        "functionCode": "var telefone = items[0].json.telefone.replaceAll(' ','').replaceAll('(','').replaceAll(')','').replaceAll('-','').replaceAll(',','').replaceAll('.','');\nvar ddd = telefone.slice(2,4);\nvar ddi = telefone.charAt(0);\nvar ddx = telefone.slice(0,2);\nvar length = telefone.length;\nif (length >= 12){\n  if (ddi == '+'){\n    ddi = telefone.slice(0,3);\n    telefone = parseInt(telefone.slice(3)).toString();\n  } else {\n    if (ddx == '55'){\n      telefone = parseInt(telefone.slice(2)).toString();\n      ddi = \"+55\";\n    } else {\n      telefone = parseInt(telefone).toString();\n      ddi = 'não informado';\n    }\n  }\n} else {\n  telefone = parseInt(telefone).toString();\n  ddi = 'não informado';\n}\n\nddd = telefone.slice(0,2);\ntelefone = telefone.slice(2);\nif (ddd > 28){\n  telefone = telefone.slice(-8);\n} else {\n  telefone = '9'+telefone.slice(-8);\n}\nvar whatsapp = '+55'+ddd+telefone;\n\nreturn [\n  {\n    json: {\n      ddi,\n      ddd,\n      telefone,\n      whatsapp,   \n    }\n  }\n];"
+      },
+      "name": "Validar Telefone BR",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        2760,
+        260
+      ],
+      "typeVersion": 1,
+      "id": "6bda5d7c-e778-4417-b149-b916b0680993"
+    },
+    {
+      "parameters": {
+        "amount": 3,
+        "unit": "seconds"
+      },
+      "id": "93a25f46-5ca8-4034-86f4-e0312c224403",
+      "name": "Wait",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1,
+      "position": [
+        4300,
+        260
+      ],
+      "webhookId": "5fb7f66b-d10f-416f-aea5-61542c56ba83"
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours"
+            }
+          ]
+        }
+      },
+      "id": "19b712cb-cc1c-48e3-8578-615d4a9c2689",
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1,
+      "position": [
+        -1640,
+        280
+      ],
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "action": "calculate",
+        "value": "={{$node[\"definindo valores1\"].json[\"DATA\"]}}",
+        "duration": 1,
+        "dataPropertyName": "data 1 dia depois",
+        "options": {
+          "fromFormat": "DD-MM-YYYY"
+        }
+      },
+      "id": "1a12dc14-deab-47c7-8713-09c5718dd5c2",
+      "name": "calcular 1 dia depois",
+      "type": "n8n-nodes-base.dateTime",
+      "typeVersion": 1,
+      "position": [
+        1700,
+        260
+      ]
+    },
+    {
+      "parameters": {
+        "value": "={{ $json[\"data 1 dia depois\"] }}",
+        "dataPropertyName": "data 1 dia depois",
+        "custom": true,
+        "toFormat": "DD-MM-YYYY",
+        "options": {}
+      },
+      "id": "cfa5eea7-3b93-401d-a3ed-25f2415846ea",
+      "name": "formatar 1 dia depois",
+      "type": "n8n-nodes-base.dateTime",
+      "typeVersion": 1,
+      "position": [
+        1900,
+        260
+      ]
+    },
+    {
+      "parameters": {
+        "action": "calculate",
+        "value": "={{$node[\"definindo valores1\"].json[\"DATA\"]}}",
+        "operation": "subtract",
+        "duration": 3,
+        "dataPropertyName": "data 3 dias antes",
+        "options": {
+          "fromFormat": "DD-MM-YYYY"
+        }
+      },
+      "id": "5a118a1e-bcdf-4821-8c8d-70f8171bc0a7",
+      "name": "calcular 3 dias antes",
+      "type": "n8n-nodes-base.dateTime",
+      "typeVersion": 1,
+      "position": [
+        2100,
+        260
+      ]
+    },
+    {
+      "parameters": {
+        "value": "={{ $json[\"data 3 dias antes\"] }}",
+        "dataPropertyName": "data 3 dias antes",
+        "custom": true,
+        "toFormat": "DD-MM-YYYY",
+        "options": {}
+      },
+      "id": "afaa2cfd-f7b5-4a9e-ba95-89bac52b487b",
+      "name": "formatar 3 dias antes",
+      "type": "n8n-nodes-base.dateTime",
+      "typeVersion": 1,
+      "position": [
+        2320,
+        260
+      ],
+      "alwaysOutputData": true
+    },
+    {
+      "parameters": {
+        "keepOnlySet": true,
+        "values": {
+          "string": [
+            {
+              "name": "data",
+              "value": "={{ $json[\"DATA\"].split(\"-\")[2]}}-{{ $json[\"DATA\"].split(\"-\")[1]}}-{{ $json[\"DATA\"].split(\"-\")[0]}}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "fbef1256-2b64-4f7a-a285-2fa88e19795b",
+      "name": "Set2",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [
+        -160,
+        260
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "let dataAgendamento = items[0].json.data;\nlet data = new Date(dataAgendamento);\nlet diaDaSemana = data.getDay();\n\nreturn [\n  {\n    json: {\n      diaDaSemana,\n    }\n  }\n];"
+      },
+      "id": "514aa269-b9b5-456d-bfc0-b3fb47b623eb",
+      "name": "Code",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 1,
+      "position": [
+        40,
+        260
+      ]
+    },
+    {
+      "parameters": {
+        "action": "calculate",
+        "value": "={{$node[\"definindo valores1\"].json[\"DATA\"]}}",
+        "operation": "subtract",
+        "duration": 3,
+        "dataPropertyName": "data 1 dia antes",
+        "options": {
+          "fromFormat": "DD-MM-YYYY"
+        }
+      },
+      "id": "42268f30-1fc0-4926-abc8-ea82a89f7866",
+      "name": "calcular 1 dia antes1",
+      "type": "n8n-nodes-base.dateTime",
+      "typeVersion": 1,
+      "position": [
+        520,
+        80
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json[\"diaDaSemana\"].toString()}}",
+              "value2": "1"
+            }
+          ]
+        }
+      },
+      "id": "4ba68ba6-4c96-47c5-a12c-c2286808168c",
+      "name": "é segunda?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        220,
+        260
+      ]
+    },
+    {
+      "parameters": {
+        "batchSize": 20,
+        "options": {}
+      },
+      "id": "bc05c85c-ccc2-4b00-bd24-fb8d48c1b355",
+      "name": "Split In Batches",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 1,
+      "position": [
+        -860,
+        260
+      ]
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "minutes"
+            }
+          ]
+        }
+      },
+      "id": "373077c8-883c-4b22-ae99-2fa6f205d992",
+      "name": "Schedule Trigger1",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1,
+      "position": [
+        -1620,
+        60
+      ]
+    }
+  ],
+  "pinData": {},
+  "settings": {
+    "saveDataSuccessExecution": "none",
+    "saveManualExecutions": false,
+    "callerPolicy": "any",
+    "saveExecutionProgress": "DEFAULT"
+  },
+  "staticData": {
+    "node:Schedule Trigger": {
+      "recurrencyRules": []
+    },
+    "node:Schedule Trigger1": {
+      "recurrencyRules": []
+    }
+  },
+  "tags": [],
+  "triggerCount": 1,
+  "updatedAt": "2023-04-10T17:18:49.000Z",
+  "versionId": "8ec25440-30f6-441f-9b89-8a3c838e78d4"
+}
