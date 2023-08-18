@@ -1362,7 +1362,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{$node[\"Lembrete 1 dia antes\"].json[\"ID - BC\"]}}/tags/1407115/",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{ $('Cadastrando na Audiência1').item.json[\"id\"] }}/tags/1407115/",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "options": {}
@@ -1388,7 +1388,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{$node[\"Lembrete 1 dia antes\"].json[\"ID - BC\"]}}/tags/1407118/",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{ $('Cadastrando na Audiência1').item.json[\"id\"] }}/tags/1407118/",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "options": {}
@@ -2798,6 +2798,6 @@
   },
   "tags": [],
   "triggerCount": 2,
-  "updatedAt": "2023-08-15T21:10:20.000Z",
-  "versionId": "35aadd09-2ac0-4174-90df-2e6ea3090312"
+  "updatedAt": "2023-08-18T04:39:59.000Z",
+  "versionId": "1befcf8e-73e1-4a14-a80c-6dc17d685cd6"
 }
