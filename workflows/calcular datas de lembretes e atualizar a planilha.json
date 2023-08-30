@@ -1,5 +1,5 @@
 {
-  "active": true,
+  "active": false,
   "connections": {
     "definindo valores": {
       "main": [
@@ -1107,6 +1107,6 @@
   },
   "tags": [],
   "triggerCount": 1,
-  "updatedAt": "2023-04-10T17:18:49.000Z",
-  "versionId": "8ec25440-30f6-441f-9b89-8a3c838e78d4"
+  "updatedAt": "2023-08-30T06:12:02.000Z",
+  "versionId": "e0b9b2fd-9c43-4065-b175-7217201a0747"
 }
