@@ -67,17 +67,6 @@
         ]
       ]
     },
-    "1 POR VEZ1": {
-      "main": [
-        [
-          {
-            "node": "Validar Telefone BR1",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "Cadastrando na Audiência1": {
       "main": [
         [
@@ -148,7 +137,7 @@
       "main": [
         [
           {
-            "node": "1 POR VEZ1",
+            "node": "1 POR VEZ111",
             "type": "main",
             "index": 0
           }
@@ -181,7 +170,7 @@
       "main": [
         [
           {
-            "node": "1 POR VEZ1",
+            "node": "1 POR VEZ111",
             "type": "main",
             "index": 0
           }
@@ -342,6 +331,17 @@
         [
           {
             "node": "possui telefone?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "1 POR VEZ111": {
+      "main": [
+        [
+          {
+            "node": "Validar Telefone BR1",
             "type": "main",
             "index": 0
           }
@@ -518,20 +518,6 @@
     },
     {
       "parameters": {
-        "batchSize": 1,
-        "options": {}
-      },
-      "id": "9d4a0751-e721-4a0d-b8fc-9b35898be15d",
-      "name": "1 POR VEZ1",
-      "type": "n8n-nodes-base.splitInBatches",
-      "typeVersion": 2,
-      "position": [
-        4080,
-        440
-      ]
-    },
-    {
-      "parameters": {
         "authentication": "headerAuth",
         "requestMethod": "POST",
         "url": "https://backend.botconversa.com.br/api/v1/webhook/subscriber/",
@@ -544,11 +530,11 @@
             },
             {
               "name": "first_name",
-              "value": "={{$node[\"1 POR VEZ1\"].json[\"nome\"].split(' ')[0]}}"
+              "value": "={{$node[\"1 POR VEZ111\"].json[\"nome\"].split(' ')[0]}}"
             },
             {
               "name": "last_name",
-              "value": "={{ $node[\"1 POR VEZ1\"].json[\"nome\"].split(' ')[1]}} {{ $node[\"1 POR VEZ1\"].json[\"nome\"].split(' ')[2]}} {{ $node[\"1 POR VEZ1\"].json[\"nome\"].split(' ')[3]}} {{ $node[\"1 POR VEZ1\"].json[\"nome\"].split(' ')[4]}} {{ $node[\"1 POR VEZ1\"].json[\"nome\"].split(' ')[5]}}"
+              "value": "={{ $node[\"1 POR VEZ111\"].json[\"nome\"].split(' ')[1]}} {{ $node[\"1 POR VEZ111\"].json[\"nome\"].split(' ')[2]}} {{ $node[\"1 POR VEZ111\"].json[\"nome\"].split(' ')[3]}} {{ $node[\"1 POR VEZ111\"].json[\"nome\"].split(' ')[4]}} {{ $node[\"1 POR VEZ111\"].json[\"nome\"].split(' ')[5]}}"
             }
           ]
         }
@@ -557,8 +543,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 1,
       "position": [
-        4560,
-        420
+        4920,
+        440
       ],
       "id": "1b3a149e-2661-4e81-8c05-cc7b36543431",
       "retryOnFail": true,
@@ -578,8 +564,8 @@
       "name": "Validar Telefone BR1",
       "type": "n8n-nodes-base.function",
       "position": [
-        4320,
-        420
+        4720,
+        440
       ],
       "typeVersion": 1,
       "id": "2b147cfa-8054-4912-a307-b5e338d4c7b9",
@@ -599,7 +585,7 @@
           "parameters": [
             {
               "name": "value",
-              "value": "={{ $node[\"1 POR VEZ1\"].json.data }}"
+              "value": "={{ $('1 POR VEZ111').item.json[\"data\"] }}"
             }
           ]
         },
@@ -610,8 +596,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        4800,
-        420
+        5160,
+        440
       ],
       "retryOnFail": true,
       "maxTries": 5,
@@ -634,7 +620,7 @@
           "parameters": [
             {
               "name": "value",
-              "value": "={{ $node[\"1 POR VEZ1\"].json.horario }}"
+              "value": "={{ $('1 POR VEZ111').item.json[\"horario\"] }}"
             }
           ]
         },
@@ -645,8 +631,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        5080,
-        420
+        5440,
+        440
       ],
       "retryOnFail": true,
       "waitBetweenTries": 5000,
@@ -669,7 +655,7 @@
           "parameters": [
             {
               "name": "value",
-              "value": "={{ $node[\"1 POR VEZ1\"].json.procedimento }}"
+              "value": "={{ $('1 POR VEZ111').item.json[\"procedimento\"] }}"
             }
           ]
         },
@@ -680,8 +666,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        5360,
-        420
+        5720,
+        440
       ],
       "retryOnFail": true,
       "maxTries": 5,
@@ -715,8 +701,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        5660,
-        420
+        6020,
+        440
       ],
       "retryOnFail": true,
       "maxTries": 5,
@@ -726,7 +712,8 @@
           "id": "14",
           "name": "BotConversa Dra Simone"
         }
-      }
+      },
+      "disabled": true
     },
     {
       "parameters": {
@@ -738,10 +725,11 @@
       "type": "n8n-nodes-base.wait",
       "typeVersion": 1,
       "position": [
-        5960,
-        420
+        6320,
+        440
       ],
-      "webhookId": "aa0c3cbc-8ae9-40cb-b52e-220f78d8be2b"
+      "webhookId": "aa0c3cbc-8ae9-40cb-b52e-220f78d8be2b",
+      "disabled": true
     },
     {
       "parameters": {
@@ -754,7 +742,7 @@
           "parameters": [
             {
               "name": "value",
-              "value": "={{ $node[\"1 POR VEZ1\"].json[\"agendamento_id\"] }}"
+              "value": "={{ $node[\"1 POR VEZ111\"].json[\"agendamento_id\"] }}"
             }
           ]
         },
@@ -765,8 +753,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        4020,
-        1120
+        4860,
+        1500
       ],
       "retryOnFail": true,
       "maxTries": 5,
@@ -794,7 +782,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        3380,
+        3720,
         440
       ]
     },
@@ -838,7 +826,7 @@
       "type": "n8n-nodes-base.itemLists",
       "typeVersion": 2,
       "position": [
-        3660,
+        4000,
         440
       ]
     },
@@ -880,7 +868,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 1,
       "position": [
-        3880,
+        4220,
         440
       ]
     },
@@ -1005,7 +993,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 1,
       "position": [
-        2820,
+        3160,
         440
       ]
     },
@@ -1035,8 +1023,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 2,
       "position": [
-        3580,
-        1300
+        4420,
+        1680
       ],
       "retryOnFail": true,
       "maxTries": 5,
@@ -1064,7 +1052,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        2580,
+        2920,
         440
       ]
     },
@@ -1084,7 +1072,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        2580,
+        2920,
         660
       ]
     },
@@ -1138,7 +1126,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 1,
       "position": [
-        2820,
+        3160,
         640
       ]
     },
@@ -1158,7 +1146,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        2580,
+        2920,
         920
       ]
     },
@@ -1212,7 +1200,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 1,
       "position": [
-        2820,
+        3160,
         900
       ]
     },
@@ -1266,8 +1254,22 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 1,
       "position": [
-        2820,
+        3160,
         1080
+      ]
+    },
+    {
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      },
+      "id": "9d4a0751-e721-4a0d-b8fc-9b35898be15d",
+      "name": "1 POR VEZ111",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 2,
+      "position": [
+        4440,
+        440
       ]
     }
   ],
@@ -1286,6 +1288,161 @@
           "Minute": "01",
           "Second": "58",
           "Timezone": "-03 -03:00"
+        }
+      }
+    ],
+    "Listar Agendamentos": [
+      {
+        "json": {
+          "success": true,
+          "content": [
+            {
+              "agendamento_id": 1457,
+              "data": "30-08-2023",
+              "horario": "09:00:00",
+              "paciente_id": 7,
+              "procedimento_id": 6,
+              "valor": "R$ 300,00",
+              "status_id": 1,
+              "duracao": 30,
+              "local_id": 1,
+              "profissional_id": 1,
+              "agendado_por": "Simone Silva Pereira",
+              "notas": "",
+              "agendado_em": "2023-08-18 11:01:22",
+              "plano_id": 0,
+              "canal_id": null,
+              "convenio_id": null,
+              "unidade_id": 0,
+              "tabela_id": null,
+              "nome_fantasia": null,
+              "retorno_id": null,
+              "especialidade_id": 128,
+              "dias_limite_retorno": null,
+              "permite_retorno": 0,
+              "retorno_existe": 0,
+              "grupo_procedimento_id": 0,
+              "encaixe": false,
+              "telemedicina": false
+            },
+            {
+              "agendamento_id": 1478,
+              "data": "30-08-2023",
+              "horario": "10:00:00",
+              "paciente_id": 54,
+              "procedimento_id": 2,
+              "valor": "R$ 0,00",
+              "status_id": 1,
+              "duracao": 30,
+              "local_id": 1,
+              "profissional_id": 1,
+              "agendado_por": "Eliane Maria Gomes Oliveira",
+              "notas": "",
+              "agendado_em": "2023-08-28 14:53:59",
+              "plano_id": 0,
+              "canal_id": null,
+              "convenio_id": null,
+              "unidade_id": 0,
+              "tabela_id": null,
+              "nome_fantasia": null,
+              "retorno_id": null,
+              "especialidade_id": 128,
+              "dias_limite_retorno": null,
+              "permite_retorno": 0,
+              "retorno_existe": 0,
+              "grupo_procedimento_id": 0,
+              "encaixe": false,
+              "telemedicina": false
+            },
+            {
+              "agendamento_id": 1479,
+              "data": "30-08-2023",
+              "horario": "10:30:00",
+              "paciente_id": 875,
+              "procedimento_id": 2,
+              "valor": "R$ 0,00",
+              "status_id": 1,
+              "duracao": 30,
+              "local_id": 1,
+              "profissional_id": 1,
+              "agendado_por": "Eliane Maria Gomes Oliveira",
+              "notas": "",
+              "agendado_em": "2023-08-28 14:55:38",
+              "plano_id": 0,
+              "canal_id": null,
+              "convenio_id": null,
+              "unidade_id": 0,
+              "tabela_id": null,
+              "nome_fantasia": null,
+              "retorno_id": null,
+              "especialidade_id": 128,
+              "dias_limite_retorno": null,
+              "permite_retorno": 0,
+              "retorno_existe": 0,
+              "grupo_procedimento_id": 0,
+              "encaixe": true,
+              "telemedicina": false
+            },
+            {
+              "agendamento_id": 1466,
+              "data": "30-08-2023",
+              "horario": "11:40:00",
+              "paciente_id": 221,
+              "procedimento_id": 6,
+              "valor": "R$ 300,00",
+              "status_id": 1,
+              "duracao": 30,
+              "local_id": 1,
+              "profissional_id": 1,
+              "agendado_por": "Simone Silva Pereira",
+              "notas": "",
+              "agendado_em": "2023-08-21 18:45:47",
+              "plano_id": 0,
+              "canal_id": null,
+              "convenio_id": null,
+              "unidade_id": 0,
+              "tabela_id": null,
+              "nome_fantasia": null,
+              "retorno_id": null,
+              "especialidade_id": 128,
+              "dias_limite_retorno": null,
+              "permite_retorno": 0,
+              "retorno_existe": 0,
+              "grupo_procedimento_id": 0,
+              "encaixe": false,
+              "telemedicina": false
+            },
+            {
+              "agendamento_id": 1473,
+              "data": "30-08-2023",
+              "horario": "12:00:00",
+              "paciente_id": 840,
+              "procedimento_id": 6,
+              "valor": "R$ 0,00",
+              "status_id": 1,
+              "duracao": 30,
+              "local_id": 1,
+              "profissional_id": 1,
+              "agendado_por": "Simone Silva Pereira",
+              "notas": "",
+              "agendado_em": "2023-08-23 09:18:10",
+              "plano_id": 0,
+              "canal_id": null,
+              "convenio_id": null,
+              "unidade_id": 0,
+              "tabela_id": null,
+              "nome_fantasia": null,
+              "retorno_id": null,
+              "especialidade_id": 128,
+              "dias_limite_retorno": null,
+              "permite_retorno": 0,
+              "retorno_existe": 0,
+              "grupo_procedimento_id": 0,
+              "encaixe": true,
+              "telemedicina": false
+            }
+          ],
+          "total": 5
         }
       }
     ]
@@ -1309,6 +1466,6 @@
     }
   ],
   "triggerCount": 1,
-  "updatedAt": "2023-07-25T14:44:34.000Z",
-  "versionId": "777862cd-1461-4a61-abaa-172ef62adafa"
+  "updatedAt": "2023-08-30T01:56:42.000Z",
+  "versionId": "9f160b50-bee6-4dd5-a19d-59134ed1c056"
 }
