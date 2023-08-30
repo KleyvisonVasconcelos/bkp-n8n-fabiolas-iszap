@@ -82,8 +82,7 @@
             "type": "main",
             "index": 0
           }
-        ],
-        []
+        ]
       ]
     },
     "Lembrete 30 dias depois": {
@@ -97,11 +96,6 @@
         ]
       ]
     },
-    "Lembrete no dia": {
-      "main": [
-        []
-      ]
-    },
     "foi atendido?": {
       "main": [
         [
@@ -110,8 +104,7 @@
             "type": "main",
             "index": 0
           }
-        ],
-        []
+        ]
       ]
     },
     "enviar fluxo implante hormonal": {
@@ -144,8 +137,7 @@
             "type": "main",
             "index": 0
           }
-        ],
-        []
+        ]
       ]
     },
     "enviar fluxo implante hormonal1": {
@@ -157,11 +149,6 @@
             "index": 0
           }
         ]
-      ]
-    },
-    "Wait": {
-      "main": [
-        []
       ]
     },
     "1 por vez": {
@@ -289,8 +276,7 @@
             "type": "main",
             "index": 0
           }
-        ],
-        []
+        ]
       ]
     },
     "enviar fluxo avaliação": {
@@ -527,8 +513,7 @@
             "type": "main",
             "index": 0
           }
-        ],
-        []
+        ]
       ]
     },
     "É IMPLANTE HORMONAL?2": {
@@ -539,8 +524,7 @@
             "type": "main",
             "index": 0
           }
-        ],
-        []
+        ]
       ]
     },
     "é laser?": {
@@ -551,8 +535,7 @@
             "type": "main",
             "index": 0
           }
-        ],
-        []
+        ]
       ]
     },
     "Listar Agendamentos": {
@@ -588,22 +571,11 @@
         ]
       ]
     },
-    "Renomeando status1": {
-      "main": [
-        [
-          {
-            "node": "buscar pacientes1",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "Marcado - não confirmado1": {
       "main": [
         [
           {
-            "node": "Renomeando status1",
+            "node": "buscar pacientes1",
             "type": "main",
             "index": 0
           }
@@ -731,7 +703,7 @@
       "main": [
         [
           {
-            "node": "Marcado - não confirmado1",
+            "node": "IF5",
             "type": "main",
             "index": 0
           }
@@ -847,16 +819,22 @@
         ]
       ]
     },
-    "Wait2": {
-      "main": [
-        []
-      ]
-    },
     "IF4": {
       "main": [
         [
           {
             "node": "Valores3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF5": {
+      "main": [
+        [
+          {
+            "node": "Marcado - não confirmado1",
             "type": "main",
             "index": 0
           }
@@ -2007,7 +1985,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 2,
       "position": [
-        -1300,
+        -1600,
         -820
       ],
       "retryOnFail": true,
@@ -2030,7 +2008,7 @@
           "parameter": [
             {
               "name": "paciente_id",
-              "value": "={{$node[\"Renomeando status1\"].json[\"paciente_id\"]}}"
+              "value": "={{ $json[\"paciente_id\"] }}"
             }
           ]
         }
@@ -2040,7 +2018,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 2,
       "position": [
-        -360,
+        -400,
         -820
       ],
       "retryOnFail": true,
@@ -2063,7 +2041,7 @@
           "parameter": [
             {
               "name": "procedimento_id",
-              "value": "={{ $node[\"Renomeando status1\"].json[\"procedimento_id\"] }}"
+              "value": "={{ $('Marcado - não confirmado1').item.json[\"procedimento_id\"] }}"
             }
           ]
         }
@@ -2073,7 +2051,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 2,
       "position": [
-        -120,
+        -140,
         -820
       ],
       "retryOnFail": true,
@@ -2085,27 +2063,6 @@
           "name": "feegow fabiolas"
         }
       }
-    },
-    {
-      "parameters": {
-        "values": {
-          "string": [
-            {
-              "name": "status_id",
-              "value": "={{ $json.status_id.toString().replace(\"3\",\"Atendido\").replace(\"1\",\"Marcado - não confirmado\").replace(\"7\",\"Marcado - confirmado\").replace(\"11\",\"Desmarcado\").replace(\"15\",\"Remarcado\") }}"
-            }
-          ]
-        },
-        "options": {}
-      },
-      "id": "507e3e98-2398-4675-8779-8f2631be859e",
-      "name": "Renomeando status1",
-      "type": "n8n-nodes-base.set",
-      "typeVersion": 1,
-      "position": [
-        -600,
-        -820
-      ]
     },
     {
       "parameters": {
@@ -2356,7 +2313,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        -2040,
+        -2340,
         -820
       ]
     },
@@ -2366,14 +2323,16 @@
         "dataPropertyName": "data-amanha",
         "custom": true,
         "toFormat": "DD-MM-YYYY",
-        "options": {}
+        "options": {
+          "fromTimezone": "America/Sao_Paulo"
+        }
       },
       "id": "01b05d79-39f6-44e2-b391-767425a5dfec",
       "name": "formatando",
       "type": "n8n-nodes-base.dateTime",
       "typeVersion": 1,
       "position": [
-        -1520,
+        -1820,
         -820
       ]
     },
@@ -2390,7 +2349,7 @@
       "type": "n8n-nodes-base.dateTime",
       "typeVersion": 1,
       "position": [
-        -1780,
+        -2080,
         -740
       ]
     },
@@ -2407,7 +2366,7 @@
       "type": "n8n-nodes-base.dateTime",
       "typeVersion": 1,
       "position": [
-        -1780,
+        -2080,
         -900
       ]
     },
@@ -2418,19 +2377,19 @@
           "string": [
             {
               "name": "agendamento_id",
-              "value": "={{$node[\"Renomeando status1\"].json[\"agendamento_id\"]}}"
+              "value": "={{ $('Marcado - não confirmado1').item.json[\"agendamento_id\"] }}"
             },
             {
               "name": "data",
-              "value": "={{$node[\"Renomeando status1\"].json[\"data\"]}}"
+              "value": "={{ $('Marcado - não confirmado1').item.json[\"data\"]}}"
             },
             {
               "name": "horario",
-              "value": "={{ $node[\"Renomeando status1\"].json[\"horario\"].slice(0,5)}}"
+              "value": "={{ $('Marcado - não confirmado1').item.json[\"horario\"].slice(0,5)}}"
             },
             {
               "name": "paciente_id",
-              "value": "={{ $node[\"Renomeando status1\"].json[\"paciente_id\"] }}"
+              "value": "={{ $('Marcado - não confirmado1').item.json[\"paciente_id\"] }}"
             },
             {
               "name": "nome",
@@ -2446,7 +2405,7 @@
             },
             {
               "name": "status",
-              "value": "={{$node[\"Renomeando status1\"].json[\"status_id\"]}}"
+              "value": "={{ $('Marcado - não confirmado1').item.json[\"status_id\"]}}"
             },
             {
               "name": "telefone",
@@ -2475,7 +2434,7 @@
       "type": "n8n-nodes-base.itemLists",
       "typeVersion": 1,
       "position": [
-        -1080,
+        -1380,
         -820
       ]
     },
@@ -2511,19 +2470,19 @@
           "string": [
             {
               "name": "agendamento_id",
-              "value": "={{$node[\"Renomeando status1\"].json[\"agendamento_id\"]}}"
+              "value": "={{ $('Marcado - não confirmado1').item.json[\"agendamento_id\"]}}"
             },
             {
               "name": "data",
-              "value": "={{$node[\"Renomeando status1\"].json[\"data\"]}}"
+              "value": "={{ $('Marcado - não confirmado1').item.json[\"data\"]}}"
             },
             {
               "name": "horario",
-              "value": "={{ $node[\"Renomeando status1\"].json[\"horario\"].slice(0,5)}}"
+              "value": "={{ $('Marcado - não confirmado1').item.json[\"horario\"].slice(0,5)}}"
             },
             {
               "name": "paciente_id",
-              "value": "={{ $node[\"Renomeando status1\"].json[\"paciente_id\"] }}"
+              "value": "={{ $('Marcado - não confirmado1').item.json[\"paciente_id\"] }}"
             },
             {
               "name": "nome",
@@ -2539,7 +2498,7 @@
             },
             {
               "name": "status",
-              "value": "={{$node[\"Renomeando status1\"].json[\"status_id\"]}}"
+              "value": "={{ $('Marcado - não confirmado1').item.json[\"status_id\"]}}"
             },
             {
               "name": "telefone",
@@ -2565,19 +2524,19 @@
           "string": [
             {
               "name": "agendamento_id",
-              "value": "={{$node[\"Renomeando status1\"].json[\"agendamento_id\"]}}"
+              "value": "={{ $('Marcado - não confirmado1').item.json[\"agendamento_id\"]}}"
             },
             {
               "name": "data",
-              "value": "={{$node[\"Renomeando status1\"].json[\"data\"]}}"
+              "value": "={{ $('Marcado - não confirmado1').item.json[\"data\"]}}"
             },
             {
               "name": "horario",
-              "value": "={{ $node[\"Renomeando status1\"].json[\"horario\"].slice(0,5)}}"
+              "value": "={{ $('Marcado - não confirmado1').item.json[\"horario\"].slice(0,5)}}"
             },
             {
               "name": "paciente_id",
-              "value": "={{ $node[\"Renomeando status1\"].json[\"paciente_id\"] }}"
+              "value": "={{ $('Marcado - não confirmado1').item.json[\"paciente_id\"] }}"
             },
             {
               "name": "nome",
@@ -2593,7 +2552,7 @@
             },
             {
               "name": "status",
-              "value": "={{$node[\"Renomeando status1\"].json[\"status_id\"]}}"
+              "value": "={{ $('Marcado - não confirmado1').item.json[\"status_id\"]}}"
             },
             {
               "name": "telefone",
@@ -2681,7 +2640,7 @@
       "type": "n8n-nodes-base.scheduleTrigger",
       "typeVersion": 1,
       "position": [
-        -2280,
+        -2580,
         -820
       ]
     },
@@ -2780,9 +2739,53 @@
         100,
         -220
       ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $('separa agendamentos').item.json[\"profissional_id\"].toString() }}",
+              "value2": "9"
+            },
+            {
+              "value1": "={{ $('separa agendamentos').item.json[\"profissional_id\"].toString() }}",
+              "value2": "10"
+            }
+          ]
+        },
+        "combineOperation": "any"
+      },
+      "id": "d755762c-9217-4668-8a95-d05a3da3267d",
+      "name": "IF5",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        -1140,
+        -820
+      ]
     }
   ],
-  "pinData": {},
+  "pinData": {
+    "formatando": [
+      {
+        "json": {
+          "timestamp": "2023-08-29T23:46:27.295-03:00",
+          "Readable date": "August 29th 2023, 11:46:27 pm",
+          "Readable time": "11:46:27 pm",
+          "Day of week": "Tuesday",
+          "Year": "2023",
+          "Month": "August",
+          "Day of month": "29",
+          "Hour": "23",
+          "Minute": "46",
+          "Second": "27",
+          "Timezone": "-03 -03:00",
+          "data-amanha": "31-08-2023"
+        }
+      }
+    ]
+  },
   "settings": {
     "saveManualExecutions": false,
     "callerPolicy": "workflowsFromSameOwner",
@@ -2796,8 +2799,15 @@
       "recurrencyRules": []
     }
   },
-  "tags": [],
+  "tags": [
+    {
+      "createdAt": "2023-08-30T02:12:04.725Z",
+      "updatedAt": "2023-08-30T02:12:04.725Z",
+      "id": "2",
+      "name": "Fabiolas"
+    }
+  ],
   "triggerCount": 2,
-  "updatedAt": "2023-08-18T04:39:59.000Z",
-  "versionId": "1befcf8e-73e1-4a14-a80c-6dc17d685cd6"
+  "updatedAt": "2023-08-30T02:52:29.000Z",
+  "versionId": "65c8b5ae-80f9-41f0-8d96-6f359f877c34"
 }
