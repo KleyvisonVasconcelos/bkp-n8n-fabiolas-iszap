@@ -23,84 +23,11 @@
         ]
       ]
     },
-    "Google Sheets": {
-      "main": [
-        [
-          {
-            "node": "Switch",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Switch": {
-      "main": [
-        [],
-        [
-          {
-            "node": "Lembrete no dia",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "Lembrete 30 dias depois",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "Switch1",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Switch1": {
-      "main": [
-        [
-          {
-            "node": "Lembrete 150 dias depois",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "Avaliação 1 dia depois",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "3 dias antes",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Lembrete 30 dias depois": {
-      "main": [
-        [
-          {
-            "node": "foi atendido?",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "foi atendido?": {
       "main": [
         [
           {
-            "node": "É IMPLANTE HORMONAL?1",
+            "node": "buscar pacientes2",
             "type": "main",
             "index": 0
           }
@@ -112,28 +39,6 @@
         [
           {
             "node": "Wait",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Lembrete 150 dias depois": {
-      "main": [
-        [
-          {
-            "node": "foi atendido?1",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "foi atendido?1": {
-      "main": [
-        [
-          {
-            "node": "É IMPLANTE HORMONAL?2",
             "type": "main",
             "index": 0
           }
@@ -239,29 +144,7 @@
       "main": [
         [
           {
-            "node": "data hoje",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Avaliação 1 dia depois": {
-      "main": [
-        [
-          {
-            "node": "foi atendido?2",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "foi atendido?2": {
-      "main": [
-        [
-          {
-            "node": "É IMPLANTE HORMONAL?",
+            "node": "Lembrete 30 dias depois",
             "type": "main",
             "index": 0
           }
@@ -455,17 +338,6 @@
         [
           {
             "node": "1 por vez1",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "3 dias antes": {
-      "main": [
-        [
-          {
-            "node": "é laser?",
             "type": "main",
             "index": 0
           }
@@ -840,6 +712,258 @@
           }
         ]
       ]
+    },
+    "Listar Agendamentos1": {
+      "main": [
+        [
+          {
+            "node": "separa agendamentos1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "buscar pacientes2": {
+      "main": [
+        [
+          {
+            "node": "BUSCAR PROCEDIMENTO",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "BUSCAR PROCEDIMENTO": {
+      "main": [
+        [
+          {
+            "node": "IF6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validar Telefone BR": {
+      "main": [
+        [
+          {
+            "node": "Cadastrando na Audiência",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "possui telefone?1": {
+      "main": [
+        [
+          {
+            "node": "Item Lists1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Item Lists1": {
+      "main": [
+        [
+          {
+            "node": "Valores8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Valores4": {
+      "main": [
+        [
+          {
+            "node": "possui telefone?1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "separa agendamentos1": {
+      "main": [
+        [
+          {
+            "node": "IF10",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Valores5": {
+      "main": [
+        [
+          {
+            "node": "possui telefone?1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Valores6": {
+      "main": [
+        [
+          {
+            "node": "possui telefone?1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Valores7": {
+      "main": [
+        [
+          {
+            "node": "possui telefone?1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF6": {
+      "main": [
+        [
+          {
+            "node": "Valores4",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "IF7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF7": {
+      "main": [
+        [
+          {
+            "node": "Valores5",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "IF8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF8": {
+      "main": [
+        [
+          {
+            "node": "Valores6",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "IF9",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF9": {
+      "main": [
+        [
+          {
+            "node": "Valores7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF10": {
+      "main": [
+        [
+          {
+            "node": "foi atendido?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "1 por vez2": {
+      "main": [
+        [
+          {
+            "node": "Validar Telefone BR",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "calculando 30 dias": {
+      "main": [
+        [
+          {
+            "node": "formatando1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "formatando1": {
+      "main": [
+        [
+          {
+            "node": "Listar Agendamentos1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Lembrete 30 dias depois": {
+      "main": [
+        [
+          {
+            "node": "calculando 30 dias",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Valores8": {
+      "main": [
+        [
+          {
+            "node": "1 por vez2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "createdAt": "2023-07-27T04:44:49.831Z",
@@ -861,8 +985,8 @@
       "type": "n8n-nodes-base.scheduleTrigger",
       "typeVersion": 1,
       "position": [
-        -140,
-        240
+        -2960,
+        620
       ]
     },
     {
@@ -882,8 +1006,8 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 1,
       "position": [
-        100,
-        240
+        1440,
+        -40
       ]
     },
     {
@@ -899,8 +1023,8 @@
       "type": "n8n-nodes-base.dateTime",
       "typeVersion": 1,
       "position": [
-        320,
-        240
+        1660,
+        -40
       ]
     },
     {
@@ -954,8 +1078,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 3,
       "position": [
-        540,
-        240
+        1880,
+        -40
       ],
       "retryOnFail": true,
       "maxTries": 5,
@@ -968,85 +1092,14 @@
       }
     },
     {
-      "parameters": {
-        "dataType": "string",
-        "value1": "={{ $node[\"Date & Time\"].json[\"data hoje\"] }}",
-        "rules": {
-          "rules": [
-            {
-              "value2": "={{ $json[\"Lembrete 1 dia antes\"] }}"
-            },
-            {
-              "value2": "={{ $json[\"Lembrete no dia\"] }}",
-              "output": 1
-            },
-            {
-              "value2": "={{ $json[\"Lembrete 30 dias\"] }}",
-              "output": 2
-            }
-          ]
-        },
-        "fallbackOutput": 3
-      },
-      "id": "d856940e-ed79-4a02-8dc3-12cd2a9e6114",
-      "name": "Switch",
-      "type": "n8n-nodes-base.switch",
-      "typeVersion": 1,
-      "position": [
-        1720,
-        240
-      ]
-    },
-    {
-      "parameters": {
-        "dataType": "string",
-        "value1": "={{ $node[\"Date & Time\"].json[\"data hoje\"] }}",
-        "rules": {
-          "rules": [
-            {
-              "value2": "={{ $node[\"1 por vez\"].json[\"Lembrete 150 dias\"] }}"
-            },
-            {
-              "value2": "={{ $node[\"1 por vez\"].json[\"Avaliação 1 dia depois\"] }}",
-              "output": 1
-            },
-            {
-              "value2": "={{ $node[\"1 por vez\"].json[\"Lembrete 3 dias antes\"] }}",
-              "output": 2
-            }
-          ]
-        },
-        "fallbackOutput": 3
-      },
-      "id": "a6fb168b-3780-49d6-8479-c9a3355d022f",
-      "name": "Switch1",
-      "type": "n8n-nodes-base.switch",
-      "typeVersion": 1,
-      "position": [
-        1700,
-        1080
-      ]
-    },
-    {
-      "parameters": {},
-      "id": "b2e50c85-ab98-46a2-a978-e360a2454d01",
-      "name": "Lembrete no dia",
-      "type": "n8n-nodes-base.noOp",
-      "typeVersion": 1,
-      "position": [
-        2100,
-        220
-      ]
-    },
-    {
       "parameters": {},
       "id": "24d6269c-932f-4cac-a790-42bdc5c25ae9",
       "name": "Lembrete 30 dias depois",
       "type": "n8n-nodes-base.noOp",
       "typeVersion": 1,
       "position": [
-        2160,
-        580
+        -2400,
+        480
       ]
     },
     {
@@ -1056,8 +1109,8 @@
       "type": "n8n-nodes-base.noOp",
       "typeVersion": 1,
       "position": [
-        2160,
-        800
+        -2400,
+        700
       ]
     },
     {
@@ -1067,8 +1120,8 @@
       "type": "n8n-nodes-base.manualTrigger",
       "typeVersion": 1,
       "position": [
-        -100,
-        680
+        2480,
+        -140
       ]
     },
     {
@@ -1076,8 +1129,8 @@
         "conditions": {
           "string": [
             {
-              "value1": "={{ $node[\"1 por vez\"].json[\"STATUS\"] }}",
-              "value2": "Atendido"
+              "value1": "={{ $json[\"status_id\"].toString() }}",
+              "value2": "3"
             }
           ]
         }
@@ -1087,8 +1140,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        2400,
-        580
+        -920,
+        480
       ]
     },
     {
@@ -1101,8 +1154,8 @@
       "type": "n8n-nodes-base.wait",
       "typeVersion": 1,
       "position": [
-        3980,
-        560
+        3800,
+        860
       ],
       "webhookId": "e488acb1-4e17-4ba7-be21-3606162e4402"
     },
@@ -1129,7 +1182,7 @@
       "typeVersion": 3,
       "position": [
         2900,
-        500
+        420
       ],
       "retryOnFail": true,
       "maxTries": 5,
@@ -1141,26 +1194,6 @@
         }
       },
       "disabled": true
-    },
-    {
-      "parameters": {
-        "conditions": {
-          "string": [
-            {
-              "value1": "={{ $node[\"1 por vez\"].json[\"STATUS\"] }}",
-              "value2": "Atendido"
-            }
-          ]
-        }
-      },
-      "id": "92e809e9-0040-4358-bdd4-97301ac8c8d2",
-      "name": "foi atendido?1",
-      "type": "n8n-nodes-base.if",
-      "typeVersion": 1,
-      "position": [
-        2400,
-        800
-      ]
     },
     {
       "parameters": {
@@ -1185,7 +1218,7 @@
       "typeVersion": 3,
       "position": [
         2900,
-        740
+        640
       ],
       "retryOnFail": true,
       "maxTries": 5,
@@ -1308,7 +1341,7 @@
         "conditions": {
           "string": [
             {
-              "value1": "={{ $node[\"1 por vez\"].json[\"MEDICA\"] }}",
+              "value1": "={{ $('1 por vez').item.json[\"medica\"] }}",
               "value2": "Fabiola Ribeiro"
             }
           ]
@@ -1418,28 +1451,8 @@
       "type": "n8n-nodes-base.noOp",
       "typeVersion": 1,
       "position": [
-        2160,
-        1040
-      ]
-    },
-    {
-      "parameters": {
-        "conditions": {
-          "string": [
-            {
-              "value1": "={{ $node[\"1 por vez\"].json[\"STATUS\"] }}",
-              "value2": "Atendido"
-            }
-          ]
-        }
-      },
-      "id": "f70cb6fb-6a0b-4d73-a9c3-6c769bb46e61",
-      "name": "foi atendido?2",
-      "type": "n8n-nodes-base.if",
-      "typeVersion": 1,
-      "position": [
-        2400,
-        1040
+        -2400,
+        1000
       ]
     },
     {
@@ -1549,8 +1562,8 @@
       "type": "n8n-nodes-base.scheduleTrigger",
       "typeVersion": 1,
       "position": [
-        500,
-        1540
+        120,
+        1720
       ]
     },
     {
@@ -1571,8 +1584,8 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 1,
       "position": [
-        740,
-        1540
+        360,
+        1720
       ]
     },
     {
@@ -1588,8 +1601,8 @@
       "type": "n8n-nodes-base.dateTime",
       "typeVersion": 1,
       "position": [
-        960,
-        1540
+        580,
+        1720
       ]
     },
     {
@@ -1623,8 +1636,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 3,
       "position": [
-        1180,
-        1540
+        800,
+        1720
       ],
       "retryOnFail": true,
       "maxTries": 5,
@@ -1658,8 +1671,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        2260,
-        1480
+        1880,
+        1660
       ],
       "retryOnFail": true,
       "maxTries": 5,
@@ -1682,8 +1695,8 @@
       "type": "n8n-nodes-base.splitInBatches",
       "typeVersion": 1,
       "position": [
-        1600,
-        1540
+        1220,
+        1720
       ]
     },
     {
@@ -1708,8 +1721,8 @@
       "type": "n8n-nodes-base.switch",
       "typeVersion": 1,
       "position": [
-        1780,
-        1540
+        1400,
+        1720
       ]
     },
     {
@@ -1719,8 +1732,8 @@
       "type": "n8n-nodes-base.noOp",
       "typeVersion": 1,
       "position": [
-        2040,
-        1480
+        1660,
+        1660
       ]
     },
     {
@@ -1730,8 +1743,8 @@
       "type": "n8n-nodes-base.noOp",
       "typeVersion": 1,
       "position": [
-        2040,
-        1660
+        1660,
+        1840
       ]
     },
     {
@@ -1756,8 +1769,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        2260,
-        1660
+        1880,
+        1840
       ],
       "retryOnFail": true,
       "maxTries": 5,
@@ -1786,8 +1799,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        1400,
-        1540
+        1020,
+        1720
       ]
     },
     {
@@ -1800,8 +1813,8 @@
       "type": "n8n-nodes-base.wait",
       "typeVersion": 1,
       "position": [
-        2560,
-        1660
+        2180,
+        1840
       ],
       "webhookId": "6fd3cb49-ced0-4bbf-9ab7-402b60d3924a"
     },
@@ -1812,8 +1825,8 @@
       "type": "n8n-nodes-base.noOp",
       "typeVersion": 1,
       "position": [
-        2160,
-        1220
+        -2400,
+        1240
       ]
     },
     {
@@ -1904,7 +1917,7 @@
       "typeVersion": 1,
       "position": [
         2620,
-        560
+        440
       ]
     },
     {
@@ -1924,7 +1937,7 @@
       "typeVersion": 1,
       "position": [
         2620,
-        780
+        660
       ]
     },
     {
@@ -2150,8 +2163,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        1280,
-        -440
+        3460,
+        -200
       ],
       "retryOnFail": true,
       "maxTries": 5,
@@ -2430,8 +2443,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 2,
       "position": [
-        1040,
-        -440
+        3220,
+        -200
       ],
       "retryOnFail": true,
       "maxTries": 5,
@@ -2779,6 +2792,530 @@
         1600,
         -820
       ]
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "url": "https://api.feegow.com/v1/api/appoints/search",
+        "options": {},
+        "queryParametersUi": {
+          "parameter": [
+            {
+              "name": "data_start",
+              "value": "={{ $json[\"data-busca\"] }}"
+            },
+            {
+              "name": "data_end",
+              "value": "={{ $json[\"data-busca\"] }}"
+            }
+          ]
+        }
+      },
+      "id": "a79c704d-e501-4d65-ae0f-30771bcb718f",
+      "name": "Listar Agendamentos1",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [
+        -1600,
+        480
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "maxTries": 5,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "2",
+          "name": "feegow fabiolas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "url": "https://api.feegow.com/v1/api/patient/search",
+        "options": {},
+        "queryParametersUi": {
+          "parameter": [
+            {
+              "name": "paciente_id",
+              "value": "={{ $json[\"paciente_id\"] }}"
+            }
+          ]
+        }
+      },
+      "id": "51cf6eaa-09dd-42ad-9e33-c46f2ab79b87",
+      "name": "buscar pacientes2",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [
+        -700,
+        480
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "2",
+          "name": "feegow fabiolas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "url": "https://api.feegow.com/v1/api/procedures/list",
+        "options": {},
+        "queryParametersUi": {
+          "parameter": [
+            {
+              "name": "procedimento_id",
+              "value": "={{ $('foi atendido?').item.json[\"procedimento_id\"] }}"
+            }
+          ]
+        }
+      },
+      "id": "0decf939-1664-49f5-8d81-2f450cad36aa",
+      "name": "BUSCAR PROCEDIMENTO",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [
+        -440,
+        480
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "2",
+          "name": "feegow fabiolas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "headerAuth",
+        "requestMethod": "POST",
+        "url": "https://backend.botconversa.com.br/api/v1/webhook/subscriber/",
+        "options": {},
+        "bodyParametersUi": {
+          "parameter": [
+            {
+              "name": "phone",
+              "value": "={{ $json[\"whatsapp\"] }}"
+            },
+            {
+              "name": "first_name",
+              "value": "={{$node[\"1 por vez2\"].json[\"nome\"].split(' ')[0]}}"
+            },
+            {
+              "name": "last_name",
+              "value": "={{ $node[\"1 por vez2\"].json[\"nome\"].split(' ')[1]}} {{ $node[\"1 por vez2\"].json[\"nome\"].split(' ')[2]}} {{ $node[\"1 por vez2\"].json[\"nome\"].split(' ')[3]}} {{ $node[\"1 por vez2\"].json[\"nome\"].split(' ')[4]}} {{ $node[\"1 por vez2\"].json[\"nome\"].split(' ')[5]}}"
+            }
+          ]
+        }
+      },
+      "name": "Cadastrando na Audiência",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 1,
+      "position": [
+        1540,
+        480
+      ],
+      "id": "4fe59d32-41cc-419e-9fcf-697288d581b7",
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "4",
+          "name": "BotConversa Fabiolas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "functionCode": "var telefone = items[0].json.telefone.replaceAll(' ','').replaceAll('(','').replaceAll(')','').replaceAll('-','').replaceAll(',','').replaceAll('.','');\nvar ddd = telefone.slice(2,4);\nvar ddi = telefone.charAt(0);\nvar ddx = telefone.slice(0,2);\nvar length = telefone.length;\nif (length >= 12){\n  if (ddi == '+'){\n    ddi = telefone.slice(0,3);\n    telefone = parseInt(telefone.slice(3)).toString();\n  } else {\n    if (ddx == '55'){\n      telefone = parseInt(telefone.slice(2)).toString();\n      ddi = \"+55\";\n    } else {\n      telefone = parseInt(telefone).toString();\n      ddi = 'não informado';\n    }\n  }\n} else {\n  telefone = parseInt(telefone).toString();\n  ddi = 'não informado';\n}\n\nddd = telefone.slice(0,2);\ntelefone = telefone.slice(2);\nif (ddd > 28){\n  telefone = telefone.slice(-8);\n} else {\n  telefone = '9'+telefone.slice(-8);\n}\nvar whatsapp = '+55'+ddd+telefone;\n\nreturn [\n  {\n    json: {\n      ddi,\n      ddd,\n      telefone,\n      whatsapp,   \n    }\n  }\n];"
+      },
+      "name": "Validar Telefone BR",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        1300,
+        480
+      ],
+      "typeVersion": 1,
+      "id": "d08ad52c-8ac6-4d09-8742-96f9ca223c07",
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "continueOnFail": true
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json.telefone }}",
+              "operation": "isNotEmpty"
+            }
+          ]
+        }
+      },
+      "id": "6b3c996e-a112-4e99-8bce-b251dd33f65d",
+      "name": "possui telefone?1",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        380,
+        500
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "summarize",
+        "fieldsToSummarize": {
+          "values": [
+            {
+              "aggregation": "append",
+              "field": "telefone"
+            },
+            {
+              "aggregation": "append",
+              "field": "nome"
+            }
+          ]
+        },
+        "fieldsToSplitBy": "paciente_id",
+        "options": {}
+      },
+      "id": "e1608f91-5291-4533-8d78-ee3dfa4700cc",
+      "name": "Item Lists1",
+      "type": "n8n-nodes-base.itemLists",
+      "typeVersion": 2,
+      "position": [
+        620,
+        480
+      ]
+    },
+    {
+      "parameters": {
+        "keepOnlySet": true,
+        "values": {
+          "string": [
+            {
+              "name": "nome",
+              "value": "={{$node[\"buscar pacientes2\"].json[\"content\"][\"nome\"]}}"
+            },
+            {
+              "name": "telefone",
+              "value": "={{$node[\"buscar pacientes2\"].json[\"content\"][\"celulares\"][0]}}"
+            },
+            {
+              "name": "paciente_id",
+              "value": "={{ $('buscar pacientes2').item.json[\"content\"][\"id\"] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "76ff9803-1b58-4e47-801f-50ecb15390f3",
+      "name": "Valores4",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [
+        80,
+        460
+      ]
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "content",
+        "options": {}
+      },
+      "id": "7583f0ac-64f9-4acd-b20f-ce655bb0410e",
+      "name": "separa agendamentos1",
+      "type": "n8n-nodes-base.itemLists",
+      "typeVersion": 1,
+      "position": [
+        -1380,
+        480
+      ]
+    },
+    {
+      "parameters": {
+        "keepOnlySet": true,
+        "values": {
+          "string": [
+            {
+              "name": "nome",
+              "value": "={{$node[\"buscar pacientes2\"].json[\"content\"][\"nome\"]}}"
+            },
+            {
+              "name": "telefone",
+              "value": "={{$node[\"buscar pacientes2\"].json[\"content\"][\"celulares\"][1]}}"
+            },
+            {
+              "name": "paciente_id",
+              "value": "={{ $('buscar pacientes2').item.json[\"content\"][\"id\"] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "3b740e45-8bfc-4589-acf6-f335d69b3d8c",
+      "name": "Valores5",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [
+        80,
+        660
+      ]
+    },
+    {
+      "parameters": {
+        "keepOnlySet": true,
+        "values": {
+          "string": [
+            {
+              "name": "nome",
+              "value": "={{$node[\"buscar pacientes2\"].json[\"content\"][\"nome\"]}}"
+            },
+            {
+              "name": "telefone",
+              "value": "={{ $('buscar pacientes2').item.json.content.telefones[0] }}"
+            },
+            {
+              "name": "paciente_id",
+              "value": "={{ $('buscar pacientes2').item.json[\"content\"][\"id\"] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "a628df16-3eb5-4bcf-b996-afeab4c07040",
+      "name": "Valores6",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [
+        80,
+        860
+      ]
+    },
+    {
+      "parameters": {
+        "keepOnlySet": true,
+        "values": {
+          "string": [
+            {
+              "name": "nome",
+              "value": "={{$node[\"buscar pacientes2\"].json[\"content\"][\"nome\"]}}"
+            },
+            {
+              "name": "telefone",
+              "value": "={{ $('buscar pacientes2').item.json.content.telefones[1] }}"
+            },
+            {
+              "name": "paciente_id",
+              "value": "={{ $('buscar pacientes2').item.json[\"content\"][\"id\"] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "ec98ccde-fc6c-45b4-aba8-273ae846609e",
+      "name": "Valores7",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [
+        80,
+        1060
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $('buscar pacientes2').item.json.content.celulares[0] }}",
+              "operation": "isNotEmpty"
+            }
+          ]
+        }
+      },
+      "id": "cd3c0890-5a68-4bdd-825b-650b6bf6a6ee",
+      "name": "IF6",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        -160,
+        480
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $('buscar pacientes2').item.json.content.celulares[1] }}",
+              "operation": "isNotEmpty"
+            }
+          ]
+        }
+      },
+      "id": "62dd3c39-d3c6-496a-9478-16e74701cae2",
+      "name": "IF7",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        -160,
+        640
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $('buscar pacientes2').item.json.content.telefones[0] }}",
+              "operation": "isNotEmpty"
+            }
+          ]
+        }
+      },
+      "id": "fdfacf37-3702-4ed7-b411-65a8f5aa0680",
+      "name": "IF8",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        -160,
+        880
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $('buscar pacientes2').item.json.content.telefones[1] }}",
+              "operation": "isNotEmpty"
+            }
+          ]
+        }
+      },
+      "id": "b74ed3b5-72d2-4174-a72a-b0ef7b82edef",
+      "name": "IF9",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        -160,
+        1080
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $('separa agendamentos1').item.json[\"profissional_id\"].toString() }}",
+              "value2": "9"
+            },
+            {
+              "value1": "={{ $('separa agendamentos1').item.json[\"profissional_id\"].toString() }}",
+              "value2": "10"
+            }
+          ]
+        },
+        "combineOperation": "any"
+      },
+      "id": "56db2019-09e4-4371-9989-e77b13c02db8",
+      "name": "IF10",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        -1140,
+        480
+      ]
+    },
+    {
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      },
+      "id": "2a6564a3-82db-4718-888f-9ec748c91732",
+      "name": "1 por vez2",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 2,
+      "position": [
+        1060,
+        480
+      ]
+    },
+    {
+      "parameters": {
+        "value": "={{ $json[\"data-busca\"] }}",
+        "dataPropertyName": "data-amanha",
+        "custom": true,
+        "toFormat": "DD-MM-YYYY",
+        "options": {
+          "fromTimezone": "America/Sao_Paulo"
+        }
+      },
+      "id": "0ff6e102-6ad4-46c7-b9a7-831d7c42bd71",
+      "name": "formatando1",
+      "type": "n8n-nodes-base.dateTime",
+      "typeVersion": 1,
+      "position": [
+        -1880,
+        480
+      ]
+    },
+    {
+      "parameters": {
+        "action": "calculate",
+        "value": "={{Date()}}",
+        "operation": "subtract",
+        "duration": 30,
+        "dataPropertyName": "data-busca",
+        "options": {}
+      },
+      "id": "44875cea-c91a-4e8f-b3d7-d684dda704a8",
+      "name": "calculando 30 dias",
+      "type": "n8n-nodes-base.dateTime",
+      "typeVersion": 1,
+      "position": [
+        -2140,
+        480
+      ]
+    },
+    {
+      "parameters": {
+        "keepOnlySet": true,
+        "values": {
+          "string": [
+            {
+              "name": "nome",
+              "value": "={{ $json.appended_nome[0].toString() }}"
+            },
+            {
+              "name": "telefone",
+              "value": "={{ $json.appended_telefone[0] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "9ec1078f-0acd-4bfe-8f3a-407232078fa7",
+      "name": "Valores8",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [
+        840,
+        480
+      ]
     }
   ],
   "pinData": {
@@ -2823,6 +3360,6 @@
     }
   ],
   "triggerCount": 2,
-  "updatedAt": "2023-08-30T03:58:17.000Z",
-  "versionId": "7994622f-60b3-4de4-934b-af22dd891a27"
+  "updatedAt": "2023-08-30T04:55:43.000Z",
+  "versionId": "18302043-3b1b-49d9-b3e9-27dfe0bfca86"
 }
