@@ -1,5 +1,5 @@
 {
-  "active": false,
+  "active": true,
   "connections": {
     "foi atendido?": {
       "main": [
@@ -114,21 +114,6 @@
             "node": "Lembrete 30 dias depois",
             "type": "main",
             "index": 0
-          },
-          {
-            "node": "Lembrete 150 dias depois",
-            "type": "main",
-            "index": 0
-          },
-          {
-            "node": "Avaliação 1 dia depois",
-            "type": "main",
-            "index": 0
-          },
-          {
-            "node": "3 dias antes",
-            "type": "main",
-            "index": 0
           }
         ]
       ]
@@ -138,39 +123,6 @@
         [
           {
             "node": "formatando5",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "data hoje1": {
-      "main": [
-        [
-          {
-            "node": "Date & Time1",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Date & Time1": {
-      "main": [
-        [
-          {
-            "node": "Google Sheets1",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Google Sheets1": {
-      "main": [
-        [
-          {
-            "node": "atendimento hoje?",
             "type": "main",
             "index": 0
           }
@@ -195,14 +147,14 @@
         ],
         [
           {
-            "node": "1 por vez1",
+            "node": "1 por vez7",
             "type": "main",
             "index": 0
           }
         ],
         [
           {
-            "node": "1 por vez1",
+            "node": "1 por vez7",
             "type": "main",
             "index": 0
           }
@@ -225,22 +177,6 @@
         [
           {
             "node": "enviar fluxo estética/cirurgia íntima1",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "atendimento hoje?": {
-      "main": [
-        []
-      ]
-    },
-    "1 por vez1": {
-      "main": [
-        [
-          {
-            "node": "Switch4",
             "type": "main",
             "index": 0
           }
@@ -273,7 +209,7 @@
       "main": [
         [
           {
-            "node": "1 por vez1",
+            "node": "1 por vez7",
             "type": "main",
             "index": 0
           }
@@ -299,8 +235,7 @@
             "type": "main",
             "index": 0
           }
-        ],
-        []
+        ]
       ]
     },
     "Listar Agendamentos": {
@@ -921,8 +856,7 @@
             "type": "main",
             "index": 0
           }
-        ],
-        []
+        ]
       ]
     },
     "Listar Agendamentos2": {
@@ -2006,17 +1940,6 @@
         ]
       ]
     },
-    "enviar fluxo implante hormonal2": {
-      "main": [
-        [
-          {
-            "node": "Wait7",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "foi atendido?3": {
       "main": [
         [
@@ -2065,7 +1988,7 @@
       "main": [
         [
           {
-            "node": "enviar fluxo implante hormonal2",
+            "node": "Switch4",
             "type": "main",
             "index": 0
           }
@@ -2269,16 +2192,55 @@
         ]
       ]
     },
-    "Wait7": {
-      "main": [
-        []
-      ]
-    },
     "Valores34": {
       "main": [
         [
           {
             "node": "possui telefone?6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait2": {
+      "main": [
+        [
+          {
+            "node": "1 por vez",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule Trigger3": {
+      "main": [
+        [
+          {
+            "node": "Lembrete 150 dias depois",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule Trigger4": {
+      "main": [
+        [
+          {
+            "node": "Avaliação 1 dia depois",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule Trigger5": {
+      "main": [
+        [
+          {
+            "node": "3 dias antes",
             "type": "main",
             "index": 0
           }
@@ -2295,7 +2257,8 @@
         "rule": {
           "interval": [
             {
-              "triggerAtHour": 8
+              "triggerAtHour": 8,
+              "triggerAtMinute": 10
             }
           ]
         }
@@ -2305,7 +2268,7 @@
       "type": "n8n-nodes-base.scheduleTrigger",
       "typeVersion": 1,
       "position": [
-        -2960,
+        -2640,
         480
       ]
     },
@@ -2631,8 +2594,7 @@
           "id": "4",
           "name": "BotConversa Fabiolas"
         }
-      },
-      "disabled": true
+      }
     },
     {
       "parameters": {},
@@ -2736,91 +2698,8 @@
     },
     {
       "parameters": {
-        "keepOnlySet": true,
-        "values": {
-          "string": [
-            {
-              "name": "DataHoje",
-              "value": "={{Date()}}"
-            }
-          ]
-        },
-        "options": {}
-      },
-      "id": "3c4b80db-f2e9-4ca0-aa62-45561d1a7011",
-      "name": "data hoje1",
-      "type": "n8n-nodes-base.set",
-      "typeVersion": 1,
-      "position": [
-        -2900,
-        -1620
-      ]
-    },
-    {
-      "parameters": {
-        "value": "={{ $json[\"DataHoje\"] }}",
-        "dataPropertyName": "data hoje",
-        "custom": true,
-        "toFormat": "DD-MM-YYYY",
-        "options": {}
-      },
-      "id": "956e96fc-ef74-4376-97e3-2ac315a12372",
-      "name": "Date & Time1",
-      "type": "n8n-nodes-base.dateTime",
-      "typeVersion": 1,
-      "position": [
-        -2680,
-        -1620
-      ]
-    },
-    {
-      "parameters": {
-        "documentId": {
-          "__rl": true,
-          "value": "1WAPCHqXPkKUpvSH3cgWhKu6_6-jNytqg0CudwcirpGE",
-          "mode": "id"
-        },
-        "sheetName": {
-          "__rl": true,
-          "value": "gid=0",
-          "mode": "list",
-          "cachedResultName": "Lembretes",
-          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1WAPCHqXPkKUpvSH3cgWhKu6_6-jNytqg0CudwcirpGE/edit#gid=0"
-        },
-        "filtersUI": {
-          "values": [
-            {
-              "lookupColumn": "STATUS",
-              "lookupValue": "Atendido"
-            }
-          ]
-        },
-        "options": {
-          "returnAllMatches": "returnAllMatches"
-        }
-      },
-      "id": "6c103dc5-9def-4460-9ef1-340ad28fd711",
-      "name": "Google Sheets1",
-      "type": "n8n-nodes-base.googleSheets",
-      "typeVersion": 3,
-      "position": [
-        -2460,
-        -1620
-      ],
-      "retryOnFail": true,
-      "maxTries": 5,
-      "waitBetweenTries": 5000,
-      "credentials": {
-        "googleSheetsOAuth2Api": {
-          "id": "3",
-          "name": "Google Sheets account"
-        }
-      }
-    },
-    {
-      "parameters": {
         "method": "POST",
-        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{$json[\"ID - BC\"]}}/send_flow/",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{ $json[\"id\"] }}/send_flow/",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "sendBody": true,
@@ -2839,8 +2718,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        -780,
-        -1700
+        1860,
+        -2320
       ],
       "retryOnFail": true,
       "maxTries": 5,
@@ -2850,27 +2729,12 @@
           "id": "4",
           "name": "BotConversa Fabiolas"
         }
-      },
-      "disabled": true
-    },
-    {
-      "parameters": {
-        "batchSize": 1,
-        "options": {}
-      },
-      "id": "76057aab-bf70-4676-8886-49d8058a8f7b",
-      "name": "1 por vez1",
-      "type": "n8n-nodes-base.splitInBatches",
-      "typeVersion": 1,
-      "position": [
-        -1440,
-        -1640
-      ]
+      }
     },
     {
       "parameters": {
         "dataType": "string",
-        "value1": "={{ $node[\"1 por vez1\"].json[\"PROCEDIMENTO\"] }}",
+        "value1": "={{ $('1 por vez7').item.json[\"procedimento\"] }}",
         "rules": {
           "rules": [
             {
@@ -2889,8 +2753,8 @@
       "type": "n8n-nodes-base.switch",
       "typeVersion": 1,
       "position": [
-        -1260,
-        -1640
+        1380,
+        -2260
       ]
     },
     {
@@ -2900,8 +2764,8 @@
       "type": "n8n-nodes-base.noOp",
       "typeVersion": 1,
       "position": [
-        -1000,
-        -1700
+        1640,
+        -2320
       ]
     },
     {
@@ -2911,14 +2775,14 @@
       "type": "n8n-nodes-base.noOp",
       "typeVersion": 1,
       "position": [
-        -1000,
-        -1520
+        1640,
+        -2140
       ]
     },
     {
       "parameters": {
         "method": "POST",
-        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{$json[\"ID - BC\"]}}/send_flow/",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{ $json[\"id\"] }}/send_flow/",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "sendBody": true,
@@ -2937,8 +2801,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        -780,
-        -1520
+        1860,
+        -2140
       ],
       "retryOnFail": true,
       "maxTries": 5,
@@ -2948,28 +2812,7 @@
           "id": "4",
           "name": "BotConversa Fabiolas"
         }
-      },
-      "disabled": true
-    },
-    {
-      "parameters": {
-        "conditions": {
-          "string": [
-            {
-              "value1": "={{ $json[\"DATA\"] }}",
-              "value2": "={{ $node[\"Date & Time1\"].json[\"data hoje\"] }}"
-            }
-          ]
-        }
-      },
-      "id": "8f854653-18f8-4a5a-a99f-856eb773fe25",
-      "name": "atendimento hoje?",
-      "type": "n8n-nodes-base.if",
-      "typeVersion": 1,
-      "position": [
-        -2240,
-        -1620
-      ]
+      }
     },
     {
       "parameters": {
@@ -2981,8 +2824,8 @@
       "type": "n8n-nodes-base.wait",
       "typeVersion": 1,
       "position": [
-        -480,
-        -1520
+        2180,
+        -2220
       ],
       "webhookId": "6fd3cb49-ced0-4bbf-9ab7-402b60d3924a"
     },
@@ -3857,8 +3700,7 @@
         3960,
         -840
       ],
-      "webhookId": "c22b43ee-cbea-4131-8525-39264a397d75",
-      "disabled": true
+      "webhookId": "c22b43ee-cbea-4131-8525-39264a397d75"
     },
     {
       "parameters": {
@@ -6522,7 +6364,7 @@
       "parameters": {
         "action": "calculate",
         "value": "={{Date()}}",
-        "duration": 1,
+        "duration": 3,
         "dataPropertyName": "data-busca",
         "options": {}
       },
@@ -6534,41 +6376,6 @@
         -2100,
         2980
       ]
-    },
-    {
-      "parameters": {
-        "method": "POST",
-        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{ $json[\"id\"] }}/send_flow/",
-        "authentication": "genericCredentialType",
-        "genericAuthType": "httpHeaderAuth",
-        "sendBody": true,
-        "bodyParameters": {
-          "parameters": [
-            {
-              "name": "flow",
-              "value": "890725"
-            }
-          ]
-        },
-        "options": {}
-      },
-      "id": "69f42d43-21af-4297-bec8-a01aec0c6398",
-      "name": "enviar fluxo implante hormonal2",
-      "type": "n8n-nodes-base.httpRequest",
-      "typeVersion": 3,
-      "position": [
-        1960,
-        -2260
-      ],
-      "retryOnFail": true,
-      "maxTries": 5,
-      "waitBetweenTries": 5000,
-      "credentials": {
-        "httpHeaderAuth": {
-          "id": "4",
-          "name": "BotConversa Fabiolas"
-        }
-      }
     },
     {
       "parameters": {
@@ -6720,7 +6527,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 1,
       "position": [
-        1740,
+        1160,
         -2260
       ],
       "id": "328a7787-ae9a-4866-a544-911320ca9a06",
@@ -6741,7 +6548,7 @@
       "name": "Validar Telefone BR6",
       "type": "n8n-nodes-base.function",
       "position": [
-        1500,
+        920,
         -2260
       ],
       "typeVersion": 1,
@@ -6767,7 +6574,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        580,
+        0,
         -2240
       ]
     },
@@ -6798,7 +6605,7 @@
       "type": "n8n-nodes-base.itemLists",
       "typeVersion": 2,
       "position": [
-        820,
+        240,
         -2260
       ]
     },
@@ -6828,7 +6635,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 1,
       "position": [
-        40,
+        -540,
         -2280
       ]
     },
@@ -6872,7 +6679,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 1,
       "position": [
-        40,
+        -540,
         -2140
       ]
     },
@@ -6902,7 +6709,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 1,
       "position": [
-        40,
+        -540,
         -2000
       ]
     },
@@ -6932,7 +6739,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 1,
       "position": [
-        40,
+        -540,
         -1860
       ]
     },
@@ -6952,7 +6759,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        -200,
+        -780,
         -2260
       ]
     },
@@ -6972,7 +6779,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        -200,
+        -780,
         -2120
       ]
     },
@@ -6992,7 +6799,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        -200,
+        -780,
         -1980
       ]
     },
@@ -7012,7 +6819,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        -200,
+        -780,
         -1840
       ]
     },
@@ -7051,7 +6858,7 @@
       "type": "n8n-nodes-base.splitInBatches",
       "typeVersion": 2,
       "position": [
-        1260,
+        680,
         -2260
       ]
     },
@@ -7100,24 +6907,9 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 1,
       "position": [
-        1040,
+        460,
         -2260
       ]
-    },
-    {
-      "parameters": {
-        "amount": 10,
-        "unit": "seconds"
-      },
-      "id": "bf9831ee-1f19-4ba8-a8b8-b00cec59c1cf",
-      "name": "Wait7",
-      "type": "n8n-nodes-base.wait",
-      "typeVersion": 1,
-      "position": [
-        2180,
-        -2260
-      ],
-      "webhookId": "e0d40425-7fb0-4fe6-a339-b735aa54e45b"
     },
     {
       "parameters": {
@@ -7136,8 +6928,68 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 1,
       "position": [
-        360,
+        -220,
         -2240
+      ]
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "triggerAtHour": 8,
+              "triggerAtMinute": 20
+            }
+          ]
+        }
+      },
+      "id": "bd8d1a43-cd16-4648-943a-5317c47e334d",
+      "name": "Schedule Trigger3",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1,
+      "position": [
+        -2660,
+        1100
+      ]
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "triggerAtHour": 8,
+              "triggerAtMinute": 30
+            }
+          ]
+        }
+      },
+      "id": "3b4c7a3c-b0f8-4686-99c8-a1b21185a40d",
+      "name": "Schedule Trigger4",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1,
+      "position": [
+        -2660,
+        1720
+      ]
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "triggerAtHour": 8,
+              "triggerAtMinute": 40
+            }
+          ]
+        }
+      },
+      "id": "2f717144-06ad-4cee-b4cc-23ba0df0d433",
+      "name": "Schedule Trigger5",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1,
+      "position": [
+        -2680,
+        2980
       ]
     }
   ],
@@ -7190,6 +7042,18 @@
     },
     "node:Schedule Trigger1": {
       "recurrencyRules": []
+    },
+    "node:Schedule Trigger2": {
+      "recurrencyRules": []
+    },
+    "node:Schedule Trigger3": {
+      "recurrencyRules": []
+    },
+    "node:Schedule Trigger4": {
+      "recurrencyRules": []
+    },
+    "node:Schedule Trigger5": {
+      "recurrencyRules": []
     }
   },
   "tags": [
@@ -7200,7 +7064,7 @@
       "name": "Fabiolas"
     }
   ],
-  "triggerCount": 2,
-  "updatedAt": "2023-08-30T05:57:43.000Z",
-  "versionId": "6a9d802b-e655-48e2-b43c-78a17e6ef9be"
+  "triggerCount": 6,
+  "updatedAt": "2023-08-30T06:22:52.000Z",
+  "versionId": "731ac08d-b91e-4f9b-9084-9d9cba8d43ec"
 }
