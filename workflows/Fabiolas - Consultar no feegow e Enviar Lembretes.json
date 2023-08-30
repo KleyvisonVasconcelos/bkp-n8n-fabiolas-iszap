@@ -27,7 +27,7 @@
       "main": [
         [
           {
-            "node": "1 por vez",
+            "node": "Switch",
             "type": "main",
             "index": 0
           }
@@ -145,17 +145,6 @@
         [
           {
             "node": "Wait",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "1 por vez": {
-      "main": [
-        [
-          {
-            "node": "Switch",
             "type": "main",
             "index": 0
           }
@@ -582,17 +571,6 @@
         ]
       ]
     },
-    "1 POR VEZ1": {
-      "main": [
-        [
-          {
-            "node": "Validar Telefone BR1",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "Validar Telefone BR1": {
       "main": [
         [
@@ -630,7 +608,7 @@
       "main": [
         [
           {
-            "node": "1 POR VEZ1",
+            "node": "1 por vez",
             "type": "main",
             "index": 0
           }
@@ -692,7 +670,7 @@
       "main": [
         [
           {
-            "node": "possui telefone?",
+            "node": "Set",
             "type": "main",
             "index": 0
           }
@@ -714,7 +692,7 @@
       "main": [
         [
           {
-            "node": "possui telefone?",
+            "node": "Set",
             "type": "main",
             "index": 0
           }
@@ -725,7 +703,7 @@
       "main": [
         [
           {
-            "node": "possui telefone?",
+            "node": "Set",
             "type": "main",
             "index": 0
           }
@@ -736,7 +714,7 @@
       "main": [
         [
           {
-            "node": "possui telefone?",
+            "node": "Set",
             "type": "main",
             "index": 0
           }
@@ -835,6 +813,28 @@
         [
           {
             "node": "Marcado - não confirmado1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set": {
+      "main": [
+        [
+          {
+            "node": "possui telefone?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "1 por vez": {
+      "main": [
+        [
+          {
+            "node": "Validar Telefone BR1",
             "type": "main",
             "index": 0
           }
@@ -1209,7 +1209,7 @@
           "parameters": [
             {
               "name": "value",
-              "value": "={{ $node[\"1 por vez\"].json[\"MEDICA\"] }}"
+              "value": "={{ $('1 por vez').item.json[\"medica\"] }}"
             }
           ]
         },
@@ -1235,20 +1235,6 @@
     },
     {
       "parameters": {
-        "batchSize": 1,
-        "options": {}
-      },
-      "id": "76d6a7b7-823a-410e-8892-2790ab65cf65",
-      "name": "1 por vez",
-      "type": "n8n-nodes-base.splitInBatches",
-      "typeVersion": 1,
-      "position": [
-        1500,
-        240
-      ]
-    },
-    {
-      "parameters": {
         "method": "POST",
         "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{ $('Cadastrando na Audiência1').item.json[\"id\"] }}/custom_fields/521315/",
         "authentication": "genericCredentialType",
@@ -1258,7 +1244,7 @@
           "parameters": [
             {
               "name": "value",
-              "value": "={{$node[\"1 por vez\"].json[\"HORÁRIO\"]}}"
+              "value": "={{ $('1 por vez').item.json[\"horario\"] }}"
             }
           ]
         },
@@ -1293,7 +1279,7 @@
           "parameters": [
             {
               "name": "value",
-              "value": "={{$node[\"1 por vez\"].json[\"PROCEDIMENTO\"]}}"
+              "value": "={{ $('1 por vez').item.json[\"procedimento\"] }}"
             }
           ]
         },
@@ -1877,7 +1863,7 @@
           "parameters": [
             {
               "name": "value",
-              "value": "={{$node[\"1 por vez\"].json[\"DATA\"]}}"
+              "value": "={{ $('1 por vez').item.json[\"data\"] }}"
             }
           ]
         },
@@ -2018,7 +2004,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 2,
       "position": [
-        -400,
+        -620,
         -820
       ],
       "retryOnFail": true,
@@ -2051,7 +2037,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 2,
       "position": [
-        -140,
+        -360,
         -820
       ],
       "retryOnFail": true,
@@ -2086,20 +2072,6 @@
     },
     {
       "parameters": {
-        "batchSize": 1,
-        "options": {}
-      },
-      "id": "fb4b9d29-9115-4a1a-b206-1891e6dd75ff",
-      "name": "1 POR VEZ1",
-      "type": "n8n-nodes-base.splitInBatches",
-      "typeVersion": 2,
-      "position": [
-        1600,
-        -820
-      ]
-    },
-    {
-      "parameters": {
         "authentication": "headerAuth",
         "requestMethod": "POST",
         "url": "https://backend.botconversa.com.br/api/v1/webhook/subscriber/",
@@ -2112,11 +2084,11 @@
             },
             {
               "name": "first_name",
-              "value": "={{$node[\"1 POR VEZ1\"].json[\"nome\"].split(' ')[0]}}"
+              "value": "={{$node[\"1 por vez\"].json[\"nome\"].split(' ')[0]}}"
             },
             {
               "name": "last_name",
-              "value": "={{ $node[\"1 POR VEZ1\"].json[\"nome\"].split(' ')[1]}} {{ $node[\"1 POR VEZ1\"].json[\"nome\"].split(' ')[2]}} {{ $node[\"1 POR VEZ1\"].json[\"nome\"].split(' ')[3]}} {{ $node[\"1 POR VEZ1\"].json[\"nome\"].split(' ')[4]}} {{ $node[\"1 POR VEZ1\"].json[\"nome\"].split(' ')[5]}}"
+              "value": "={{ $node[\"1 por vez\"].json[\"nome\"].split(' ')[1]}} {{ $node[\"1 por vez\"].json[\"nome\"].split(' ')[2]}} {{ $node[\"1 por vez\"].json[\"nome\"].split(' ')[3]}} {{ $node[\"1 por vez\"].json[\"nome\"].split(' ')[4]}} {{ $node[\"1 por vez\"].json[\"nome\"].split(' ')[5]}}"
             }
           ]
         }
@@ -2134,8 +2106,8 @@
       "waitBetweenTries": 5000,
       "credentials": {
         "httpHeaderAuth": {
-          "id": "14",
-          "name": "BotConversa Dra Simone"
+          "id": "4",
+          "name": "BotConversa Fabiolas"
         }
       }
     },
@@ -2167,7 +2139,7 @@
           "parameters": [
             {
               "name": "value",
-              "value": "={{ $node[\"1 POR VEZ1\"].json[\"agendamento_id\"] }}"
+              "value": "={{ $node[\"1 por vez\"].json[\"agendamento_id\"] }}"
             }
           ]
         },
@@ -2240,6 +2212,10 @@
             {
               "aggregation": "append",
               "field": "nome"
+            },
+            {
+              "aggregation": "append",
+              "field": "nome medica"
             }
           ]
         },
@@ -2283,6 +2259,10 @@
             {
               "name": "telefone",
               "value": "={{ $json.appended_telefone[0] }}"
+            },
+            {
+              "name": "medica",
+              "value": "={{ $json.appended_nome_medica[0] }}"
             }
           ]
         },
@@ -2764,6 +2744,41 @@
         -1140,
         -820
       ]
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "nome medica",
+              "value": "={{ $('Marcado - não confirmado1').item.json[\"profissional_id\"].toString().replace(\"9\",\"Fabiola Ribeiro\").replace(\"10\",\"Fabiola Leite\") }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "6cd40326-af44-4c1e-8857-c991df87137d",
+      "name": "Set",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 2,
+      "position": [
+        660,
+        -820
+      ]
+    },
+    {
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      },
+      "id": "fb4b9d29-9115-4a1a-b206-1891e6dd75ff",
+      "name": "1 por vez",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 2,
+      "position": [
+        1600,
+        -820
+      ]
     }
   ],
   "pinData": {
@@ -2808,6 +2823,6 @@
     }
   ],
   "triggerCount": 2,
-  "updatedAt": "2023-08-30T02:52:29.000Z",
-  "versionId": "65c8b5ae-80f9-41f0-8d96-6f359f877c34"
+  "updatedAt": "2023-08-30T03:58:17.000Z",
+  "versionId": "7994622f-60b3-4de4-934b-af22dd891a27"
 }
