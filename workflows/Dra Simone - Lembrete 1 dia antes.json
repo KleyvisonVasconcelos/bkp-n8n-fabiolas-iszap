@@ -543,7 +543,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 1,
       "position": [
-        4920,
+        4440,
         440
       ],
       "id": "1b3a149e-2661-4e81-8c05-cc7b36543431",
@@ -564,7 +564,7 @@
       "name": "Validar Telefone BR1",
       "type": "n8n-nodes-base.function",
       "position": [
-        4720,
+        4240,
         440
       ],
       "typeVersion": 1,
@@ -596,7 +596,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        5160,
+        4680,
         440
       ],
       "retryOnFail": true,
@@ -631,7 +631,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        5440,
+        4960,
         440
       ],
       "retryOnFail": true,
@@ -666,7 +666,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        5720,
+        5240,
         440
       ],
       "retryOnFail": true,
@@ -701,7 +701,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        6020,
+        5540,
         440
       ],
       "retryOnFail": true,
@@ -712,8 +712,7 @@
           "id": "14",
           "name": "BotConversa Dra Simone"
         }
-      },
-      "disabled": true
+      }
     },
     {
       "parameters": {
@@ -725,11 +724,10 @@
       "type": "n8n-nodes-base.wait",
       "typeVersion": 1,
       "position": [
-        6320,
+        5840,
         440
       ],
-      "webhookId": "aa0c3cbc-8ae9-40cb-b52e-220f78d8be2b",
-      "disabled": true
+      "webhookId": "aa0c3cbc-8ae9-40cb-b52e-220f78d8be2b"
     },
     {
       "parameters": {
@@ -782,7 +780,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        3720,
+        3240,
         440
       ]
     },
@@ -826,7 +824,7 @@
       "type": "n8n-nodes-base.itemLists",
       "typeVersion": 2,
       "position": [
-        4000,
+        3520,
         440
       ]
     },
@@ -868,7 +866,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 1,
       "position": [
-        4220,
+        3740,
         440
       ]
     },
@@ -993,7 +991,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 1,
       "position": [
-        3160,
+        2900,
         440
       ]
     },
@@ -1052,7 +1050,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        2920,
+        2660,
         440
       ]
     },
@@ -1072,7 +1070,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        2920,
+        2660,
         660
       ]
     },
@@ -1126,7 +1124,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 1,
       "position": [
-        3160,
+        2900,
         640
       ]
     },
@@ -1146,7 +1144,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        2920,
+        2660,
         920
       ]
     },
@@ -1200,7 +1198,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 1,
       "position": [
-        3160,
+        2900,
         900
       ]
     },
@@ -1254,7 +1252,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 1,
       "position": [
-        3160,
+        2900,
         1080
       ]
     },
@@ -1268,7 +1266,7 @@
       "type": "n8n-nodes-base.splitInBatches",
       "typeVersion": 2,
       "position": [
-        4440,
+        3960,
         440
       ]
     }
@@ -1466,6 +1464,6 @@
     }
   ],
   "triggerCount": 1,
-  "updatedAt": "2023-08-30T01:56:42.000Z",
-  "versionId": "9f160b50-bee6-4dd5-a19d-59134ed1c056"
+  "updatedAt": "2023-08-30T02:10:44.000Z",
+  "versionId": "5ee477f1-d336-45fd-b7ea-2e7544b68ace"
 }
