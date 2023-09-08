@@ -2281,8 +2281,7 @@
       "position": [
         -2640,
         480
-      ],
-      "disabled": true
+      ]
     },
     {
       "parameters": {},
@@ -2706,8 +2705,7 @@
       "position": [
         -2700,
         -2260
-      ],
-      "disabled": true
+      ]
     },
     {
       "parameters": {
@@ -6963,8 +6961,7 @@
       "position": [
         -2660,
         1100
-      ],
-      "disabled": true
+      ]
     },
     {
       "parameters": {
@@ -6984,8 +6981,7 @@
       "position": [
         -2660,
         1720
-      ],
-      "disabled": true
+      ]
     },
     {
       "parameters": {
@@ -7005,8 +7001,7 @@
       "position": [
         -2680,
         2980
-      ],
-      "disabled": true
+      ]
     },
     {
       "parameters": {},
@@ -7073,7 +7068,7 @@
       "name": "Fabiolas"
     }
   ],
-  "triggerCount": 1,
-  "updatedAt": "2023-09-08T16:55:36.000Z",
-  "versionId": "17760067-e07d-4c4d-99b8-9b8c43ea7292"
+  "triggerCount": 6,
+  "updatedAt": "2023-09-08T17:33:42.000Z",
+  "versionId": "2b53452b-c150-46d7-b5f8-9ce8e0a7c288"
 }
