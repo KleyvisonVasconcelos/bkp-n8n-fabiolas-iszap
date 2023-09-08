@@ -2246,6 +2246,17 @@
           }
         ]
       ]
+    },
+    "When clicking \"Execute Workflow\"": {
+      "main": [
+        [
+          {
+            "node": "hoje é sexta?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "createdAt": "2023-07-27T04:44:49.831Z",
@@ -2270,7 +2281,8 @@
       "position": [
         -2640,
         480
-      ]
+      ],
+      "disabled": true
     },
     {
       "parameters": {},
@@ -2564,7 +2576,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{$node[\"Lembrete 1 dia antes\"].json[\"ID - BC\"]}}/send_flow/",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{ $('Cadastrando na Audiência1').item.json[\"id\"] }}/send_flow/",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "sendBody": true,
@@ -2694,7 +2706,8 @@
       "position": [
         -2700,
         -2260
-      ]
+      ],
+      "disabled": true
     },
     {
       "parameters": {
@@ -6950,7 +6963,8 @@
       "position": [
         -2660,
         1100
-      ]
+      ],
+      "disabled": true
     },
     {
       "parameters": {
@@ -6970,7 +6984,8 @@
       "position": [
         -2660,
         1720
-      ]
+      ],
+      "disabled": true
     },
     {
       "parameters": {
@@ -6990,28 +7005,22 @@
       "position": [
         -2680,
         2980
+      ],
+      "disabled": true
+    },
+    {
+      "parameters": {},
+      "id": "4f36a1c6-5f61-4d13-bb5a-cfb63966dfb4",
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -2780,
+        -540
       ]
     }
   ],
   "pinData": {
-    "formatando": [
-      {
-        "json": {
-          "timestamp": "2023-08-29T23:46:27.295-03:00",
-          "Readable date": "August 29th 2023, 11:46:27 pm",
-          "Readable time": "11:46:27 pm",
-          "Day of week": "Tuesday",
-          "Year": "2023",
-          "Month": "August",
-          "Day of month": "29",
-          "Hour": "23",
-          "Minute": "46",
-          "Second": "27",
-          "Timezone": "-03 -03:00",
-          "data-amanha": "31-08-2023"
-        }
-      }
-    ],
     "formatando5": [
       {
         "json": {
@@ -7064,7 +7073,7 @@
       "name": "Fabiolas"
     }
   ],
-  "triggerCount": 6,
-  "updatedAt": "2023-08-30T06:22:52.000Z",
-  "versionId": "731ac08d-b91e-4f9b-9084-9d9cba8d43ec"
+  "triggerCount": 1,
+  "updatedAt": "2023-09-08T16:55:36.000Z",
+  "versionId": "17760067-e07d-4c4d-99b8-9b8c43ea7292"
 }
