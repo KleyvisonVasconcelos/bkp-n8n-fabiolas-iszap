@@ -436,7 +436,7 @@
       "main": [
         [
           {
-            "node": "hoje é sexta?",
+            "node": "hoje é domingo?",
             "type": "main",
             "index": 0
           }
@@ -2249,6 +2249,12 @@
     },
     "When clicking \"Execute Workflow\"": {
       "main": [
+        []
+      ]
+    },
+    "hoje é domingo?": {
+      "main": [
+        [],
         [
           {
             "node": "hoje é sexta?",
@@ -3634,7 +3640,7 @@
       "type": "n8n-nodes-base.scheduleTrigger",
       "typeVersion": 1,
       "position": [
-        -2580,
+        -2820,
         -820
       ]
     },
@@ -7013,6 +7019,26 @@
         -2780,
         -540
       ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json[\"Day of week\"] }}",
+              "value2": "Sunday"
+            }
+          ]
+        }
+      },
+      "id": "068e40ad-9561-4b40-8a7a-632b1aebeca7",
+      "name": "hoje é domingo?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        -2580,
+        -820
+      ]
     }
   ],
   "pinData": {
@@ -7069,6 +7095,6 @@
     }
   ],
   "triggerCount": 6,
-  "updatedAt": "2023-09-08T17:33:42.000Z",
-  "versionId": "2b53452b-c150-46d7-b5f8-9ce8e0a7c288"
+  "updatedAt": "2023-09-10T22:15:11.000Z",
+  "versionId": "10625a9d-4c6e-4f3f-bb2b-3b4f71df10ce"
 }
