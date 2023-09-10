@@ -5,7 +5,7 @@
       "main": [
         [
           {
-            "node": "hoje é sexta?",
+            "node": "hoje é domingo?",
             "type": "main",
             "index": 0
           }
@@ -347,6 +347,18 @@
           }
         ]
       ]
+    },
+    "hoje é domingo?": {
+      "main": [
+        [],
+        [
+          {
+            "node": "hoje é sexta?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "createdAt": "2023-06-07T05:23:56.019Z",
@@ -368,7 +380,7 @@
       "type": "n8n-nodes-base.scheduleTrigger",
       "typeVersion": 1,
       "position": [
-        200,
+        -40,
         440
       ]
     },
@@ -1269,6 +1281,26 @@
         3960,
         440
       ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json[\"Day of week\"] }}",
+              "value2": "Sunday"
+            }
+          ]
+        }
+      },
+      "id": "bd9c13c9-c220-4261-9282-84fc56d139dc",
+      "name": "hoje é domingo?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        180,
+        440
+      ]
     }
   ],
   "pinData": {},
@@ -1291,6 +1323,6 @@
     }
   ],
   "triggerCount": 1,
-  "updatedAt": "2023-09-08T23:57:41.000Z",
-  "versionId": "463a430a-6482-4bed-bbbf-0cbe66b1dc28"
+  "updatedAt": "2023-09-10T22:12:48.000Z",
+  "versionId": "812cfbc4-f45f-472c-908d-30ea1d7f05ad"
 }
