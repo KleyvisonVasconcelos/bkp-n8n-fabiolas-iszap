@@ -689,7 +689,8 @@
           "id": "14",
           "name": "BotConversa Dra Simone"
         }
-      }
+      },
+      "continueOnFail": true
     },
     {
       "parameters": {
@@ -838,7 +839,8 @@
       "position": [
         3520,
         440
-      ]
+      ],
+      "continueOnFail": true
     },
     {
       "parameters": {
@@ -1323,6 +1325,6 @@
     }
   ],
   "triggerCount": 1,
-  "updatedAt": "2023-09-10T22:12:48.000Z",
-  "versionId": "812cfbc4-f45f-472c-908d-30ea1d7f05ad"
+  "updatedAt": "2023-09-15T21:06:27.000Z",
+  "versionId": "c1919460-8914-4ef1-bb36-17c4450647cb"
 }
