@@ -370,7 +370,7 @@
         "rule": {
           "interval": [
             {
-              "triggerAtHour": 9
+              "triggerAtHour": 8
             }
           ]
         }
@@ -641,7 +641,8 @@
           "id": "18",
           "name": "ClickBot - BrinCare"
         }
-      }
+      },
+      "disabled": true
     },
     {
       "parameters": {
@@ -718,7 +719,7 @@
       "type": "n8n-nodes-base.itemLists",
       "typeVersion": 2,
       "position": [
-        3520,
+        3500,
         440
       ],
       "continueOnFail": true
@@ -1271,6 +1272,6 @@
     }
   ],
   "triggerCount": 1,
-  "updatedAt": "2023-09-18T11:39:11.000Z",
-  "versionId": "f27b7987-c870-49df-a189-525c1cf70301"
+  "updatedAt": "2023-09-18T12:19:02.000Z",
+  "versionId": "08cb0b2d-3917-4b7e-83b0-6c24d846dfea"
 }
