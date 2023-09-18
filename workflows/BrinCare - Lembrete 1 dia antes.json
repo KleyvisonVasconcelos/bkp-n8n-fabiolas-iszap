@@ -530,8 +530,8 @@
       "waitBetweenTries": 5000,
       "credentials": {
         "httpHeaderAuth": {
-          "id": "14",
-          "name": "BotConversa Dra Simone"
+          "id": "18",
+          "name": "ClickBot - BrinCare"
         }
       },
       "continueOnFail": true
@@ -566,8 +566,8 @@
       "maxTries": 5,
       "credentials": {
         "httpHeaderAuth": {
-          "id": "14",
-          "name": "BotConversa Dra Simone"
+          "id": "18",
+          "name": "ClickBot - BrinCare"
         }
       },
       "continueOnFail": true
@@ -602,8 +602,8 @@
       "waitBetweenTries": 5000,
       "credentials": {
         "httpHeaderAuth": {
-          "id": "14",
-          "name": "BotConversa Dra Simone"
+          "id": "18",
+          "name": "ClickBot - BrinCare"
         }
       },
       "continueOnFail": true
@@ -619,7 +619,7 @@
           "parameters": [
             {
               "name": "flow",
-              "value": "1648914"
+              "value": "2281132"
             }
           ]
         },
@@ -638,8 +638,8 @@
       "waitBetweenTries": 5000,
       "credentials": {
         "httpHeaderAuth": {
-          "id": "14",
-          "name": "BotConversa Dra Simone"
+          "id": "18",
+          "name": "ClickBot - BrinCare"
         }
       }
     },
@@ -674,7 +674,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        3240,
+        3160,
         440
       ]
     },
@@ -1271,6 +1271,6 @@
     }
   ],
   "triggerCount": 1,
-  "updatedAt": "2023-09-18T10:57:57.000Z",
-  "versionId": "4f0cd113-1717-4ea7-981d-710a0132c2b5"
+  "updatedAt": "2023-09-18T11:39:11.000Z",
+  "versionId": "f27b7987-c870-49df-a189-525c1cf70301"
 }
