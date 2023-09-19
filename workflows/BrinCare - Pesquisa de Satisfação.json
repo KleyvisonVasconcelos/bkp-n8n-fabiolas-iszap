@@ -921,7 +921,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{ $node[\"Cadastrando na Audiência\"].json[\"id\"] }}/custom_fields/------/",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{ $node[\"Cadastrando na Audiência\"].json[\"id\"] }}/custom_fields/1271490/",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "sendBody": true,
@@ -952,7 +952,6 @@
           "name": "ClickBot - BrinCare"
         }
       },
-      "disabled": true,
       "continueOnFail": true
     }
   ],
@@ -995,6 +994,6 @@
     }
   ],
   "triggerCount": 1,
-  "updatedAt": "2023-09-19T16:32:23.000Z",
-  "versionId": "1bd8ac4c-8630-4e89-b56c-59fb60fd4676"
+  "updatedAt": "2023-09-19T17:33:36.000Z",
+  "versionId": "2e4966c3-da68-4367-ac16-0e9286503fe1"
 }
