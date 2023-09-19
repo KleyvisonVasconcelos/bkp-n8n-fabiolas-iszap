@@ -82,7 +82,7 @@
       "main": [
         [
           {
-            "node": "enviar fluxo1",
+            "node": "Salvar nome crianca",
             "type": "main",
             "index": 0
           }
@@ -126,7 +126,7 @@
       "main": [
         [
           {
-            "node": "Valores4",
+            "node": "responsavel cadastrado?",
             "type": "main",
             "index": 0
           }
@@ -370,6 +370,46 @@
           }
         ]
       ]
+    },
+    "responsavel cadastrado?": {
+      "main": [
+        [
+          {
+            "node": "Valores4",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Valores5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Valores5": {
+      "main": [
+        [
+          {
+            "node": "1 POR VEZ111",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Salvar nome crianca": {
+      "main": [
+        [
+          {
+            "node": "enviar fluxo1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "createdAt": "2023-09-18T10:45:31.143Z",
@@ -501,7 +541,7 @@
       "name": "Validar Telefone BR1",
       "type": "n8n-nodes-base.function",
       "position": [
-        4460,
+        4440,
         440
       ],
       "typeVersion": 1,
@@ -605,7 +645,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        5460,
+        5440,
         440
       ],
       "retryOnFail": true,
@@ -641,7 +681,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        5760,
+        5920,
         440
       ],
       "retryOnFail": true,
@@ -665,7 +705,7 @@
       "type": "n8n-nodes-base.wait",
       "typeVersion": 1,
       "position": [
-        6060,
+        6160,
         440
       ],
       "webhookId": "d4b48830-e382-4c4a-8d5c-1ff3c39fbf94"
@@ -686,8 +726,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        3160,
-        440
+        2980,
+        460
       ]
     },
     {
@@ -735,7 +775,7 @@
       "type": "n8n-nodes-base.itemLists",
       "typeVersion": 2,
       "position": [
-        3680,
+        3400,
         440
       ],
       "continueOnFail": true
@@ -861,8 +901,8 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 1,
       "position": [
-        2900,
-        440
+        2720,
+        420
       ]
     },
     {
@@ -895,7 +935,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        2660,
+        2480,
         440
       ]
     },
@@ -915,7 +955,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        2660,
+        2480,
         660
       ]
     },
@@ -969,8 +1009,8 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 1,
       "position": [
-        2900,
-        640
+        2720,
+        580
       ]
     },
     {
@@ -989,8 +1029,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        2660,
-        920
+        2480,
+        880
       ]
     },
     {
@@ -1043,8 +1083,8 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 1,
       "position": [
-        2900,
-        900
+        2720,
+        740
       ]
     },
     {
@@ -1097,8 +1137,8 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 1,
       "position": [
-        2900,
-        1080
+        2720,
+        900
       ]
     },
     {
@@ -1154,7 +1194,7 @@
             },
             {
               "name": "nome",
-              "value": "={{ $json.appended_nome[0].toString() }}"
+              "value": "={{ $json.appended_Responsavel[0] }}"
             },
             {
               "name": "procedimento",
@@ -1165,8 +1205,8 @@
               "value": "={{ $json.appended_telefone[0] }}"
             },
             {
-              "name": "Responsavel",
-              "value": "={{ $json.appended_Responsavel[0] }}"
+              "name": "Nome Crianca",
+              "value": "={{ $json.appended_nome[0].toString() }}"
             }
           ]
         },
@@ -1177,8 +1217,8 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 1,
       "position": [
-        3920,
-        440
+        3900,
+        360
       ]
     },
     {
@@ -1285,9 +1325,112 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 2,
       "position": [
-        3420,
+        3200,
         440
       ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json.appended_Responsavel[0] }}",
+              "operation": "isNotEmpty"
+            }
+          ]
+        }
+      },
+      "id": "25674357-cd29-455a-8d81-042cbccea2f9",
+      "name": "responsavel cadastrado?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        3620,
+        440
+      ]
+    },
+    {
+      "parameters": {
+        "keepOnlySet": true,
+        "values": {
+          "string": [
+            {
+              "name": "agendamento_id",
+              "value": "={{ $json.concatenated_agendamento_id.toString() }}"
+            },
+            {
+              "name": "data",
+              "value": "={{ $json.appended_data[0].toString() }}"
+            },
+            {
+              "name": "horario",
+              "value": "={{ $json.appended_horario[0].toString() }}"
+            },
+            {
+              "name": "nome",
+              "value": "=Responsável"
+            },
+            {
+              "name": "procedimento",
+              "value": "={{ $json.concatenated_procedimento }}"
+            },
+            {
+              "name": "telefone",
+              "value": "={{ $json.appended_telefone[0] }}"
+            },
+            {
+              "name": "Nome Crianca",
+              "value": "={{ $json.appended_nome[0].toString() }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "8d620a8a-1b08-4a04-a5a6-615cd5a4be71",
+      "name": "Valores5",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [
+        3900,
+        520
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{ $node[\"Cadastrando na Audiência1\"].json[\"id\"] }}/custom_fields/------/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "value",
+              "value": "={{ $('1 POR VEZ111').item.json[\"Nome Crianca\"] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "f75e2c62-5184-4cb2-bd8c-6ee97ca574a2",
+      "name": "Salvar nome crianca",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        5680,
+        440
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "18",
+          "name": "ClickBot - BrinCare"
+        }
+      },
+      "disabled": true,
+      "continueOnFail": true
     }
   ],
   "pinData": {},
@@ -1310,6 +1453,6 @@
     }
   ],
   "triggerCount": 1,
-  "updatedAt": "2023-09-19T15:46:50.000Z",
-  "versionId": "a4a8c59b-2860-4562-a882-3746f30e482b"
+  "updatedAt": "2023-09-19T16:26:35.000Z",
+  "versionId": "52118289-2f6e-4d34-a759-28f582b4eebb"
 }
