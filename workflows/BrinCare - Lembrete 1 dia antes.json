@@ -45,17 +45,6 @@
         ]
       ]
     },
-    "Validar Telefone BR1": {
-      "main": [
-        [
-          {
-            "node": "Cadastrando na Audiência1",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "Atualizar Data Agendamento no BC1": {
       "main": [
         [
@@ -371,7 +360,7 @@
       "main": [
         [
           {
-            "node": "Salvar nome médico",
+            "node": "Salvar nome profissional",
             "type": "main",
             "index": 0
           }
@@ -389,22 +378,11 @@
         ]
       ]
     },
-    "Salvar nome médico": {
-      "main": [
-        [
-          {
-            "node": "enviar fluxo1",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "1 POR VEZ": {
       "main": [
         [
           {
-            "node": "Validar Telefone BR1",
+            "node": "Nome e telefone para validar",
             "type": "main",
             "index": 0
           }
@@ -427,6 +405,39 @@
         [
           {
             "node": "1 POR VEZ",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Salvar nome profissional": {
+      "main": [
+        [
+          {
+            "node": "enviar fluxo1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Nome e telefone para validar": {
+      "main": [
+        [
+          {
+            "node": "Formatando Nome e Telefone",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Formatando Nome e Telefone": {
+      "main": [
+        [
+          {
+            "node": "Cadastrando na Audiência1",
             "type": "main",
             "index": 0
           }
@@ -501,8 +512,7 @@
             {
               "value1": "={{ $json.status_id.toString() }}",
               "value2": "1"
-            },
-            {}
+            }
           ]
         },
         "combineOperation": "any"
@@ -534,7 +544,7 @@
             },
             {
               "name": "last_name",
-              "value": "={{ $node[\"1 POR VEZ\"].json[\"nome\"].split(' ')[1]}} {{ $node[\"1 POR VEZ\"].json[\"nome\"].split(' ')[2]}} {{ $node[\"1 POR VEZ\"].json[\"nome\"].split(' ')[3]}} {{ $node[\"1 POR VEZ\"].json[\"nome\"].split(' ')[4]}} {{ $node[\"1 POR VEZ\"].json[\"nome\"].split(' ')[5]}}"
+              "value": "={{ $json.Sobrenome }}"
             }
           ]
         }
@@ -543,7 +553,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 1,
       "position": [
-        4660,
+        4880,
         440
       ],
       "id": "a75be772-ac07-4992-959d-dd726c6e855d",
@@ -556,23 +566,6 @@
           "name": "ClickBot - BrinCare"
         }
       },
-      "continueOnFail": true
-    },
-    {
-      "parameters": {
-        "functionCode": "var telefone = items[0].json.telefone.replaceAll(' ','').replaceAll('(','').replaceAll(')','').replaceAll('-','').replaceAll(',','').replaceAll('.','');\nvar ddd = telefone.slice(2,4);\nvar ddi = telefone.charAt(0);\nvar ddx = telefone.slice(0,2);\nvar length = telefone.length;\nif (length >= 12){\n  if (ddi == '+'){\n    ddi = telefone.slice(0,3);\n    telefone = parseInt(telefone.slice(3)).toString();\n  } else {\n    if (ddx == '55'){\n      telefone = parseInt(telefone.slice(2)).toString();\n      ddi = \"+55\";\n    } else {\n      telefone = parseInt(telefone).toString();\n      ddi = 'não informado';\n    }\n  }\n} else {\n  telefone = parseInt(telefone).toString();\n  ddi = 'não informado';\n}\n\nddd = telefone.slice(0,2);\ntelefone = telefone.slice(2);\nif (ddd > 28){\n  telefone = telefone.slice(-8);\n} else {\n  telefone = '9'+telefone.slice(-8);\n}\nvar whatsapp = '+55'+ddd+telefone;\n\nreturn [\n  {\n    json: {\n      ddi,\n      ddd,\n      telefone,\n      whatsapp,   \n    }\n  }\n];"
-      },
-      "name": "Validar Telefone BR1",
-      "type": "n8n-nodes-base.function",
-      "position": [
-        4440,
-        440
-      ],
-      "typeVersion": 1,
-      "id": "9b9755de-98ba-4566-a9a4-0bfd04636055",
-      "retryOnFail": true,
-      "maxTries": 5,
-      "waitBetweenTries": 5000,
       "continueOnFail": true
     },
     {
@@ -597,7 +590,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        4920,
+        5140,
         440
       ],
       "retryOnFail": true,
@@ -633,7 +626,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        5180,
+        5400,
         440
       ],
       "retryOnFail": true,
@@ -650,7 +643,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{ $node[\"Cadastrando na Audiência1\"].json[\"id\"] }}/custom_fields/992933/",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{ $node[\"Cadastrando na Audiência1\"].json[\"id\"] }}/custom_fields/1316320/",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "sendBody": true,
@@ -669,7 +662,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        5440,
+        5660,
         440
       ],
       "retryOnFail": true,
@@ -705,7 +698,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        6140,
+        6360,
         440
       ],
       "retryOnFail": true,
@@ -729,7 +722,7 @@
       "type": "n8n-nodes-base.wait",
       "typeVersion": 1,
       "position": [
-        6380,
+        6600,
         440
       ],
       "webhookId": "d4b48830-e382-4c4a-8d5c-1ff3c39fbf94"
@@ -1414,7 +1407,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        5680,
+        5900,
         440
       ],
       "retryOnFail": true,
@@ -1463,42 +1456,6 @@
     },
     {
       "parameters": {
-        "method": "POST",
-        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{ $node[\"Cadastrando na Audiência1\"].json[\"id\"] }}/custom_fields/1281325/",
-        "authentication": "genericCredentialType",
-        "genericAuthType": "httpHeaderAuth",
-        "sendBody": true,
-        "bodyParameters": {
-          "parameters": [
-            {
-              "name": "value",
-              "value": "={{ $('1 POR VEZ').item.json[\"Profissional\"] }}"
-            }
-          ]
-        },
-        "options": {}
-      },
-      "id": "90111c6a-3bae-4d2d-98c8-ac9eb5edaeab",
-      "name": "Salvar nome médico",
-      "type": "n8n-nodes-base.httpRequest",
-      "typeVersion": 3,
-      "position": [
-        5900,
-        440
-      ],
-      "retryOnFail": true,
-      "maxTries": 5,
-      "waitBetweenTries": 5000,
-      "credentials": {
-        "httpHeaderAuth": {
-          "id": "18",
-          "name": "ClickBot - BrinCare"
-        }
-      },
-      "continueOnFail": true
-    },
-    {
-      "parameters": {
         "batchSize": 1,
         "options": {}
       },
@@ -1529,6 +1486,81 @@
       "typeVersion": 1,
       "position": [
         1520,
+        440
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{ $node[\"Cadastrando na Audiência1\"].json[\"id\"] }}/custom_fields/1281325/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "value",
+              "value": "={{ $('1 POR VEZ').item.json[\"Profissional\"] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "90111c6a-3bae-4d2d-98c8-ac9eb5edaeab",
+      "name": "Salvar nome profissional",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        6120,
+        440
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "18",
+          "name": "ClickBot - BrinCare"
+        }
+      },
+      "continueOnFail": true
+    },
+    {
+      "parameters": {
+        "keepOnlySet": true,
+        "values": {
+          "string": [
+            {
+              "name": "telefone",
+              "value": "={{ $json.telefone }}"
+            },
+            {
+              "name": "nomeCompleto",
+              "value": "={{ $json.nome }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "ddd1cccf-a849-48bc-b725-405d9f2ca15d",
+      "name": "Nome e telefone para validar",
+      "type": "n8n-nodes-base.set",
+      "position": [
+        4420,
+        440
+      ],
+      "typeVersion": 1
+    },
+    {
+      "parameters": {
+        "jsCode": "// Obter a string de nome completo do nó anterior\nconst nomeCompleto = items[0].json.nomeCompleto;\n\n// Função para separar o nome completo em nome e sobrenome\nfunction separarNomeSobrenome(nomeCompleto) {\n  // Verificar se o nome completo é uma string\n  if (typeof nomeCompleto !== 'string') {\n    throw new Error('O nome completo deve ser uma string.');\n  }\n\n  // Dividir o nome completo em palavras\n  const palavras = nomeCompleto.trim().split(' ');\n\n  // Verificar se há mais de uma palavra\n  if (palavras.length === 0) {\n    throw new Error('O nome completo deve conter pelo menos um nome.');\n  }\n\n  // Extrair o primeiro nome\n  const primeiroNome = palavras.shift();\n\n  // Extrair o sobrenome\n  const sobrenome = palavras.length > 0 ? palavras.join(' ') : '.';\n\n  // Formatar o nome e sobrenome com a primeira letra de cada palavra em maiúscula\n  const nomeFormatado = formatarNome(primeiroNome);\n  const sobrenomeFormatado = formatarNome(sobrenome);\n\n  return {\n    nome: nomeFormatado,\n    sobrenome: sobrenomeFormatado\n  };\n}\n\nfunction formatarNome(nome) {\n  return nome\n    .toLowerCase()\n    .split(' ')\n    .map((palavra) => palavra.charAt(0).toUpperCase() + palavra.slice(1))\n    .join(' ');\n}\n\n// Separar o nome completo em nome e sobrenome\nconst resultado = separarNomeSobrenome(nomeCompleto);\n\nvar whatsapp = items[0].json.telefone.replace(/\\D/g, '');\nvar ddd = whatsapp.slice(2,4);\nvar ddi = whatsapp.charAt(0);\nvar ddx = whatsapp.slice(0,2);\nvar length = whatsapp.length;\nif (length >= 12){\n  if (ddi == '+'){\n    ddi = whatsapp.slice(0,3);\n    whatsapp = parseInt(whatsapp.slice(3)).toString();\n  } else {\n    if (ddx == '55'){\n      whatsapp = parseInt(whatsapp.slice(2)).toString();\n      ddi = \"+55\";\n    } else {\n      whatsapp = parseInt(whatsapp).toString();\n      ddi = 'não informado';\n    }\n  }\n} else {\n  whatsapp = parseInt(whatsapp).toString();\n  ddi = 'não informado';\n}\n\nddd = whatsapp.slice(0,2);\nwhatsapp = whatsapp.slice(2);\nif (ddd > 28){\n  whatsapp = whatsapp.slice(-8);\n} else {\n  whatsapp = '9'+whatsapp.slice(-8);\n}\nvar whatsapp = '+55'+ddd+whatsapp;\n\n// Armazenar o nome e sobrenome nos campos desejados\nreturn {\n  json: {\n    Nome: resultado.nome,\n    Sobrenome: resultado.sobrenome,\n    NomeCompleto: resultado.nome+' '+resultado.sobrenome,\n    whatsapp\n  }\n};\n"
+      },
+      "id": "1b5da60c-fe82-4740-8ee6-044e530a8af9",
+      "name": "Formatando Nome e Telefone",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 1,
+      "position": [
+        4660,
         440
       ]
     }
@@ -1572,6 +1604,6 @@
     }
   ],
   "triggerCount": 1,
-  "updatedAt": "2023-09-20T12:56:35.000Z",
-  "versionId": "66bc59c0-2c88-4cf1-a0af-9dec96e2ef47"
+  "updatedAt": "2023-09-20T13:35:03.000Z",
+  "versionId": "31488aab-751a-4e27-846d-596b28b7f8f0"
 }
