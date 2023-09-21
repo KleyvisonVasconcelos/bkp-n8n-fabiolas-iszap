@@ -1,17 +1,6 @@
 {
-  "active": true,
+  "active": false,
   "connections": {
-    "Schedule Trigger": {
-      "main": [
-        [
-          {
-            "node": "hoje é domingo?",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "Listar Agendamentos": {
       "main": [
         [
@@ -105,57 +94,6 @@
         [
           {
             "node": "responsavel cadastrado?",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "hoje é sexta?": {
-      "main": [
-        [
-          {
-            "node": "somando 3 dias",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "somando 1 dia",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "formatando": {
-      "main": [
-        [
-          {
-            "node": "Listar Agendamentos",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "somando 1 dia": {
-      "main": [
-        [
-          {
-            "node": "formatando",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "somando 3 dias": {
-      "main": [
-        [
-          {
-            "node": "formatando",
             "type": "main",
             "index": 0
           }
@@ -265,18 +203,6 @@
         [
           {
             "node": "possui telefone?",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "hoje é domingo?": {
-      "main": [
-        [],
-        [
-          {
-            "node": "hoje é sexta?",
             "type": "main",
             "index": 0
           }
@@ -443,32 +369,23 @@
           }
         ]
       ]
+    },
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Listar Agendamentos",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "createdAt": "2023-09-20T13:41:57.323Z",
   "id": "21",
   "name": "BrinCare - mensagem agendamento realizado",
   "nodes": [
-    {
-      "parameters": {
-        "rule": {
-          "interval": [
-            {
-              "triggerAtHour": 8
-            }
-          ]
-        }
-      },
-      "id": "f56f577f-89dc-44de-a7ae-927d992aa393",
-      "name": "Schedule Trigger",
-      "type": "n8n-nodes-base.scheduleTrigger",
-      "typeVersion": 1,
-      "position": [
-        -360,
-        440
-      ],
-      "disabled": true
-    },
     {
       "parameters": {
         "authentication": "genericCredentialType",
@@ -478,12 +395,8 @@
         "queryParametersUi": {
           "parameter": [
             {
-              "name": "data_start",
-              "value": "={{ $json[\"data-amanha\"] }}"
-            },
-            {
-              "name": "data_end",
-              "value": "={{ $json[\"data-amanha\"] }}"
+              "name": "agendamento_id",
+              "value": "={{ $('Webhook').item.json[\"body\"][\"payload\"][\"id\"] }}"
             }
           ]
         }
@@ -493,7 +406,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 2,
       "position": [
-        860,
+        840,
         440
       ],
       "retryOnFail": true,
@@ -800,77 +713,6 @@
     },
     {
       "parameters": {
-        "conditions": {
-          "string": [
-            {
-              "value1": "={{ $json[\"Day of week\"] }}",
-              "value2": "Friday"
-            }
-          ]
-        }
-      },
-      "id": "e130fb16-107b-421e-88b0-337089221237",
-      "name": "hoje é sexta?",
-      "type": "n8n-nodes-base.if",
-      "typeVersion": 1,
-      "position": [
-        120,
-        440
-      ]
-    },
-    {
-      "parameters": {
-        "value": "={{ $json[\"data-amanha\"] }}",
-        "dataPropertyName": "data-amanha",
-        "custom": true,
-        "toFormat": "DD-MM-YYYY",
-        "options": {}
-      },
-      "id": "13bf52f8-d3f5-4099-aff4-194744bc6a48",
-      "name": "formatando",
-      "type": "n8n-nodes-base.dateTime",
-      "typeVersion": 1,
-      "position": [
-        640,
-        440
-      ]
-    },
-    {
-      "parameters": {
-        "action": "calculate",
-        "value": "={{Date()}}",
-        "duration": 1,
-        "dataPropertyName": "data-amanha",
-        "options": {}
-      },
-      "id": "18545121-2b25-444c-8594-d2b54e8871d3",
-      "name": "somando 1 dia",
-      "type": "n8n-nodes-base.dateTime",
-      "typeVersion": 1,
-      "position": [
-        380,
-        520
-      ]
-    },
-    {
-      "parameters": {
-        "action": "calculate",
-        "value": "={{Date()}}",
-        "duration": 3,
-        "dataPropertyName": "data-amanha",
-        "options": {}
-      },
-      "id": "2f13491a-389b-4a9b-b232-56dab82c810e",
-      "name": "somando 3 dias",
-      "type": "n8n-nodes-base.dateTime",
-      "typeVersion": 1,
-      "position": [
-        380,
-        360
-      ]
-    },
-    {
-      "parameters": {
         "keepOnlySet": true,
         "values": {
           "string": [
@@ -1157,26 +999,6 @@
       "position": [
         2720,
         900
-      ]
-    },
-    {
-      "parameters": {
-        "conditions": {
-          "string": [
-            {
-              "value1": "={{ $json[\"Day of week\"] }}",
-              "value2": "Sunday"
-            }
-          ]
-        }
-      },
-      "id": "fc6ecbb5-87ef-4a8f-8a11-953500865b67",
-      "name": "hoje é domingo?",
-      "type": "n8n-nodes-base.if",
-      "typeVersion": 1,
-      "position": [
-        -140,
-        440
       ]
     },
     {
@@ -1576,28 +1398,54 @@
       "type": "n8n-nodes-base.webhook",
       "typeVersion": 1,
       "position": [
-        140,
-        -40
+        600,
+        440
       ],
       "webhookId": "6df30a16-3b0a-4ddc-98e8-19ba9bcb1ca7"
     }
   ],
   "pinData": {
-    "somando 1 dia": [
+    "Webhook": [
       {
         "json": {
-          "timestamp": "2023-09-20T09:32:33.593-03:00",
-          "Readable date": "September 20th 2023, 9:32:33 am",
-          "Readable time": "9:32:33 am",
-          "Day of week": "Wednesday",
-          "Year": "2023",
-          "Month": "September",
-          "Day of month": "20",
-          "Hour": "09",
-          "Minute": "32",
-          "Second": "33",
-          "Timezone": "-03 -03:00",
-          "data-amanha": "2023-09-19T12:32:33.000Z"
+          "headers": {
+            "host": "n8n-fabiolas.iszap.com.br",
+            "user-agent": "axios/0.26.1",
+            "content-length": "356",
+            "accept": "application/json, text/plain, */*",
+            "content-type": "application/json",
+            "x-forwarded-for": "54.196.252.81",
+            "x-forwarded-host": "n8n-fabiolas.iszap.com.br",
+            "x-forwarded-port": "443",
+            "x-forwarded-proto": "https",
+            "x-forwarded-server": "7a550ec337c6",
+            "x-real-ip": "54.196.252.81",
+            "accept-encoding": "gzip"
+          },
+          "params": {},
+          "query": {},
+          "body": {
+            "event": "booking/create",
+            "licenseID": 26869,
+            "payload": {
+              "UnidadeID": 0,
+              "NotificarPaciente": false,
+              "PacienteID": 1736,
+              "ProfissionalID": 5,
+              "Data": "2023-09-23",
+              "Hora": "10:40",
+              "TipoCompromissoID": 1,
+              "StaID": 1,
+              "Notas": "",
+              "HoraSta": "12:51:00",
+              "ConfEmail": "S",
+              "ConfSMS": "",
+              "EspecialidadeID": 134,
+              "NomeClinica": "BRINCARE CLÍNICA BRINCARE",
+              "SysUser": 160116761,
+              "id": 2762
+            }
+          }
         }
       }
     ]
@@ -1621,6 +1469,6 @@
     }
   ],
   "triggerCount": 1,
-  "updatedAt": "2023-09-20T13:46:55.000Z",
-  "versionId": "676e9d34-3a59-4db2-bbb5-4d1afb549a9d"
+  "updatedAt": "2023-09-21T14:36:00.000Z",
+  "versionId": "afc74278-37e5-4078-9ef6-5ef1b118f394"
 }
