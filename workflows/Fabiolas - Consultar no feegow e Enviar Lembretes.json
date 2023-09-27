@@ -279,6 +279,13 @@
             "type": "main",
             "index": 0
           }
+        ],
+        [
+          {
+            "node": "buscar pacientes7",
+            "type": "main",
+            "index": 0
+          }
         ]
       ]
     },
@@ -2247,17 +2254,23 @@
         ]
       ]
     },
-    "When clicking \"Execute Workflow\"": {
-      "main": [
-        []
-      ]
-    },
     "hoje é domingo?": {
       "main": [
         [],
         [
           {
             "node": "hoje é sexta?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "buscar pacientes7": {
+      "main": [
+        [
+          {
+            "node": "Set1",
             "type": "main",
             "index": 0
           }
@@ -7039,6 +7052,65 @@
         -2580,
         -820
       ]
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "url": "https://api.feegow.com/v1/api/patient/search",
+        "options": {},
+        "queryParametersUi": {
+          "parameter": [
+            {
+              "name": "paciente_id",
+              "value": "={{ $json[\"paciente_id\"] }}"
+            }
+          ]
+        }
+      },
+      "id": "dec17f13-6295-468c-bca5-7755cf91850e",
+      "name": "buscar pacientes7",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [
+        -620,
+        -600
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "2",
+          "name": "feegow fabiolas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "keepOnlySet": true,
+        "values": {
+          "string": [
+            {
+              "name": "nome",
+              "value": "={{ $json.content.nome }}"
+            },
+            {
+              "name": "status",
+              "value": "={{ $('Marcado - não confirmado1').item.json.status_id }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "42b2f523-a529-4625-88e3-b473a57bb204",
+      "name": "Set1",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 2,
+      "position": [
+        -400,
+        -600
+      ]
     }
   ],
   "pinData": {
@@ -7095,6 +7167,6 @@
     }
   ],
   "triggerCount": 6,
-  "updatedAt": "2023-09-26T17:46:04.000Z",
-  "versionId": "c94c6b96-560f-4aec-ad62-51cc17949320"
+  "updatedAt": "2023-09-27T20:39:21.000Z",
+  "versionId": "5e42fda9-0013-4149-a710-090a523d3784"
 }
