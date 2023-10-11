@@ -47,7 +47,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "https://backend.botconversa.com.br/api/v1/webhook/subscriber/139232712/send_message/",
+        "url": "https://backend.botconversa.com.br/api/v1/webhook/subscriber/290713112/send_message/",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "sendBody": true,
@@ -59,7 +59,7 @@
             },
             {
               "name": "value",
-              "value": "=⚠️ *SERVIDOR N8N* ⚠️\n\nWorkflow: {{$json[\"workflow\"][\"name\"]}}\nErro: {{$json[\"execution\"][\"error\"][\"message\"]}}\nÚltimo nó executado: {{$json[\"execution\"][\"lastNodeExecuted\"]}}\nURL de execução: {{$json[\"execution\"][\"url\"]}}"
+              "value": "=⚠️ *SERVIDOR N8N DRA.FABIOLA* ⚠️\n\nWorkflow: {{$json[\"workflow\"][\"name\"]}}\nErro: {{$json[\"execution\"][\"error\"][\"message\"]}}\nÚltimo nó executado: {{$json[\"execution\"][\"lastNodeExecuted\"]}}\nURL de execução: {{$json[\"execution\"][\"url\"]}}"
             }
           ]
         },
@@ -78,15 +78,15 @@
       "waitBetweenTries": 5000,
       "credentials": {
         "httpHeaderAuth": {
-          "id": "4",
-          "name": "BotConversa Fabiolas"
+          "id": "19",
+          "name": "BC isZap"
         }
       }
     },
     {
       "parameters": {
         "method": "POST",
-        "url": "https://backend.botconversa.com.br/api/v1/webhook/subscriber/145306036/send_message/",
+        "url": "https://backend.botconversa.com.br/api/v1/webhook/subscriber/290747006/send_message/",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "sendBody": true,
@@ -98,7 +98,7 @@
             },
             {
               "name": "value",
-              "value": "=⚠️ *SERVIDOR N8N* ⚠️\n\nWorkflow: {{$json[\"workflow\"][\"name\"]}}\nErro: {{$json[\"execution\"][\"error\"][\"message\"]}}\nÚltimo nó executado: {{$json[\"execution\"][\"lastNodeExecuted\"]}}\nURL de execução: {{$json[\"execution\"][\"url\"]}}"
+              "value": "=⚠️ *SERVIDOR N8N DRA.FABIOLA* ⚠️\n\nWorkflow: {{$json[\"workflow\"][\"name\"]}}\nErro: {{$json[\"execution\"][\"error\"][\"message\"]}}\nÚltimo nó executado: {{$json[\"execution\"][\"lastNodeExecuted\"]}}\nURL de execução: {{$json[\"execution\"][\"url\"]}}"
             }
           ]
         },
@@ -117,8 +117,8 @@
       "waitBetweenTries": 5000,
       "credentials": {
         "httpHeaderAuth": {
-          "id": "4",
-          "name": "BotConversa Fabiolas"
+          "id": "19",
+          "name": "BC isZap"
         }
       }
     }
@@ -128,6 +128,6 @@
   "staticData": null,
   "tags": [],
   "triggerCount": 0,
-  "updatedAt": "2023-03-30T21:59:26.000Z",
-  "versionId": "e3286231-1cef-4250-9a7d-74873ef13217"
+  "updatedAt": "2023-10-11T02:27:45.000Z",
+  "versionId": "299ca572-d2df-463a-bd31-3a22bdfa42e5"
 }
