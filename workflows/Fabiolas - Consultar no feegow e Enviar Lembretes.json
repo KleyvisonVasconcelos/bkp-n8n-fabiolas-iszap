@@ -355,7 +355,7 @@
       "main": [
         [
           {
-            "node": "Set6",
+            "node": "Set4",
             "type": "main",
             "index": 0
           }
@@ -1403,7 +1403,7 @@
       "main": [
         [
           {
-            "node": "Set4",
+            "node": "Listar Agendamentos3",
             "type": "main",
             "index": 0
           }
@@ -2358,50 +2358,6 @@
       "main": [
         [
           {
-            "node": "Listar Agendamentos3",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Code2": {
-      "main": [
-        [
-          {
-            "node": "Set7",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Set6": {
-      "main": [
-        [
-          {
-            "node": "Code2",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Set7": {
-      "main": [
-        [
-          {
-            "node": "Filter2",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Filter2": {
-      "main": [
-        [
-          {
             "node": "Listar Agendamentos",
             "type": "main",
             "index": 0
@@ -2432,7 +2388,8 @@
       "position": [
         -2640,
         480
-      ]
+      ],
+      "disabled": true
     },
     {
       "parameters": {},
@@ -2856,7 +2813,8 @@
       "position": [
         -2700,
         -2260
-      ]
+      ],
+      "disabled": true
     },
     {
       "parameters": {
@@ -3787,7 +3745,8 @@
       "position": [
         -2820,
         -820
-      ]
+      ],
+      "disabled": true
     },
     {
       "parameters": {
@@ -7112,7 +7071,8 @@
       "position": [
         -2660,
         1100
-      ]
+      ],
+      "disabled": true
     },
     {
       "parameters": {
@@ -7132,7 +7092,8 @@
       "position": [
         -2660,
         1720
-      ]
+      ],
+      "disabled": true
     },
     {
       "parameters": {
@@ -7152,17 +7113,6 @@
       "position": [
         -3080,
         2980
-      ]
-    },
-    {
-      "parameters": {},
-      "id": "4f36a1c6-5f61-4d13-bb5a-cfb63966dfb4",
-      "name": "When clicking \"Execute Workflow\"",
-      "type": "n8n-nodes-base.manualTrigger",
-      "typeVersion": 1,
-      "position": [
-        -2780,
-        -540
       ]
     },
     {
@@ -7325,13 +7275,13 @@
       "parameters": {
         "jsCode": "// Certifique-se de que o nome do campo que contém a data está correto\nconst dataAnterior = new Date(items[0].json.data);\nconst diasDaSemana = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'];\n\nconst diaDaSemana = diasDaSemana[dataAnterior.getDay()];\n\nreturn {\n  diaDaSemana: diaDaSemana\n  \n};\n"
       },
-      "id": "37cc940e-3482-401e-bcf3-c86c868bfc32",
+      "id": "d7e2687b-bb93-4d94-8bf4-04dd2ad77621",
       "name": "Code1",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        -1580,
-        2020
+        -1560,
+        -580
       ]
     },
     {
@@ -7347,13 +7297,13 @@
         },
         "options": {}
       },
-      "id": "1ad0c486-8986-41f2-b2ad-7d0cb7c91809",
+      "id": "11e61aa8-5461-453d-bf14-a50aecc1a111",
       "name": "Set4",
       "type": "n8n-nodes-base.set",
       "typeVersion": 2,
       "position": [
-        -1760,
-        2020
+        -1740,
+        -580
       ]
     },
     {
@@ -7368,13 +7318,13 @@
           ]
         }
       },
-      "id": "3f18a330-3a4a-4476-8dc7-6a47b444259c",
+      "id": "9c995b0f-5d93-4bf5-b6e2-9e3d01c4d59b",
       "name": "Filter1",
       "type": "n8n-nodes-base.filter",
       "typeVersion": 1,
       "position": [
-        -1140,
-        2020
+        -1120,
+        -580
       ]
     },
     {
@@ -7389,90 +7339,13 @@
         },
         "options": {}
       },
-      "id": "aad4f085-2a78-4d77-832a-c0a440038e49",
+      "id": "af484309-74d1-4c43-b2da-1e4cd887e214",
       "name": "Set5",
       "type": "n8n-nodes-base.set",
       "typeVersion": 2,
       "position": [
-        -1340,
-        2020
-      ]
-    },
-    {
-      "parameters": {
-        "jsCode": "// Certifique-se de que o nome do campo que contém a data está correto\nconst dataAnterior = new Date(items[0].json.data);\nconst diasDaSemana = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'];\n\nconst diaDaSemana = diasDaSemana[dataAnterior.getDay()];\n\nreturn {\n  diaDaSemana: diaDaSemana\n  \n};\n"
-      },
-      "id": "21505d99-ad8b-497f-80ba-e211001ec842",
-      "name": "Code2",
-      "type": "n8n-nodes-base.code",
-      "typeVersion": 2,
-      "position": [
-        -1500,
-        -540
-      ]
-    },
-    {
-      "parameters": {
-        "keepOnlySet": true,
-        "values": {
-          "string": [
-            {
-              "name": "data",
-              "value": "={{ $json['data-busca'].split('-')[2] }}-{{ $json['data-busca'].split('-')[1] }}-{{ $json['data-busca'].split('-')[0] }}"
-            }
-          ]
-        },
-        "options": {}
-      },
-      "id": "739abc24-4d9e-4eb3-aea4-436f3573c3a1",
-      "name": "Set6",
-      "type": "n8n-nodes-base.set",
-      "typeVersion": 2,
-      "position": [
-        -1680,
-        -540
-      ]
-    },
-    {
-      "parameters": {
-        "conditions": {
-          "string": [
-            {
-              "value1": "={{ $json.diaDaSemana }}",
-              "operation": "notEqual",
-              "value2": "Domingo"
-            }
-          ]
-        }
-      },
-      "id": "c5cf30c6-825d-4d9a-824f-2b1dd843b7ca",
-      "name": "Filter2",
-      "type": "n8n-nodes-base.filter",
-      "typeVersion": 1,
-      "position": [
-        -1060,
-        -540
-      ]
-    },
-    {
-      "parameters": {
-        "values": {
-          "string": [
-            {
-              "name": "data-busca",
-              "value": "={{ $('formatando4').item.json['data-busca'] }}"
-            }
-          ]
-        },
-        "options": {}
-      },
-      "id": "c611d7b5-9457-4807-9a94-8f945da9f658",
-      "name": "Set7",
-      "type": "n8n-nodes-base.set",
-      "typeVersion": 2,
-      "position": [
-        -1260,
-        -540
+        -1320,
+        -580
       ]
     }
   ],
@@ -7529,7 +7402,7 @@
       "name": "Fabiolas"
     }
   ],
-  "triggerCount": 6,
-  "updatedAt": "2023-10-26T13:56:49.000Z",
-  "versionId": "fee357cd-24c7-4eed-8390-d576654a1e71"
+  "triggerCount": 1,
+  "updatedAt": "2023-10-26T14:10:39.000Z",
+  "versionId": "0bdb176c-0598-4e6d-8e9e-400c1038e0ca"
 }
