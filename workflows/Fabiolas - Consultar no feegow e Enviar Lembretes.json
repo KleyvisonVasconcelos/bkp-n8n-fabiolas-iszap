@@ -355,7 +355,7 @@
       "main": [
         [
           {
-            "node": "Listar Agendamentos",
+            "node": "Set6",
             "type": "main",
             "index": 0
           }
@@ -1403,7 +1403,7 @@
       "main": [
         [
           {
-            "node": "Listar Agendamentos3",
+            "node": "Set4",
             "type": "main",
             "index": 0
           }
@@ -1874,7 +1874,7 @@
       "main": [
         [
           {
-            "node": "Listar Agendamentos4",
+            "node": "Set2",
             "type": "main",
             "index": 0
           }
@@ -2271,6 +2271,138 @@
         [
           {
             "node": "Set1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set2": {
+      "main": [
+        [
+          {
+            "node": "Code",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code": {
+      "main": [
+        [
+          {
+            "node": "Set3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter": {
+      "main": [
+        [
+          {
+            "node": "Listar Agendamentos4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set3": {
+      "main": [
+        [
+          {
+            "node": "Filter",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code1": {
+      "main": [
+        [
+          {
+            "node": "Set5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set4": {
+      "main": [
+        [
+          {
+            "node": "Code1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set5": {
+      "main": [
+        [
+          {
+            "node": "Filter1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter1": {
+      "main": [
+        [
+          {
+            "node": "Listar Agendamentos3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code2": {
+      "main": [
+        [
+          {
+            "node": "Set7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set6": {
+      "main": [
+        [
+          {
+            "node": "Code2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set7": {
+      "main": [
+        [
+          {
+            "node": "Filter2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter2": {
+      "main": [
+        [
+          {
+            "node": "Listar Agendamentos",
             "type": "main",
             "index": 0
           }
@@ -2866,7 +2998,7 @@
       "type": "n8n-nodes-base.noOp",
       "typeVersion": 1,
       "position": [
-        -2360,
+        -2880,
         2980
       ]
     },
@@ -2892,7 +3024,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        2060,
+        2280,
         2980
       ],
       "retryOnFail": true,
@@ -2976,7 +3108,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        -180,
+        40,
         2980
       ]
     },
@@ -4276,7 +4408,7 @@
     {
       "parameters": {
         "value": "={{ $json[\"data-busca\"] }}",
-        "dataPropertyName": "data-amanha",
+        "dataPropertyName": "data-busca",
         "custom": true,
         "toFormat": "DD-MM-YYYY",
         "options": {
@@ -4873,7 +5005,7 @@
     {
       "parameters": {
         "value": "={{ $json[\"data-busca\"] }}",
-        "dataPropertyName": "data-amanha",
+        "dataPropertyName": "data-busca",
         "custom": true,
         "toFormat": "DD-MM-YYYY",
         "options": {
@@ -5452,7 +5584,7 @@
     {
       "parameters": {
         "value": "={{ $json[\"data-busca\"] }}",
-        "dataPropertyName": "data-amanha",
+        "dataPropertyName": "data-busca",
         "custom": true,
         "toFormat": "DD-MM-YYYY",
         "options": {
@@ -5893,7 +6025,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 2,
       "position": [
-        -1600,
+        -1380,
         2980
       ],
       "retryOnFail": true,
@@ -5926,7 +6058,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 2,
       "position": [
-        -700,
+        -480,
         2980
       ],
       "retryOnFail": true,
@@ -5959,7 +6091,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 2,
       "position": [
-        -440,
+        -220,
         2980
       ],
       "retryOnFail": true,
@@ -5999,7 +6131,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 1,
       "position": [
-        1840,
+        2060,
         2980
       ],
       "id": "213fcd2b-8560-48ed-ace5-d96f08042524",
@@ -6020,7 +6152,7 @@
       "name": "Validar Telefone BR5",
       "type": "n8n-nodes-base.function",
       "position": [
-        1600,
+        1820,
         2980
       ],
       "typeVersion": 1,
@@ -6046,7 +6178,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        680,
+        900,
         3000
       ]
     },
@@ -6073,7 +6205,7 @@
       "type": "n8n-nodes-base.itemLists",
       "typeVersion": 2,
       "position": [
-        920,
+        1140,
         2980
       ]
     },
@@ -6103,7 +6235,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 1,
       "position": [
-        380,
+        600,
         2960
       ]
     },
@@ -6117,7 +6249,7 @@
       "type": "n8n-nodes-base.itemLists",
       "typeVersion": 1,
       "position": [
-        -1380,
+        -1160,
         2980
       ]
     },
@@ -6147,7 +6279,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 1,
       "position": [
-        380,
+        600,
         3100
       ]
     },
@@ -6177,7 +6309,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 1,
       "position": [
-        380,
+        600,
         3240
       ]
     },
@@ -6207,7 +6339,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 1,
       "position": [
-        380,
+        600,
         3380
       ]
     },
@@ -6227,7 +6359,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        140,
+        360,
         2980
       ]
     },
@@ -6247,7 +6379,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        140,
+        360,
         3120
       ]
     },
@@ -6267,7 +6399,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        140,
+        360,
         3260
       ]
     },
@@ -6287,7 +6419,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        140,
+        360,
         3400
       ]
     },
@@ -6312,7 +6444,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        -1140,
+        -920,
         2980
       ]
     },
@@ -6326,14 +6458,14 @@
       "type": "n8n-nodes-base.splitInBatches",
       "typeVersion": 2,
       "position": [
-        1360,
+        1580,
         2980
       ]
     },
     {
       "parameters": {
         "value": "={{ $json[\"data-busca\"] }}",
-        "dataPropertyName": "data-amanha",
+        "dataPropertyName": "data-busca",
         "custom": true,
         "toFormat": "DD-MM-YYYY",
         "options": {
@@ -6345,7 +6477,7 @@
       "type": "n8n-nodes-base.dateTime",
       "typeVersion": 1,
       "position": [
-        -1840,
+        -2500,
         2980
       ]
     },
@@ -6371,7 +6503,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 1,
       "position": [
-        1140,
+        1360,
         2980
       ]
     },
@@ -6385,7 +6517,7 @@
       "type": "n8n-nodes-base.wait",
       "typeVersion": 1,
       "position": [
-        2280,
+        2500,
         2980
       ],
       "webhookId": "e0d40425-7fb0-4fe6-a339-b735aa54e45b"
@@ -6403,7 +6535,7 @@
       "type": "n8n-nodes-base.dateTime",
       "typeVersion": 1,
       "position": [
-        -2100,
+        -2680,
         2980
       ]
     },
@@ -7018,7 +7150,7 @@
       "type": "n8n-nodes-base.scheduleTrigger",
       "typeVersion": 1,
       "position": [
-        -2680,
+        -3080,
         2980
       ]
     },
@@ -7111,6 +7243,237 @@
         -400,
         -600
       ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Certifique-se de que o nome do campo que contém a data está correto\nconst dataAnterior = new Date(items[0].json.data);\nconst diasDaSemana = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'];\n\nconst diaDaSemana = diasDaSemana[dataAnterior.getDay()];\n\nreturn {\n  diaDaSemana: diaDaSemana\n  \n};\n"
+      },
+      "id": "c9562532-d9e2-4f43-9304-7ed39ffd8fd1",
+      "name": "Code",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -2140,
+        2980
+      ]
+    },
+    {
+      "parameters": {
+        "keepOnlySet": true,
+        "values": {
+          "string": [
+            {
+              "name": "data",
+              "value": "={{ $json['data-busca'].split('-')[2] }}-{{ $json['data-busca'].split('-')[1] }}-{{ $json['data-busca'].split('-')[0] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "d9a073e0-3ee3-427c-b37d-58a3be1d1710",
+      "name": "Set2",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 2,
+      "position": [
+        -2320,
+        2980
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json.diaDaSemana }}",
+              "operation": "notEqual",
+              "value2": "Domingo"
+            }
+          ]
+        }
+      },
+      "id": "7d5429d9-f304-4cb1-b56c-55eaa4a60051",
+      "name": "Filter",
+      "type": "n8n-nodes-base.filter",
+      "typeVersion": 1,
+      "position": [
+        -1700,
+        2980
+      ]
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "data-busca",
+              "value": "={{ $('formatando4').item.json['data-busca'] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "287d429c-c36c-463c-919c-434f0e012d5f",
+      "name": "Set3",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 2,
+      "position": [
+        -1900,
+        2980
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Certifique-se de que o nome do campo que contém a data está correto\nconst dataAnterior = new Date(items[0].json.data);\nconst diasDaSemana = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'];\n\nconst diaDaSemana = diasDaSemana[dataAnterior.getDay()];\n\nreturn {\n  diaDaSemana: diaDaSemana\n  \n};\n"
+      },
+      "id": "37cc940e-3482-401e-bcf3-c86c868bfc32",
+      "name": "Code1",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -1580,
+        2020
+      ]
+    },
+    {
+      "parameters": {
+        "keepOnlySet": true,
+        "values": {
+          "string": [
+            {
+              "name": "data",
+              "value": "={{ $json['data-busca'].split('-')[2] }}-{{ $json['data-busca'].split('-')[1] }}-{{ $json['data-busca'].split('-')[0] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "1ad0c486-8986-41f2-b2ad-7d0cb7c91809",
+      "name": "Set4",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 2,
+      "position": [
+        -1760,
+        2020
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json.diaDaSemana }}",
+              "operation": "notEqual",
+              "value2": "Domingo"
+            }
+          ]
+        }
+      },
+      "id": "3f18a330-3a4a-4476-8dc7-6a47b444259c",
+      "name": "Filter1",
+      "type": "n8n-nodes-base.filter",
+      "typeVersion": 1,
+      "position": [
+        -1140,
+        2020
+      ]
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "data-busca",
+              "value": "={{ $('formatando4').item.json['data-busca'] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "aad4f085-2a78-4d77-832a-c0a440038e49",
+      "name": "Set5",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 2,
+      "position": [
+        -1340,
+        2020
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Certifique-se de que o nome do campo que contém a data está correto\nconst dataAnterior = new Date(items[0].json.data);\nconst diasDaSemana = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'];\n\nconst diaDaSemana = diasDaSemana[dataAnterior.getDay()];\n\nreturn {\n  diaDaSemana: diaDaSemana\n  \n};\n"
+      },
+      "id": "21505d99-ad8b-497f-80ba-e211001ec842",
+      "name": "Code2",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -1500,
+        -540
+      ]
+    },
+    {
+      "parameters": {
+        "keepOnlySet": true,
+        "values": {
+          "string": [
+            {
+              "name": "data",
+              "value": "={{ $json['data-busca'].split('-')[2] }}-{{ $json['data-busca'].split('-')[1] }}-{{ $json['data-busca'].split('-')[0] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "739abc24-4d9e-4eb3-aea4-436f3573c3a1",
+      "name": "Set6",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 2,
+      "position": [
+        -1680,
+        -540
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json.diaDaSemana }}",
+              "operation": "notEqual",
+              "value2": "Domingo"
+            }
+          ]
+        }
+      },
+      "id": "c5cf30c6-825d-4d9a-824f-2b1dd843b7ca",
+      "name": "Filter2",
+      "type": "n8n-nodes-base.filter",
+      "typeVersion": 1,
+      "position": [
+        -1060,
+        -540
+      ]
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "data-busca",
+              "value": "={{ $('formatando4').item.json['data-busca'] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "c611d7b5-9457-4807-9a94-8f945da9f658",
+      "name": "Set7",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 2,
+      "position": [
+        -1260,
+        -540
+      ]
     }
   ],
   "pinData": {
@@ -7167,6 +7530,6 @@
     }
   ],
   "triggerCount": 6,
-  "updatedAt": "2023-09-27T20:39:21.000Z",
-  "versionId": "5e42fda9-0013-4149-a710-090a523d3784"
+  "updatedAt": "2023-10-26T13:56:49.000Z",
+  "versionId": "fee357cd-24c7-4eed-8390-d576654a1e71"
 }
