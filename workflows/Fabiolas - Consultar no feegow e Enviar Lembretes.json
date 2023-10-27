@@ -3080,11 +3080,11 @@
           "parameter": [
             {
               "name": "data_start",
-              "value": "={{ $json[\"data-amanha\"] }}"
+              "value": "={{ $json[\"data-busca\"] }}"
             },
             {
               "name": "data_end",
-              "value": "={{ $json[\"data-amanha\"] }}"
+              "value": "={{ $json[\"data-busca\"] }}"
             }
           ]
         }
@@ -3423,7 +3423,7 @@
     {
       "parameters": {
         "value": "={{ $json[\"data-amanha\"] }}",
-        "dataPropertyName": "data-amanha",
+        "dataPropertyName": "data-busca",
         "custom": true,
         "toFormat": "DD-MM-YYYY",
         "options": {
@@ -3745,8 +3745,7 @@
       "position": [
         -2820,
         -820
-      ],
-      "disabled": true
+      ]
     },
     {
       "parameters": {
@@ -7113,7 +7112,8 @@
       "position": [
         -3080,
         2980
-      ]
+      ],
+      "disabled": true
     },
     {
       "parameters": {
@@ -7333,7 +7333,7 @@
           "string": [
             {
               "name": "data-busca",
-              "value": "={{ $('formatando4').item.json['data-busca'] }}"
+              "value": "={{ $('formatando').item.json['data-busca'] }}"
             }
           ]
         },
@@ -7403,6 +7403,6 @@
     }
   ],
   "triggerCount": 1,
-  "updatedAt": "2023-10-26T14:10:39.000Z",
-  "versionId": "0bdb176c-0598-4e6d-8e9e-400c1038e0ca"
+  "updatedAt": "2023-10-27T19:24:16.000Z",
+  "versionId": "d72a9420-139d-485d-91fb-236ab9d4661e"
 }
