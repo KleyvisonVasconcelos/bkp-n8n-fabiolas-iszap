@@ -443,7 +443,7 @@
       "main": [
         [
           {
-            "node": "hoje é domingo?",
+            "node": "Lembrete 1 dia antes",
             "type": "main",
             "index": 0
           }
@@ -2364,6 +2364,17 @@
           }
         ]
       ]
+    },
+    "Lembrete 1 dia antes": {
+      "main": [
+        [
+          {
+            "node": "hoje é domingo?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "createdAt": "2023-07-27T04:44:49.831Z",
@@ -2524,7 +2535,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        2340,
+        2560,
         -840
       ],
       "retryOnFail": true,
@@ -2559,7 +2570,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        2560,
+        2780,
         -840
       ],
       "retryOnFail": true,
@@ -2594,7 +2605,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        2780,
+        3000,
         -840
       ],
       "retryOnFail": true,
@@ -2623,7 +2634,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        3200,
+        3420,
         -840
       ]
     },
@@ -2640,7 +2651,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        3420,
+        3640,
         -940
       ],
       "retryOnFail": true,
@@ -2666,7 +2677,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        3420,
+        3640,
         -760
       ],
       "retryOnFail": true,
@@ -2701,7 +2712,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        3700,
+        3920,
         -840
       ],
       "retryOnFail": true,
@@ -3015,7 +3026,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        3000,
+        3220,
         -840
       ],
       "retryOnFail": true,
@@ -3092,7 +3103,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 2,
       "position": [
-        -1600,
+        -1380,
         -820
       ],
       "retryOnFail": true,
@@ -3125,7 +3136,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 2,
       "position": [
-        -620,
+        -400,
         -820
       ],
       "retryOnFail": true,
@@ -3158,7 +3169,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 2,
       "position": [
-        -360,
+        -140,
         -820
       ],
       "retryOnFail": true,
@@ -3187,7 +3198,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        -860,
+        -640,
         -820
       ]
     },
@@ -3218,7 +3229,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 1,
       "position": [
-        2080,
+        2300,
         -840
       ],
       "id": "4fbfb8a1-9cfc-4662-b0d8-2c5d3b04504d",
@@ -3239,7 +3250,7 @@
       "name": "Validar Telefone BR1",
       "type": "n8n-nodes-base.function",
       "position": [
-        1840,
+        2060,
         -840
       ],
       "typeVersion": 1,
@@ -3300,7 +3311,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        900,
+        1120,
         -820
       ]
     },
@@ -3348,7 +3359,7 @@
       "type": "n8n-nodes-base.itemLists",
       "typeVersion": 2,
       "position": [
-        1180,
+        1400,
         -820
       ]
     },
@@ -3394,7 +3405,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 1,
       "position": [
-        1400,
+        1620,
         -820
       ]
     },
@@ -3414,7 +3425,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        -2340,
+        -3000,
         -820
       ]
     },
@@ -3433,7 +3444,7 @@
       "type": "n8n-nodes-base.dateTime",
       "typeVersion": 1,
       "position": [
-        -1820,
+        -2480,
         -820
       ]
     },
@@ -3450,7 +3461,7 @@
       "type": "n8n-nodes-base.dateTime",
       "typeVersion": 1,
       "position": [
-        -2080,
+        -2740,
         -740
       ]
     },
@@ -3467,7 +3478,7 @@
       "type": "n8n-nodes-base.dateTime",
       "typeVersion": 1,
       "position": [
-        -2080,
+        -2740,
         -900
       ]
     },
@@ -3521,7 +3532,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 1,
       "position": [
-        340,
+        560,
         -840
       ]
     },
@@ -3535,7 +3546,7 @@
       "type": "n8n-nodes-base.itemLists",
       "typeVersion": 1,
       "position": [
-        -1380,
+        -1160,
         -820
       ]
     },
@@ -3614,7 +3625,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 1,
       "position": [
-        340,
+        560,
         -640
       ]
     },
@@ -3668,7 +3679,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 1,
       "position": [
-        340,
+        560,
         -440
       ]
     },
@@ -3722,7 +3733,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 1,
       "position": [
-        340,
+        560,
         -240
       ]
     },
@@ -3741,7 +3752,7 @@
       "type": "n8n-nodes-base.scheduleTrigger",
       "typeVersion": 1,
       "position": [
-        -2820,
+        -3700,
         -820
       ]
     },
@@ -3761,7 +3772,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        100,
+        320,
         -820
       ]
     },
@@ -3781,7 +3792,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        100,
+        320,
         -620
       ]
     },
@@ -3801,7 +3812,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        100,
+        320,
         -420
       ]
     },
@@ -3815,7 +3826,7 @@
       "type": "n8n-nodes-base.wait",
       "typeVersion": 1,
       "position": [
-        3960,
+        4180,
         -840
       ],
       "webhookId": "c22b43ee-cbea-4131-8525-39264a397d75"
@@ -3836,7 +3847,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        100,
+        320,
         -220
       ]
     },
@@ -3861,7 +3872,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        -1140,
+        -920,
         -820
       ]
     },
@@ -3882,7 +3893,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 2,
       "position": [
-        660,
+        880,
         -820
       ]
     },
@@ -3896,7 +3907,7 @@
       "type": "n8n-nodes-base.splitInBatches",
       "typeVersion": 2,
       "position": [
-        1600,
+        1820,
         -820
       ]
     },
@@ -7127,7 +7138,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        -2580,
+        -3240,
         -820
       ]
     },
@@ -7151,7 +7162,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 2,
       "position": [
-        -620,
+        -400,
         -600
       ],
       "retryOnFail": true,
@@ -7186,7 +7197,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 2,
       "position": [
-        -400,
+        -180,
         -600
       ]
     },
@@ -7276,8 +7287,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        -1560,
-        -580
+        -2040,
+        -820
       ]
     },
     {
@@ -7298,8 +7309,8 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 2,
       "position": [
-        -1740,
-        -580
+        -2260,
+        -820
       ]
     },
     {
@@ -7319,8 +7330,8 @@
       "type": "n8n-nodes-base.filter",
       "typeVersion": 1,
       "position": [
-        -1120,
-        -580
+        -1600,
+        -820
       ]
     },
     {
@@ -7340,8 +7351,19 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 2,
       "position": [
-        -1320,
-        -580
+        -1820,
+        -820
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "90de9111-a8b4-4287-aec3-30a801f8965a",
+      "name": "Lembrete 1 dia antes",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        -3480,
+        -820
       ]
     }
   ],
@@ -7399,6 +7421,6 @@
     }
   ],
   "triggerCount": 5,
-  "updatedAt": "2023-11-01T16:30:41.000Z",
-  "versionId": "1ef7ee72-a847-4645-8377-02fda4ff4a11"
+  "updatedAt": "2023-11-14T17:26:53.000Z",
+  "versionId": "bda0d5c8-cce2-4291-81c5-325ec86e1e32"
 }
