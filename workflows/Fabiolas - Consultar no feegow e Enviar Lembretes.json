@@ -76,13 +76,7 @@
     },
     "tag fabiola ribeiro": {
       "main": [
-        [
-          {
-            "node": "enviar fluxo confirmação de agendamento",
-            "type": "main",
-            "index": 0
-          }
-        ]
+        []
       ]
     },
     "tag fabiola leite": {
@@ -7421,6 +7415,6 @@
     }
   ],
   "triggerCount": 5,
-  "updatedAt": "2023-11-14T17:26:53.000Z",
-  "versionId": "bda0d5c8-cce2-4291-81c5-325ec86e1e32"
+  "updatedAt": "2023-12-11T10:36:42.000Z",
+  "versionId": "f7f191b8-7fed-4a61-80b4-15d206912ff2"
 }
