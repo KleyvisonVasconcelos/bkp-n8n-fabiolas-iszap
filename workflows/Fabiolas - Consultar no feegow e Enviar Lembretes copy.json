@@ -7111,6 +7111,133 @@
         -400,
         -600
       ]
+    },
+    {
+      "parameters": {
+        "url": "https://api.feegow.com/v1/api/company/list-unity",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "options": {}
+      },
+      "id": "0eeeb16d-185b-4a35-9d9b-1b67dc2c942e",
+      "name": "listar unidades",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [
+        -1860,
+        -2840
+      ],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "2",
+          "name": "feegow fabiolas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "https://api.feegow.com/v1/api/appoints/available-schedule",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "data_start",
+              "value": "28-12-2023"
+            },
+            {
+              "name": "data_end",
+              "value": "08-01-2024"
+            },
+            {
+              "name": "tipo",
+              "value": "E"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "53a9b31b-80e3-4a70-85d5-c32f4a563b00",
+      "name": "listar agendamentos",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [
+        -1340,
+        -2840
+      ],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "2",
+          "name": "feegow fabiolas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "https://api.feegow.com/v1/api/specialties/list",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "options": {}
+      },
+      "id": "23b18113-7b3e-40cd-80ea-5d541fe003d5",
+      "name": "listar tipos especialidades",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [
+        -1600,
+        -2840
+      ],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "2",
+          "name": "feegow fabiolas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "https://api.feegow.com/v1/api/procedures/types",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "options": {}
+      },
+      "id": "f3a7d994-a088-43f0-a76f-428e09ef29ac",
+      "name": "listar tipos procedimentos",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [
+        -1120,
+        -2840
+      ],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "2",
+          "name": "feegow fabiolas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "https://api.feegow.com/v1/api/professional/list",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "options": {}
+      },
+      "id": "19331cf6-3427-47ef-a392-48a7d88961af",
+      "name": "listar profissionais",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [
+        -1860,
+        -2660
+      ],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "2",
+          "name": "feegow fabiolas"
+        }
+      }
     }
   ],
   "pinData": {
@@ -7129,6 +7256,128 @@
           "Second": "32",
           "Timezone": "-03 -03:00",
           "data-busca": "29-08-2023"
+        }
+      }
+    ],
+    "listar unidades": [
+      {
+        "json": {
+          "success": true,
+          "content": {
+            "matriz": [
+              {
+                "unidade_id": 0,
+                "nome_fantasia": "VIV SAÚDE INTEGRADA",
+                "cnpj": "19860488000155",
+                "endereco": "Avenida da Integração",
+                "foto": null,
+                "cep": "56328-010",
+                "numero": "561",
+                "bairro": "Vila Eduardo",
+                "estado": "PE",
+                "cidade": "Petrolina",
+                "regiao": "",
+                "zona": "",
+                "telefone_1": "8738621034",
+                "telefone_2": "",
+                "email_1": "iara.catarine@hotmail.com",
+                "email_2": "",
+                "complemento": "1º ANDAR",
+                "mapa": "",
+                "ExibirAgendamentoOnline": 1
+              }
+            ],
+            "unidades": []
+          },
+          "total": 2
+        },
+        "pairedItem": {
+          "item": 0
+        }
+      }
+    ],
+    "listar tipos especialidades": [
+      {
+        "json": {
+          "success": true,
+          "content": [
+            {
+              "especialidade_id": 242,
+              "nome": "Cirurgião dentista - implantodontista",
+              "consulta_id": 1,
+              "consulta_online_id": null,
+              "exibir_agendamento_online": 1,
+              "codigo_tiss": "223224"
+            },
+            {
+              "especialidade_id": 248,
+              "nome": "CLINICA MEDICA",
+              "consulta_id": 1,
+              "consulta_online_id": null,
+              "exibir_agendamento_online": 1,
+              "codigo_tiss": null
+            },
+            {
+              "especialidade_id": 192,
+              "nome": "Fisioterapeuta geral",
+              "consulta_id": 1,
+              "consulta_online_id": null,
+              "exibir_agendamento_online": 1,
+              "codigo_tiss": "223605"
+            },
+            {
+              "especialidade_id": 247,
+              "nome": "MEDICINA ORTOMOLECULAR",
+              "consulta_id": 1,
+              "consulta_online_id": null,
+              "exibir_agendamento_online": 1,
+              "codigo_tiss": ""
+            },
+            {
+              "especialidade_id": 98,
+              "nome": "Médico dermatologista",
+              "consulta_id": 1,
+              "consulta_online_id": null,
+              "exibir_agendamento_online": 1,
+              "codigo_tiss": "225135"
+            },
+            {
+              "especialidade_id": 128,
+              "nome": "Médico ginecologista / obstetra",
+              "consulta_id": 1,
+              "consulta_online_id": null,
+              "exibir_agendamento_online": 1,
+              "codigo_tiss": "225250"
+            },
+            {
+              "especialidade_id": 103,
+              "nome": "Médico hematologista",
+              "consulta_id": 1,
+              "consulta_online_id": null,
+              "exibir_agendamento_online": 1,
+              "codigo_tiss": "225185"
+            },
+            {
+              "especialidade_id": 141,
+              "nome": "Médico psiquiatra",
+              "consulta_id": 1,
+              "consulta_online_id": null,
+              "exibir_agendamento_online": 1,
+              "codigo_tiss": "225133"
+            },
+            {
+              "especialidade_id": 188,
+              "nome": "Psicólogo clínico",
+              "consulta_id": 1,
+              "consulta_online_id": null,
+              "exibir_agendamento_online": 1,
+              "codigo_tiss": "251510"
+            }
+          ],
+          "total": 9
+        },
+        "pairedItem": {
+          "item": 0
         }
       }
     ]
@@ -7167,6 +7416,6 @@
     }
   ],
   "triggerCount": 6,
-  "updatedAt": "2023-10-18T12:47:00.870Z",
-  "versionId": "d8788428-7009-4804-800e-3e220a15470e"
+  "updatedAt": "2023-12-26T18:27:11.000Z",
+  "versionId": "2fc2fc9e-7693-4520-bfa7-be552492411c"
 }
