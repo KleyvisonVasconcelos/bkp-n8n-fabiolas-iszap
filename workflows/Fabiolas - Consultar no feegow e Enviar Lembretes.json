@@ -3742,8 +3742,8 @@
         "rule": {
           "interval": [
             {
-              "triggerAtHour": 8,
-              "triggerAtMinute": 1
+              "triggerAtHour": 15,
+              "triggerAtMinute": 27
             }
           ]
         }
@@ -7422,6 +7422,6 @@
     }
   ],
   "triggerCount": 5,
-  "updatedAt": "2023-12-12T15:16:47.000Z",
-  "versionId": "fe85e750-1a24-46e5-a261-8d3deb4d4a5b"
+  "updatedAt": "2024-01-10T18:25:49.000Z",
+  "versionId": "be00e41e-74e0-48ba-af23-ae9af0487994"
 }
