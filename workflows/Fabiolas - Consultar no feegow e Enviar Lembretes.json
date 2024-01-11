@@ -78,7 +78,7 @@
       "main": [
         [
           {
-            "node": "enviar fluxo confirmação de agendamento",
+            "node": "No Operation, do nothing",
             "type": "main",
             "index": 0
           }
@@ -2358,7 +2358,7 @@
       "main": [
         [
           {
-            "node": "enviar fluxo confirmação de agendamento",
+            "node": "No Operation, do nothing",
             "type": "main",
             "index": 0
           }
@@ -2370,6 +2370,17 @@
         [
           {
             "node": "formatando5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "No Operation, do nothing": {
+      "main": [
+        [
+          {
+            "node": "enviar fluxo confirmação de agendamento",
             "type": "main",
             "index": 0
           }
@@ -2713,10 +2724,10 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        3920,
+        4220,
         -840
       ],
-      "retryOnFail": true,
+      "retryOnFail": false,
       "maxTries": 5,
       "waitBetweenTries": 5000,
       "credentials": {
@@ -2724,7 +2735,8 @@
           "id": "4",
           "name": "BotConversa Fabiolas"
         }
-      }
+      },
+      "continueOnFail": true
     },
     {
       "parameters": {},
@@ -3801,7 +3813,6 @@
     },
     {
       "parameters": {
-        "amount": 30,
         "unit": "seconds"
       },
       "id": "5d2889a0-867b-4929-b43c-33e86087320b",
@@ -3809,7 +3820,7 @@
       "type": "n8n-nodes-base.wait",
       "typeVersion": 1,
       "position": [
-        4180,
+        4460,
         -840
       ],
       "webhookId": "c22b43ee-cbea-4131-8525-39264a397d75"
@@ -7370,6 +7381,17 @@
         -2260
       ],
       "disabled": true
+    },
+    {
+      "parameters": {},
+      "id": "c6a33b6a-479e-490a-8544-89e60521da31",
+      "name": "No Operation, do nothing",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        3960,
+        -840
+      ]
     }
   ],
   "pinData": {
@@ -7426,6 +7448,6 @@
     }
   ],
   "triggerCount": 1,
-  "updatedAt": "2024-01-11T13:51:23.000Z",
-  "versionId": "a5628290-8616-4f13-94aa-6b062cf85b17"
+  "updatedAt": "2024-01-11T14:57:25.000Z",
+  "versionId": "a00c1656-258f-4e11-89e9-514170169149"
 }
