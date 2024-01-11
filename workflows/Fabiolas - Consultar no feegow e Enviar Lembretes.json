@@ -2399,7 +2399,8 @@
       "position": [
         -2640,
         480
-      ]
+      ],
+      "disabled": true
     },
     {
       "parameters": {},
@@ -2701,7 +2702,7 @@
           "parameters": [
             {
               "name": "flow",
-              "value": "890289"
+              "value": "794436"
             }
           ]
         },
@@ -3723,8 +3724,8 @@
         "rule": {
           "interval": [
             {
-              "triggerAtHour": 8,
-              "triggerAtMinute": 5
+              "triggerAtHour": 10,
+              "triggerAtMinute": 53
             }
           ]
         }
@@ -7061,7 +7062,8 @@
       "position": [
         -2660,
         1100
-      ]
+      ],
+      "disabled": true
     },
     {
       "parameters": {
@@ -7081,7 +7083,8 @@
       "position": [
         -2660,
         1720
-      ]
+      ],
+      "disabled": true
     },
     {
       "parameters": {
@@ -7101,7 +7104,8 @@
       "position": [
         -3080,
         2980
-      ]
+      ],
+      "disabled": true
     },
     {
       "parameters": {
@@ -7364,7 +7368,8 @@
       "position": [
         -2700,
         -2260
-      ]
+      ],
+      "disabled": true
     }
   ],
   "pinData": {
@@ -7420,7 +7425,7 @@
       "name": "Fabiolas"
     }
   ],
-  "triggerCount": 6,
-  "updatedAt": "2024-01-11T01:37:31.000Z",
-  "versionId": "9d1bb5f3-856b-4486-bf58-431063ef405a"
+  "triggerCount": 1,
+  "updatedAt": "2024-01-11T13:51:23.000Z",
+  "versionId": "a5628290-8616-4f13-94aa-6b062cf85b17"
 }
