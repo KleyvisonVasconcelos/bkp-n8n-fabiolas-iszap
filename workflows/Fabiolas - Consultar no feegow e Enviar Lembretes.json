@@ -107,17 +107,6 @@
         ]
       ]
     },
-    "Schedule Trigger1": {
-      "main": [
-        [
-          {
-            "node": "formatando5",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "Switch4": {
       "main": [
         [
@@ -2375,6 +2364,17 @@
           }
         ]
       ]
+    },
+    "Schedule Trigger1": {
+      "main": [
+        [
+          {
+            "node": "formatando5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "createdAt": "2023-07-27T04:44:49.831Z",
@@ -2399,8 +2399,7 @@
       "position": [
         -2640,
         480
-      ],
-      "disabled": true
+      ]
     },
     {
       "parameters": {},
@@ -2806,26 +2805,6 @@
           "name": "BotConversa Fabiolas"
         }
       }
-    },
-    {
-      "parameters": {
-        "rule": {
-          "interval": [
-            {
-              "triggerAtHour": 18
-            }
-          ]
-        }
-      },
-      "id": "a3f0f27a-d311-4f46-8c82-776e26db1cbd",
-      "name": "Schedule Trigger1",
-      "type": "n8n-nodes-base.scheduleTrigger",
-      "typeVersion": 1,
-      "position": [
-        -2700,
-        -2260
-      ],
-      "disabled": true
     },
     {
       "parameters": {
@@ -3744,8 +3723,8 @@
         "rule": {
           "interval": [
             {
-              "triggerAtHour": 15,
-              "triggerAtMinute": 27
+              "triggerAtHour": 8,
+              "triggerAtMinute": 5
             }
           ]
         }
@@ -7082,8 +7061,7 @@
       "position": [
         -2660,
         1100
-      ],
-      "disabled": true
+      ]
     },
     {
       "parameters": {
@@ -7103,8 +7081,7 @@
       "position": [
         -2660,
         1720
-      ],
-      "disabled": true
+      ]
     },
     {
       "parameters": {
@@ -7124,8 +7101,7 @@
       "position": [
         -3080,
         2980
-      ],
-      "disabled": true
+      ]
     },
     {
       "parameters": {
@@ -7370,6 +7346,25 @@
         -3480,
         -820
       ]
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "triggerAtHour": 18
+            }
+          ]
+        }
+      },
+      "id": "1d81d8b6-6bc6-491b-a533-55bc9da534d1",
+      "name": "Schedule Trigger1",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1,
+      "position": [
+        -2700,
+        -2260
+      ]
     }
   ],
   "pinData": {
@@ -7425,7 +7420,7 @@
       "name": "Fabiolas"
     }
   ],
-  "triggerCount": 1,
-  "updatedAt": "2024-01-10T21:05:09.000Z",
-  "versionId": "62ae8baa-d5b2-4ccf-b1fa-ee0162df435f"
+  "triggerCount": 6,
+  "updatedAt": "2024-01-11T01:37:31.000Z",
+  "versionId": "9d1bb5f3-856b-4486-bf58-431063ef405a"
 }
