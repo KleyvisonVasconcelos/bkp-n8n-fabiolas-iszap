@@ -1,0 +1,147 @@
+{
+  "active": false,
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "subtraindo data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "subtraindo data": {
+      "main": [
+        [
+          {
+            "node": "formatando data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "formatando data": {
+      "main": [
+        [
+          {
+            "node": "Listar Agendamentos",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "createdAt": "2024-03-04T04:14:15.349Z",
+  "id": "23",
+  "name": "Lembretes por Idade",
+  "nodes": [
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "url": "https://api.feegow.com/v1/api/appoints/search",
+        "options": {},
+        "queryParametersUi": {
+          "parameter": [
+            {
+              "name": "data_start",
+              "value": "={{ $json[\"data-busca\"] }}"
+            },
+            {
+              "name": "data_end",
+              "value": "={{ $json[\"data-busca\"] }}"
+            }
+          ]
+        }
+      },
+      "id": "a4426f34-a90c-4306-a5e7-33f711610ebb",
+      "name": "Listar Agendamentos",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [
+        1920,
+        400
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "maxTries": 5,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "17",
+          "name": "Feegow - BrinCare"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "triggerAtHour": 8
+            }
+          ]
+        }
+      },
+      "id": "a403e457-c510-4cee-8682-710fd8b41660",
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1,
+      "position": [
+        1140,
+        400
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "subtractFromDate",
+        "magnitude": "={{$now}}",
+        "duration": 23,
+        "outputFieldName": "data-busca"
+      },
+      "id": "fc3baa1a-e7af-437b-922a-1b13c35c4cc7",
+      "name": "subtraindo data",
+      "type": "n8n-nodes-base.dateTime",
+      "typeVersion": 2,
+      "position": [
+        1420,
+        400
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "formatDate",
+        "date": "={{ $json['data-busca'] }}",
+        "format": "custom",
+        "customFormat": "dd-MM-yyyy",
+        "outputFieldName": "data-busca",
+        "options": {}
+      },
+      "id": "428cafab-3d1b-4ffc-bed7-8a8ece0f6f8b",
+      "name": "formatando data",
+      "type": "n8n-nodes-base.dateTime",
+      "typeVersion": 2,
+      "position": [
+        1640,
+        400
+      ]
+    }
+  ],
+  "pinData": {},
+  "settings": {},
+  "staticData": null,
+  "tags": [
+    {
+      "createdAt": "2023-09-18T10:45:17.940Z",
+      "updatedAt": "2023-09-18T10:45:17.940Z",
+      "id": "3",
+      "name": "BrinCare"
+    }
+  ],
+  "triggerCount": 0,
+  "updatedAt": "2024-03-04T04:59:24.000Z",
+  "versionId": "0d547081-3423-447d-822b-80345de8298d"
+}
