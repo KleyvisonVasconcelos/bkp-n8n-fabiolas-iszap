@@ -2386,6 +2386,28 @@
           }
         ]
       ]
+    },
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Set6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set6": {
+      "main": [
+        [
+          {
+            "node": "Set4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "createdAt": "2023-07-27T04:44:49.831Z",
@@ -2546,7 +2568,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        2560,
+        2780,
         -840
       ],
       "retryOnFail": true,
@@ -2581,7 +2603,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        2780,
+        3000,
         -840
       ],
       "retryOnFail": true,
@@ -2616,7 +2638,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        3000,
+        3220,
         -840
       ],
       "retryOnFail": true,
@@ -2645,7 +2667,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        3420,
+        3640,
         -840
       ]
     },
@@ -2662,7 +2684,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        3640,
+        3860,
         -940
       ],
       "retryOnFail": true,
@@ -2688,7 +2710,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        3640,
+        3860,
         -760
       ],
       "retryOnFail": true,
@@ -2723,7 +2745,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        4220,
+        4440,
         -840
       ],
       "retryOnFail": false,
@@ -3019,7 +3041,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        3220,
+        3440,
         -840
       ],
       "retryOnFail": true,
@@ -3096,7 +3118,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 2,
       "position": [
-        -1380,
+        -1160,
         -820
       ],
       "retryOnFail": true,
@@ -3129,7 +3151,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 2,
       "position": [
-        -400,
+        -180,
         -820
       ],
       "retryOnFail": true,
@@ -3162,7 +3184,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 2,
       "position": [
-        -140,
+        80,
         -820
       ],
       "retryOnFail": true,
@@ -3191,7 +3213,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        -640,
+        -420,
         -820
       ]
     },
@@ -3222,7 +3244,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 1,
       "position": [
-        2300,
+        2520,
         -840
       ],
       "id": "4fbfb8a1-9cfc-4662-b0d8-2c5d3b04504d",
@@ -3243,7 +3265,7 @@
       "name": "Validar Telefone BR1",
       "type": "n8n-nodes-base.function",
       "position": [
-        2060,
+        2280,
         -840
       ],
       "typeVersion": 1,
@@ -3304,7 +3326,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        1120,
+        1340,
         -820
       ]
     },
@@ -3352,7 +3374,7 @@
       "type": "n8n-nodes-base.itemLists",
       "typeVersion": 2,
       "position": [
-        1400,
+        1620,
         -820
       ]
     },
@@ -3398,7 +3420,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 1,
       "position": [
-        1620,
+        1840,
         -820
       ]
     },
@@ -3525,7 +3547,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 1,
       "position": [
-        560,
+        780,
         -840
       ]
     },
@@ -3539,7 +3561,7 @@
       "type": "n8n-nodes-base.itemLists",
       "typeVersion": 1,
       "position": [
-        -1160,
+        -940,
         -820
       ]
     },
@@ -3618,7 +3640,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 1,
       "position": [
-        560,
+        780,
         -640
       ]
     },
@@ -3672,7 +3694,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 1,
       "position": [
-        560,
+        780,
         -440
       ]
     },
@@ -3726,7 +3748,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 1,
       "position": [
-        560,
+        780,
         -240
       ]
     },
@@ -3766,7 +3788,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        320,
+        540,
         -820
       ]
     },
@@ -3786,7 +3808,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        320,
+        540,
         -620
       ]
     },
@@ -3806,7 +3828,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        320,
+        540,
         -420
       ]
     },
@@ -3820,7 +3842,7 @@
       "type": "n8n-nodes-base.wait",
       "typeVersion": 1,
       "position": [
-        4460,
+        4680,
         -840
       ],
       "webhookId": "c22b43ee-cbea-4131-8525-39264a397d75"
@@ -3841,7 +3863,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        320,
+        540,
         -220
       ]
     },
@@ -3866,7 +3888,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        -920,
+        -700,
         -820
       ]
     },
@@ -3887,7 +3909,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 2,
       "position": [
-        880,
+        1100,
         -820
       ]
     },
@@ -3901,7 +3923,7 @@
       "type": "n8n-nodes-base.splitInBatches",
       "typeVersion": 2,
       "position": [
-        1820,
+        2040,
         -820
       ]
     },
@@ -7155,7 +7177,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 2,
       "position": [
-        -400,
+        -180,
         -600
       ],
       "retryOnFail": true,
@@ -7190,7 +7212,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 2,
       "position": [
-        -180,
+        40,
         -600
       ]
     },
@@ -7280,7 +7302,7 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        -2040,
+        -1820,
         -820
       ]
     },
@@ -7306,7 +7328,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 2,
       "position": [
-        -2260,
+        -2040,
         -820
       ]
     },
@@ -7327,7 +7349,7 @@
       "type": "n8n-nodes-base.filter",
       "typeVersion": 1,
       "position": [
-        -1600,
+        -1380,
         -820
       ]
     },
@@ -7348,7 +7370,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 2,
       "position": [
-        -1820,
+        -1600,
         -820
       ]
     },
@@ -7389,7 +7411,7 @@
       "type": "n8n-nodes-base.noOp",
       "typeVersion": 1,
       "position": [
-        3960,
+        4180,
         -840
       ]
     },
@@ -7404,10 +7426,32 @@
       "type": "n8n-nodes-base.webhook",
       "typeVersion": 1,
       "position": [
-        -2440,
-        -1080
+        -2660,
+        -1140
       ],
       "webhookId": "6c34cd24-9705-4ddb-b09f-6f0a388abe3f"
+    },
+    {
+      "parameters": {
+        "keepOnlySet": true,
+        "values": {
+          "string": [
+            {
+              "name": "data-busca",
+              "value": "={{ $json.body['data-busca'] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "74b467e6-f204-48e1-80c3-629832da9358",
+      "name": "Set6",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 2,
+      "position": [
+        -2440,
+        -1140
+      ]
     }
   ],
   "pinData": {
@@ -7432,7 +7476,26 @@
     "Webhook": [
       {
         "json": {
-          "data-busca": "First item"
+          "headers": {
+            "host": "n8n-fabiolas.iszap.com.br",
+            "user-agent": "python-requests/2.26.0",
+            "content-length": "30",
+            "accept": "*/*",
+            "accept-encoding": "gzip, deflate",
+            "content-type": "application/json",
+            "sentry-trace": "ed58ff1a8fab4e59bef0a64673bd6c4e-a5acd55ffa3b954c-0",
+            "x-forwarded-for": "18.231.143.194",
+            "x-forwarded-host": "n8n-fabiolas.iszap.com.br",
+            "x-forwarded-port": "443",
+            "x-forwarded-proto": "https",
+            "x-forwarded-server": "2cacd8d2214d",
+            "x-real-ip": "18.231.143.194"
+          },
+          "params": {},
+          "query": {},
+          "body": {
+            "data-busca": "07-03-2024"
+          }
         }
       }
     ]
@@ -7471,6 +7534,6 @@
     }
   ],
   "triggerCount": 7,
-  "updatedAt": "2024-03-05T16:59:56.000Z",
-  "versionId": "02131865-4183-4bb2-a261-2334ad6cd733"
+  "updatedAt": "2024-03-05T18:50:53.000Z",
+  "versionId": "0e4533d2-10a6-4ce7-acdd-ee4e37d10869"
 }
