@@ -7292,6 +7292,10 @@
             {
               "name": "data",
               "value": "={{ $json['data-busca'].split('-')[2] }}-{{ $json['data-busca'].split('-')[1] }}-{{ $json['data-busca'].split('-')[0] }}"
+            },
+            {
+              "name": "data-normal",
+              "value": "={{ $json['data-busca'] }}"
             }
           ]
         },
@@ -7333,7 +7337,7 @@
           "string": [
             {
               "name": "data-busca",
-              "value": "={{ $('formatando').item.json['data-busca'] }}"
+              "value": "={{ $('Set4').item.json['data-normal'] }}"
             }
           ]
         },
@@ -7388,6 +7392,22 @@
         3960,
         -840
       ]
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "ativar-confirmacao-manual",
+        "options": {}
+      },
+      "id": "47afbbe3-6c4c-4c40-bf7f-5d39f92a5998",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        -2440,
+        -1080
+      ],
+      "webhookId": "6c34cd24-9705-4ddb-b09f-6f0a388abe3f"
     }
   ],
   "pinData": {
@@ -7406,6 +7426,13 @@
           "Second": "32",
           "Timezone": "-03 -03:00",
           "data-busca": "29-08-2023"
+        }
+      }
+    ],
+    "Webhook": [
+      {
+        "json": {
+          "data-busca": "First item"
         }
       }
     ]
@@ -7443,7 +7470,7 @@
       "name": "Fabiolas"
     }
   ],
-  "triggerCount": 6,
-  "updatedAt": "2024-01-15T15:53:18.000Z",
-  "versionId": "e4a6e518-6875-400c-b06e-bca4ed43d6de"
+  "triggerCount": 7,
+  "updatedAt": "2024-03-05T16:59:56.000Z",
+  "versionId": "02131865-4183-4bb2-a261-2334ad6cd733"
 }
