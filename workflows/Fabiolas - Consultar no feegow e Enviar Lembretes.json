@@ -198,7 +198,7 @@
       "main": [
         [
           {
-            "node": "IF",
+            "node": "salvando id agendamento",
             "type": "main",
             "index": 0
           }
@@ -2408,6 +2408,17 @@
           }
         ]
       ]
+    },
+    "salvando id agendamento": {
+      "main": [
+        [
+          {
+            "node": "IF",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "createdAt": "2023-07-27T04:44:49.831Z",
@@ -2667,7 +2678,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        3640,
+        3820,
         -840
       ]
     },
@@ -2684,7 +2695,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        3860,
+        4040,
         -940
       ],
       "retryOnFail": true,
@@ -2710,7 +2721,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        3860,
+        4040,
         -760
       ],
       "retryOnFail": true,
@@ -2745,7 +2756,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        4440,
+        4620,
         -840
       ],
       "retryOnFail": false,
@@ -3041,7 +3052,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        3440,
+        3420,
         -840
       ],
       "retryOnFail": true,
@@ -3842,7 +3853,7 @@
       "type": "n8n-nodes-base.wait",
       "typeVersion": 1,
       "position": [
-        4680,
+        4860,
         -840
       ],
       "webhookId": "c22b43ee-cbea-4131-8525-39264a397d75"
@@ -7411,7 +7422,7 @@
       "type": "n8n-nodes-base.noOp",
       "typeVersion": 1,
       "position": [
-        4180,
+        4360,
         -840
       ]
     },
@@ -7451,6 +7462,56 @@
       "position": [
         -2440,
         -1140
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{ $('Cadastrando na Audiência1').item.json[\"id\"] }}/custom_fields/2378174/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "value",
+              "value": "={{ $('1 por vez').item.json[\"agendamento_id\"] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "4c22e4ab-f749-4dc6-9a3c-b5a1f681dcd9",
+      "name": "salvando id agendamento",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        3620,
+        -840
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "4",
+          "name": "BotConversa Fabiolas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "## DISPARO 1 DIA ANTES",
+        "height": 1110.447965738758,
+        "width": 8857.963169164885
+      },
+      "id": "806b0243-3a48-4059-b09b-8e5a1721d32e",
+      "name": "Sticky Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -3760,
+        -1180
       ]
     }
   ],
@@ -7534,6 +7595,6 @@
     }
   ],
   "triggerCount": 7,
-  "updatedAt": "2024-03-05T18:50:53.000Z",
-  "versionId": "0e4533d2-10a6-4ce7-acdd-ee4e37d10869"
+  "updatedAt": "2024-05-15T06:30:36.000Z",
+  "versionId": "cdf446d7-a2d7-479c-bd52-994ab9fbbdfa"
 }
