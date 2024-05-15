@@ -77,7 +77,9 @@
             }
           ]
         },
-        "options": {}
+        "options": {
+          "cellFormat": "USER_ENTERED"
+        }
       },
       "id": "a156db80-f279-4cca-ade4-89fa9bf3fdeb",
       "name": "Google Sheets",
@@ -122,10 +124,10 @@
         },
         "sheetName": {
           "__rl": true,
-          "value": 63844731,
+          "value": 1945539090,
           "mode": "list",
-          "cachedResultName": "Atendimentos Abertos",
-          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1WAPCHqXPkKUpvSH3cgWhKu6_6-jNytqg0CudwcirpGE/edit#gid=63844731"
+          "cachedResultName": "Atendimentos Concluídos",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1WAPCHqXPkKUpvSH3cgWhKu6_6-jNytqg0CudwcirpGE/edit#gid=1945539090"
         },
         "fieldsUi": {
           "fieldValues": [
@@ -140,10 +142,16 @@
             {
               "fieldId": "QTD",
               "fieldValue": "1"
+            },
+            {
+              "fieldId": "ATENDENTE",
+              "fieldValue": "={{ $json.body.Atendente }}"
             }
           ]
         },
-        "options": {}
+        "options": {
+          "cellFormat": "USER_ENTERED"
+        }
       },
       "id": "6c90ec2e-7a85-4c4a-9dba-b3db642ee0b8",
       "name": "Google Sheets1",
@@ -188,6 +196,35 @@
           "item": 0
         }
       }
+    ],
+    "Webhook1": [
+      {
+        "json": {
+          "headers": {
+            "host": "n8n-fabiolas.iszap.com.br",
+            "user-agent": "python-requests/2.26.0",
+            "content-length": "28",
+            "accept": "*/*",
+            "accept-encoding": "gzip, deflate",
+            "content-type": "application/json",
+            "sentry-trace": "b049910790704d638c5542ff16c94df3-b49d56027a4985d1-0",
+            "x-forwarded-for": "18.230.227.135",
+            "x-forwarded-host": "n8n-fabiolas.iszap.com.br",
+            "x-forwarded-port": "443",
+            "x-forwarded-proto": "https",
+            "x-forwarded-server": "2cacd8d2214d",
+            "x-real-ip": "18.230.227.135"
+          },
+          "params": {},
+          "query": {},
+          "body": {
+            "Atendente": "{Atendente}"
+          }
+        },
+        "pairedItem": {
+          "item": 0
+        }
+      }
     ]
   },
   "settings": {},
@@ -201,6 +238,6 @@
     }
   ],
   "triggerCount": 2,
-  "updatedAt": "2024-05-15T13:29:35.000Z",
-  "versionId": "90f1070a-f73e-4221-90b3-f9ea17190f0d"
+  "updatedAt": "2024-05-15T13:56:34.000Z",
+  "versionId": "aae15155-6024-4b8f-921f-a999fc14b5eb"
 }
