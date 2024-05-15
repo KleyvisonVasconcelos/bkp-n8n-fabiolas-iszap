@@ -1,11 +1,195 @@
 {
-  "active": false,
-  "connections": {},
+  "active": true,
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook1": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
   "createdAt": "2024-05-15T12:59:37.560Z",
   "id": "25",
   "name": "Contabilizar atendimentos",
-  "nodes": [],
-  "pinData": {},
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "contabilizar-atendimento",
+        "options": {}
+      },
+      "id": "fc7f5621-c9b2-4634-b507-dba0794dc764",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        1200,
+        400
+      ],
+      "webhookId": "187ec0d5-8f6e-4b09-9ba5-fb3c9ec8ed4f"
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "https://docs.google.com/spreadsheets/d/1WAPCHqXPkKUpvSH3cgWhKu6_6-jNytqg0CudwcirpGE/edit#gid=63844731",
+          "mode": "url",
+          "__regex": "https:\\/\\/(?:drive|docs)\\.google\\.com\\/\\w+\\/d\\/([0-9a-zA-Z\\-_]+)(?:\\/.*|)"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 63844731,
+          "mode": "list",
+          "cachedResultName": "Atendimentos Abertos",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1WAPCHqXPkKUpvSH3cgWhKu6_6-jNytqg0CudwcirpGE/edit#gid=63844731"
+        },
+        "fieldsUi": {
+          "fieldValues": [
+            {
+              "fieldId": "DATA",
+              "fieldValue": "={{$now.toFormat(\"dd-MM-yyyy\") }}"
+            },
+            {
+              "fieldId": "MÊS",
+              "fieldValue": "={{$now.toFormat(\"MM-yyyy\") }}"
+            },
+            {
+              "fieldId": "QTD",
+              "fieldValue": "1"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "a156db80-f279-4cca-ade4-89fa9bf3fdeb",
+      "name": "Google Sheets",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 3,
+      "position": [
+        1420,
+        400
+      ],
+      "credentials": {
+        "googleApi": {
+          "id": "1",
+          "name": "fabiolas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "contabilizar-atendimento-finalizado",
+        "options": {}
+      },
+      "id": "3da14bd4-1e36-4426-a0bf-1ee7eadf140b",
+      "name": "Webhook1",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        1200,
+        660
+      ],
+      "webhookId": "187ec0d5-8f6e-4b09-9ba5-fb3c9ec8ed4f"
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "https://docs.google.com/spreadsheets/d/1WAPCHqXPkKUpvSH3cgWhKu6_6-jNytqg0CudwcirpGE/edit#gid=63844731",
+          "mode": "url",
+          "__regex": "https:\\/\\/(?:drive|docs)\\.google\\.com\\/\\w+\\/d\\/([0-9a-zA-Z\\-_]+)(?:\\/.*|)"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 63844731,
+          "mode": "list",
+          "cachedResultName": "Atendimentos Abertos",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1WAPCHqXPkKUpvSH3cgWhKu6_6-jNytqg0CudwcirpGE/edit#gid=63844731"
+        },
+        "fieldsUi": {
+          "fieldValues": [
+            {
+              "fieldId": "DATA",
+              "fieldValue": "={{$now.toFormat(\"dd-MM-yyyy\") }}"
+            },
+            {
+              "fieldId": "MÊS",
+              "fieldValue": "={{$now.toFormat(\"MM-yyyy\") }}"
+            },
+            {
+              "fieldId": "QTD",
+              "fieldValue": "1"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "6c90ec2e-7a85-4c4a-9dba-b3db642ee0b8",
+      "name": "Google Sheets1",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 3,
+      "position": [
+        1420,
+        660
+      ],
+      "credentials": {
+        "googleApi": {
+          "id": "1",
+          "name": "fabiolas"
+        }
+      }
+    }
+  ],
+  "pinData": {
+    "Webhook": [
+      {
+        "json": {
+          "headers": {
+            "host": "n8n-fabiolas.iszap.com.br",
+            "user-agent": "python-requests/2.26.0",
+            "content-length": "2",
+            "accept": "*/*",
+            "accept-encoding": "gzip, deflate",
+            "content-type": "application/json",
+            "sentry-trace": "91b0d0a8803c4ac9922feb2e3dfbb245-88f29768ae93db1d-0",
+            "x-forwarded-for": "15.228.69.118",
+            "x-forwarded-host": "n8n-fabiolas.iszap.com.br",
+            "x-forwarded-port": "443",
+            "x-forwarded-proto": "https",
+            "x-forwarded-server": "2cacd8d2214d",
+            "x-real-ip": "15.228.69.118"
+          },
+          "params": {},
+          "query": {},
+          "body": {}
+        },
+        "pairedItem": {
+          "item": 0
+        }
+      }
+    ]
+  },
   "settings": {},
   "staticData": null,
   "tags": [
@@ -16,7 +200,7 @@
       "name": "Fabiolas"
     }
   ],
-  "triggerCount": 0,
-  "updatedAt": "2024-05-15T12:59:45.000Z",
-  "versionId": "81683599-3acf-4870-addb-6f0e9ad59cd3"
+  "triggerCount": 2,
+  "updatedAt": "2024-05-15T13:29:35.000Z",
+  "versionId": "90f1070a-f73e-4221-90b3-f9ea17190f0d"
 }
