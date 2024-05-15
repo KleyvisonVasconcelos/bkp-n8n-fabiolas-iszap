@@ -1,6 +1,18 @@
 {
-  "active": false,
-  "connections": {},
+  "active": true,
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
   "createdAt": "2024-05-15T06:40:55.862Z",
   "id": "24",
   "name": "Confirmar agendamento no feegow",
@@ -20,9 +32,75 @@
         400
       ],
       "webhookId": "cee14eec-b7b3-49de-a6b0-36f0376bcb78"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.feegow.com/v1/api/appoints/statusUpdate",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "AgendamentoID",
+              "value": "={{ $json.body.idAgendamento }}"
+            },
+            {
+              "name": "StatusID",
+              "value": "7"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "30c740b5-65f5-425b-9b5c-7ecc105236d1",
+      "name": "HTTP Request",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [
+        1420,
+        400
+      ],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "2",
+          "name": "feegow fabiolas"
+        }
+      }
     }
   ],
-  "pinData": {},
+  "pinData": {
+    "Webhook": [
+      {
+        "json": {
+          "headers": {
+            "host": "n8n-fabiolas.iszap.com.br",
+            "user-agent": "python-requests/2.26.0",
+            "content-length": "36",
+            "accept": "*/*",
+            "accept-encoding": "gzip, deflate",
+            "content-type": "application/json",
+            "sentry-trace": "8e5ea55fae1f4ad78f3187282829d038-86202eff4601e483-0",
+            "x-forwarded-for": "54.233.228.103",
+            "x-forwarded-host": "n8n-fabiolas.iszap.com.br",
+            "x-forwarded-port": "443",
+            "x-forwarded-proto": "https",
+            "x-forwarded-server": "2cacd8d2214d",
+            "x-real-ip": "54.233.228.103"
+          },
+          "params": {},
+          "query": {},
+          "body": {
+            "idAgendamento": "{idAgendamento}"
+          }
+        },
+        "pairedItem": {
+          "item": 0
+        }
+      }
+    ]
+  },
   "settings": {},
   "staticData": null,
   "tags": [
@@ -33,7 +111,7 @@
       "name": "Fabiolas"
     }
   ],
-  "triggerCount": 0,
-  "updatedAt": "2024-05-15T06:41:57.000Z",
-  "versionId": "2238dadc-21c5-4cde-bf59-ee8cc07a6455"
+  "triggerCount": 1,
+  "updatedAt": "2024-05-15T12:59:24.000Z",
+  "versionId": "8ebdc185-f680-40b6-b13b-9061c1df59b3"
 }
