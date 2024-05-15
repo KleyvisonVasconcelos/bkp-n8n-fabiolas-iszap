@@ -2419,6 +2419,342 @@
           }
         ]
       ]
+    },
+    "salvando nome médica1": {
+      "main": [
+        [
+          {
+            "node": "salvando hora agendamento1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "salvando hora agendamento1": {
+      "main": [
+        [
+          {
+            "node": "IF35",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF35": {
+      "main": [
+        [
+          {
+            "node": "tag fabiola ribeiro1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "tag fabiola leite1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "tag fabiola ribeiro1": {
+      "main": [
+        [
+          {
+            "node": "No Operation, do nothing1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "tag fabiola leite1": {
+      "main": [
+        [
+          {
+            "node": "No Operation, do nothing1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "enviar fluxo confirmação de agendamento1": {
+      "main": [
+        [
+          {
+            "node": "Wait7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Listar Agendamentos6": {
+      "main": [
+        [
+          {
+            "node": "separa agendamentos6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "buscar pacientes8": {
+      "main": [
+        [
+          {
+            "node": "IF36",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Cadastrando na Audiência7": {
+      "main": [
+        [
+          {
+            "node": "salvando nome médica1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validar Telefone BR7": {
+      "main": [
+        [
+          {
+            "node": "Cadastrando na Audiência7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "possui telefone?7": {
+      "main": [
+        [
+          {
+            "node": "Item Lists7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Item Lists7": {
+      "main": [
+        [
+          {
+            "node": "Valores Planilha",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Valores Planilha": {
+      "main": [
+        [
+          {
+            "node": "1 por vez1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Valores35": {
+      "main": [
+        [
+          {
+            "node": "Set7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "separa agendamentos6": {
+      "main": [
+        [
+          {
+            "node": "IF40",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule Trigger6": {
+      "main": [
+        [
+          {
+            "node": "Listar Agendamentos6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF36": {
+      "main": [
+        [
+          {
+            "node": "Valores35",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "IF37",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF37": {
+      "main": [
+        [
+          {
+            "node": "Valores36",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "IF38",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF38": {
+      "main": [
+        [
+          {
+            "node": "Valores37",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "IF39",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait7": {
+      "main": [
+        [
+          {
+            "node": "1 por vez1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF39": {
+      "main": [
+        [
+          {
+            "node": "Valores38",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF40": {
+      "main": [
+        [
+          {
+            "node": "buscar pacientes8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set7": {
+      "main": [
+        [
+          {
+            "node": "possui telefone?7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "1 por vez1": {
+      "main": [
+        [
+          {
+            "node": "Validar Telefone BR7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "No Operation, do nothing1": {
+      "main": [
+        [
+          {
+            "node": "enviar fluxo confirmação de agendamento1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Valores36": {
+      "main": [
+        [
+          {
+            "node": "Set7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Valores38": {
+      "main": [
+        [
+          {
+            "node": "Set7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Valores37": {
+      "main": [
+        [
+          {
+            "node": "Set7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "createdAt": "2023-07-27T04:44:49.831Z",
@@ -3588,7 +3924,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 2,
       "position": [
-        940,
+        1360,
         -460
       ],
       "retryOnFail": true,
@@ -7513,6 +7849,760 @@
         -3760,
         -1180
       ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{ $('Cadastrando na Audiência7').item.json[\"id\"] }}/custom_fields/521316/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "value",
+              "value": "={{ $('1 por vez1').item.json[\"medica\"] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "5dd18031-4303-42fe-a880-5199323d3b3b",
+      "name": "salvando nome médica1",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        1440,
+        -3420
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "4",
+          "name": "BotConversa Fabiolas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{ $('Cadastrando na Audiência7').item.json[\"id\"] }}/custom_fields/521315/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "value",
+              "value": "={{ $('1 por vez1').item.json[\"horario\"] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "4d3dfe36-7174-469b-8e92-180faea70286",
+      "name": "salvando hora agendamento1",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        1660,
+        -3420
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "4",
+          "name": "BotConversa Fabiolas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $('1 por vez1').item.json[\"medica\"] }}",
+              "value2": "Fabiola Ribeiro"
+            }
+          ]
+        }
+      },
+      "id": "714dbe4e-e70b-43d6-bf85-ee26b23c2820",
+      "name": "IF35",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        1880,
+        -3420
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{ $('Cadastrando na Audiência7').item.json[\"id\"] }}/tags/1407115/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "options": {}
+      },
+      "id": "b842e46d-772c-4dd6-a3b8-5a9846fcb2c6",
+      "name": "tag fabiola ribeiro1",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        2100,
+        -3520
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "4",
+          "name": "BotConversa Fabiolas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{ $('Cadastrando na Audiência7').item.json[\"id\"] }}/tags/1407118/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "options": {}
+      },
+      "id": "7c3d76e7-f3bf-4b22-8b85-d1c16b22618f",
+      "name": "tag fabiola leite1",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        2100,
+        -3340
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "4",
+          "name": "BotConversa Fabiolas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{ $('Cadastrando na Audiência7').item.json[\"id\"] }}/send_flow/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "flow",
+              "value": "4192700"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "ae04adfc-44d9-49cf-b2f6-281f052bd4ba",
+      "name": "enviar fluxo confirmação de agendamento1",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        2680,
+        -3420
+      ],
+      "retryOnFail": false,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "4",
+          "name": "BotConversa Fabiolas"
+        }
+      },
+      "continueOnFail": true
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "url": "https://api.feegow.com/v1/api/appoints/search",
+        "options": {},
+        "queryParametersUi": {
+          "parameter": [
+            {
+              "name": "data_start",
+              "value": "={{ $now.toFormat(\"yyyy-MM-dd\") }}"
+            },
+            {
+              "name": "data_end",
+              "value": "={{ $now.toFormat(\"yyyy-MM-dd\") }}"
+            }
+          ]
+        }
+      },
+      "id": "f1380d77-b866-4f7b-8597-418abef27d5c",
+      "name": "Listar Agendamentos6",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [
+        -2500,
+        -3400
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "maxTries": 5,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "2",
+          "name": "feegow fabiolas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "url": "https://api.feegow.com/v1/api/patient/search",
+        "options": {},
+        "queryParametersUi": {
+          "parameter": [
+            {
+              "name": "paciente_id",
+              "value": "={{ $json[\"paciente_id\"] }}"
+            }
+          ]
+        }
+      },
+      "id": "72d384e3-c16e-4ae7-b29f-5f6435cfcadb",
+      "name": "buscar pacientes8",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [
+        -1520,
+        -3400
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "2",
+          "name": "feegow fabiolas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "headerAuth",
+        "requestMethod": "POST",
+        "url": "https://backend.botconversa.com.br/api/v1/webhook/subscriber/",
+        "options": {},
+        "bodyParametersUi": {
+          "parameter": [
+            {
+              "name": "phone",
+              "value": "={{ $json[\"whatsapp\"] }}"
+            },
+            {
+              "name": "first_name",
+              "value": "={{$node[\"1 por vez1\"].json[\"nome\"].split(' ')[0]}}"
+            },
+            {
+              "name": "last_name",
+              "value": "={{ $node[\"1 por vez1\"].json[\"nome\"].split(' ')[1]}} {{ $node[\"1 por vez1\"].json[\"nome\"].split(' ')[2]}} {{ $node[\"1 por vez1\"].json[\"nome\"].split(' ')[3]}} {{ $node[\"1 por vez1\"].json[\"nome\"].split(' ')[4]}} {{ $node[\"1 por vez1\"].json[\"nome\"].split(' ')[5]}}"
+            }
+          ]
+        }
+      },
+      "name": "Cadastrando na Audiência7",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 1,
+      "position": [
+        1180,
+        -3420
+      ],
+      "id": "40ccfde0-2d66-4cd9-8857-838827a14d5d",
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "4",
+          "name": "BotConversa Fabiolas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "functionCode": "var telefone = items[0].json.telefone.replaceAll(' ','').replaceAll('(','').replaceAll(')','').replaceAll('-','').replaceAll(',','').replaceAll('.','');\nvar ddd = telefone.slice(2,4);\nvar ddi = telefone.charAt(0);\nvar ddx = telefone.slice(0,2);\nvar length = telefone.length;\nif (length >= 12){\n  if (ddi == '+'){\n    ddi = telefone.slice(0,3);\n    telefone = parseInt(telefone.slice(3)).toString();\n  } else {\n    if (ddx == '55'){\n      telefone = parseInt(telefone.slice(2)).toString();\n      ddi = \"+55\";\n    } else {\n      telefone = parseInt(telefone).toString();\n      ddi = 'não informado';\n    }\n  }\n} else {\n  telefone = parseInt(telefone).toString();\n  ddi = 'não informado';\n}\n\nddd = telefone.slice(0,2);\ntelefone = telefone.slice(2);\nif (ddd > 28){\n  telefone = telefone.slice(-8);\n} else {\n  telefone = '9'+telefone.slice(-8);\n}\nvar whatsapp = '+55'+ddd+telefone;\n\nreturn [\n  {\n    json: {\n      ddi,\n      ddd,\n      telefone,\n      whatsapp,   \n    }\n  }\n];"
+      },
+      "name": "Validar Telefone BR7",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        940,
+        -3420
+      ],
+      "typeVersion": 1,
+      "id": "8adba946-446e-4f6b-9bf0-f68bae868eae",
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "continueOnFail": true
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json.telefone }}",
+              "operation": "isNotEmpty"
+            }
+          ]
+        }
+      },
+      "id": "2235309f-7f3e-4861-bdc3-5a4e6a8a4126",
+      "name": "possui telefone?7",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        0,
+        -3400
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "summarize",
+        "fieldsToSummarize": {
+          "values": [
+            {
+              "aggregation": "concatenate",
+              "field": "procedimento",
+              "separateBy": ", "
+            },
+            {
+              "aggregation": "concatenate",
+              "field": "agendamento_id"
+            },
+            {
+              "aggregation": "append",
+              "field": "data"
+            },
+            {
+              "aggregation": "append",
+              "field": "horario"
+            },
+            {
+              "aggregation": "append",
+              "field": "telefone"
+            },
+            {
+              "aggregation": "append",
+              "field": "nome"
+            },
+            {
+              "aggregation": "append",
+              "field": "nome medica"
+            }
+          ]
+        },
+        "fieldsToSplitBy": "paciente_id",
+        "options": {}
+      },
+      "id": "5a3c07c8-4148-4e8e-a770-0ca48ecb3cfc",
+      "name": "Item Lists7",
+      "type": "n8n-nodes-base.itemLists",
+      "typeVersion": 2,
+      "position": [
+        280,
+        -3400
+      ]
+    },
+    {
+      "parameters": {
+        "keepOnlySet": true,
+        "values": {
+          "string": [
+            {
+              "name": "agendamento_id",
+              "value": "={{ $json.concatenated_agendamento_id.toString() }}"
+            },
+            {
+              "name": "data",
+              "value": "={{ $json.appended_data[0].toString() }}"
+            },
+            {
+              "name": "horario",
+              "value": "={{ $json.appended_horario[0].toString() }}"
+            },
+            {
+              "name": "nome",
+              "value": "={{ $json.appended_nome[0].toString() }}"
+            },
+            {
+              "name": "procedimento",
+              "value": "={{ $json.concatenated_procedimento }}"
+            },
+            {
+              "name": "telefone",
+              "value": "={{ $json.appended_telefone[0] }}"
+            },
+            {
+              "name": "medica",
+              "value": "={{ $json.appended_nome_medica[0] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "e062754d-6757-4d72-b177-ca1cae93ee15",
+      "name": "Valores Planilha",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [
+        500,
+        -3400
+      ]
+    },
+    {
+      "parameters": {
+        "keepOnlySet": true,
+        "values": {
+          "string": [
+            {
+              "name": "horario",
+              "value": "={{ $('IF40').item.json[\"horario\"].slice(0,5)}}"
+            },
+            {
+              "name": "nome",
+              "value": "={{$node[\"buscar pacientes8\"].json[\"content\"][\"nome\"]}}"
+            },
+            {
+              "name": "telefone",
+              "value": "={{$node[\"buscar pacientes8\"].json[\"content\"][\"celulares\"][0]}}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "0f063a60-d3fc-4582-bad9-d6943757e833",
+      "name": "Valores35",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [
+        -560,
+        -3420
+      ]
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "content",
+        "options": {}
+      },
+      "id": "868f5a9b-2674-4538-bf1b-a0b5993b268c",
+      "name": "separa agendamentos6",
+      "type": "n8n-nodes-base.itemLists",
+      "typeVersion": 1,
+      "position": [
+        -2280,
+        -3400
+      ]
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "triggerAtHour": 7
+            }
+          ]
+        }
+      },
+      "id": "e7f66849-2e8f-43da-977c-2604c813281d",
+      "name": "Schedule Trigger6",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1,
+      "position": [
+        -2720,
+        -3400
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $('buscar pacientes8').item.json.content.celulares[0] }}",
+              "operation": "isNotEmpty"
+            }
+          ]
+        }
+      },
+      "id": "efdd5fc6-114d-42dd-b363-72abc9273523",
+      "name": "IF36",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        -800,
+        -3400
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $('buscar pacientes8').item.json.content.celulares[1] }}",
+              "operation": "isNotEmpty"
+            }
+          ]
+        }
+      },
+      "id": "e5777cb0-67b4-4635-8189-e9c6644b5b3a",
+      "name": "IF37",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        -800,
+        -3200
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $('buscar pacientes8').item.json.content.telefones[0] }}",
+              "operation": "isNotEmpty"
+            }
+          ]
+        }
+      },
+      "id": "2c6586f1-561b-486e-ad24-01b6f0612ed6",
+      "name": "IF38",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        -800,
+        -3000
+      ]
+    },
+    {
+      "parameters": {
+        "amount": 30,
+        "unit": "seconds"
+      },
+      "id": "ed0d8192-9ea9-474f-8632-f354e894b78d",
+      "name": "Wait7",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1,
+      "position": [
+        2920,
+        -3420
+      ],
+      "webhookId": "c22b43ee-cbea-4131-8525-39264a397d75"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $('buscar pacientes8').item.json.content.telefones[1] }}",
+              "operation": "isNotEmpty"
+            }
+          ]
+        }
+      },
+      "id": "99f196d8-d1d7-495f-9e4b-274ed760d8fd",
+      "name": "IF39",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        -800,
+        -2800
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $('separa agendamentos6').item.json[\"profissional_id\"].toString() }}",
+              "value2": "9"
+            },
+            {
+              "value1": "={{ $('separa agendamentos6').item.json[\"profissional_id\"].toString() }}",
+              "value2": "10"
+            }
+          ]
+        },
+        "combineOperation": "any"
+      },
+      "id": "0bd06b0e-d160-4c17-8bfa-7ca48d0471d7",
+      "name": "IF40",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        -2040,
+        -3400
+      ]
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "nome medica",
+              "value": "={{ $('IF40').item.json[\"profissional_id\"].toString().replace(\"9\",\"Fabiola Ribeiro\").replace(\"10\",\"Fabiola Leite\") }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "2ef72206-1a82-4bb6-b809-cd20645d6779",
+      "name": "Set7",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 2,
+      "position": [
+        -240,
+        -3400
+      ]
+    },
+    {
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      },
+      "id": "b84e91e3-e11a-4e66-a33c-0e7a2d1cd195",
+      "name": "1 por vez1",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 2,
+      "position": [
+        700,
+        -3400
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "2d06173b-de50-476a-807d-d99532d128db",
+      "name": "No Operation, do nothing1",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        2420,
+        -3420
+      ]
+    },
+    {
+      "parameters": {
+        "content": "## DISPARO NO DIA\n",
+        "height": 80,
+        "width": 244.26209850107657
+      },
+      "id": "c4c60635-b3c7-45ba-baf9-08d813b5e0b1",
+      "name": "Sticky Note1",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -3040,
+        -3400
+      ]
+    },
+    {
+      "parameters": {
+        "keepOnlySet": true,
+        "values": {
+          "string": [
+            {
+              "name": "horario",
+              "value": "={{ $('IF40').item.json[\"horario\"].slice(0,5)}}"
+            },
+            {
+              "name": "nome",
+              "value": "={{$node[\"buscar pacientes8\"].json[\"content\"][\"nome\"]}}"
+            },
+            {
+              "name": "telefone",
+              "value": "={{$node[\"buscar pacientes8\"].json[\"content\"][\"celulares\"][1]}}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "bbb424ea-9735-4c0b-bb9c-712804158833",
+      "name": "Valores36",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [
+        -560,
+        -3220
+      ]
+    },
+    {
+      "parameters": {
+        "keepOnlySet": true,
+        "values": {
+          "string": [
+            {
+              "name": "horario",
+              "value": "={{ $('IF40').item.json[\"horario\"].slice(0,5)}}"
+            },
+            {
+              "name": "nome",
+              "value": "={{$node[\"buscar pacientes8\"].json[\"content\"][\"nome\"]}}"
+            },
+            {
+              "name": "telefone",
+              "value": "={{$node[\"buscar pacientes8\"].json[\"content\"][\"telefones\"][0]}}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "a37d0947-97bf-497b-a532-ad006db2cff9",
+      "name": "Valores37",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [
+        -560,
+        -3020
+      ]
+    },
+    {
+      "parameters": {
+        "keepOnlySet": true,
+        "values": {
+          "string": [
+            {
+              "name": "horario",
+              "value": "={{ $('IF40').item.json[\"horario\"].slice(0,5)}}"
+            },
+            {
+              "name": "nome",
+              "value": "={{$node[\"buscar pacientes8\"].json[\"content\"][\"nome\"]}}"
+            },
+            {
+              "name": "telefone",
+              "value": "={{$node[\"buscar pacientes8\"].json[\"content\"][\"telefones\"][1]}}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "a43ed736-d269-4478-b1a7-21bdc61d1d2e",
+      "name": "Valores38",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [
+        -560,
+        -2820
+      ]
     }
   ],
   "pinData": {
@@ -7584,6 +8674,9 @@
     },
     "node:Schedule Trigger5": {
       "recurrencyRules": []
+    },
+    "node:Schedule Trigger6": {
+      "recurrencyRules": []
     }
   },
   "tags": [
@@ -7594,7 +8687,7 @@
       "name": "Fabiolas"
     }
   ],
-  "triggerCount": 7,
-  "updatedAt": "2024-05-15T06:37:07.000Z",
-  "versionId": "b0c76612-1d6e-45f4-a61d-4e988cde1b74"
+  "triggerCount": 8,
+  "updatedAt": "2024-05-15T16:46:23.000Z",
+  "versionId": "ad1e7c3f-d7f9-4719-b72b-54c77856d4ea"
 }
