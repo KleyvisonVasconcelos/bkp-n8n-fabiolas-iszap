@@ -2380,7 +2380,7 @@
       "main": [
         [
           {
-            "node": "enviar fluxo confirmação de agendamento",
+            "node": "convenio?",
             "type": "main",
             "index": 0
           }
@@ -2755,6 +2755,35 @@
           }
         ]
       ]
+    },
+    "convenio?": {
+      "main": [
+        [
+          {
+            "node": "enviar fluxo confirmação de agendamento2",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "enviar fluxo confirmação de agendamento",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "enviar fluxo confirmação de agendamento2": {
+      "main": [
+        [
+          {
+            "node": "Wait2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "createdAt": "2023-07-27T04:44:49.831Z",
@@ -3092,8 +3121,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        4620,
-        -840
+        4820,
+        -740
       ],
       "retryOnFail": false,
       "maxTries": 5,
@@ -3710,6 +3739,10 @@
             {
               "aggregation": "append",
               "field": "nome medica"
+            },
+            {
+              "aggregation": "append",
+              "field": "convenio"
             }
           ]
         },
@@ -3757,6 +3790,10 @@
             {
               "name": "medica",
               "value": "={{ $json.appended_nome_medica[0] }}"
+            },
+            {
+              "name": "convenio",
+              "value": "={{ $json.appended_convenio[0] }}"
             }
           ]
         },
@@ -4189,7 +4226,7 @@
       "type": "n8n-nodes-base.wait",
       "typeVersion": 1,
       "position": [
-        4860,
+        5080,
         -840
       ],
       "webhookId": "c22b43ee-cbea-4131-8525-39264a397d75"
@@ -4246,6 +4283,10 @@
             {
               "name": "nome medica",
               "value": "={{ $('Marcado - não confirmado1').item.json[\"profissional_id\"].toString().replace(\"9\",\"Fabiola Ribeiro\").replace(\"10\",\"Fabiola Leite\") }}"
+            },
+            {
+              "name": "convenio",
+              "value": "={{ $('buscar pacientes1').item.json.content.programa_de_saude }}"
             }
           ]
         },
@@ -8603,6 +8644,62 @@
         -560,
         -2820
       ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $('1 por vez').item.json.convenio }}",
+              "operation": "isNotEmpty"
+            }
+          ]
+        }
+      },
+      "id": "df5791fc-7108-483e-8204-480c4f739542",
+      "name": "convenio?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        4580,
+        -840
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{ $('Cadastrando na Audiência1').item.json[\"id\"] }}/send_flow/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "flow",
+              "value": "4267694"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "76bb4ead-1d82-49ae-b7a0-7b5c4ac2918f",
+      "name": "enviar fluxo confirmação de agendamento2",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        4820,
+        -940
+      ],
+      "retryOnFail": false,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "4",
+          "name": "BotConversa Fabiolas"
+        }
+      },
+      "continueOnFail": true
     }
   ],
   "pinData": {
@@ -8688,6 +8785,6 @@
     }
   ],
   "triggerCount": 8,
-  "updatedAt": "2024-05-15T16:46:23.000Z",
-  "versionId": "ad1e7c3f-d7f9-4719-b72b-54c77856d4ea"
+  "updatedAt": "2024-05-23T15:12:15.000Z",
+  "versionId": "d347e18c-734e-4ef3-b546-bbf5c8e1c62e"
 }
