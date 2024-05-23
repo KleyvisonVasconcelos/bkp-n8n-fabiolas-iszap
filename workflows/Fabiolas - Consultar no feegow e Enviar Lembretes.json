@@ -8753,6 +8753,11 @@
               "value1": "={{ $('1 por vez').item.json.horario }}",
               "operation": "startsWith",
               "value2": "11:"
+            },
+            {
+              "value1": "={{ $('1 por vez').item.json.horario }}",
+              "operation": "startsWith",
+              "value2": "12:"
             }
           ]
         },
@@ -8887,6 +8892,6 @@
     }
   ],
   "triggerCount": 8,
-  "updatedAt": "2024-05-23T18:58:08.000Z",
-  "versionId": "ac1d5c9b-d9bf-4920-a2b5-daa0a11ab58a"
+  "updatedAt": "2024-05-23T19:13:42.000Z",
+  "versionId": "2d9ab3ba-0e89-4d96-ba3d-5a987c33f0f0"
 }
