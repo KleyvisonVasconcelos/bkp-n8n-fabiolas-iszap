@@ -2760,7 +2760,7 @@
       "main": [
         [
           {
-            "node": "enviar fluxo confirmação de agendamento2",
+            "node": "IF41",
             "type": "main",
             "index": 0
           }
@@ -2775,6 +2775,35 @@
       ]
     },
     "enviar fluxo confirmação de agendamento2": {
+      "main": [
+        [
+          {
+            "node": "Wait2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF41": {
+      "main": [
+        [
+          {
+            "node": "enviar fluxo confirmação de agendamento2",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "enviar fluxo confirmação de agendamento3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "enviar fluxo confirmação de agendamento3": {
       "main": [
         [
           {
@@ -4226,8 +4255,8 @@
       "type": "n8n-nodes-base.wait",
       "typeVersion": 1,
       "position": [
-        5080,
-        -840
+        5260,
+        -820
       ],
       "webhookId": "c22b43ee-cbea-4131-8525-39264a397d75"
     },
@@ -8687,7 +8716,80 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        4820,
+        5040,
+        -1180
+      ],
+      "retryOnFail": false,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "4",
+          "name": "BotConversa Fabiolas"
+        }
+      },
+      "continueOnFail": true
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $('1 por vez').item.json.horario }}",
+              "operation": "startsWith",
+              "value2": "08:"
+            },
+            {
+              "value1": "={{ $('1 por vez').item.json.horario }}",
+              "operation": "startsWith",
+              "value2": "09:"
+            },
+            {
+              "value1": "={{ $('1 por vez').item.json.horario }}",
+              "operation": "startsWith",
+              "value2": "10:"
+            },
+            {
+              "value1": "={{ $('1 por vez').item.json.horario }}",
+              "operation": "startsWith",
+              "value2": "11:"
+            }
+          ]
+        },
+        "combineOperation": "any"
+      },
+      "id": "8497bca7-0376-4eb4-9630-6d5ec61b1df1",
+      "name": "IF41",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        4800,
+        -1040
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{ $('Cadastrando na Audiência1').item.json[\"id\"] }}/send_flow/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "flow",
+              "value": "4271884"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "97ba8a96-b0fc-4b4d-881f-8508a0bec1b5",
+      "name": "enviar fluxo confirmação de agendamento3",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        5040,
         -940
       ],
       "retryOnFail": false,
@@ -8785,6 +8887,6 @@
     }
   ],
   "triggerCount": 8,
-  "updatedAt": "2024-05-23T15:12:15.000Z",
-  "versionId": "d347e18c-734e-4ef3-b546-bbf5c8e1c62e"
+  "updatedAt": "2024-05-23T18:58:08.000Z",
+  "versionId": "ac1d5c9b-d9bf-4920-a2b5-daa0a11ab58a"
 }
