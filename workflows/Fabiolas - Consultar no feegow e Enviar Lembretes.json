@@ -4311,11 +4311,11 @@
           "string": [
             {
               "name": "nome medica",
-              "value": "={{ $('Marcado - não confirmado1').item.json[\"profissional_id\"].toString().replace(\"9\",\"Fabiola Ribeiro\").replace(\"10\",\"Fabiola Leite\") }}"
+              "value": "={{ $('Marcado - não confirmado1').first().json[\"profissional_id\"].toString().replace(\"9\",\"Fabiola Ribeiro\").replace(\"10\",\"Fabiola Leite\") }}"
             },
             {
               "name": "convenio",
-              "value": "={{ $('buscar pacientes1').item.json.content.programa_de_saude }}"
+              "value": "={{ $('buscar pacientes1').first().json.content.convenio_id }}"
             }
           ]
         },
@@ -8892,6 +8892,6 @@
     }
   ],
   "triggerCount": 8,
-  "updatedAt": "2024-05-23T19:13:42.000Z",
-  "versionId": "2d9ab3ba-0e89-4d96-ba3d-5a987c33f0f0"
+  "updatedAt": "2024-05-24T13:42:55.000Z",
+  "versionId": "3074abf2-e1de-4178-91ce-acb608691f70"
 }
