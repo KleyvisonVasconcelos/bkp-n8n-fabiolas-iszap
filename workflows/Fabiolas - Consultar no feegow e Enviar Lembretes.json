@@ -2813,6 +2813,17 @@
           }
         ]
       ]
+    },
+    "buscar pacientes9": {
+      "main": [
+        [
+          {
+            "node": "Item Lists8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "createdAt": "2023-07-27T04:44:49.831Z",
@@ -8671,7 +8682,8 @@
           "string": [
             {
               "value1": "={{ $('1 por vez').item.json.convenio }}",
-              "operation": "isNotEmpty"
+              "operation": "notEqual",
+              "value2": "2570"
             }
           ]
         }
@@ -8798,6 +8810,45 @@
         }
       },
       "continueOnFail": true
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "url": "https://api.feegow.com/v1/api/insurance/list",
+        "options": {}
+      },
+      "id": "a82ab934-a4cc-4ae8-a8d2-87989e612bc9",
+      "name": "buscar pacientes9",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [
+        1580,
+        -400
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "2",
+          "name": "feegow fabiolas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "content",
+        "options": {}
+      },
+      "id": "aba38765-ff41-4118-b396-037d2aff4476",
+      "name": "Item Lists8",
+      "type": "n8n-nodes-base.itemLists",
+      "typeVersion": 2.1,
+      "position": [
+        1800,
+        -400
+      ]
     }
   ],
   "pinData": {
@@ -11053,6 +11104,6 @@
     }
   ],
   "triggerCount": 8,
-  "updatedAt": "2024-05-29T00:23:06.000Z",
-  "versionId": "e2225c71-0287-4522-bd5e-ebc707ae3518"
+  "updatedAt": "2024-05-29T00:32:57.000Z",
+  "versionId": "7c77cb39-8b1b-4ef1-b8ee-29a84d4642b4"
 }
