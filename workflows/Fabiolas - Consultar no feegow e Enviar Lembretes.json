@@ -2380,7 +2380,7 @@
       "main": [
         [
           {
-            "node": "convenio?",
+            "node": "convenio?1",
             "type": "main",
             "index": 0
           }
@@ -2824,6 +2824,24 @@
           }
         ]
       ]
+    },
+    "convenio?1": {
+      "main": [
+        [
+          {
+            "node": "convenio?",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "enviar fluxo confirmação de agendamento",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "createdAt": "2023-07-27T04:44:49.831Z",
@@ -3161,7 +3179,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        4820,
+        4960,
         -740
       ],
       "retryOnFail": false,
@@ -4266,7 +4284,7 @@
       "type": "n8n-nodes-base.wait",
       "typeVersion": 1,
       "position": [
-        5260,
+        5400,
         -820
       ],
       "webhookId": "c22b43ee-cbea-4131-8525-39264a397d75"
@@ -8693,8 +8711,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        4580,
-        -840
+        4740,
+        -920
       ]
     },
     {
@@ -8719,7 +8737,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        5040,
+        5180,
         -1180
       ],
       "retryOnFail": false,
@@ -8771,7 +8789,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        4800,
+        4940,
         -1040
       ]
     },
@@ -8797,7 +8815,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        5040,
+        5180,
         -940
       ],
       "retryOnFail": false,
@@ -8848,6 +8866,26 @@
       "position": [
         1800,
         -400
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $('1 por vez').item.json.convenio }}",
+              "operation": "isNotEmpty"
+            }
+          ]
+        }
+      },
+      "id": "5b1c4011-2182-44ca-b098-c17a6437bced",
+      "name": "convenio?1",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        4520,
+        -820
       ]
     }
   ],
@@ -11104,6 +11142,6 @@
     }
   ],
   "triggerCount": 8,
-  "updatedAt": "2024-05-29T00:32:57.000Z",
-  "versionId": "7c77cb39-8b1b-4ef1-b8ee-29a84d4642b4"
+  "updatedAt": "2024-05-29T13:59:21.000Z",
+  "versionId": "b09d5570-029a-403d-9617-5cf12da0c173"
 }
