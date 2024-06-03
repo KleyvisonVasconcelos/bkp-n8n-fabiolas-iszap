@@ -258,13 +258,7 @@
             "index": 0
           }
         ],
-        [
-          {
-            "node": "buscar pacientes7",
-            "type": "main",
-            "index": 0
-          }
-        ]
+        []
       ]
     },
     "Validar Telefone BR1": {
@@ -2756,24 +2750,6 @@
         ]
       ]
     },
-    "convenio?": {
-      "main": [
-        [
-          {
-            "node": "IF41",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "enviar fluxo confirmação de agendamento",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "enviar fluxo confirmação de agendamento2": {
       "main": [
         [
@@ -2829,7 +2805,7 @@
       "main": [
         [
           {
-            "node": "convenio?",
+            "node": "IF41",
             "type": "main",
             "index": 0
           }
@@ -2837,6 +2813,17 @@
         [
           {
             "node": "enviar fluxo confirmação de agendamento",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Listar Agendamentos7": {
+      "main": [
+        [
+          {
+            "node": "buscar pacientes12",
             "type": "main",
             "index": 0
           }
@@ -3731,8 +3718,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
       "position": [
-        1180,
-        -460
+        1140,
+        -260
       ],
       "retryOnFail": true,
       "maxTries": 5,
@@ -4027,10 +4014,11 @@
       "waitBetweenTries": 5000,
       "credentials": {
         "httpHeaderAuth": {
-          "id": "13",
-          "name": "Feegow Dra Simone"
+          "id": "4",
+          "name": "BotConversa Fabiolas"
         }
-      }
+      },
+      "disabled": true
     },
     {
       "parameters": {
@@ -7612,7 +7600,7 @@
           "parameter": [
             {
               "name": "paciente_id",
-              "value": "={{ $json[\"paciente_id\"] }}"
+              "value": "=125701"
             }
           ]
         }
@@ -8695,27 +8683,6 @@
     },
     {
       "parameters": {
-        "conditions": {
-          "string": [
-            {
-              "value1": "={{ $('1 por vez').item.json.convenio }}",
-              "operation": "notEqual",
-              "value2": "2570"
-            }
-          ]
-        }
-      },
-      "id": "df5791fc-7108-483e-8204-480c4f739542",
-      "name": "convenio?",
-      "type": "n8n-nodes-base.if",
-      "typeVersion": 1,
-      "position": [
-        4740,
-        -920
-      ]
-    },
-    {
-      "parameters": {
         "method": "POST",
         "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{ $('Cadastrando na Audiência1').item.json[\"id\"] }}/send_flow/",
         "authentication": "genericCredentialType",
@@ -8872,8 +8839,8 @@
         "conditions": {
           "string": [
             {
-              "value1": "={{ $('1 por vez').item.json.convenio }}",
-              "operation": "isNotEmpty"
+              "value1": "={{ $('separa agendamentos').item.json[\"valor\"] }}",
+              "operation": "isEmpty"
             }
           ]
         }
@@ -8883,9 +8850,129 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        4520,
-        -820
+        4560,
+        -840
       ]
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "url": "https://api.feegow.com/v1/api/insurance/list",
+        "options": {}
+      },
+      "id": "38915d15-0f11-4c47-bc98-cb7a7b9ec825",
+      "name": "buscar pacientes10",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [
+        1420,
+        -160
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "2",
+          "name": "feegow fabiolas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "url": "https://api.feegow.com/v1/api/procedures/list",
+        "options": {}
+      },
+      "id": "0014bd7c-3e0a-442b-8ba7-751aa71ec384",
+      "name": "buscar pacientes11",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [
+        1800,
+        -140
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "2",
+          "name": "feegow fabiolas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "url": "https://api.feegow.com/v1/api/appoints/search",
+        "options": {},
+        "queryParametersUi": {
+          "parameter": [
+            {
+              "name": "data_start",
+              "value": "=06-06-2024"
+            },
+            {
+              "name": "data_end",
+              "value": "=06-06-2024"
+            }
+          ]
+        }
+      },
+      "id": "5124693b-d9eb-42c3-83ce-d536448d385a",
+      "name": "Listar Agendamentos7",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [
+        -1160,
+        -580
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "maxTries": 5,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "2",
+          "name": "feegow fabiolas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "url": "https://api.feegow.com/v1/api/patient/search",
+        "options": {},
+        "queryParametersUi": {
+          "parameter": [
+            {
+              "name": "paciente_id",
+              "value": "={{ $json[\"paciente_id\"] }}"
+            }
+          ]
+        }
+      },
+      "id": "3f0bcc21-d55b-447d-b952-881cad4145aa",
+      "name": "buscar pacientes12",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [
+        -920,
+        -580
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "2",
+          "name": "feegow fabiolas"
+        }
+      }
     }
   ],
   "pinData": {
@@ -11141,6 +11228,6 @@
     }
   ],
   "triggerCount": 8,
-  "updatedAt": "2024-05-31T23:13:54.000Z",
-  "versionId": "8543168a-b3c3-4b35-8110-57301a674b79"
+  "updatedAt": "2024-06-03T20:56:15.000Z",
+  "versionId": "480b61ec-f8d2-4801-9f8e-9aa806e8db06"
 }
