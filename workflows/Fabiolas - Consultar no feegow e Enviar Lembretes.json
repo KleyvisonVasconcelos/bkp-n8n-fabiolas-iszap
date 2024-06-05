@@ -85,17 +85,6 @@
         ]
       ]
     },
-    "enviar fluxo confirmação de agendamento": {
-      "main": [
-        [
-          {
-            "node": "Wait2",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "Schedule Trigger": {
       "main": [
         [
@@ -257,8 +246,7 @@
             "type": "main",
             "index": 0
           }
-        ],
-        []
+        ]
       ]
     },
     "Validar Telefone BR1": {
@@ -2812,7 +2800,7 @@
         ],
         [
           {
-            "node": "enviar fluxo confirmação de agendamento",
+            "node": "enviar fluxo confirmação de agendamento - particular",
             "type": "main",
             "index": 0
           }
@@ -2824,6 +2812,17 @@
         [
           {
             "node": "buscar pacientes12",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "enviar fluxo confirmação de agendamento - particular": {
+      "main": [
+        [
+          {
+            "node": "Wait2",
             "type": "main",
             "index": 0
           }
@@ -3143,42 +3142,6 @@
           "name": "BotConversa Fabiolas"
         }
       }
-    },
-    {
-      "parameters": {
-        "method": "POST",
-        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{ $('Cadastrando na Audiência1').item.json[\"id\"] }}/send_flow/",
-        "authentication": "genericCredentialType",
-        "genericAuthType": "httpHeaderAuth",
-        "sendBody": true,
-        "bodyParameters": {
-          "parameters": [
-            {
-              "name": "flow",
-              "value": "794436"
-            }
-          ]
-        },
-        "options": {}
-      },
-      "id": "3aebdd86-973e-41ad-9fff-d8da3d405c77",
-      "name": "enviar fluxo confirmação de agendamento",
-      "type": "n8n-nodes-base.httpRequest",
-      "typeVersion": 3,
-      "position": [
-        4960,
-        -740
-      ],
-      "retryOnFail": false,
-      "maxTries": 5,
-      "waitBetweenTries": 5000,
-      "credentials": {
-        "httpHeaderAuth": {
-          "id": "4",
-          "name": "BotConversa Fabiolas"
-        }
-      },
-      "continueOnFail": true
     },
     {
       "parameters": {},
@@ -8973,6 +8936,42 @@
           "name": "feegow fabiolas"
         }
       }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://backend.botconversa.com.br/api/v1/webhook/subscriber/{{ $('Cadastrando na Audiência1').item.json[\"id\"] }}/send_flow/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "flow",
+              "value": "794436"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "3aebdd86-973e-41ad-9fff-d8da3d405c77",
+      "name": "enviar fluxo confirmação de agendamento - particular",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [
+        4960,
+        -740
+      ],
+      "retryOnFail": false,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "4",
+          "name": "BotConversa Fabiolas"
+        }
+      },
+      "continueOnFail": true
     }
   ],
   "pinData": {
@@ -11228,6 +11227,6 @@
     }
   ],
   "triggerCount": 8,
-  "updatedAt": "2024-06-03T20:56:15.000Z",
-  "versionId": "480b61ec-f8d2-4801-9f8e-9aa806e8db06"
+  "updatedAt": "2024-06-05T19:29:17.000Z",
+  "versionId": "d8f68b91-1632-48ff-b0de-d24663bde525"
 }
