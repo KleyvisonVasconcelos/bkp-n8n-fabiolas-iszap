@@ -249,17 +249,6 @@
         ]
       ]
     },
-    "Validar Telefone BR1": {
-      "main": [
-        [
-          {
-            "node": "Cadastrando na Audiência1",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "possui telefone?": {
       "main": [
         [
@@ -512,7 +501,7 @@
       "main": [
         [
           {
-            "node": "Validar Telefone BR1",
+            "node": "Formatando Nome e Telefone",
             "type": "main",
             "index": 0
           }
@@ -2828,6 +2817,17 @@
           }
         ]
       ]
+    },
+    "Formatando Nome e Telefone": {
+      "main": [
+        [
+          {
+            "node": "Cadastrando na Audiência1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "createdAt": "2023-07-27T04:44:49.831Z",
@@ -3615,11 +3615,11 @@
             },
             {
               "name": "first_name",
-              "value": "={{$node[\"1 por vez\"].json[\"nome\"].split(' ')[0]}}"
+              "value": "={{ $json[\"Nome\"] }}"
             },
             {
               "name": "last_name",
-              "value": "={{ $node[\"1 por vez\"].json[\"nome\"].split(' ')[1]}} {{ $node[\"1 por vez\"].json[\"nome\"].split(' ')[2]}} {{ $node[\"1 por vez\"].json[\"nome\"].split(' ')[3]}} {{ $node[\"1 por vez\"].json[\"nome\"].split(' ')[4]}} {{ $node[\"1 por vez\"].json[\"nome\"].split(' ')[5]}}"
+              "value": "={{ $json[\"Sobrenome\"] }}"
             }
           ]
         }
@@ -3641,23 +3641,6 @@
           "name": "BotConversa Fabiolas"
         }
       }
-    },
-    {
-      "parameters": {
-        "functionCode": "var telefone = items[0].json.telefone.replaceAll(' ','').replaceAll('(','').replaceAll(')','').replaceAll('-','').replaceAll(',','').replaceAll('.','');\nvar ddd = telefone.slice(2,4);\nvar ddi = telefone.charAt(0);\nvar ddx = telefone.slice(0,2);\nvar length = telefone.length;\nif (length >= 12){\n  if (ddi == '+'){\n    ddi = telefone.slice(0,3);\n    telefone = parseInt(telefone.slice(3)).toString();\n  } else {\n    if (ddx == '55'){\n      telefone = parseInt(telefone.slice(2)).toString();\n      ddi = \"+55\";\n    } else {\n      telefone = parseInt(telefone).toString();\n      ddi = 'não informado';\n    }\n  }\n} else {\n  telefone = parseInt(telefone).toString();\n  ddi = 'não informado';\n}\n\nddd = telefone.slice(0,2);\ntelefone = telefone.slice(2);\nif (ddd > 28){\n  telefone = telefone.slice(-8);\n} else {\n  telefone = '9'+telefone.slice(-8);\n}\nvar whatsapp = '+55'+ddd+telefone;\n\nreturn [\n  {\n    json: {\n      ddi,\n      ddd,\n      telefone,\n      whatsapp,   \n    }\n  }\n];"
-      },
-      "name": "Validar Telefone BR1",
-      "type": "n8n-nodes-base.function",
-      "position": [
-        2280,
-        -840
-      ],
-      "typeVersion": 1,
-      "id": "1447e9de-97ff-406a-b41b-f00538e25b41",
-      "retryOnFail": true,
-      "maxTries": 5,
-      "waitBetweenTries": 5000,
-      "continueOnFail": true
     },
     {
       "parameters": {
@@ -8973,54 +8956,23 @@
         }
       },
       "continueOnFail": true
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "jsCode": "// Obter a string de nome completo do nó anterior\nconst nomeCompleto = item.json.nomeCompleto;\n\n// Função para separar o nome completo em nome e sobrenome\nfunction separarNomeSobrenome(nomeCompleto) {\n  // Verificar se o nome completo é uma string\n  if (typeof nomeCompleto !== 'string') {\n    throw new Error('O nome completo deve ser uma string.');\n  }\n\n  // Dividir o nome completo em palavras\n  const palavras = nomeCompleto.trim().split(' ');\n\n  // Verificar se há mais de uma palavra\n  if (palavras.length === 0) {\n    throw new Error('O nome completo deve conter pelo menos um nome.');\n  }\n\n  // Extrair o primeiro nome\n  const primeiroNome = palavras.shift();\n\n  // Extrair o sobrenome\n  const sobrenome = palavras.length > 0 ? palavras.join(' ') : '.';\n\n  // Formatar o nome e sobrenome com a primeira letra de cada palavra em maiúscula\n  const nomeFormatado = formatarNome(primeiroNome);\n  const sobrenomeFormatado = formatarNome(sobrenome);\n\n  return {\n    nome: nomeFormatado,\n    sobrenome: sobrenomeFormatado\n  };\n}\n\nfunction formatarNome(nome) {\n  return nome\n    .toLowerCase()\n    .split(' ')\n    .map((palavra) => palavra.charAt(0).toUpperCase() + palavra.slice(1))\n    .join(' ');\n}\n\n// Separar o nome completo em nome e sobrenome\nconst resultado = separarNomeSobrenome(nomeCompleto);\n\nvar whatsapp = item.json.telefone.replace(/\\D/g, '');\nvar ddd = whatsapp.slice(2,4);\nvar ddi = whatsapp.charAt(0);\nvar ddx = whatsapp.slice(0,2);\nvar length = whatsapp.length;\nif (length >= 12){\n  if (ddi == '+'){\n    ddi = whatsapp.slice(0,3);\n    whatsapp = parseInt(whatsapp.slice(3)).toString();\n  } else {\n    if (ddx == '55'){\n      whatsapp = parseInt(whatsapp.slice(2)).toString();\n      ddi = \"+55\";\n    } else {\n      whatsapp = parseInt(whatsapp).toString();\n      ddi = 'não informado';\n    }\n  }\n} else {\n  whatsapp = parseInt(whatsapp).toString();\n  ddi = 'não informado';\n}\n\nddd = whatsapp.slice(0,2);\nwhatsapp = whatsapp.slice(2);\nif (ddd > 28){\n  whatsapp = whatsapp.slice(-8);\n} else {\n  whatsapp = '9'+whatsapp.slice(-8);\n}\nvar whatsapp = '+55'+ddd+whatsapp;\n\n// Armazenar o nome e sobrenome nos campos desejados\nreturn {\n  json: {\n    Nome: resultado.nome,\n    Sobrenome: resultado.sobrenome,\n    NomeCompleto: resultado.nome+' '+resultado.sobrenome,\n    whatsapp\n  }\n};\n"
+      },
+      "id": "35c2620c-031e-49b5-a1b1-96176936b2f1",
+      "name": "Formatando Nome e Telefone",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 1,
+      "position": [
+        2280,
+        -840
+      ]
     }
   ],
-  "pinData": {
-    "formatando5": [
-      {
-        "json": {
-          "timestamp": "2023-08-30T02:43:32.874-03:00",
-          "Readable date": "August 30th 2023, 2:43:32 am",
-          "Readable time": "2:43:32 am",
-          "Day of week": "Wednesday",
-          "Year": "2023",
-          "Month": "August",
-          "Day of month": "30",
-          "Hour": "02",
-          "Minute": "43",
-          "Second": "32",
-          "Timezone": "-03 -03:00",
-          "data-busca": "29-08-2023"
-        }
-      }
-    ],
-    "Webhook": [
-      {
-        "json": {
-          "headers": {
-            "host": "n8n-fabiolas.iszap.com.br",
-            "user-agent": "python-requests/2.26.0",
-            "content-length": "30",
-            "accept": "*/*",
-            "accept-encoding": "gzip, deflate",
-            "content-type": "application/json",
-            "sentry-trace": "ed58ff1a8fab4e59bef0a64673bd6c4e-a5acd55ffa3b954c-0",
-            "x-forwarded-for": "18.231.143.194",
-            "x-forwarded-host": "n8n-fabiolas.iszap.com.br",
-            "x-forwarded-port": "443",
-            "x-forwarded-proto": "https",
-            "x-forwarded-server": "2cacd8d2214d",
-            "x-real-ip": "18.231.143.194"
-          },
-          "params": {},
-          "query": {},
-          "body": {
-            "data-busca": "07-03-2024"
-          }
-        }
-      }
-    ]
-  },
+  "pinData": {},
   "settings": {
     "saveManualExecutions": true,
     "callerPolicy": "workflowsFromSameOwner",
@@ -9058,6 +9010,6 @@
     }
   ],
   "triggerCount": 8,
-  "updatedAt": "2024-07-11T15:18:57.000Z",
-  "versionId": "256266d8-6708-4d74-aefa-cc2bd203012b"
+  "updatedAt": "2024-08-12T13:48:13.000Z",
+  "versionId": "bd5e2fbc-5200-4c70-a5a3-c470831ec51f"
 }
