@@ -4274,7 +4274,7 @@
           "string": [
             {
               "name": "nome medica",
-              "value": "={{ $('Marcado - não confirmado1').item.json[\"profissional_id\"].toString().replace(\"1\",\"Fabiola Ribeiro\").replace(\"10\",\"Fabiola Leite\") }}"
+              "value": "={{ $('Marcado - não confirmado1').item.json[\"profissional_id\"].toString().replace(\"10\",\"Fabiola Leite\").replace(\"1\",\"Fabiola Ribeiro\") }}"
             },
             {
               "name": "convenio",
@@ -7809,7 +7809,8 @@
         -2660,
         -1140
       ],
-      "webhookId": "6c34cd24-9705-4ddb-b09f-6f0a388abe3f"
+      "webhookId": "6c34cd24-9705-4ddb-b09f-6f0a388abe3f",
+      "disabled": true
     },
     {
       "parameters": {
@@ -8483,7 +8484,7 @@
           "string": [
             {
               "name": "nome medica",
-              "value": "={{ $('IF40').item.json[\"profissional_id\"].toString().replace(\"9\",\"Fabiola Ribeiro\").replace(\"10\",\"Fabiola Leite\") }}"
+              "value": "={{ $('IF40').item.json[\"profissional_id\"].toString().replace(\"10\",\"Fabiola Leite\").replace(\"1\",\"Fabiola Ribeiro\") }}"
             }
           ]
         },
@@ -8830,31 +8831,6 @@
       "parameters": {
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
-        "url": "https://api.feegow.com/v1/api/procedures/list",
-        "options": {}
-      },
-      "id": "0014bd7c-3e0a-442b-8ba7-751aa71ec384",
-      "name": "buscar pacientes11",
-      "type": "n8n-nodes-base.httpRequest",
-      "typeVersion": 2,
-      "position": [
-        1800,
-        -140
-      ],
-      "retryOnFail": true,
-      "maxTries": 5,
-      "waitBetweenTries": 5000,
-      "credentials": {
-        "httpHeaderAuth": {
-          "id": "2",
-          "name": "feegow fabiolas"
-        }
-      }
-    },
-    {
-      "parameters": {
-        "authentication": "genericCredentialType",
-        "genericAuthType": "httpHeaderAuth",
         "url": "https://api.feegow.com/v1/api/appoints/search",
         "options": {},
         "queryParametersUi": {
@@ -8970,6 +8946,31 @@
         2280,
         -840
       ]
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "url": "https://api.feegow.com/v1/api/professional/list",
+        "options": {}
+      },
+      "id": "0014bd7c-3e0a-442b-8ba7-751aa71ec384",
+      "name": "buscar profissionais",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [
+        1800,
+        -140
+      ],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "2",
+          "name": "feegow fabiolas"
+        }
+      }
     }
   ],
   "pinData": {},
@@ -9009,7 +9010,7 @@
       "name": "Fabiolas"
     }
   ],
-  "triggerCount": 8,
-  "updatedAt": "2024-08-12T14:12:32.000Z",
-  "versionId": "42a11cf0-e10d-4f19-93b3-481c9b3113e9"
+  "triggerCount": 7,
+  "updatedAt": "2024-08-22T14:18:45.000Z",
+  "versionId": "6798ccaa-6bc0-42ce-96ff-0ac6f14a45af"
 }
