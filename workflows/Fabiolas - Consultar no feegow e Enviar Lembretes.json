@@ -4134,7 +4134,7 @@
           "interval": [
             {
               "triggerAtHour": 9,
-              "triggerAtMinute": 8
+              "triggerAtMinute": 35
             }
           ]
         }
@@ -9011,6 +9011,6 @@
     }
   ],
   "triggerCount": 7,
-  "updatedAt": "2024-11-06T12:06:13.000Z",
-  "versionId": "1cc51e2a-d5e1-430c-8cfd-1df524e83eab"
+  "updatedAt": "2024-11-06T12:32:05.000Z",
+  "versionId": "ed626ae0-402a-4d99-8398-eba6688c671d"
 }
