@@ -1,5 +1,5 @@
 {
-  "active": true,
+  "active": false,
   "connections": {
     "foi atendido?": {
       "main": [
@@ -9011,6 +9011,6 @@
     }
   ],
   "triggerCount": 8,
-  "updatedAt": "2024-11-14T18:13:09.000Z",
-  "versionId": "1db763f7-f6ea-4bee-833b-c6347674f806"
+  "updatedAt": "2024-11-16T22:51:09.000Z",
+  "versionId": "cc98c144-e90a-47a1-80ef-913df2fa1def"
 }
